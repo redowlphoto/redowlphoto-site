@@ -1,0 +1,9 @@
+baseURL = "https://redowlphoto.dk/"
+languageCode = "en"
+title = "RedOwlPhoto"
+theme = "blowfish"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
