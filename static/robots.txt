@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
+# CMS
+Disallow: /admin/
+
 Sitemap: https://redowlphoto.dk/sitemap.xml
