@@ -8,20 +8,33 @@ theme = "blowfish"
     [markup.goldmark.renderer]
       unsafe = true
 
+# --- Taxonomier (tags + farvegrupper til forsiden) ---
+[taxonomies]
+  tag     = "tags"
+  palette = "palette"
+
 [params]
-  description = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
+  description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
 
+  # Bruges af Blowfish til SEO/structured data.
   [params.author]
     name = "RedOwlPhoto"
 
+# --- Topmenu ---
 [menu]
-  [[menu.main]]
-    name = "Works"
-    url = "/works/"
-    weight = 10
 
   [[menu.main]]
-    name = "About & Contact"
-    url = "/about/"
-    weight = 100
+    name    = "Works"
+    pageRef = "works"
+    weight  = 10
+
+  [[menu.main]]
+    name    = "Blog"
+    pageRef = "blog"
+    weight  = 20
+
+  [[menu.main]]
+    name    = "About & Contact"
+    pageRef = "about"
+    weight  = 100
