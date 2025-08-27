@@ -17,13 +17,19 @@ theme = "blowfish"
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
 
-  # Bruges af Blowfish til SEO/structured data.
+  # Bruges af Blowfish til SEO/structured data + sociale links
   [params.author]
-    name = "RedOwlPhoto"
+    name  = "RedOwlPhoto"
+    links = [
+      { instagram = "https://www.instagram.com/redowlphoto/" }
+    ]
 
-# --- Topmenu ---
+  # Sørg for at footer-menuen vises
+  [params.footer]
+    showMenu = true
+
+# --- Menus ---
 [menu]
-
   [[menu.main]]
     name    = "Works"
     pageRef = "works"
@@ -39,6 +45,8 @@ theme = "blowfish"
     pageRef = "about"
     weight  = 100
 
-[[params.social]]
-  name = "instagram"
-  url  = "https://www.instagram.com/redowlphoto/"
+  # Footer-menu (tekstlink)
+  [[menu.footer]]
+    name   = "Instagram"
+    url    = "https://www.instagram.com/redowlphoto/"
+    weight = 10
