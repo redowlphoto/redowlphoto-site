@@ -38,3 +38,7 @@ theme = "blowfish"
     name    = "About & Contact"
     pageRef = "about"
     weight  = 100
+
+[[params.social]]
+  name = "instagram"
+  url  = "https://www.instagram.com/redowlphoto/"
