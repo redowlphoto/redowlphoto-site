@@ -7,3 +7,9 @@ theme = "blowfish"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "About & Contact"
+    url = "/about/"
+    weight = 20
