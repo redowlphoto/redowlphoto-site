@@ -11,7 +11,9 @@ theme = "blowfish"
 [params]
   description = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
-  author = "RedOwlPhoto"
+
+  [params.author]
+    name = "RedOwlPhoto"
 
 [menu]
   [[menu.main]]
