@@ -11,9 +11,7 @@ showEdit: false
 ---
 
 ## Artist statement
-Quiet, pared-back seascapes from Denmark’s east coast. I work with calm
-water, open horizons and restrained colour to create images that feel unhurried
-and spacious.
+I create quiet, pared-back photographs shaped by minimalism and a modernist sense of form. Simple lines, open horizons and restrained colour are the tools I use to create images that feel unhurried and spacious. Whether I am on the coast, in a city square or on a mountain path, I look for a clear structure: light meeting edge, mass meeting void. The subject may be the sea, a wall, a tree or a passer-by, but the aim is the same — reduce distraction so the mood of a place can come through. The work sits between document and abstraction. It does not describe everything; it suggests enough for the viewer to complete. Most photographs are made on Denmark’s east coast around Mariager Fjord, Als Odde and Øster Hurup, with ongoing series from other places as well.
 
 ## Locations
 Mariager Fjord · Als Odde · Øster Hurup
