@@ -61,3 +61,25 @@ footer hr {
   backdrop-filter: blur(4px);
   border-radius: 8px;
 }
+
+/* 6) Ensartede side-overskrifter (H1) på Works / Blog / About */
+.page-title,
+.page-header h1,
+main h1.page-title,
+main h1:first-child {
+  font-size: clamp(2.1rem, 3.8vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  letter-spacing: .01em;
+}
+
+/* 7) Underoverskrift på Works ("Browse by category") lidt tydeligere */
+.ro-sub{
+  font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+  opacity: .95;
+}
+
+/* 8) Forside-tagline: følg temaets tekstfarve (mørk/lys) */
+.ro-tagline{
+  color: var(--bf-fg) !important;
+}
