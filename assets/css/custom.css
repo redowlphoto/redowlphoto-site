@@ -3,6 +3,12 @@
    Placering: assets/css/custom.css
    ========================================================= */
 
+/* ---------- Basale variable til indryk og bredde ---------- */
+:root{
+  --ro-pad-x: clamp(1rem, 4vw, 3rem);   /* vandret indryk */
+  --ro-maxw: 1200px;                    /* max bredde på indhold */
+}
+
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
 .heading-anchor{
   display: none !important;
@@ -53,8 +59,7 @@ footer hr{
   border-radius: 8px;
 }
 
-/* 6) ENS overskriftsstørrelse på Works (matcher temaets store h1)
-   Bemærk !important for at slå den inline <style> på siden */
+/* 6) Ens overskriftsstørrelse på Works (overstyrer inline-style dér) */
 .ro-h1{
   font-size: clamp(2rem, 3.2vw, 3rem) !important;
   font-weight: 800 !important;
@@ -63,8 +68,7 @@ footer hr{
   margin: 0 0 1.25rem 0 !important;
 }
 
-/* 7) Forsidens tagline skal skifte farve med temaet
-   (brug arvet tekstfarve; !important for at overstyre inline-style) */
+/* 7) Forsidens tagline skal skifte farve med temaet */
 .ro-tagline{
   color: inherit !important;
   opacity: .9;
@@ -72,7 +76,6 @@ footer hr{
 
 /* =========================================================
    8) HEADER / TOP-MENU – større, harmonisk typografi
-   (uden at ændre temaets HTML)
    ========================================================= */
 
 /* Brand (venstre) – dækker typiske Blowfish-varianter */
@@ -101,15 +104,7 @@ header .menu a,
   text-underline-offset: .2em;
 }
 
-/* Gap mellem menupunkter (uden at ændre layout) */
-header nav ul,
-header .menu,
-.site-header nav ul,
-.site-header .menu{
-  gap: 1.15rem !important;
-}
-
-/* En anelse mere vertikal luft i headeren – ens på alle sider */
+/* Ens vertikal padding i headeren på alle sider */
 header,
 .site-header{
   padding-top: .55rem !important;
@@ -128,11 +123,48 @@ header,
   .site-header .brand{
     font-size: 1.15rem !important;
   }
-}  /* <-- luk media query korrekt */
+}
 
-/* 9) Ens vandret indryk på alle sider med .ro-wrap
-   (overstyrer inline padding i vores templates) */
+/* =========================================================
+   9) ENS HORIZONTALE INDRYK & MAKS-BREDDE PÅ ALLE SIDER
+   ---------------------------------------------------------
+   - Works/forside bruger .ro-wrap (vores egne sider)
+   - Blog/About (temaets sider) fanges via typiske containere.
+   - Vi sætter samme max-width og vandrette padding på begge.
+   ========================================================= */
+
+/* Vores egne wrappers */
 .ro-wrap{
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Temaets almindelige content-wrappers (flere variationer for sikkerhed) */
+main .container,
+main .content,
+main .content-wrapper,
+main .page,
+main .article-container,
+main .prose{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Ens top-afstand under headeren før første indhold */
+main{
+  padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important;
+}
+
+/* Ens topmargin for første H1 på alle sider */
+.ro-wrap h1:first-child,
+main .content h1:first-child,
+main .container h1:first-child,
+main .prose h1:first-child{
+  margin-top: .25rem !important;
 }
