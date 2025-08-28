@@ -12,7 +12,6 @@ categories:
   - Cool Blues
   - Sea & Fjord
   - Curated Picks
-  - test
 tags:
   - mariagerfjord
   - minimalism
