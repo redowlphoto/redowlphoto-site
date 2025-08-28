@@ -7,7 +7,7 @@
 :root{
   --ro-pad-x: clamp(1rem, 4vw, 3rem);       /* vandret indryk */
   --ro-maxw: 1200px;                        /* max bredde på indhold */
-  --ro-h1-size: clamp(2rem, 2.8vw, 2.6rem); /* ENS side-overskrift på alle sider */
+  --ro-h1-size: clamp(6rem, 9.6vw, 9rem); /* ENS side-overskrift på alle sider */
 }
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
