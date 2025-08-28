@@ -7,22 +7,27 @@
   .ro-card img{display:block;width:100%;height:200px;object-fit:cover}
   .ro-card-label{position:absolute;left:.75rem;bottom:.6rem;background:rgba(0,0,0,.55);color:#fff;padding:.25rem .5rem;border-radius:8px;font-size:.9rem;line-height:1}
   .ro-card:hover{opacity:.94;transition:.2s}
+  .ro-ph{height:200px;display:flex;align-items:center;justify-content:center;font-weight:600;opacity:.8}
 </style>
 
 <div class="ro-wrap">
   <h1 class="ro-h1">{{ .Title }}</h1>
-
   <div class="ro-grid">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range $term := .Data.Terms.Alphabetical }}
+      {{ $name := $term.Name }}
+      {{ $p    := index ($term.Pages | sort "Date" "desc") 0 }}
       {{ $img := false }}
-      {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
-      {{ if $img }}
-        {{ $thumb := $img.Fit "800x450 q80" }}
-        <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
-          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.cover.alt }}" loading="lazy" decoding="async">
-          <span class="ro-card-label">{{ .Title }}</span>
-        </a>
-      {{ end }}
+      {{ with $p }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}{{ end }}
+
+      <a class="ro-card" href="{{ $term.Page.RelPermalink }}" title="{{ $name }}">
+        {{ if $img }}
+          {{ $thumb := $img.Fit "800x450 q80" }}
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ $name }}" loading="lazy" decoding="async">
+        {{ else }}
+          <div class="ro-ph">{{ $name }}</div>
+        {{ end }}
+        <span class="ro-card-label">{{ $name }}</span>
+      </a>
     {{ end }}
   </div>
 </div>

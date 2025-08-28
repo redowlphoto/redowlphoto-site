@@ -1,14 +1,24 @@
-baseURL = "https://redowlphoto.dk/"
+baseURL      = "https://redowlphoto.dk/"
 languageCode = "en"
-title = "RedOwlPhoto"
-theme = "blowfish"
+title        = "RedOwlPhoto"
+theme        = "blowfish"
+
+# Sørg for at taxonomy/term-sider rent faktisk bliver genereret
+disableKinds = []
+
+[outputs]
+home     = ["HTML"]
+page     = ["HTML"]
+section  = ["HTML"]
+taxonomy = ["HTML"]
+term     = ["HTML"]
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-# --- Taxonomier (tags + farvegrupper til forsiden) ---
+# --- Taxonomier ---
 [taxonomies]
   category = "categories"
   tag      = "tags"
@@ -17,16 +27,18 @@ theme = "blowfish"
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
-  customCSS    = ["css/custom.css"]
 
-  # Bruges af footer + SEO
+  # Blowfish loader disse fra 'assets/css/...'
+  customCSS = ["css/custom.css"]
+
+  # Bruges til SEO og vores footer-ikon/link
   [params.author]
     name  = "RedOwlPhoto"
     links = [
       { instagram = "https://www.instagram.com/redowlphoto/" }
     ]
 
-  # Skjul temaets egen footer-menu (vi bruger vores ikon)
+  # Skjul temaets egen footer-menu (vi viser vores eget ikon/navn)
   [params.footer]
     showMenu = false
 
