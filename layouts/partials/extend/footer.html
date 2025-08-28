@@ -1,0 +1,33 @@
+{{- /* Find Instagram-linket fra params.author.links */ -}}
+{{- $ig := "" -}}
+{{- with site.Params.author.links -}}
+  {{- range . -}}
+    {{- with .instagram -}}{{- $ig = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $ig -}}
+<style>
+  .ro-footer-social{ margin-top:.75rem }
+  .ro-footer-social a{
+    display:inline-flex; align-items:center; gap:.5rem;
+    opacity:.9; text-decoration:none;
+  }
+  .ro-footer-social a:hover{ opacity:1 }
+  .ro-footer-social svg{ width:20px; height:20px; vertical-align:middle }
+</style>
+
+<div class="ro-footer-social">
+  <a href="{{ $ig }}" target="_blank" rel="me noopener" aria-label="Instagram">
+    <!-- Lille “instagram-agtig” ikon (simpel SVG) -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" ry="5"
+            fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4"
+              fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+    </svg>
+    <span>Instagram</span>
+  </a>
+</div>
+{{- end -}}

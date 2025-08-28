@@ -45,7 +45,7 @@ theme = "blowfish"
     pageRef = "about"
     weight  = 100
 
-  # Footer-menu (tekstlink)
+  # Footer-menu (tekstlink i bunden)
   [[menu.footer]]
     name   = "Instagram"
     url    = "https://www.instagram.com/redowlphoto/"
