@@ -33,13 +33,12 @@
 /* 5) Lille polering af kategori-badges */
 .ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
-/* 6) UNIFIED H1 (side-overskrifter) – gælder Works/Blog/About osv. */
+/* 6) UNIFIED H1 (side-overskrifter) – Works/Blog/About m.fl. */
 .ro-h1,
-.ro-wrap > h1:first-child,
-main .content > h1:first-child,
-main .container > h1:first-child,
-main .prose > h1:first-child,
-main .page > h1:first-child {
+main h1:first-of-type,
+main header h1,
+main .page-header h1,
+main .article-header h1 {
   font-size: var(--ro-h1-size) !important;
   font-weight: 800 !important;
   letter-spacing: -.01em;
