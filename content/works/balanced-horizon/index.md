@@ -13,6 +13,9 @@ categories:
   - Cool Blues
   - Sea & Fjord
   - Curated Picks
+  - Warm Pastels
+  - Dunes & Sandscapes
+  - Personal
 tags:
   - minimalism
   - sunrise
