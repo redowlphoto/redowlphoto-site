@@ -1,13 +1,12 @@
 ---
-title: "About & Contact"
-slug: "about"
-# Skjul meta i Blowfish
-showDate: false
-showAuthor: false
-showReadingTime: false
-showWordCount: false
-showTaxonomies: false
 showEdit: false
+showWordCount: false
+showAuthor: false
+showDate: false
+slug: about
+showTaxonomies: false
+title: About, Prints & Contact
+showReadingTime: false
 ---
 
 ## Artist statement
