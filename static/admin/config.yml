@@ -33,20 +33,24 @@ collections:
           - { label: "Image", name: "image", widget: "image", choose_url: false }
           - { label: "ALT text", name: "alt", widget: "string", hint: "Still water at Als Odde under blue dawn light" }
 
-      # ↓↓↓ DROPDOWN til dine 6 kategorier
+      # Vælg visning på forsiden (slideshow)
+      - { label: "Featured on home", name: "featured", widget: "boolean", default: false, hint: "Vis dette værk i forsideslideshowet" }
+
+      # Faste kategorier (vælg en eller flere)
       - label: "Categories"
         name: "categories"
         widget: "select"
         multiple: true
         options:
-          - "Cool Blues"
-          - "Warm Pastels"
-          - "Sea & Fjord"
-          - "Dunes & Sandscapes"
-          - "Curated Picks"
-          - "Personal"
+          - { label: "Cool Blues",         value: "cool-blues" }
+          - { label: "Warm Pastels",       value: "warm-pastels" }
+          - { label: "Sea & Fjord",        value: "sea-fjord" }
+          - { label: "Dunes & Sandscapes", value: "dunes-sandscapes" }
+          - { label: "Curated Picks",      value: "curated-picks" }
+          - { label: "Personal",           value: "personal" }
+        hint: "Vælg 0–∞. Bruges til /works og kategori-sider."
 
-      # Valgfri: behold frie tags hvis du vil
+      # Valgfri frie tags
       - label: "Tags"
         name: "tags"
         widget: "list"
@@ -57,9 +61,19 @@ collections:
     files:
       - label: "About & Contact"
         name: "about"
-        file: "content/about/_index.md"
+        file: "content/about/index.md"
         editor:
           preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body",  name: "body",  widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Body", name: "body", widget: "markdown" }
