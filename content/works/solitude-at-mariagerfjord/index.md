@@ -8,10 +8,11 @@ caption: A moored boat on glassy water at Mariager Fjord, quiet dawn light and
 cover:
   image: solitude-at-mariagerfjord.jpg
   alt: Small boat on calm water at Mariager Fjord in soft dawn mist.
+featured: true
 categories:
-  - Cool Blues
-  - Sea & Fjord
-  - Curated Picks
+  - cool-blues
+  - sea-fjord
+  - curated-picks
 tags:
   - mariagerfjord
   - minimalism
