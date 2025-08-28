@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $root := . }}
 <style>
   .ro-wrap{max-width:1200px;margin:0 auto;padding:2.5rem 1.25rem}
   .ro-h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 1.25rem 0}
@@ -11,17 +12,17 @@
 </style>
 
 <div class="ro-wrap">
-  <h1 class="ro-h1">{{ .Title }}</h1>
+  <h1 class="ro-h1">{{ $root.Title }}</h1>
 
   {{/* Start med de sider Hugo selv eksponerer for term-siden */}}
-  {{ $pages := .Pages }}
+  {{ $pages := $root.Pages }}
 
-  {{/* Fallback: hvis .Pages er tom (fx pga. navn vs. slug, & osv.), slå op i taxonomien manuelt */}}
+  {{/* Fallback: hvis .Pages er tom (fx pga. & / navn vs slug), slå op i taxonomien manuelt */}}
   {{ if or (not $pages) (eq (len $pages) 0) }}
-    {{ $catmap := site.Taxonomies.categories }}
+    {{ $catmap := site.Taxonomies.categories | default (dict) }}
     {{ $key := "" }}
-    {{ range $k, $v := $catmap }}
-      {{ if eq (urlize $k) (urlize .Title) }}
+    {{ range $k, $_ := $catmap }}
+      {{ if eq (urlize $k) (urlize $root.Title) }}
         {{ $key = $k }}
       {{ end }}
     {{ end }}
@@ -30,7 +31,7 @@
     {{ end }}
   {{ end }}
 
-  {{ if gt (len $pages) 0 }}
+  {{ if and $pages (gt (len $pages) 0) }}
     <div class="ro-grid">
       {{ range $p := (sort $pages "Date" "desc") }}
         {{ $img := false }}
