@@ -1,31 +1,35 @@
 {{ define "main" }}
-  <style>
-    .ro-wrap{max-width:1200px;margin:0 auto;padding:2.25rem 1.25rem 3rem}
-    .ro-title{font-size:clamp(28px,4vw,44px);font-weight:800;margin:0 0 1rem}
-    .ro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-    .ro-card{display:block;position:relative;overflow:hidden;border-radius:14px}
-    .ro-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
-    .ro-card:hover{opacity:.95;transform:translateY(-1px);transition:.18s}
-  </style>
-  <div class="ro-wrap">
-    <h1 class="ro-title">Works</h1>
-    <div class="ro-grid">
-      {{ range (sort .Pages ".Date" "desc") }}
-        {{ $img := false }}
-        {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
-        {{ if $img }}
-          {{ $w800 := $img.Resize "800x q80" }}
-          {{ $w1600 := $img.Resize "1600x q80" }}
-          <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
-            <img
-              src="{{ $w800.RelPermalink }}"
-              srcset="{{ $w800.RelPermalink }} 800w, {{ $w1600.RelPermalink }} 1600w"
-              sizes="(max-width: 700px) 100vw, 33vw"
-              alt="{{ .Params.cover.alt }}"
-              loading="lazy" decoding="async">
-          </a>
-        {{ end }}
+<style>
+  .ro-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
+  .ro-title{font-size:2.1rem;font-weight:800;margin:0 0 1rem 0}
+  .ro-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:1rem}
+  .ro-card{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem 1.2rem;border-radius:12px;text-decoration:none;
+    background:var(--bf-surface-2,rgba(127,127,127,.08));
+    border:1px solid rgba(127,127,127,.12);
+    font-weight:700
+  }
+  .ro-card:hover{filter:brightness(1.05)}
+  .ro-badge{opacity:.7;font-weight:600}
+</style>
+
+<div class="ro-wrap">
+  <h1 class="ro-title">Works</h1>
+  <p>Vælg en kategori for at gå på opdagelse.</p>
+
+  {{ $cats := .Site.Taxonomies.categories }}
+  {{ if $cats }}
+    <div class="ro-cats">
+      {{ range $name, $pages := $cats }}
+        <a class="ro-card" href="{{ (printf "/categories/%s/" ($name | urlize)) | relURL }}">
+          <span>{{ $name }}</span>
+          <span class="ro-badge">{{ len $pages }}</span>
+        </a>
       {{ end }}
     </div>
-  </div>
+  {{ else }}
+    <p>Ingen kategorier endnu. Tilføj <code>categories</code> i front matter på dine værker.</p>
+  {{ end }}
+</div>
 {{ end }}

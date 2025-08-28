@@ -12,6 +12,7 @@ theme = "blowfish"
 [taxonomies]
   tag     = "tags"
   palette = "palette"
+  categories = "categories"
 
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
