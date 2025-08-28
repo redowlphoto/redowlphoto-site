@@ -7,7 +7,7 @@
 :root{
   --ro-pad-x: clamp(1rem, 4vw, 3rem);   /* vandret indryk */
   --ro-maxw: 1200px;                    /* max bredde på indhold */
-  --ro-h1-size: clamp(6rem, 9.6vw, 9rem);   /* STOR titel (Blog/About m.fl.) */
+  --ro-h1-size: clamp(18rem, 18.8vw, 27rem);   /* STOR titel (Blog/About m.fl.) */
   --ro-works-h1: clamp(12rem, 19.2vw, 18rem);/* MINDRE titel kun til Works */
 }
 
