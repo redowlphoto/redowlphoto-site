@@ -1,6 +1,5 @@
 {{- $site := . -}}
 {{- $base := $site.BaseURL -}}
-{{- /* Ret stien herunder hvis dit logo ligger et andet sted */ -}}
 {{- $logo := printf "%simages/logo.png" $base -}}
 
 <script type="application/ld+json">
@@ -14,14 +13,5 @@
   "sameAs": [
     "https://www.instagram.com/redowlphoto"
   ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": {{ $base | jsonify }},
-  "name": {{ $site.Title | jsonify }}
 }
 </script>
