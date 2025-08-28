@@ -1,0 +1,2 @@
+/* Skjul anker-ikon/”#” foran overskrifter (Blowfish) */
+.heading-anchor{ display:none !important; }

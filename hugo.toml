@@ -8,16 +8,16 @@ theme = "blowfish"
     [markup.goldmark.renderer]
       unsafe = true
 
-# --- Taxonomier ---
+# --- Taxonomier (tags + farvegrupper til forsiden) ---
 [taxonomies]
-  tag       = "tags"
-  palette   = "palette"
-  category  = "categories"
-
+  tag     = "tags"
+  palette = "palette"
 
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
+  # indlæs vores lille override
+  customCSS = ["css/custom.css"]
 
   # Bruges af Blowfish til SEO/structured data + sociale links
   [params.author]
@@ -26,11 +26,11 @@ theme = "blowfish"
       { instagram = "https://www.instagram.com/redowlphoto/" }
     ]
 
-  # (kan være true/false – gør ingen skade hvis du lader den stå)
+  # Sørg for at footer-menuen vises
   [params.footer]
     showMenu = true
 
-# --- Menus (kun topmenu – ingen footer-menu her) ---
+# --- Menus ---
 [menu]
   [[menu.main]]
     name    = "Works"
@@ -46,3 +46,9 @@ theme = "blowfish"
     name    = "About & Contact"
     pageRef = "about"
     weight  = 100
+
+  # Footer-menu (tekstlink i bunden)
+  [[menu.footer]]
+    name   = "Instagram"
+    url    = "https://www.instagram.com/redowlphoto/"
+    weight = 10
