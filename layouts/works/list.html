@@ -1,7 +1,6 @@
 {{ define "main" }}
 <style>
-  .ro-wrap{max-width:1200px;margin:0 auto;padding:1.5rem 1.25rem}
-  .ro-h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 1.25rem 0}
+  /* Kun side-specifik styling – ingen faste størrelser her */
   .ro-sub{font-size:clamp(1.05rem,1.5vw,1.2rem);opacity:.9;margin:.25rem 0 1.25rem}
   .ro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
   .ro-card{position:relative;display:block;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04)}
@@ -21,7 +20,7 @@
 
   {{ $cats := site.Taxonomies.categories | default (dict) }}
 
-  {{/* Pæne labels til faste kategorier (nøgler = slug) */}}
+  {{/* Venlige labels til faste kategorier (nøgler = slug) */}}
   {{ $pretty := dict
       "cool-blues"        "Cool Blues"
       "warm-pastels"      "Warm Pastels"
@@ -34,16 +33,15 @@
 
   <div class="ro-grid">
     {{ range $name, $pages := $cats }}
-      {{/* $name kan være label/slug; normaliser til slug */}}
       {{ $slug := urlize $name }}
       {{ $label := index $pretty $slug | default (title (replace (replace $name "-" " ") "_" " ")) }}
 
-      {{/* Repræsentativt billede fra første side i kategorien */}}
+      {{/* Vælg et repræsentativt billede fra nyeste side i kategorien */}}
       {{ $first := index (sort $pages "Date" "desc") 0 }}
       {{ $img := false }}
       {{ with $first }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}{{ end }}
 
-      {{/* Find term-siden sikkert */}}
+      {{/* Term-URL (robust) */}}
       {{ $term := site.GetPage (printf "/categories/%s" $slug) }}
       {{ $href := cond $term $term.RelPermalink (printf "/categories/%s/" $slug | relURL) }}
 

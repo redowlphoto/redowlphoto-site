@@ -3,12 +3,18 @@
    Placering: assets/css/custom.css
    ========================================================= */
 
-/* ---------- Basale variable ---------- */
+/* ---------- Globale variabler (ændr størrelser her) ---------- */
 :root{
-  --ro-pad-x: clamp(1rem, 4vw, 3rem);   /* vandret indryk */
-  --ro-maxw: 1200px;                    /* max bredde på indhold */
-  --ro-h1-size: clamp(18rem, 18.8vw, 27rem);   /* STOR titel (Blog/About m.fl.) */
-  --ro-works-h1: clamp(12rem, 19.2vw, 18rem);/* MINDRE titel kun til Works */
+  /* vandret indryk + max bredde */
+  --ro-pad-x: clamp(1rem, 4vw, 3rem);
+  --ro-maxw: 1200px;
+
+  /* SIDE-OVERSKRIFTER
+     - Blog/About m.fl. bruger --ro-h1-size
+     - Works bruger --ro-works-h1
+     -> Skru op/ned efter smag */
+  --ro-h1-size: clamp(3.25rem, 6.5vw, 5.75rem);
+  --ro-works-h1: clamp(2.8rem, 5.2vw, 4.75rem);
 }
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
@@ -27,52 +33,18 @@
 .ro-footer-social a:hover{ opacity:1 }
 .ro-footer-social svg{ width:20px; height:20px; vertical-align:middle }
 
-/* 4) Genbrugelig “Instagram inline”-stil (fx på About-siden) */
+/* 4) “Instagram inline”-stil (fx på About-siden) */
 .ig-inline{ display:inline-flex; align-items:center; gap:.5rem }
 .ig-inline svg{ width:18px; height:18px }
 
-/* 5) Lille polering af kategori-badges */
+/* 5) Lidt polering af kategori-badge */
 .ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
-/* 6) UNIFIED H1 – Works bruger sin egen skala */
-.ro-h1{
-  font-size: var(--ro-works-h1) !important; /* <- kun Works */
-  font-weight: 800 !important;
-  letter-spacing: -.01em;
-  line-height: 1.15 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
-
-/* …mens temaets sidetitler (Blog/About/enkeltindlæg) bruger den store skala */
-main :is(h1, h2, p).title,
-main :is(h1, h2, p).page-title,
-main header :is(h1, h2, p).title,
-main header :is(h1, h2, p).page-title,
-.page-header :is(h1, h2, p).title,
-.page-header :is(h1, h2, p).page-title,
-.article-header :is(h1, h2, p).title,
-.article-header :is(h1, h2, p).page-title,
-h1.page-title,
-h1.title,
-.single-title,
-.post-title,
-.article-title,
-.list-title,
-.content > h1:first-child,
-.container > h1:first-child,
-.prose > h1:first-child{
-  font-size: var(--ro-h1-size) !important;  /* <- Blog/About m.fl. */
-  font-weight: 800 !important;
-  letter-spacing: -.01em;
-  line-height: 1.15 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
-
-/* 7) Forsidens tagline skal skifte farve med temaet */
+/* 6) Forsidens tagline skal skifte farve med temaet */
 .ro-tagline{ color:inherit !important; opacity:.9 }
 
 /* =========================================================
-   8) HEADER / TOP-MENU – større, harmonisk typografi
+   7) HEADER / TOP-MENU – typografi
    ========================================================= */
 header .brand,
 header .site-brand,
@@ -96,10 +68,9 @@ header .menu a,
   line-height: 1.15 !important;
   text-underline-offset: .2em;
 }
-/* Ens vertikal padding i headeren på alle sider */
+/* Ens vertikal padding i headeren */
 header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !important; }
-
-/* Lidt nedskalering på små skærme */
+/* Nedskalering på små skærme */
 @media (max-width: 820px){
   header nav a,
   header .menu a,
@@ -109,13 +80,15 @@ header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !impo
 }
 
 /* =========================================================
-   9) Ens vandrette indryk & maks-bredde på alle sider
+   8) ENS vandrette indryk & maks-bredde på alle sider
    ========================================================= */
+/* Vores egne wrappers */
 .ro-wrap{
   max-width: var(--ro-maxw) !important;
   margin-left:auto !important; margin-right:auto !important;
   padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
 }
+/* Temaets wrappers */
 main .container,
 main .content,
 main .content-wrapper,
@@ -126,10 +99,50 @@ main .prose{
   margin-left:auto !important; margin-right:auto !important;
   padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
 }
-/* Ens top-afstand under headeren før første indhold */
+/* Lidt luft under headeren */
 main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
 /* Ens topmargin for første H1 */
 .ro-wrap h1:first-child,
 main .content h1:first-child,
 main .container h1:first-child,
 main .prose h1:first-child{ margin-top:.25rem !important; }
+
+/* =========================================================
+   9) SIDE-OVERSKRIFTER (H1)
+   - Works: .ro-h1 (fra Works-list skabelonen)
+   - Øvrige (Blog/About/indlæg): griber Blowfish’ titel-varianter
+   ========================================================= */
+
+/* Works-side (bruger variablen kun for Works) */
+.ro-h1{
+  font-size: var(--ro-works-h1) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.01em;
+  line-height: 1.15 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+/* Blog/About/enkeltindlæg m.fl. */
+main :is(h1, h2, p).title,
+main :is(h1, h2, p).page-title,
+main header :is(h1, h2, p).title,
+main header :is(h1, h2, p).page-title,
+.page-header :is(h1, h2, p).title,
+.page-header :is(h1, h2, p).page-title,
+.article-header :is(h1, h2, p).title,
+.article-header :is(h1, h2, p).page-title,
+h1.page-title,
+h1.title,
+.single-title,
+.post-title,
+.article-title,
+.list-title,
+.content > h1:first-child,
+.container > h1:first-child,
+.prose > h1:first-child{
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.01em;
+  line-height: 1.15 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
