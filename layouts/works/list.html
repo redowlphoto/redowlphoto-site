@@ -21,37 +21,62 @@
 <div class="ro-wrap">
   <h1 class="ro-h1">Works</h1>
 
-  {{/* Hent kategorier (taxonomien 'categories') */}}
+  {{/* Hent taxonomien 'categories' */}}
   {{ $cats := site.Taxonomies.categories }}
 
   {{ if gt (len $cats) 0 }}
     <p class="ro-sub">Browse by category</p>
-    <div class="ro-grid">
-      {{ range $name, $pages := $cats }}
-        {{/* Link til term-siden, fx /categories/varme-pasteller/ */}}
-        {{ $term := site.GetPage (printf "/categories/%s" (urlize $name)) }}
 
-        {{/* Vælg et repræsentativt billede: første side i kategorien */}}
+    {{/* Fast ønsket rækkefølge; ukendte kategorier til sidst */}}
+    {{ $order := slice
+        "Cool Blues"
+        "Warm Pastels"
+        "Sea & Fjord"
+        "Dunes & Sandscapes"
+        "Curated Picks"
+        "Personal"
+    }}
+
+    {{ $names := slice }}
+    {{ range $order }}
+      {{ if isset $cats . }} {{ $names = $names | append . }} {{ end }}
+    {{ end }}
+    {{ range $name, $_ := $cats }}
+      {{ if not (in $names $name) }} {{ $names = $names | append $name }} {{ end }}
+    {{ end }}
+
+    <div class="ro-grid">
+      {{ range $names }}
+        {{ $name := . }}
+        {{ $pages := index $cats $name }}
+
+        {{/* Repræsentativt billede: første side i kategorien */}}
         {{ $first := index (sort $pages "Date" "desc") 0 }}
         {{ $img := false }}
         {{ with $first }}
           {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
         {{ end }}
 
-        <a class="ro-card" href="{{ $term.RelPermalink }}" title="{{ $name }}">
+        {{ $term := site.GetPage (printf "/categories/%s" (urlize $name)) }}
+
+        {{/* Pæn label: erstat bindestreger med mellemrum og Title-case */}}
+        {{ $pretty := title (replace $name "-" " ") }}
+
+        <a class="ro-card" href="{{ $term.RelPermalink }}" title="{{ $pretty }}" aria-label="{{ $pretty }}">
           {{ if $img }}
             {{ $thumb := $img.Fit "800x450 q80" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ $name }}" loading="lazy" decoding="async">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ $pretty }}" loading="lazy" decoding="async">
           {{ else }}
-            <div class="ro-ph">{{ $name }}</div>
+            <div class="ro-ph">{{ $pretty }}</div>
           {{ end }}
-          <span class="ro-card-label">{{ $name }} · {{ len $pages }}</span>
+          <!-- Kun navn, intet tal -->
+          <span class="ro-card-label">{{ $pretty }}</span>
         </a>
       {{ end }}
     </div>
 
   {{ else }}
-    {{/* Fallback: hvis der ingen kategorier er endnu, vis grid af værker */}}
+    {{/* Fallback: vis grid af værker hvis der ingen kategorier er endnu */}}
     <div class="ro-grid">
       {{ range .Pages.ByDate.Reverse }}
         {{ $img := false }}
