@@ -3,24 +3,27 @@ title: Balanced Horizon
 draft: false
 date: 2025-03-08
 location: Øster Hurup, Kattegat, Denmark
-caption: A near-still sea and faint posts draw a minimal horizon; pastel sunrise
-  holds the scene.
+caption: Morning haze over Kattegat at Øster Hurup.
 cover:
   image: balanced-horizon.jpg
-  alt: Minimal horizon over calm sea at Øster Hurup during pastel sunrise. Located
-    at Kattegat in Denmark
-featured: false
+  alt: Minimalist seascape photograph from Øster Hurup on the Kattegat coast,
+    showing a calm early morning with sea mist drifting in from the north, soft
+    sunlight partly veiled by haze and reflections on the still water.
+featured: true
 categories:
   - cool-blues
   - sea-fjord
   - curated-picks
 tags:
-  - minimalism
-  - sunrise
-  - calm
-  - seascape
-  - østerhurup
-  - øster-hurup
-  - kattegat
-  - denmark
+  - Øster Hurup
+  - Kattegat coast
+  - Denmark seascape photography
+  - Scandinavian minimalism
+  - Nordic fine art
+  - morning sea mist
+  - hazy sunrise Denmark
+  - tranquil seascape
+  - atmospheric Nordic coast
+  - nature photography Denmark
+  - redowlphoto
 ---
