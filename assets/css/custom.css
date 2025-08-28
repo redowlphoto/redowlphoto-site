@@ -128,4 +128,11 @@ header,
   .site-header .brand{
     font-size: 1.15rem !important;
   }
+}  /* <-- luk media query korrekt */
+
+/* 9) Ens vandret indryk på alle sider med .ro-wrap
+   (overstyrer inline padding i vores templates) */
+.ro-wrap{
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
