@@ -11,8 +11,8 @@ theme = "blowfish"
 # --- Taxonomier ---
 [taxonomies]
   tag       = "tags"
-  category  = "categories"   # ← NY: aktiverer kategorier
   palette   = "palette"
+  category  = "categories"
 
 
 [params]

@@ -20,38 +20,29 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Title",    name: "title", widget: "string" }
+      - { label: "Draft",    name: "draft", widget: "boolean", default: false }
+      - { label: "Date",     name: "date",  widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Location", name: "location", widget: "string", hint: "e.g. Als Odde, Denmark" }
-      - { label: "Caption", name: "caption", widget: "text", hint: "Short curatorial text" }
+      - { label: "Caption",  name: "caption",  widget: "text", hint: "Short curatorial text" }
 
       - label: "Cover"
         name: "cover"
         widget: "object"
         fields:
-          - { label: "Image", name: "image", widget: "image", choose_url: false }
-          - { label: "ALT text", name: "alt", widget: "string", hint: "Still water at Als Odde under blue dawn light" }
+          - { label: "Image",   name: "image", widget: "image", choose_url: false }
+          - { label: "ALT text", name: "alt",   widget: "string", hint: "Still water at Als Odde under blue dawn light" }
 
-      # >>> NYT FELT: Kategorier (flere kan vælges)
+      # Taksonomier
       - label: "Categories"
         name: "categories"
-        widget: "select"
-        multiple: true
-        options:
-          - "Calm Minimal"
-          - "Warm Pastels"
-          - "Sea & Fjord"
-          - "Sands & Dunes"
-          - "Life & Trille"
-          - "Curated Picks"
-        required: false
-        hint: "Vælg en eller flere kategorier til værket"
+        widget: "list"
+        hint: "Choose one or more (e.g. Warm Pastels, Sea & Fjord)"
+        allow_add: true
 
-      - label: "Taxonomies"
+      - label: "Tags"
         name: "tags"
         widget: "list"
-        summary: "{{fields}}"
         hint: "Optional keywords (e.g. minimalism, long exposure)"
 
   - name: "pages"
@@ -64,4 +55,4 @@ collections:
           preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body",  name: "body",  widget: "markdown" }
