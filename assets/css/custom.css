@@ -1,2 +1,63 @@
-﻿/* Hide heading anchor "#" in Blowfish */
-.heading-anchor{ display:none !important; }
+﻿/* =========================================================
+   RedOwlPhoto – Custom CSS
+   Placering: assets/css/custom.css
+   ========================================================= */
+
+/* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
+.heading-anchor { 
+  display: none !important;
+}
+
+/* 2) Footer – fjern den lyse top-linje / divider */
+.site-footer,
+footer,
+.page-footer {
+  border-top: none !important;
+}
+
+.site-footer hr,
+.page-footer hr,
+footer hr {
+  display: none !important;
+}
+
+/* 3) Footer – Instagram-række (vores extend/partial) */
+.ro-footer-social{
+  margin-top: .75rem;
+}
+
+.ro-footer-social a{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  opacity: .9;
+  text-decoration: none;
+}
+
+.ro-footer-social a:hover{
+  opacity: 1;
+}
+
+.ro-footer-social svg{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* 4) Genbrugelig “Instagram inline”-stil (fx på About-siden) */
+.ig-inline{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.ig-inline svg{
+  width: 18px;
+  height: 18px;
+}
+
+/* 5) Lille polering af kategori-badges (hvis de bruges flere steder) */
+.ro-card-label{
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
