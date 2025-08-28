@@ -1,35 +1,70 @@
 {{ define "main" }}
 <style>
-  .ro-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
-  .ro-title{font-size:2.1rem;font-weight:800;margin:0 0 1rem 0}
-  .ro-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:1rem}
-  .ro-card{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:1.1rem 1.2rem;border-radius:12px;text-decoration:none;
-    background:var(--bf-surface-2,rgba(127,127,127,.08));
-    border:1px solid rgba(127,127,127,.12);
-    font-weight:700
+  .ro-wrap{max-width:1200px;margin:0 auto;padding:2.5rem 1.25rem}
+  .ro-h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 1.25rem 0}
+  .ro-sub{font-size:clamp(1.05rem,1.5vw,1.2rem);opacity:.9;margin:.25rem 0 1.25rem}
+  .ro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .ro-card{position:relative;display:block;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04)}
+  .ro-card img{display:block;width:100%;height:200px;object-fit:cover}
+  .ro-card-label{
+    position:absolute;left:.75rem;bottom:.6rem;
+    background:rgba(0,0,0,.55);color:#fff;padding:.25rem .5rem;border-radius:8px;
+    font-size:.9rem;line-height:1
   }
-  .ro-card:hover{filter:brightness(1.05)}
-  .ro-badge{opacity:.7;font-weight:600}
+  .ro-card:hover{opacity:.94;transition:.2s}
+  .ro-ph{
+    height:200px;display:flex;align-items:center;justify-content:center;
+    font-weight:600;opacity:.8
+  }
 </style>
 
 <div class="ro-wrap">
-  <h1 class="ro-title">Works</h1>
-  <p>Vælg en kategori for at gå på opdagelse.</p>
+  <h1 class="ro-h1">Works</h1>
 
-  {{ $cats := .Site.Taxonomies.categories }}
-  {{ if $cats }}
-    <div class="ro-cats">
+  {{/* Hent kategorier (taxonomien 'categories') */}}
+  {{ $cats := site.Taxonomies.categories }}
+
+  {{ if gt (len $cats) 0 }}
+    <p class="ro-sub">Browse by category</p>
+    <div class="ro-grid">
       {{ range $name, $pages := $cats }}
-        <a class="ro-card" href="{{ (printf "/categories/%s/" ($name | urlize)) | relURL }}">
-          <span>{{ $name }}</span>
-          <span class="ro-badge">{{ len $pages }}</span>
+        {{/* Link til term-siden, fx /categories/varme-pasteller/ */}}
+        {{ $term := site.GetPage (printf "/categories/%s" (urlize $name)) }}
+
+        {{/* Vælg et repræsentativt billede: første side i kategorien */}}
+        {{ $first := index (sort $pages "Date" "desc") 0 }}
+        {{ $img := false }}
+        {{ with $first }}
+          {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+        {{ end }}
+
+        <a class="ro-card" href="{{ $term.RelPermalink }}" title="{{ $name }}">
+          {{ if $img }}
+            {{ $thumb := $img.Fit "800x450 q80" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ $name }}" loading="lazy" decoding="async">
+          {{ else }}
+            <div class="ro-ph">{{ $name }}</div>
+          {{ end }}
+          <span class="ro-card-label">{{ $name }} · {{ len $pages }}</span>
         </a>
       {{ end }}
     </div>
+
   {{ else }}
-    <p>Ingen kategorier endnu. Tilføj <code>categories</code> i front matter på dine værker.</p>
+    {{/* Fallback: hvis der ingen kategorier er endnu, vis grid af værker */}}
+    <div class="ro-grid">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ $img := false }}
+        {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+        {{ if $img }}
+          {{ $thumb := $img.Fit "800x450 q80" }}
+          <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.cover.alt }}" loading="lazy" decoding="async">
+            <span class="ro-card-label">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
   {{ end }}
 </div>
 {{ end }}
