@@ -9,7 +9,7 @@ cover:
   image: balanced-horizon.jpg
   alt: Minimal horizon over calm sea at Øster Hurup during pastel sunrise. Located
     at Kattegat in Denmark
-featured: true
+featured: false
 categories:
   - cool-blues
   - sea-fjord
