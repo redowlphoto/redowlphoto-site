@@ -19,34 +19,35 @@
   <h1 class="ro-h1">Works</h1>
   <p class="ro-sub">Browse by category</p>
 
-  {{ $cats := site.Taxonomies.categories }}
+  {{ $cats := site.Taxonomies.categories | default (dict) }}
 
-  {{/* Pæne labels for dine faste kategorier */}}
+  {{/* Pæne labels til faste kategorier (nøgler = slug) */}}
   {{ $pretty := dict
-      "cool-blues"    "Cool Blues"
-      "warm-pastels"  "Warm Pastels"
-      "orange-reds"   "Orange & Reds"
-      "sea-fjord"     "Sea & Fjord"
+      "cool-blues"        "Cool Blues"
+      "warm-pastels"      "Warm Pastels"
+      "orange-reds"       "Orange & Reds"
+      "sea-fjord"         "Sea & Fjord"
       "dunes-sandscapes"  "Dunes & Sandscapes"
-      "curated-picks" "Curated Picks"
-      "personal"      "Personal"
+      "curated-picks"     "Curated Picks"
+      "personal"          "Personal"
   }}
 
   <div class="ro-grid">
     {{ range $name, $pages := $cats }}
-      {{/* $name er selve term-navnet (fx "Sea & Fjord") */}}
+      {{/* $name er term-navnet som det er gemt i taxonomien (kan være slug eller label) */}}
       {{ $slug := urlize $name }}
-      {{ $label := index $pretty $slug | default (title $name) }}
-
-      {{/* Find term-siden PÅ DEN RIGTIGE MÅDE (robust for & osv.) */}}
-      {{ $term := site.GetPage "taxonomyTerm" "categories" $name }}
+      {{ $label := index $pretty $slug | default (title (replace (replace $name "-" " ") "_" " ")) }}
 
       {{/* Repræsentativt billede fra første side i kategorien */}}
       {{ $first := index (sort $pages "Date" "desc") 0 }}
       {{ $img := false }}
       {{ with $first }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}{{ end }}
 
-      <a class="ro-card" href="{{ if $term }}{{ $term.RelPermalink }}{{ else }}{{ printf "/categories/%s/" $slug | relURL }}{{ end }}" title="{{ $label }}">
+      {{/* Find term-siden via sti; fallback til ren URL hvis nil */}}
+      {{ $term := site.GetPage (printf "/categories/%s" $slug) }}
+      {{ $href := cond $term $term.RelPermalink (printf "/categories/%s/" $slug | relURL) }}
+
+      <a class="ro-card" href="{{ $href }}" title="{{ $label }}">
         {{ if $img }}
           {{ $thumb := $img.Fit "800x450 q80" }}
           <img src="{{ $thumb.RelPermalink }}" alt="{{ $label }}" loading="lazy" decoding="async">
