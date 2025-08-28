@@ -21,31 +21,32 @@
 
   {{ $cats := site.Taxonomies.categories }}
 
-  {{/* “Pæne” labels til de faste kategorier */}}
+  {{/* Pæne labels for dine faste kategorier */}}
   {{ $pretty := dict
       "cool-blues"    "Cool Blues"
       "warm-pastels"  "Warm Pastels"
       "orange-reds"   "Orange & Reds"
       "sea-fjord"     "Sea & Fjord"
-      "dunes-sandscapes" "Dunes & Sandscapes"
-      "personal"      "Personal"
+      "dunes-sandscapes"  "Dunes & Sandscapes"
       "curated-picks" "Curated Picks"
+      "personal"      "Personal"
   }}
 
   <div class="ro-grid">
-    {{ range $slug, $pages := $cats }}
-      {{ $label := index $pretty $slug | default (title (replace $slug "-" " ")) }}
+    {{ range $name, $pages := $cats }}
+      {{/* $name er selve term-navnet (fx "Sea & Fjord") */}}
+      {{ $slug := urlize $name }}
+      {{ $label := index $pretty $slug | default (title $name) }}
 
-      {{/* Vælg repræsentativt billede */}}
+      {{/* Find term-siden PÅ DEN RIGTIGE MÅDE (robust for & osv.) */}}
+      {{ $term := site.GetPage "taxonomyTerm" "categories" $name }}
+
+      {{/* Repræsentativt billede fra første side i kategorien */}}
       {{ $first := index (sort $pages "Date" "desc") 0 }}
       {{ $img := false }}
       {{ with $first }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}{{ end }}
 
-      {{/* Find term-siden og brug dens RelPermalink (sikrer specialtegn som “&”) */}}
-      {{ $term := site.GetPage (printf "/categories/%s" (urlize $slug)) }}
-      {{ $href := cond $term $term.RelPermalink (printf "/categories/%s/" (urlize $slug) | relURL) }}
-
-      <a class="ro-card" href="{{ $href }}" title="{{ $label }}">
+      <a class="ro-card" href="{{ if $term }}{{ $term.RelPermalink }}{{ else }}{{ printf "/categories/%s/" $slug | relURL }}{{ end }}" title="{{ $label }}">
         {{ if $img }}
           {{ $thumb := $img.Fit "800x450 q80" }}
           <img src="{{ $thumb.RelPermalink }}" alt="{{ $label }}" loading="lazy" decoding="async">
