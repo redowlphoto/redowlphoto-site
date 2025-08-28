@@ -11,28 +11,23 @@
     font-size:.9rem;line-height:1
   }
   .ro-card:hover{opacity:.94;transition:.2s}
-  .ro-empty{opacity:.7}
 </style>
 
 <div class="ro-wrap">
   <h1 class="ro-h1">{{ .Title }}</h1>
 
-  {{ if gt (len .Pages) 0 }}
-    <div class="ro-grid">
-      {{ range .Pages.ByDate.Reverse }}
-        {{ $img := false }}
-        {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
-        {{ if $img }}
-          {{ $thumb := $img.Fit "800x450 q80" }}
-          <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.cover.alt }}" loading="lazy" decoding="async">
-            <span class="ro-card-label">{{ .Title }}</span>
-          </a>
-        {{ end }}
+  <div class="ro-grid">
+    {{ range .Pages.ByDate.Reverse }}
+      {{ $img := false }}
+      {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+      {{ if $img }}
+        {{ $thumb := $img.Fit "800x450 q80" }}
+        <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.cover.alt }}" loading="lazy" decoding="async">
+          <span class="ro-card-label">{{ .Title }}</span>
+        </a>
       {{ end }}
-    </div>
-  {{ else }}
-    <p class="ro-empty">Ingen værker i denne kategori endnu.</p>
-  {{ end }}
+    {{ end }}
+  </div>
 </div>
 {{ end }}
