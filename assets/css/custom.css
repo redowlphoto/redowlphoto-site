@@ -111,7 +111,6 @@ main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
 main .content h1:first-child,
 main .container h1:first-child,
 main .prose h1:first-child{ margin-top:.25rem !important; }
-
 /* --- Forceér sidetitler på alle Blowfish-varianter til at bruge --ro-h1-size --- */
 .page-header .title,
 .article-header .title,
@@ -121,6 +120,20 @@ h1.title,
 .prose h1.title,
 main .page-header h1.title,
 main .article-header h1.title {
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.01em;
+  margin: 0 0 1.25rem 0 !important;
+}
+/* === Unify page titles on all Blowfish layouts ===
+   (Blog list, single pages, About, etc.) */
+main header.page-header :is(h1, h2, p).title,
+main header.article-header :is(h1, h2, p).title,
+main header.page-header :is(h1, h2).page-title,
+main header.article-header :is(h1, h2).page-title,
+main :is(h1, h2).page-title:first-child,
+main :is(h1, h2).title:first-child {
   font-size: var(--ro-h1-size) !important;
   font-weight: 800 !important;
   line-height: 1.15 !important;
