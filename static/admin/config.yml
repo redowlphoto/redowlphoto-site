@@ -25,17 +25,35 @@ collections:
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Location", name: "location", widget: "string", hint: "e.g. Als Odde, Denmark" }
       - { label: "Caption", name: "caption", widget: "text", hint: "Short curatorial text" }
+
       - label: "Cover"
         name: "cover"
         widget: "object"
         fields:
           - { label: "Image", name: "image", widget: "image", choose_url: false }
           - { label: "ALT text", name: "alt", widget: "string", hint: "Still water at Als Odde under blue dawn light" }
+
+      # >>> NYT FELT: Kategorier (flere kan vælges)
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options:
+          - "Calm Minimal"
+          - "Warm Pastels"
+          - "Sea & Fjord"
+          - "Sands & Dunes"
+          - "Life & Trille"
+          - "Curated Picks"
+        required: false
+        hint: "Vælg en eller flere kategorier til værket"
+
       - label: "Taxonomies"
         name: "tags"
         widget: "list"
         summary: "{{fields}}"
         hint: "Optional keywords (e.g. minimalism, long exposure)"
+
   - name: "pages"
     label: "Pages"
     files:
