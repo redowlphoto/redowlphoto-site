@@ -1,67 +1,45 @@
-{{- /* Find Instagram-linket fra params.author.links */ -}}
-{{- $ig := "" -}}
-{{- with site.Params.author.links -}}
-  {{- range . -}}
-    {{- with .instagram -}}{{ $ig = . }}{{- end -}}
+{{/* Custom footer that replaces Blowfish default */}}
+<footer class="footer">
+  <hr class="my-6"/>
+
+  {{/* Find Instagram-link fra params.author.links */}}
+  {{- $ig := "" -}}
+  {{- with site.Params.author.links -}}
+    {{- range . -}}
+      {{- with .instagram -}}{{- $ig = . -}}{{- end -}}
+    {{- end -}}
   {{- end -}}
-{{- end -}}
 
-<footer class="ro-footer">
-  <style>
-    .ro-footer{
-      margin-top:3rem;
-      padding:1.25rem 1rem 2rem;
-      border-top:1px solid rgba(255,255,255,.08);
-      opacity:.95;
-    }
-    .ro-footer-bar{
-      display:flex;
-      gap:1rem;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-bottom:.5rem;
-    }
-    .ro-footer-social{
-      display:inline-flex;
-      align-items:center;
-      gap:.5rem;
-      text-decoration:none;
-      opacity:.9;
-    }
-    .ro-footer-social:hover{ opacity:1 }
-    .ro-footer-social svg{ width:20px; height:20px }
-    .ro-footmenu{ display:inline-flex; gap:.75rem; flex-wrap:wrap }
-    .ro-footmenu a{ text-decoration:none; opacity:.9 }
-    .ro-footmenu a:hover{ opacity:1 }
-    .ro-footcredits{ font-size:.9rem; opacity:.8 }
-    .ro-footcredits .sep{ opacity:.5; padding:0 .35rem }
-  </style>
-
-  <div class="ro-footer-bar">
-    {{- if $ig -}}
-      <a class="ro-footer-social" href="{{ $ig }}" target="_blank" rel="me noopener">
-        <!-- Simple “instagram-agtigt” ikon -->
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3" y="3" width="18" height="18"
-                fill="none" stroke="currentColor" stroke-width="2" rx="4" />
-          <circle cx="12" cy="12" r="4"
-                  fill="none" stroke="currentColor" stroke-width="2" />
-          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-        </svg>
-        <span>Instagram</span>
-      </a>
-    {{- end -}}
-
-    {{- with site.Menus.footer -}}
-      <nav class="ro-footmenu" aria-label="Footer">
-        {{- range . -}}
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        {{- end -}}
-      </nav>
-    {{- end -}}
+  {{ if $ig }}
+  <div class="ro-footer-social">
+    <a href="{{ $ig }}" target="_blank" rel="me noopener" aria-label="Instagram">
+      <!-- lille instagram-ikon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"
+              fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4"
+                fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+      </svg>
+      <span>{{ site.Params.author.name | default "RedOwlPhoto" }}</span>
+    </a>
   </div>
+  {{ end }}
 
-  <div class="ro-footcredits">
-    © {{ now.Year }} {{ site.Title }} <span class="sep">·</span> Powered by Hugo &amp; Blowfish
+  <div class="footer-meta">
+    <span>© {{ now.Format "2006" }} {{ site.Title }}</span>
+    <span> · Powered by Hugo &amp; Blowfish</span>
   </div>
 </footer>
+
+<style>
+  .footer{padding:1.25rem 0}
+  .ro-footer-social{ margin-top:.75rem }
+  .ro-footer-social a{
+    display:inline-flex; align-items:center; gap:.5rem;
+    opacity:.9; text-decoration:none;
+  }
+  .ro-footer-social a:hover{ opacity:1 }
+  .ro-footer-social svg{ width:20px; height:20px; vertical-align:middle }
+  .footer-meta{ opacity:.9 }
+</style>
