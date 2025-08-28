@@ -84,7 +84,7 @@ header .site-name,
 .site-header .site-brand,
 .site-header .site-title,
 .site-header .site-name{
-  font-size: clamp(1.25rem, 1.1vw + 1rem, 1.55rem) !important;
+  font-size: clamp(1.35rem, 1.3vw + 1.05rem, 1.75rem) !important;
   font-weight: 700 !important;
   letter-spacing: .01em;
   line-height: 1.15 !important;
@@ -95,7 +95,7 @@ header nav a,
 header .menu a,
 .site-header nav a,
 .site-header .menu a{
-  font-size: clamp(1.1rem, 0.9vw + 0.85rem, 1.3rem) !important;
+  font-size: clamp(1.2rem, 1.05vw + 0.95rem, 1.45rem) !important;
   font-weight: 600 !important;
   line-height: 1.15 !important;
   text-underline-offset: .2em;
