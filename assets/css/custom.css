@@ -34,17 +34,45 @@
 .ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
 /* 6) UNIFIED H1 (side-overskrifter) – Works/Blog/About m.fl. */
-.ro-h1,
-main h1:first-of-type,
-main header h1,
-main .page-header h1,
-main .article-header h1 {
+:root{
+  /* behold din 3× størrelse */
+  --ro-h1-size: clamp(6rem, 9.6vw, 9rem);
+}
+
+/* Works’ egen klasse */
+.ro-h1{
   font-size: var(--ro-h1-size) !important;
   font-weight: 800 !important;
   letter-spacing: -.01em;
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
+
+/* Fang alle typiske Blowfish-varianter – uanset wrapper/element-type */
+main :is(h1, h2, p).title,
+main :is(h1, h2, p).page-title,
+main header :is(h1, h2, p).title,
+main header :is(h1, h2, p).page-title,
+.page-header :is(h1, h2, p).title,
+.page-header :is(h1, h2, p).page-title,
+.article-header :is(h1, h2, p).title,
+.article-header :is(h1, h2, p).page-title,
+h1.page-title,
+h1.title,
+.single-title,
+.post-title,
+.article-title,
+.list-title,
+.content > h1:first-child,
+.container > h1:first-child,
+.prose > h1:first-child {
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.01em;
+  line-height: 1.15 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
 
 /* 7) Forsidens tagline skal skifte farve med temaet */
 .ro-tagline{ color:inherit !important; opacity:.9 }
