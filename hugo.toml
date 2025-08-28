@@ -10,8 +10,9 @@ theme = "blowfish"
 
 # --- Taxonomier (tags + farvegrupper til forsiden) ---
 [taxonomies]
-  tag     = "tags"
-  palette = "palette"
+  category = "categories"   # <-- NY: gør categories til en gyldig taxonomi
+  tag      = "tags"
+  palette  = "palette"
 
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
