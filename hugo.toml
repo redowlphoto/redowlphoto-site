@@ -8,11 +8,12 @@ theme = "blowfish"
     [markup.goldmark.renderer]
       unsafe = true
 
-# --- Taxonomier (tags + farvegrupper til forsiden) ---
+# --- Taxonomier ---
 [taxonomies]
-  tag     = "tags"
-  palette = "palette"
-  categories = "categories"
+  tag       = "tags"
+  category  = "categories"   # ← NY: aktiverer kategorier
+  palette   = "palette"
+
 
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
