@@ -21,23 +21,41 @@
     Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup.
   </div>
 
-  {{/* Hent de 5 seneste værker og deres cover-billeder */}}
+  {{/* Vælg værker: først featured=true, ellers seneste 5 */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
+  {{ $featured := where $works ".Params.featured" true }}
+  {{ $pick := cond (gt (len $featured) 0) (sort $featured "Date" "desc") (sort $works "Date" "desc") }}
+  {{ $pick = first 5 $pick }}
+
+  {{/* Byg slides med flere størrelser */}}
   {{ $slides := slice }}
-  {{ range first 5 (sort $works ".Date" "desc") }}
+  {{ range $p := $pick }}
     {{ $img := false }}
-    {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+    {{ with $p.Resources.GetMatch (printf "*%s" (path.Base $p.Params.cover.image)) }}{{ $img = . }}{{ end }}
     {{ if $img }}
-      {{ $w := $img.Resize "2000x q80" }}
-      {{ $slides = $slides | append $w.RelPermalink }}
+      {{ $w1200 := $img.Resize "1200x q80" }}
+      {{ $w1600 := $img.Resize "1600x q80" }}
+      {{ $w2000 := $img.Resize "2000x q80" }}
+      {{ $slides = $slides | append (dict
+        "w1200" $w1200
+        "w1600" $w1600
+        "w2000" $w2000
+        "alt"   ($p.Params.cover.alt | default $p.Title)
+      ) }}
     {{ end }}
   {{ end }}
 
   {{ if gt (len $slides) 0 }}
     <div class="ro-hero">
       <a class="ro-hero-link" href="{{ "works" | relURL }}" aria-label="Go to Works">
-        {{ range $i, $url := $slides }}
-          <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $url }}" alt="Featured work">
+        {{ range $i, $s := $slides }}
+          <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}"
+               src="{{ $s.w1200.RelPermalink }}"
+               srcset="{{ $s.w1200.RelPermalink }} 1200w, {{ $s.w1600.RelPermalink }} 1600w, {{ $s.w2000.RelPermalink }} 2000w"
+               sizes="100vw"
+               alt="{{ $s.alt }}"
+               {{ if eq $i 0 }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }}
+               decoding="async">
         {{ end }}
       </a>
     </div>
