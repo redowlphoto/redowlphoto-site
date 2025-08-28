@@ -1,7 +1,14 @@
 {{ define "main" }}
 <style>
   .ro-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
-  .ro-tagline{font-size:1.15rem;line-height:1.6;margin-bottom:1rem;color:var(--bf-fg,#333);opacity:.9}
+  /* ændret ↓ */
+  .ro-tagline{
+    font-size:clamp(1.05rem,1.6vw,1.25rem);
+    line-height:1.6;
+    margin-bottom:1rem;
+    color:inherit;           /* arver temaets farve (mørk/lys) */
+    opacity:.9;
+  }
 
   .ro-hero{position:relative;border-radius:14px;overflow:hidden}
   .ro-hero-link{display:block;position:relative}
