@@ -12,6 +12,7 @@ cover:
 categories:
   - Cool Blues
   - Sea & Fjord
+  - Curated Picks
 tags:
   - minimalism
   - sunrise
