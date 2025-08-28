@@ -5,9 +5,10 @@
 
 /* ---------- Basale variable ---------- */
 :root{
-  --ro-pad-x: clamp(1rem, 4vw, 3rem);       /* vandret indryk */
-  --ro-maxw: 1200px;                        /* max bredde på indhold */
-  --ro-h1-size: clamp(6rem, 9.6vw, 9rem); /* ENS side-overskrift på alle sider */
+  --ro-pad-x: clamp(1rem, 4vw, 3rem);   /* vandret indryk */
+  --ro-maxw: 1200px;                    /* max bredde på indhold */
+  --ro-h1-size: clamp(6rem, 9.6vw, 9rem);   /* STOR titel (Blog/About m.fl.) */
+  --ro-works-h1: clamp(3rem, 5.3vw, 4.8rem);/* MINDRE titel kun til Works */
 }
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
@@ -33,22 +34,16 @@
 /* 5) Lille polering af kategori-badges */
 .ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
-/* 6) UNIFIED H1 (side-overskrifter) – Works/Blog/About m.fl. */
-:root{
-  /* behold din 3× størrelse */
-  --ro-h1-size: clamp(6rem, 9.6vw, 9rem);
-}
-
-/* Works’ egen klasse */
+/* 6) UNIFIED H1 – Works bruger sin egen skala */
 .ro-h1{
-  font-size: var(--ro-h1-size) !important;
+  font-size: var(--ro-works-h1) !important; /* <- kun Works */
   font-weight: 800 !important;
   letter-spacing: -.01em;
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
 
-/* Fang alle typiske Blowfish-varianter – uanset wrapper/element-type */
+/* …mens temaets sidetitler (Blog/About/enkeltindlæg) bruger den store skala */
 main :is(h1, h2, p).title,
 main :is(h1, h2, p).page-title,
 main header :is(h1, h2, p).title,
@@ -65,14 +60,13 @@ h1.title,
 .list-title,
 .content > h1:first-child,
 .container > h1:first-child,
-.prose > h1:first-child {
-  font-size: var(--ro-h1-size) !important;
+.prose > h1:first-child{
+  font-size: var(--ro-h1-size) !important;  /* <- Blog/About m.fl. */
   font-weight: 800 !important;
   letter-spacing: -.01em;
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
-
 
 /* 7) Forsidens tagline skal skifte farve med temaet */
 .ro-tagline{ color:inherit !important; opacity:.9 }
@@ -115,7 +109,7 @@ header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !impo
 }
 
 /* =========================================================
-   9) ENS HORIZONTALE INDRYK & MAKS-BREDDE PÅ ALLE SIDER
+   9) Ens vandrette indryk & maks-bredde på alle sider
    ========================================================= */
 .ro-wrap{
   max-width: var(--ro-maxw) !important;
@@ -139,32 +133,3 @@ main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
 main .content h1:first-child,
 main .container h1:first-child,
 main .prose h1:first-child{ margin-top:.25rem !important; }
-/* --- Forceér sidetitler på alle Blowfish-varianter til at bruge --ro-h1-size --- */
-.page-header .title,
-.article-header .title,
-h1.title,
-.page-title,
-.content h1.title,
-.prose h1.title,
-main .page-header h1.title,
-main .article-header h1.title {
-  font-size: var(--ro-h1-size) !important;
-  font-weight: 800 !important;
-  line-height: 1.15 !important;
-  letter-spacing: -.01em;
-  margin: 0 0 1.25rem 0 !important;
-}
-/* === Unify page titles on all Blowfish layouts ===
-   (Blog list, single pages, About, etc.) */
-main header.page-header :is(h1, h2, p).title,
-main header.article-header :is(h1, h2, p).title,
-main header.page-header :is(h1, h2).page-title,
-main header.article-header :is(h1, h2).page-title,
-main :is(h1, h2).page-title:first-child,
-main :is(h1, h2).title:first-child {
-  font-size: var(--ro-h1-size) !important;
-  font-weight: 800 !important;
-  line-height: 1.15 !important;
-  letter-spacing: -.01em;
-  margin: 0 0 1.25rem 0 !important;
-}
