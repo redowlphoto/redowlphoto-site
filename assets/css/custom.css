@@ -4,28 +4,24 @@
    ========================================================= */
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
-.heading-anchor { 
+.heading-anchor{
   display: none !important;
 }
 
 /* 2) Footer – fjern den lyse top-linje / divider */
 .site-footer,
 footer,
-.page-footer {
+.page-footer{
   border-top: none !important;
 }
-
 .site-footer hr,
 .page-footer hr,
-footer hr {
+footer hr{
   display: none !important;
 }
 
 /* 3) Footer – Instagram-række (vores extend/partial) */
-.ro-footer-social{
-  margin-top: .75rem;
-}
-
+.ro-footer-social{ margin-top: .75rem; }
 .ro-footer-social a{
   display: inline-flex;
   align-items: center;
@@ -33,11 +29,7 @@ footer hr {
   opacity: .9;
   text-decoration: none;
 }
-
-.ro-footer-social a:hover{
-  opacity: 1;
-}
-
+.ro-footer-social a:hover{ opacity: 1; }
 .ro-footer-social svg{
   width: 20px;
   height: 20px;
@@ -50,36 +42,30 @@ footer hr {
   align-items: center;
   gap: .5rem;
 }
-
 .ig-inline svg{
   width: 18px;
   height: 18px;
 }
 
-/* 5) Lille polering af kategori-badges (hvis de bruges flere steder) */
+/* 5) Lille polering af kategori-badges */
 .ro-card-label{
   backdrop-filter: blur(4px);
   border-radius: 8px;
 }
 
-/* 6) Ensartede side-overskrifter (H1) på Works / Blog / About */
-.page-title,
-.page-header h1,
-main h1.page-title,
-main h1:first-child {
-  font-size: clamp(2.1rem, 3.8vw, 2.8rem);
-  line-height: 1.2;
-  margin: 0 0 1rem 0;
-  letter-spacing: .01em;
+/* 6) ENS overskriftsstørrelse på Works (matcher temaets store h1)
+   Bemærk !important for at slå den inline <style> på siden */
+.ro-h1{
+  font-size: clamp(2rem, 3.2vw, 3rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.01em;
+  line-height: 1.15;
+  margin: 0 0 1.25rem 0;
 }
 
-/* 7) Underoverskrift på Works ("Browse by category") lidt tydeligere */
-.ro-sub{
-  font-size: clamp(1.1rem, 1.6vw, 1.25rem);
-  opacity: .95;
-}
-
-/* 8) Forside-tagline: følg temaets tekstfarve (mørk/lys) */
+/* 7) Forsidens tagline skal skifte farve med temaet
+   (brug arvet tekstfarve; !important for at overstyre inline-style) */
 .ro-tagline{
-  color: var(--bf-fg) !important;
+  color: inherit !important;
+  opacity: .9;
 }
