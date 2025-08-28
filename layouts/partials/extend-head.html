@@ -1,17 +1,13 @@
-{{- $site := . -}}
-{{- $base := $site.BaseURL -}}
-{{- $logo := printf "%simages/logo.png" $base -}}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": {{ $site.Title | jsonify }},
-  "alternateName": ["Red Owl Photo"],
-  "url": {{ $base | jsonify }},
-  "logo": {{ $logo | jsonify }},
-  "sameAs": [
-    "https://www.instagram.com/redowlphoto"
-  ]
-}
-</script>
+{{/* layouts/partials/extend-head.html */}}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type"    "Organization"
+  "name"     .Title
+  "alternateName" (slice "Red Owl Photo")
+  "url"      (absURL "/")
+  "logo"     (absURL "images/logo.png")
+  "sameAs"   (slice
+                "https://www.instagram.com/redowlphoto"
+             )
+-}}
+<script type="application/ld+json">{{ $org | jsonify }}</script>
