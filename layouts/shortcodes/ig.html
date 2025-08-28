@@ -1,0 +1,14 @@
+<a class="ro-ig-inline" href="{{ .Get "url" }}" target="_blank" rel="me noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" ry="5"
+          fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="4"
+            fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+  </svg>
+  <span>{{ or (.Get "label") "Instagram" }}</span>
+</a>
+<style>
+  .ro-ig-inline{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none}
+  .ro-ig-inline svg{width:18px;height:18px;vertical-align:middle}
+</style>

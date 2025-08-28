@@ -24,11 +24,11 @@ theme = "blowfish"
       { instagram = "https://www.instagram.com/redowlphoto/" }
     ]
 
-  # Sørg for at footer-menuen vises
+  # (kan være true/false – gør ingen skade hvis du lader den stå)
   [params.footer]
     showMenu = true
 
-# --- Menus ---
+# --- Menus (kun topmenu – ingen footer-menu her) ---
 [menu]
   [[menu.main]]
     name    = "Works"
@@ -44,9 +44,3 @@ theme = "blowfish"
     name    = "About & Contact"
     pageRef = "about"
     weight  = 100
-
-  # Footer-menu (tekstlink i bunden)
-  [[menu.footer]]
-    name   = "Instagram"
-    url    = "https://www.instagram.com/redowlphoto/"
-    weight = 10
