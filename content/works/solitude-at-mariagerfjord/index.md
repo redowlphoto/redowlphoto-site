@@ -3,25 +3,27 @@ title: Solitude at Mariagerfjord
 draft: false
 date: 2025-03-07
 location: Hadsund, Mariagerfjord, Denmark
-caption: A moored boat on glassy water at Mariager Fjord, quiet dawn light and
-  thin mist.
+caption: Quiet morning reflections at Mariager Fjord, Hadsund.
 cover:
   image: solitude-at-mariagerfjord.jpg
-  alt: Small boat on calm water at Mariager Fjord in soft dawn mist.
+  alt: Minimalist landscape photograph of Mariager Fjord near Hadsund on an early
+    spring morning, with soft mist, calm water and a single boat reflecting in
+    the still surface.
 featured: true
 categories:
   - cool-blues
   - sea-fjord
   - curated-picks
 tags:
-  - mariagerfjord
-  - minimalism
-  - dawn
-  - mist
-  - boat
-  - seascape
-  - mariager
-  - hadsund
-  - himmerland
-  - denmark
+  - Mariager Fjord
+  - Hadsund Denmark
+  - Denmark landscape photography
+  - Scandinavian minimalism
+  - Nordic fine art
+  - misty morning fjord
+  - peaceful waters Denmark
+  - minimalist seascape
+  - nature photography Denmark
+  - tranquil boat
+  - sceneredowlphoto
 ---
