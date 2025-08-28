@@ -69,3 +69,58 @@ footer hr{
   color: inherit !important;
   opacity: .9;
 }
+
+/* =========================================================
+   8) HEADER / TOP-MENU – større, harmonisk typografi
+   (uden at ændre temaets HTML)
+   ========================================================= */
+
+/* Brand (venstre) – dækker typiske Blowfish-varianter */
+header .brand,
+header .site-brand,
+header .site-title,
+header .site-name,
+.site-header .brand,
+.site-header .site-brand,
+.site-header .site-title,
+.site-header .site-name{
+  font-size: clamp(1.05rem, 1.2vw + 0.85rem, 1.35rem);
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 1.15;
+}
+
+/* Menupunkter (højre) */
+header nav a,
+header .menu a,
+.site-header nav a,
+.site-header .menu a{
+  font-size: clamp(1rem, 0.9vw + 0.8rem, 1.15rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* Gap mellem menupunkter (uden at ændre layout) */
+header nav ul,
+header .menu,
+.site-header nav ul,
+.site-header .menu{
+  gap: 1.1rem;
+}
+
+/* En anelse mere vertikal luft i headeren */
+header,
+.site-header{
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+}
+
+/* Lidt nedskalering på små skærme */
+@media (max-width: 820px){
+  header nav a,
+  header .menu a,
+  .site-header nav a,
+  .site-header .menu a{
+    font-size: 1rem;
+  }
+}
