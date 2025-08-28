@@ -7,23 +7,45 @@
   .ro-card img{display:block;width:100%;height:200px;object-fit:cover}
   .ro-card-label{position:absolute;left:.75rem;bottom:.6rem;background:rgba(0,0,0,.55);color:#fff;padding:.25rem .5rem;border-radius:8px;font-size:.9rem;line-height:1}
   .ro-card:hover{opacity:.94;transition:.2s}
+  .ro-empty{opacity:.75}
 </style>
 
 <div class="ro-wrap">
   <h1 class="ro-h1">{{ .Title }}</h1>
 
-  <div class="ro-grid">
-    {{ range .Pages.ByDate.Reverse }}
-      {{ $img := false }}
-      {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
-      {{ if $img }}
-        {{ $thumb := $img.Fit "800x450 q80" }}
-        <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
-          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.cover.alt }}" loading="lazy" decoding="async">
-          <span class="ro-card-label">{{ .Title }}</span>
-        </a>
+  {{/* Start med de sider Hugo selv eksponerer for term-siden */}}
+  {{ $pages := .Pages }}
+
+  {{/* Fallback: hvis .Pages er tom (fx pga. navn vs. slug, & osv.), slå op i taxonomien manuelt */}}
+  {{ if or (not $pages) (eq (len $pages) 0) }}
+    {{ $catmap := site.Taxonomies.categories }}
+    {{ $key := "" }}
+    {{ range $k, $v := $catmap }}
+      {{ if eq (urlize $k) (urlize .Title) }}
+        {{ $key = $k }}
       {{ end }}
     {{ end }}
-  </div>
+    {{ if ne $key "" }}
+      {{ $pages = index $catmap $key }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $pages) 0 }}
+    <div class="ro-grid">
+      {{ range $p := (sort $pages "Date" "desc") }}
+        {{ $img := false }}
+        {{ with $p.Resources.GetMatch (printf "*%s" (path.Base $p.Params.cover.image)) }}{{ $img = . }}{{ end }}
+        {{ if $img }}
+          {{ $thumb := $img.Fit "800x450 q80" }}
+          <a class="ro-card" href="{{ $p.RelPermalink }}" title="{{ $p.Title }}">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ $p.Params.cover.alt }}" loading="lazy" decoding="async">
+            <span class="ro-card-label">{{ $p.Title }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="ro-empty">Ingen værker i denne kategori endnu.</p>
+  {{ end }}
 </div>
 {{ end }}
