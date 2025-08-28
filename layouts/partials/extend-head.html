@@ -1,28 +1,27 @@
-{{- if .IsHome -}}
-  <!-- JSON-LD: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "RedOwlPhoto",
-    "alternateName": ["Red Owl Photo"],
-    "url": "{{ site.BaseURL }}",
-    "logo": "{{ "images/logo.png" | absURL }}",
-    "sameAs": [
-      "https://www.instagram.com/redowlphoto/",
-      "https://dk.pinterest.com/RedOwlPhotos/",
-      "https://www.behance.net/allanandersen"
-    ]
-  }
-  </script>
+{{- $site := . -}}
+{{- $base := $site.BaseURL -}}
+{{- /* Ret stien herunder hvis dit logo ligger et andet sted */ -}}
+{{- $logo := printf "%simages/logo.png" $base -}}
 
-  <!-- JSON-LD: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "{{ site.BaseURL }}",
-    "name": "RedOwlPhoto"
-  }
-  </script>
-{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ $site.Title | jsonify }},
+  "alternateName": ["Red Owl Photo"],
+  "url": {{ $base | jsonify }},
+  "logo": {{ $logo | jsonify }},
+  "sameAs": [
+    "https://www.instagram.com/redowlphoto"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": {{ $base | jsonify }},
+  "name": {{ $site.Title | jsonify }}
+}
+</script>
