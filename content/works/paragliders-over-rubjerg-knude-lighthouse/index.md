@@ -9,7 +9,7 @@ cover:
   alt: Photograph of Rubjerg Knude Lighthouse in North Jutland, Denmark, captured
     from Vennebjerg Church on a late summer day, with sandy dunes in the
     foreground and two paragliders soaring in the clear blue sky.
-featured: true
+featured: false
 categories:
   - dunes-sandscapes
 tags:
