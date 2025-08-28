@@ -1,13 +1,11 @@
-{{/* layouts/partials/extend-head.html */}}
+{{/* Organization JSON-LD */}}
 {{- $org := dict
-  "@context" "https://schema.org"
-  "@type"    "Organization"
-  "name"     .Title
+  "@context"      "https://schema.org"
+  "@type"         "Organization"
+  "name"          "RedOwlPhoto"
   "alternateName" (slice "Red Owl Photo")
-  "url"      (absURL "/")
-  "logo"     (absURL "images/logo.png")
-  "sameAs"   (slice
-                "https://www.instagram.com/redowlphoto"
-             )
+  "url"           "https://redowlphoto.dk/"
+  "logo"          "https://redowlphoto.dk/images/logo.png"
+  "sameAs"        (slice "https://www.instagram.com/redowlphoto")
 -}}
 <script type="application/ld+json">{{ $org | jsonify }}</script>
