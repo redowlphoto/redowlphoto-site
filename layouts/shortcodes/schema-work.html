@@ -1,48 +1,52 @@
 {{- $p := .Page -}}
-{{- $site := .Site -}}
+{{- $name := $p.Title -}}
+{{- $caption := $p.Params.caption | default "" -}}
+{{- $loc := $p.Params.location | default "" -}}
+{{- $cover := $p.Params.cover.image | default "" -}}
+{{- $coverAbs := "" -}}
+{{- with $cover }}
+  {{- with $p.Resources.GetMatch (printf "*%s" (path.Base .)) }}
+    {{- $coverAbs = .Permalink -}}
+  {{- else -}}
+    {{- $coverAbs = printf "%s%s/%s" site.BaseURL (path.Dir $p.RelPermalink) (path.Base .) -}}
+  {{- end -}}
+{{- end }}
 
-{{- $title := $p.Title -}}
-{{- $caption := or $p.Params.caption $p.Params.cover.alt -}}
-{{- $loc := $p.Params.location -}}
-{{- $imgName := $p.Params.cover.image -}}
-{{- $imgURL := cond (strings.HasPrefix $imgName "http") $imgName (printf "%s%s" $p.Permalink $imgName) -}}
+<script type="application/ld+json">
+[{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "articleSection":"Works",
+  "name": {{ $name | jsonify }},
+  "headline": {{ $name | jsonify }},
+  "abstract": {{ $p.Summary | plainify | jsonify }},
+  "inLanguage": {{ $p.Language.LanguageCode | default "en" | jsonify }},
+  "url": {{ $p.Permalink | jsonify }},
+  "author": { "@type":"Person","name":"RedOwlPhoto" },
+  "copyrightYear": {{ $p.Date.Format "2006" }},
+  "dateCreated": {{ $p.Date | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "datePublished": {{ ($p.PublishDate | default $p.Date) | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ $p.Lastmod | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "keywords": {{ $p.Params.tags | default slice | jsonify }},
+  "mainEntityOfPage": true
+},
+{
+  "@context":"https://schema.org",
+  "@type":["CreativeWork","ImageObject"],
+  "caption": {{ $caption | jsonify }},
+  "contentLocation": { "@type":"Place","name": {{ $loc | jsonify }} },
+  "creator": { "@type":"Person","name":"Allan Andersen","url": {{ "https://redowlphoto.dk/" | jsonify }} },
+  "datePublished": {{ $p.Date.Format "2006-01-02" | jsonify }},
+  "genre": ["Minimalist","Seascape","Fine Art"],
+  "image": {{ $coverAbs | jsonify }},
+  "inLanguage": {{ $p.Language.LanguageCode | default "en" | jsonify }},
+  "name": {{ $name | jsonify }},
+  "sameAs": ["https://www.instagram.com/redowlphoto/"],
+  "url": {{ $p.Permalink | jsonify }},
 
-{{- $authorName := or $site.Params.author.name $site.Author.name $site.Title -}}
-{{- $authorURL := or $site.Params.author.url $site.BaseURL -}}
-
-{{- $article := dict
-  "@context" "https://schema.org"
-  "@type" "Article"
-  "articleSection" "Works"
-  "name" $title
-  "headline" $title
-  "abstract" ($caption | plainify)
-  "inLanguage" (or $site.Language.Lang "en")
-  "url" $p.Permalink
-  "author" (dict "@type" "Person" "name" $authorName "url" $authorURL)
-  "copyrightYear" ($p.Date.Format "2006")
-  "dateCreated" ($p.Date.Format "2006-01-02T15:04:05Z07:00")
-  "datePublished" ($p.PublishDate.Format "2006-01-02T15:04:05Z07:00")
-  "dateModified" ($p.Lastmod.Format "2006-01-02T15:04:05Z07:00")
-  "image" $imgURL
-  "keywords" $p.Params.tags
-  "mainEntityOfPage" true
--}}
-
-{{- $imageObj := dict
-  "@context" "https://schema.org"
-  "@type" (slice "CreativeWork" "ImageObject")
-  "name" $title
-  "creator" (dict "@type" "Person" "name" "Allan Andersen" "url" $authorURL)
-  "url" $p.Permalink
-  "image" $imgURL
-  "caption" $caption
-  "contentLocation" (cond $loc (dict "@type" "Place" "name" $loc) nil)
-  "genre" (slice "Minimalist" "Seascape" "Fine Art")
-  "datePublished" ($p.Date.Format "2006-01-02")
-  "inLanguage" "en"
-  "sameAs" (slice "https://www.instagram.com/redowlphoto/")
--}}
-
-{{- $payload := slice $article $imageObj | jsonify -}}
-<script type="application/ld+json">{{- $payload | safeJS -}}</script>
+  "creditText": "Allan Andersen",
+  "copyrightNotice": "© Allan Andersen / RedOwlPhoto",
+  "license": {{ (print site.BaseURL "license/") | jsonify }},
+  "acquireLicensePage": {{ (print site.BaseURL "about/") | jsonify }}
+}]
+</script>
