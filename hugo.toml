@@ -24,6 +24,11 @@ term     = ["HTML"]
   tag      = "tags"
   palette  = "palette"
 
+# Top-level author bruges af flere temaer/partials (giver også author.url til schema i <head>)
+[author]
+  name = "RedOwlPhoto"
+  url  = "https://redowlphoto.dk/"
+
 [params]
   description  = "Minimalist seascapes from Mariager Fjord, Als Odde and Øster Hurup."
   defaultTheme = "auto"
@@ -31,9 +36,10 @@ term     = ["HTML"]
   # Blowfish loader disse fra 'assets/css/...'
   customCSS = ["css/custom.css"]
 
-  # Bruges til SEO og vores footer-ikon/link
+  # Bruges til SEO, footer-ikon/link og som fallback i schema
   [params.author]
     name  = "RedOwlPhoto"
+    url   = "https://redowlphoto.dk/"
     links = [
       { instagram = "https://www.instagram.com/redowlphoto/" }
     ]
