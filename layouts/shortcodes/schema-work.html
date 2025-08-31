@@ -1,0 +1,24 @@
+{{/* Shortcode til værk-schema: brug på enkeltsider i /works/ */}}
+{{ $p := .Page }}
+{{ if and (eq $p.Section "works") $p.IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["CreativeWork","ImageObject"],
+  "name": {{ $p.Title | jsonify }},
+  "creator": { "@type": "Person", "name": "Allan Andersen" },
+  "url": {{ $p.Permalink | jsonify }},
+  {{/* Find bedste billede i denne rækkefølge: params.image → params.cover.image → første resource → params.images[0] */}}
+  {{ $img := $p.Params.image }}
+  {{ if not $img }}{{ with $p.Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end }}{{ end }}
+  {{ if not $img }}{{ with $p.Resources.GetMatch "*" }}{{ $img = .RelPermalink }}{{ end }}{{ end }}
+  {{ if not $img }}{{ with (index $p.Params.images 0) }}{{ $img = . }}{{ end }}{{ end }}
+  "image": {{ if $img }}{{ (absURL $img) | jsonify }}{{ else }}""{{ end }},
+  {{ with $p.Params.caption }}"caption": {{ . | jsonify }},{{ end }}
+  {{ with $p.Params.location }}"contentLocation": { "@type": "Place", "name": {{ . | jsonify }} },{{ end }}
+  "genre": ["Minimalist","Seascape","Fine Art"],
+  {{ with $p.Date }}"datePublished": "{{ .Format "2006-01-02" }}",{{ end }}
+  "inLanguage": "en"
+}
+</script>
+{{ end }}
