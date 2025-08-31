@@ -6,7 +6,18 @@
     .ro-figure{margin:0 0 1.25rem;border-radius:14px;overflow:hidden}
     .ro-figure img{width:100%;height:auto;display:block}
     .ro-cap{opacity:.85;margin-top:.25rem}
+
+    /* Related works */
+    .ro-related{margin-top:2.25rem}
+    .ro-related h2{font-size:1.25rem;font-weight:700;margin-bottom:.75rem}
+    .ro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .ro-card{display:block;border-radius:12px;overflow:hidden;opacity:.95}
+    .ro-card:hover{opacity:1}
+    .ro-card img{width:100%;height:auto;display:block}
+    .ro-card-title{font-size:.95rem;margin-top:.35rem}
+    @media (max-width:720px){ .ro-grid{grid-template-columns:repeat(2,minmax(0,1fr));} }
   </style>
+
   <div class="ro-wrap">
     <h1 class="ro-title">{{ .Title }}</h1>
     <div class="ro-meta">
@@ -29,6 +40,13 @@
       </figure>
     {{ end }}
 
-    {{ .Content }}
+    {{/* Vis kun Body hvis du eksplicit slår det til pr. værk */}}
+    {{ if .Params.showBody }}
+      <div class="prose dark:prose-invert max-w-none">
+        {{ .Content }}
+      </div>
+    {{ end }}
+
+    {{ partial "related-works.html" . }}
   </div>
 {{ end }}
