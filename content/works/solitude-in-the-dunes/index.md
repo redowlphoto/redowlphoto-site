@@ -11,7 +11,6 @@ cover:
 featured: false
 categories:
   - dunes-sandscapes
-  - personal
 tags:
   - Råbjerg Mile
   - Skagen dunes
