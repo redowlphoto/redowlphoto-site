@@ -25,5 +25,8 @@ tags:
   - nature photography Denmark
   - redowlphoto
 ---
-{{< schema-work >}}
 
+
+<!--more-->
+
+{{< schema_work >}}
