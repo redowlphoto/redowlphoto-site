@@ -10,7 +10,7 @@ cover:
   alt: Boat leaving shore on calm August sunrise at Als Odde, Mariager Fjord,
     Denmark, with golden light over the water – by RedOwlPhoto.
   image: golden-dawn-2.jpg
-featured: false
+featured: true
 categories:
   - sea-fjord
 tags:
