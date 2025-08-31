@@ -1,45 +1,35 @@
-{{/* Relaterede værker (3–6) baseret på categories/tags */}}
-{{- $current := . -}}
-{{- $rel := .Site.RegularPages.Related . -}}
-{{- $rel = where $rel "Section" "works" -}}
-{{- $rel = where $rel "Permalink" "ne" .Permalink -}}
-{{- $rel = first 6 $rel -}}
+{{/* Related works: robust mod manglende cover.image */}}
+{{- $page := . -}}
+{{- $all  := where site.RegularPages "Section" "works" -}}
 
-{{- if or (not $rel) (eq (len $rel) 0) -}}
-  {{/* Fallback: seneste fra works (ekskl. denne) */}}
-  {{- $rel = first 6 (where (where .Site.RegularPages "Section" "works") "Permalink" "ne" .Permalink) -}}
-{{- end -}}
+{{- $cats := $page.Params.categories | default (slice) -}}
+{{- $tags := $page.Params.tags        | default (slice) -}}
 
-{{- if gt (len $rel) 0 -}}
-<section class="mt-12">
-  <h2 class="text-2xl font-semibold mb-4">Relaterede værker</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {{- range $rel -}}
-      <a class="group block no-underline" href="{{ .RelPermalink }}">
-        {{/* Find cover-billede: prøv cover.image, ellers første image-resource */}}
-        {{- $alt := .Title -}}
-        {{- with .Params.cover.alt }}{{ $alt = . }}{{ end -}}
-        {{- $img := nil -}}
-        {{- with .Params.cover.image -}}
-          {{- $base := path.Base . -}}
-          {{- $got := $.Resources.GetMatch (printf "*%s*" $base) -}}
-          {{- if $got }}{{ $img = $got }}{{ end -}}
-        {{- end -}}
-        {{- if not $img -}}
-          {{- $imgs := .Resources.ByType "image" -}}
-          {{- if gt (len $imgs) 0 -}}
-            {{- $img = index $imgs 0 -}}
+{{- $byCat := where $all "Params.categories" "intersect" $cats -}}
+{{- $byTag := where $all "Params.tags"        "intersect" $tags -}}
+{{- $pool  := union $byCat $byTag -}}
+{{- $pool  = where $pool "RelPermalink" "ne" $page.RelPermalink -}}
+{{- $pool  = first 6 (uniq $pool) -}}
+
+{{- if gt (len $pool) 0 -}}
+  <div class="ro-related">
+    <h2>Related Works</h2>
+    <div class="ro-grid">
+      {{- range $pool -}}
+        {{- $thumb := "" -}}
+        {{- $imgPath := "" -}}
+        {{- with .Params.cover }}{{ with .image }}{{ $imgPath = . }}{{ end }}{{ end -}}
+        {{- if $imgPath }}
+          {{- with .Resources.GetMatch (printf "*%s" (path.Base $imgPath)) -}}
+            {{- $r := .Resize "400x q80" -}}
+            {{- $thumb = $r.RelPermalink -}}
           {{- end -}}
         {{- end -}}
-        {{- if $img -}}
-          {{- $thumb := $img.Fit "600x400 webp q75" -}}
-          <img class="rounded-xl w-full h-auto" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $alt }}">
-        {{- end -}}
-        <div class="mt-2 text-base">
-          <span class="font-medium group-hover:underline">{{ .Title }}</span>
-        </div>
-      </a>
-    {{- end -}}
+        <a class="ro-card" href="{{ .RelPermalink }}">
+          {{- if $thumb -}}<img src="{{ $thumb }}" alt="{{ .Title }}">{{- end -}}
+          <div class="ro-card-title">{{ .Title }}</div>
+        </a>
+      {{- end -}}
+    </div>
   </div>
-</section>
 {{- end -}}
