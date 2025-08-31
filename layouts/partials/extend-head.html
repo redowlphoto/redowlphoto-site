@@ -1,6 +1,12 @@
 <!-- Safe extend-head: virker både når partial kaldes med .Site og med en side -->
 
-<!-- Open Graph (site-level only; temaet håndterer per-side tags) -->
+{{/* Canonical + og:url kun når vi ER på en side (temaet kalder nogle gange med .Site) */}}
+{{ if .IsPage }}
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ end }}
+
+<!-- Open Graph (site-level only; temaet håndterer det meste per side) -->
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -28,3 +34,27 @@
   "name": "RedOwlPhoto"
 }
 </script>
+
+{{/* Værk-schema: kør KUN på enkeltsider i sektionen "works" */}}
+{{ if and .IsPage (eq .Section "works") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["CreativeWork","ImageObject"],
+  "name": {{ .Title | jsonify }},
+  "creator": { "@type": "Person", "name": "Allan Andersen" },
+  "url": {{ .Permalink | jsonify }},
+  {{/* Find bedste billede: params.image → params.cover.image → første resource → params.images[0] */}}
+  {{ $img := .Params.image }}
+  {{ if not $img }}{{ with .Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end }}{{ end }}
+  {{ if not $img }}{{ with .Resources.GetMatch "*" }}{{ $img = .RelPermalink }}{{ end }}{{ end }}
+  {{ if not $img }}{{ with (index .Params.images 0) }}{{ $img = . }}{{ end }}{{ end }}
+  "image": {{ if $img }}{{ (absURL $img) | jsonify }}{{ else }}""{{ end }},
+  {{ with .Params.caption }}"caption": {{ . | jsonify }},{{ end }}
+  {{ with .Params.location }}"contentLocation": { "@type": "Place", "name": {{ . | jsonify }} },{{ end }}
+  "genre": ["Minimalist","Seascape","Fine Art"],
+  {{ with .Date }}"datePublished": "{{ .Format "2006-01-02" }}",{{ end }}
+  "inLanguage": "en"
+}
+</script>
+{{ end }}
