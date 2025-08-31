@@ -1,25 +1,16 @@
-<!-- Safe extend-head: site-level (JSON-LD) + gated page CSS -->
-<!-- Remove duplicates: OG/Twitter + WebSite comes from theme already -->
+<!-- Safe extend-head: site-level only (. is .Site) -->
+<!-- Undgå dubletter: OG/Twitter håndteres af temaet -->
 
 <!-- Schema.org: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://redowlphoto.dk/#organization",
+  "@id": "{{ .BaseURL }}#organization",
   "name": "RedOwlPhoto",
   "alternateName": ["Red Owl Photo"],
-  "url": "https://redowlphoto.dk/",
-  "logo": "https://redowlphoto.dk/images/logo.png",
-  "sameAs": [
-    "https://www.instagram.com/redowlphoto"
-  ]
+  "url": "{{ .BaseURL }}",
+  "logo": "{{ .BaseURL }}images/logo.png",
+  "sameAs": ["https://www.instagram.com/redowlphoto/"]
 }
 </script>
-
-{{/* Hide prev/next pager only when a page sets noPager: true */}}
-{{ if and .IsPage .Params.noPager }}
-<style>
-  main + nav { display: none !important; }
-</style>
-{{ end }}
