@@ -5,6 +5,7 @@ backend:
 site_url: https://redowlphoto.dk
 display_url: https://redowlphoto.dk
 
+# Standard upload-sti for alt andet end "works"
 media_folder: "static/uploads"
 public_folder: "/uploads"
 media_folder_relative: true
@@ -15,28 +16,33 @@ collections:
     label_singular: "Work"
     folder: "content/works"
     create: true
-    path: "{{slug}}/index"
     slug: "{{slug}}"
+    path: "{{slug}}/index"          # -> content/works/<slug>/index.md
     editor:
       preview: false
+
+    # VIGTIGT: Gem assets i samme mappe som indlægget
+    media_folder: ""                # upload til content/works/<slug>/
+    public_folder: ""               # skriv relative stier i front matter
+    preview_path: "works/{{slug}}/"
+
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Location", name: "location", widget: "string", hint: "e.g. Als Odde, Denmark" }
-      - { label: "Caption", name: "caption", widget: "text", hint: "Short curatorial text" }
+      - { label: "Title",  name: "title", widget: "string" }
+      - { label: "Draft",  name: "draft", widget: "boolean", default: false }
+      - { label: "Date",   name: "date",  widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Location", name: "location", widget: "string", hint: "e.g. Als Odde, Denmark", required: false }
+      - { label: "Caption",  name: "caption", widget: "text", hint: "Short curatorial text", required: false }
 
       - label: "Cover"
         name: "cover"
         widget: "object"
+        collapsed: false
         fields:
-          - { label: "Image", name: "image", widget: "image", choose_url: false }
-          - { label: "ALT text", name: "alt", widget: "string", hint: "Still water at Als Odde under blue dawn light" }
+          - { label: "Image", name: "image", widget: "image", choose_url: false, allow_multiple: false, required: true }
+          - { label: "ALT text", name: "alt", widget: "string", hint: "Still water at Als Odde under blue dawn light", required: false }
 
-      # Vælg visning på forsiden (slideshow)
-      - { label: "Featured on home", name: "featured", widget: "boolean", default: false, hint: "Vis dette værk i forsideslideshowet" }
+      - { label: "Featured on home", name: "featured", widget: "boolean", default: false, hint: "Vis dette værk i forsideslideshowet", required: false }
 
-      # Faste kategorier (vælg en eller flere)
       - label: "Categories"
         name: "categories"
         widget: "select"
@@ -49,12 +55,24 @@ collections:
           - { label: "Curated Picks",      value: "curated-picks" }
           - { label: "Personal",           value: "personal" }
         hint: "Vælg 0–∞. Bruges til /works og kategori-sider."
+        required: false
 
-      # Valgfri frie tags
       - label: "Tags"
         name: "tags"
         widget: "list"
         hint: "Optional keywords (e.g. minimalism, long exposure)"
+        required: false
+
+      # Valgfri tekst. Default indsætter break + schema-shortcode,
+      # så du ikke skal gøre det manuelt.
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        default: |
+          <!--more-->
+
+          {{< schema-work >}}
 
   - name: "pages"
     label: "Pages"
@@ -74,6 +92,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title",        name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date",  widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Body",         name: "body",  widget: "markdown" }
