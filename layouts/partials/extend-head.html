@@ -1,12 +1,7 @@
-<!-- Canonical -->
-<link rel="canonical" href="{{ .Permalink }}" />
+<!-- Safe extend-head: virker både når partial kaldes med .Site og med en side -->
 
-<!-- Open Graph (grundlæggende) -->
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:title" content="{{ .Title }}" />
-{{ with .Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
-
-<!-- Twitter Card (basic) -->
+<!-- Open Graph (site-level only; temaet håndterer per-side tags) -->
+<meta property="og:site_name" content="{{ site.Title }}">
 <meta name="twitter:card" content="summary_large_image" />
 
 <!-- Schema.org: Organization -->
