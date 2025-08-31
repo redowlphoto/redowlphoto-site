@@ -1,62 +1,49 @@
-{{- $p := .Page -}}
-
-{{/* ---------- Find bedste billede ---------- */}}
+{{/* schema-work.html */}}
 {{- $img := "" -}}
-
-{{/* 1) .Params.image (site-level) */}}
-{{- with $p.Params.image }}
-  {{- $img = . | absURL -}}
+{{- with .Resources.GetMatch .Params.cover.image -}}
+  {{- $img = .Permalink -}}
+{{- else if .Params.cover.image -}}
+  {{- $img = printf "%s%s" .Permalink .Params.cover.image -}}
 {{- end -}}
 
-{{/* 2) cover.image → først prøv som Page Resource, ellers som path */}}
-{{- if not $img }}
-  {{- with $p.Params.cover }}
-    {{- with .image }}
-      {{- $res := $p.Resources.GetMatch (printf "%s*" .) -}}
-      {{- if $res -}}
-        {{- $img = $res.Permalink -}}
-      {{- else -}}
-        {{- $img = . | absURL -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
+{{- $abstract := ( .Summary | plainify | default .Params.caption ) -}}
+{{- $nowISO := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- $dateY  := .Date.Format "2006" -}}
+{{- $lang   := ( .Site.LanguageCode | default "en" ) -}}
+{{- $base   := .Site.BaseURL -}}
 
-{{/* 3) Første billed-resource i bundlen */}}
-{{- if not $img }}
-  {{- with $p.Resources.ByType "image" }}
-    {{- with first 1 . }}
-      {{- $img = (index . 0).Permalink -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-
-{{/* 4) .Params.images[0] fallback */}}
-{{- if not $img }}
-  {{- with index $p.Params.images 0 }}
-    {{- $img = . | absURL -}}
-  {{- end -}}
-{{- end -}}
-
-{{/* ---------- Byg JSON-LD ---------- */}}
-{{- $data := dict
+{{- $article := dict
   "@context" "https://schema.org"
-  "@type"     (slice "CreativeWork" "ImageObject")
-  "name"      $p.Title
-  "creator"   (dict "@type" "Person" "name" "Allan Andersen")
-  "url"       $p.Permalink
-  "image"     $img
-  "caption"   $p.Params.caption
-  "contentLocation" (cond (isset $p.Params "location") (dict "@type" "Place" "name" $p.Params.location) nil)
-  "genre"     (slice "Minimalist" "Seascape" "Fine Art")
-  "datePublished" ($p.Date.Format "2006-01-02")
-  "inLanguage" "en"
+  "@type" "Article"
+  "articleSection" "Works"
+  "name" .Title
+  "headline" .Title
+  "abstract" $abstract
+  "inLanguage" $lang
+  "url" .Permalink
+  "image" $img
+  "author" (dict "@type" "Person" "name" "RedOwlPhoto" "url" $base)
+  "copyrightYear" $dateY
+  "dateCreated" $nowISO
+  "datePublished" $nowISO
+  "dateModified" $nowISO
+  "keywords" .Params.tags
+  "mainEntityOfPage" true
 -}}
 
-{{/* jsonify bør allerede give rå JSON. Hvis noget i pipeline alligevel har tilføjet
-     begyndelses-/slut-anførselstegn, fjerner vi dem defensivt med trim. */}}
-{{- $json := $data | jsonify -}}
+{{- $imageObj := dict
+  "@context" "https://schema.org"
+  "@type" (slice "CreativeWork" "ImageObject")
+  "name" .Title
+  "url" .Permalink
+  "image" $img
+  "caption" .Params.caption
+  "contentLocation" (dict "@type" "Place" "name" .Params.location)
+  "genre" (slice "Minimalist" "Seascape" "Fine Art")
+  "datePublished" (.Date.Format "2006-01-02")
+  "inLanguage" $lang
+  "creator" (dict "@type" "Person" "name" "Allan Andersen" "url" $base)
+  "sameAs" (slice "https://www.instagram.com/redowlphoto/")
+-}}
 
-<script type="application/ld+json">
-{{- $json | trim "\"" | safeHTML -}}
-</script>
+<script type="application/ld+json">{{ (slice $article $imageObj) | jsonify | safeHTML }}</script>
