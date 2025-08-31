@@ -1,14 +1,14 @@
 {{- $p := .Page -}}
 
-{{/* ---- Find bedste billede ---- */}}
+{{/* ---------- Find bedste billede ---------- */}}
 {{- $img := "" -}}
 
-{{/* 1) .Params.image (site-level) hvis sat */}}
+{{/* 1) .Params.image (site-level) */}}
 {{- with $p.Params.image }}
   {{- $img = . | absURL -}}
 {{- end -}}
 
-{{/* 2) cover.image → prøv som Page Resource-match, ellers brug som path */}}
+{{/* 2) cover.image → først prøv som Page Resource, ellers som path */}}
 {{- if not $img }}
   {{- with $p.Params.cover }}
     {{- with .image }}
@@ -38,7 +38,7 @@
   {{- end -}}
 {{- end -}}
 
-{{/* ---- Byg JSON-LD ---- */}}
+{{/* ---------- Byg JSON-LD ---------- */}}
 {{- $data := dict
   "@context" "https://schema.org"
   "@type"     (slice "CreativeWork" "ImageObject")
@@ -53,6 +53,10 @@
   "inLanguage" "en"
 -}}
 
+{{/* jsonify bør allerede give rå JSON. Hvis noget i pipeline alligevel har tilføjet
+     begyndelses-/slut-anførselstegn, fjerner vi dem defensivt med trim. */}}
+{{- $json := $data | jsonify -}}
+
 <script type="application/ld+json">
-{{- $data | jsonify -}}
+{{- $json | trim "\"" | safeHTML -}}
 </script>
