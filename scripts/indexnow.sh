@@ -1,10 +1,36 @@
 #!/usr/bin/env bash
 set -euo pipefail
-KEY="PAST-DIN-NØGLE-HER"  # <-- indsæt nøglen fra 5a
 
-SITEMAP="public/sitemap.xml"
-# Gennemgå alle URL’er i sitemap og ping både bing.com og indexnow.org
-grep -Eo "https://redowlphoto.dk/[^<]+" "$SITEMAP" | while read -r url; do
-  curl -s "https://www.bing.com/IndexNow?url=${url}&key=${KEY}" >/dev/null || true
-  curl -s "https://api.indexnow.org/IndexNow?url=${url}&key=${KEY}"  >/dev/null || true
-done
+BASE="https://redowlphoto.dk"
+KEY="46b70692f22f4f6b992b9997c3350424"
+KEY_URL="${BASE}/${KEY}.txt"
+SITEMAP_URL="${BASE}/sitemap.xml"
+
+echo "IndexNow: using key=${KEY}"
+echo "IndexNow: keyLocation=${KEY_URL}"
+
+# Tjek (kun som info) at nÃ¸glefilen findes i build-outputtet
+if [[ ! -f "public/${KEY}.txt" && ! -f "static/${KEY}.txt" ]]; then
+  echo "IndexNow: WARNING â€“ ${KEY}.txt ikke fundet i /static eller /public"
+fi
+
+# 1) Ping via sitemap (anbefalet)
+CODE_MAIN=$(curl -s -o /dev/null -w '%{http_code}' \
+  "https://api.indexnow.org/indexnow?sitemap=${SITEMAP_URL}&key=${KEY}&keyLocation=${KEY_URL}")
+echo "IndexNow: api.indexnow.org (sitemap) -> ${CODE_MAIN}"
+
+# 2) Ekstra ping til Bings gateway (valgfrit)
+CODE_BING=$(curl -s -o /dev/null -w '%{http_code}' \
+  "https://www.bing.com/indexnow?url=${BASE}/&key=${KEY}&keyLocation=${KEY_URL}")
+echo "IndexNow: www.bing.com (homepage) -> ${CODE_BING}"
+
+# 3) Fallback: hvis sitemap-ping ikke returnerer 200/202, ping hver URL i sitemap
+if [[ "${CODE_MAIN}" != "200" && "${CODE_MAIN}" != "202" ]]; then
+  if [[ -f "public/sitemap.xml" ]]; then
+    echo "IndexNow: fallback â€“ pinger hver URL fra sitemapâ€¦"
+    grep -Eo "https://redowlphoto.dk/[^<]+" "public/sitemap.xml" | while read -r url; do
+      c=$(curl -s -o /dev/null -w '%{http_code}' "https://api.indexnow.org/indexnow?url=${url}&key=${KEY}")
+      echo "  -> ${c} ${url}"
+    done
+  fi
+fi
