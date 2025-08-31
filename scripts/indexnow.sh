@@ -16,12 +16,12 @@ fi
 
 # 1) Ping via sitemap (anbefalet)
 CODE_MAIN=$(curl -s -o /dev/null -w '%{http_code}' \
-  "https://api.indexnow.org/indexnow?sitemap=${SITEMAP_URL}&key=${KEY}&keyLocation=${KEY_URL}")
+  "https://api.indexnow.org/IndexNow?url=${SITEMAP_URL}&key=${KEY}&keyLocation=${KEY_URL}")
 echo "IndexNow: api.indexnow.org (sitemap) -> ${CODE_MAIN}"
 
 # 2) Ekstra ping til Bings gateway (valgfrit)
 CODE_BING=$(curl -s -o /dev/null -w '%{http_code}' \
-  "https://www.bing.com/indexnow?url=${BASE}/&key=${KEY}&keyLocation=${KEY_URL}")
+  "https://www.bing.com/IndexNow?url=${SITEMAP_URL}&key=${KEY}&keyLocation=${KEY_URL}")
 echo "IndexNow: www.bing.com (homepage) -> ${CODE_BING}"
 
 # 3) Fallback: hvis sitemap-ping ikke returnerer 200/202, ping hver URL i sitemap
