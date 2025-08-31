@@ -1,4 +1,4 @@
-<!-- Safe extend-head: site-level only (no .Page usage) -->
+<!-- Safe extend-head: site-level (JSON-LD) + gated page CSS -->
 <!-- Remove duplicates: OG/Twitter + WebSite comes from theme already -->
 
 <!-- Schema.org: Organization -->
@@ -16,3 +16,10 @@
   ]
 }
 </script>
+
+{{/* Hide prev/next pager only when a page sets noPager: true */}}
+{{ if and .IsPage .Params.noPager }}
+<style>
+  main + nav { display: none !important; }
+</style>
+{{ end }}

@@ -7,6 +7,8 @@ slug: about
 showTaxonomies: false
 title: About, Prints & Contact
 showReadingTime: false
+noPager: true
+
 ---
 
 ## Artist statement

@@ -1,6 +1,8 @@
 ---
 title: "Image Licensing"
 draft: false
+noPager: true
+
 ---
 
 If you wish to license an image from RedOwlPhoto for editorial or commercial use,

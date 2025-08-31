@@ -21,7 +21,7 @@ collections:
     editor:
       preview: false
 
-    # VIGTIGT: Gem assets i samme mappe som indlægget
+    # Gem assets i samme mappe som indlægget
     media_folder: ""                # upload til content/works/<slug>/
     public_folder: ""               # skriv relative stier i front matter
     preview_path: "works/{{slug}}/"
@@ -43,18 +43,16 @@ collections:
 
       - { label: "Featured on home", name: "featured", widget: "boolean", default: false, hint: "Vis dette værk i forsideslideshowet", required: false }
 
+      # Hentes fra kollektionen "Categories" nedenfor og gemmer slug
       - label: "Categories"
         name: "categories"
-        widget: "select"
+        widget: "relation"
+        collection: "category_terms"
+        search_fields: ["title", "slug"]
+        display_fields: ["title"]
+        value_field: "slug"
         multiple: true
-        options:
-          - { label: "Cool Blues",         value: "cool-blues" }
-          - { label: "Warm Pastels",       value: "warm-pastels" }
-          - { label: "Sea & Fjord",        value: "sea-fjord" }
-          - { label: "Dunes & Sandscapes", value: "dunes-sandscapes" }
-          - { label: "Curated Picks",      value: "curated-picks" }
-          - { label: "Personal",           value: "personal" }
-        hint: "Vælg 0–∞. Bruges til /works og kategori-sider."
+        hint: "Vælg 0–∞. Vedligeholdes under Collections → Categories."
         required: false
 
       - label: "Tags"
@@ -63,8 +61,7 @@ collections:
         hint: "Optional keywords (e.g. minimalism, long exposure)"
         required: false
 
-      # Valgfri tekst. Default indsætter break + schema-shortcode,
-      # så du ikke skal gøre det manuelt.
+      # Body gemmes for SEO, men vises ikke på siden
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -73,6 +70,26 @@ collections:
           <!--more-->
 
           {{< schema-work >}}
+
+  # --- NY: Redigér kategorier + intro-tekst (120–200 ord) ---
+  - name: "category_terms"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/_index"         # -> content/categories/<slug>/_index.md
+    media_folder: ""
+    public_folder: ""
+    editor:
+      preview: false
+    identifier_field: "slug"
+    preview_path: "categories/{{slug}}/"
+    fields:
+      - { label: "Title (shown on page)", name: "title", widget: "string" }
+      - { label: "Slug (lowercase-with-dashes)", name: "slug", widget: "string",
+          hint: "fx: sea-fjord", pattern: ["^[a-z0-9-]+$", "Use lowercase, digits and dashes only."] }
+      - { label: "Intro (shown at top of the category page)", name: "body", widget: "markdown", required: false }
 
   - name: "pages"
     label: "Pages"
