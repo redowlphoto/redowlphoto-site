@@ -2,7 +2,7 @@
 title: Solitude in the Dunes
 draft: false
 date: 2025-08-20
-location: Raabjerg MIle, Skagen, Denmark
+location: Raabjerg Mile, Skagen, Denmark
 caption: Solitude in the shifting sands of Råbjerg Mile, Denmark.
 cover:
   alt: Minimalist landscape photograph of Råbjerg Mile sand dunes near Skagen,
