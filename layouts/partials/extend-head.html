@@ -1,39 +1,8 @@
-<!-- Safe extend-head: virker både når partial kaldes med .Site og med en side -->
+<!-- Safe extend-head: virker når temaet kalder med .Site -->
 
 <!-- Open Graph (site-level) -->
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta name="twitter:card" content="summary_large_image" />
-
-<!-- Per-side ting (kun når vi HAR en sidekontekst) -->
-{{ with .Page }}
-  <!-- Canonical + og:url -->
-  <link rel="canonical" href="{{ .Permalink }}" />
-  <meta property="og:url" content="{{ .Permalink }}" />
-
-  {{/* Værk-schema: kun på enkeltsider i sektionen "works" */}}
-  {{ if eq .Section "works" }}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["CreativeWork","ImageObject"],
-    "name": {{ .Title | jsonify }},
-    "creator": { "@type": "Person", "name": "Allan Andersen" },
-    "url": {{ .Permalink | jsonify }},
-    {{/* params.image → params.cover.image → første resource → params.images[0] */}}
-    {{ $img := .Params.image }}
-    {{ if not $img }}{{ with .Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end }}{{ end }}
-    {{ if not $img }}{{ with .Resources.GetMatch "*" }}{{ $img = .RelPermalink }}{{ end }}{{ end }}
-    {{ if not $img }}{{ with (index .Params.images 0) }}{{ $img = . }}{{ end }}{{ end }}
-    "image": {{ if $img }}{{ (absURL $img) | jsonify }}{{ else }}""{{ end }},
-    {{ with .Params.caption }}"caption": {{ . | jsonify }},{{ end }}
-    {{ with .Params.location }}"contentLocation": { "@type": "Place", "name": {{ . | jsonify }} },{{ end }}
-    "genre": ["Minimalist","Seascape","Fine Art"],
-    {{ with .Date }}"datePublished": "{{ .Format "2006-01-02" }}",{{ end }}
-    "inLanguage": "en"
-  }
-  </script>
-  {{ end }}
-{{ end }}
 
 <!-- Schema.org: Organization -->
 <script type="application/ld+json">
