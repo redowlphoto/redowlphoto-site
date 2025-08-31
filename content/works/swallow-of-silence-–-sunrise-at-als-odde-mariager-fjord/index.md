@@ -1,5 +1,5 @@
 ---
-title: Swallow of Silence – Sunrise at Als Odde, Mariager Fjord
+title: Swallow of Silence
 draft: false
 date: 2025-08-13
 location: Als Odde, Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
