@@ -1,6 +1,7 @@
-﻿---
-title: "Sea & Fjord"
-description: "Minimalist seascapes from Mariager Fjord, Øster Hurup and the Kattegat coast."
+---
+title: Sea & Fjord
+description: Minimalist seascapes from Mariager Fjord, Øster Hurup and the Kattegat coast.
+slug: sea-fjord
 ---
 
 Along the shores of Mariager Fjord and the open Kattegat, the sea is rarely dramatic.  
