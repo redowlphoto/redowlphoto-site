@@ -29,6 +29,18 @@ term     = ["HTML", "RSS"]
   tag      = "tags"
   palette  = "palette"
 
+# Relateret indhold (brug categories + tags)
+[related]
+  includeNewer = true
+  threshold    = 0
+  toLower      = true
+  [[related.indices]]
+    name   = "categories"
+    weight = 100
+  [[related.indices]]
+    name   = "tags"
+    weight = 80
+
 # Top-level author bruges af flere temaer/partials (giver også author.url til schema i <head>)
 [author]
   name = "RedOwlPhoto"

@@ -1,0 +1,6 @@
+{{/* Vis “Relaterede værker” lige før footer – kun på enkelt-sider i /works */}}
+{{- if and .IsPage (eq .Section "works") -}}
+  <div class="ro-wrap">
+    {{ partial "related-works.html" . }}
+  </div>
+{{- end -}}
