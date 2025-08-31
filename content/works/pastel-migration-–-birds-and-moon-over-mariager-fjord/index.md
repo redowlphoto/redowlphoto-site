@@ -27,3 +27,12 @@ tags:
   - Scandinavian fine art photo
   - Nordic seascape Denmark
 ---
+
+On a clear November day by Mariager Fjord, a flock of migrating birds
+  crosses the sky beneath the pale moon. The soft autumn light and pastel tones
+  capture the quiet rhythm of nature along Himmerland’s coast – a reminder of
+  how the seasons shape the atmosphere of Denmark’s landscapes.
+
+  <!--more-->
+
+{{< schema-work >}}

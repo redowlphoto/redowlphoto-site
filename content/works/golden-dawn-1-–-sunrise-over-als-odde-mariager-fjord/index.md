@@ -26,3 +26,13 @@ tags:
   - Scandinavian fine art seascape
   - Nordic coast Denmark
 ---
+
+An August sunrise over Als Odde, where the rising sun paints the fjord
+  in glowing gold. A sailboat drifts on the horizon, embodying the freedom of
+  summer mornings by Mariager Fjord. Here, the quiet beauty of Himmerland’s
+  coast meets the timeless rhythm of the sea.
+
+  
+<!--more-->
+
+{{< schema-work >}}

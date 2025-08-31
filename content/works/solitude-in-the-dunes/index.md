@@ -25,3 +25,10 @@ tags:
   - travel Denmark nature
   - redowlphoto
 ---
+
+Minimalist landscape photograph of Råbjerg Mile sand dunes near Skagen,
+    Denmark, with a single person sitting alone under a wide cloudy sky.
+
+<!--more-->
+
+{{< schema-work >}}

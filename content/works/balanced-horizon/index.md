@@ -27,3 +27,12 @@ tags:
   - nature photography Denmark
   - redowlphoto
 ---
+
+Minimalist seascape photograph from Øster Hurup on the Kattegat  coast,
+showing a calm early morning with sea mist drifting in from the north, soft
+sunlight partly veiled by haze and reflections on the still water.
+
+
+<!--more-->
+
+{{< schema-work >}}

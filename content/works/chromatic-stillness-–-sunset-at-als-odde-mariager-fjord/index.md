@@ -28,3 +28,13 @@ tags:
   - pastel sky Denmark
   - Nordic seascape art
 ---
+
+Pastel colors settle over Mariager Fjord on a quiet evening at Als
+  Odde. The rhythm of old wooden poles rising from the water creates a
+  meditative stillness, a scene where nature and minimalism meet. This is the
+  essence of the Himmerland coast – calm, timeless, and deeply Scandinavian.
+
+
+<!--more-->
+
+{{< schema-work >}} 

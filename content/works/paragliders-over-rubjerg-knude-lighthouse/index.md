@@ -26,6 +26,7 @@ tags:
   - redowlphoto
 ---
 
+Photograph of Rubjerg Knude Lighthouse on the North Sea coast of Denmark. Captured from Vennebjerg Church on a late summer day, the scene shows sandy dunes in the foreground and two paragliders above the lighthouse in a clear blue sky.
 
 <!--more-->
 

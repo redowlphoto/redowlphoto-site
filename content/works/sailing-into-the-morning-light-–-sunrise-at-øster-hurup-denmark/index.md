@@ -27,3 +27,12 @@ tags:
   - sailboat at sunrise Denmark
   - Scandinavian fine art photography
 ---
+
+A calm summer morning by Øster Hurup on the Kattegat coast. The still
+  water, soft pastel sky and a lone sailboat capture the essence of freedom and
+  quiet beauty by Mariager Fjord and Himmerland’s coastline. A reminder of how
+  simple moments at sea can hold timeless meaning.
+
+  <!--more-->
+
+{{< schema-work >}}

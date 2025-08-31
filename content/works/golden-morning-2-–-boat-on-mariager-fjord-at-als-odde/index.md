@@ -25,3 +25,11 @@ tags:
   - Scandinavian fine art seascape
   - Nordic coast Denmark
 ---
+
+An August sunrise at Als Odde. A small boat heads out across the calm
+  water of Mariager Fjord, surrounded by golden light and the quiet rhythm of
+  the morning.
+
+<!--more-->
+
+{{< schema-work >}}

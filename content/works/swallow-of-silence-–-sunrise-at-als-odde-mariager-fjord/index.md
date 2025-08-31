@@ -26,3 +26,12 @@ tags:
   - swallow over water Denmark
   - Nordic seascape art
 ---
+
+A quiet August morning at Als Odde, just after sunrise. A swallow skims
+  low over the still water, reflected in the soft golden light. This fleeting
+  moment of grace captures the essence of Mariager Fjord, where summer dawns
+  bring both calm and freedom to the Himmerland coast.
+
+<!--more-->
+
+{{< schema-work >}}
