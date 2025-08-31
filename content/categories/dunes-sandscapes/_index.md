@@ -1,6 +1,7 @@
-﻿---
-title: "Dunes & Sandscapes"
+---
+title: Dunes & Sandscapes
 description: "Wind-shaped dunes from North Jutland: Rubjerg Knude, Råbjerg Mile and Skagen."
+slug: dunes-sandscapes
 ---
 
 North Jutland’s dunes are always moving. At Rubjerg Knude the lighthouse stands above
