@@ -1,10 +1,7 @@
-<!-- Safe extend-head: virker når temaet kalder med .Site -->
+<!-- Safe extend-head: site-level only (no .Page usage) -->
+<!-- Remove duplicates: OG/Twitter + WebSite comes from theme already -->
 
-<!-- Open Graph (site-level) -->
-<meta property="og:site_name" content="{{ site.Title }}">
-<meta name="twitter:card" content="summary_large_image" />
-
-<!-- Schema.org: Organization (site-level) -->
+<!-- Schema.org: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -17,17 +14,5 @@
   "sameAs": [
     "https://www.instagram.com/redowlphoto"
   ]
-}
-</script>
-
-<!-- Schema.org: WebSite (site-level) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://redowlphoto.dk/#website",
-  "url": "https://redowlphoto.dk/",
-  "name": "RedOwlPhoto",
-  "inLanguage": "en"
 }
 </script>
