@@ -1,5 +1,5 @@
 ---
-title: Sailing into the Morning Light – Sunrise at Øster Hurup, Denmark
+title: Sailing into the Morning Light
 draft: false
 date: 2025-06-22
 location: Øster Hurup, Kattegat, Denmark
