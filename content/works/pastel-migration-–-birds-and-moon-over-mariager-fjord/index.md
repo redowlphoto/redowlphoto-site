@@ -1,5 +1,5 @@
 ---
-title: Pastel Migration – Birds and Moon over Mariager Fjord
+title: Pastel Migration
 draft: false
 date: 2024-11-14
 location: Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
