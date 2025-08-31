@@ -29,4 +29,4 @@ tags:
 
 <!--more-->
 
-{{< schema_work >}}
+{{< schema-work >}}
