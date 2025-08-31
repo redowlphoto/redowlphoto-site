@@ -1,0 +1,22 @@
+{{/* Kør kun på enkeltsider i sektionen "works" */}}
+{{ if and (eq .Section "works") .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["CreativeWork","ImageObject"],
+  "name": {{ .Title | jsonify }},
+  "creator": { "@type": "Person", "name": "Allan Andersen" },
+  "url": {{ .Permalink | jsonify }},
+  {{/* Forsøg at vælge et billede fra front matter/resources */}}
+  {{ $img := .Params.image }}
+  {{ if not $img }}{{ with .Resources.GetMatch "*feature*" }}{{ $img = .RelPermalink }}{{ end }}{{ end }}
+  {{ if not $img }}{{ with (index .Params.images 0) }}{{ $img = . }}{{ end }}{{ end }}
+  "image": {{ if $img }}{{ (absURL $img) | jsonify }}{{ else }}""{{ end }},
+  {{ with .Params.caption }}"caption": {{ . | jsonify }},{{ end }}
+  {{ with .Params.location }}"contentLocation": { "@type": "Place", "name": {{ . | jsonify }} },{{ end }}
+  "genre": ["Minimalist","Seascape","Fine Art"],
+  {{ with .Date }}"datePublished": "{{ .Format "2006-01-02" }}",{{ end }}
+  "inLanguage": "en"
+}
+</script>
+{{ end }}
