@@ -1,5 +1,5 @@
 ---
-title: Chromatic Stillness – Sunset at Als Odde, Mariager Fjord
+title: Chromatic Stillness
 draft: false
 date: 2025-03-31
 location: Als Odde, Mariager Fjord – Himmerland, North Jutland, Denmark
