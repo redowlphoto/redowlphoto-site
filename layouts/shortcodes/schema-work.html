@@ -1,62 +1,48 @@
-{{/* schema-work.html */}}
 {{- $p := .Page -}}
+{{- $site := .Site -}}
 
-{{- /* Find absolut billed-URL */ -}}
-{{- $img := "" -}}
-{{- with $p.Resources.GetMatch ($p.Params.cover.image) -}}
-  {{- $img = .Permalink -}}
-{{- else -}}
-  {{- with $p.Params.cover.image -}}
-    {{- if hasPrefix . "http" -}}
-      {{- $img = . -}}
-    {{- else -}}
-      {{- $img = (print $p.Permalink .) -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
+{{- $title := $p.Title -}}
+{{- $caption := or $p.Params.caption $p.Params.cover.alt -}}
+{{- $loc := $p.Params.location -}}
+{{- $imgName := $p.Params.cover.image -}}
+{{- $imgURL := cond (strings.HasPrefix $imgName "http") $imgName (printf "%s%s" $p.Permalink $imgName) -}}
 
-{{- /* Basisfelter */ -}}
-{{- $abstract := ( $p.Summary | plainify | default $p.Params.caption ) -}}
-{{- $iso      := $p.Date.Format "2006-01-02T15:04:05Z07:00" -}}
-{{- $year     := $p.Date.Format "2006" -}}
-{{- $lang     := ( $p.Site.LanguageCode | default "en" ) -}}
-{{- $authorNm := ( default "RedOwlPhoto" $p.Site.Params.author.name ) -}}
-{{- $authorURL:= ( default $p.Site.BaseURL $p.Site.Params.author.url ) -}}
+{{- $authorName := or $site.Params.author.name $site.Author.name $site.Title -}}
+{{- $authorURL := or $site.Params.author.url $site.BaseURL -}}
 
-{{- /* Article m. image + author.url */ -}}
 {{- $article := dict
   "@context" "https://schema.org"
   "@type" "Article"
   "articleSection" "Works"
-  "name" $p.Title
-  "headline" $p.Title
-  "abstract" $abstract
-  "inLanguage" $lang
+  "name" $title
+  "headline" $title
+  "abstract" ($caption | plainify)
+  "inLanguage" (or $site.Language.Lang "en")
   "url" $p.Permalink
-  "image" $img
-  "author" (dict "@type" "Person" "name" $authorNm "url" $authorURL)
-  "copyrightYear" $year
-  "dateCreated" $iso
-  "datePublished" $iso
-  "dateModified" $iso
+  "author" (dict "@type" "Person" "name" $authorName "url" $authorURL)
+  "copyrightYear" ($p.Date.Format "2006")
+  "dateCreated" ($p.Date.Format "2006-01-02T15:04:05Z07:00")
+  "datePublished" ($p.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" ($p.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "image" $imgURL
   "keywords" $p.Params.tags
   "mainEntityOfPage" true
 -}}
 
-{{- /* CreativeWork/ImageObject */ -}}
 {{- $imageObj := dict
   "@context" "https://schema.org"
   "@type" (slice "CreativeWork" "ImageObject")
-  "name" $p.Title
+  "name" $title
+  "creator" (dict "@type" "Person" "name" "Allan Andersen" "url" $authorURL)
   "url" $p.Permalink
-  "image" $img
-  "caption" $p.Params.caption
-  "contentLocation" (dict "@type" "Place" "name" $p.Params.location)
+  "image" $imgURL
+  "caption" $caption
+  "contentLocation" (cond $loc (dict "@type" "Place" "name" $loc) nil)
   "genre" (slice "Minimalist" "Seascape" "Fine Art")
   "datePublished" ($p.Date.Format "2006-01-02")
-  "inLanguage" $lang
-  "creator" (dict "@type" "Person" "name" "Allan Andersen" "url" $authorURL)
+  "inLanguage" "en"
   "sameAs" (slice "https://www.instagram.com/redowlphoto/")
 -}}
 
-<script type="application/ld+json">{{ (slice $article $imageObj) | jsonify | safeHTML }}</script>
+{{- $payload := slice $article $imageObj | jsonify -}}
+<script type="application/ld+json">{{- $payload | safeJS -}}</script>
