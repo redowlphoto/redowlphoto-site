@@ -1,5 +1,5 @@
 ---
-title: Golden Morning 2
+title: Golden Dawn 2
 draft: false
 date: 2025-08-13
 location: Als Odde, Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
