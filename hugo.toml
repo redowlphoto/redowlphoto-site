@@ -3,6 +3,11 @@ languageCode = "en"
 title        = "RedOwlPhoto"
 theme        = "blowfish"
 
+# Brug Git til automatisk lastmod + fallback-rækkefølge
+enableGitInfo = true
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+
 # Sørg for at taxonomy/term-sider rent faktisk bliver genereret
 disableKinds = []
 
