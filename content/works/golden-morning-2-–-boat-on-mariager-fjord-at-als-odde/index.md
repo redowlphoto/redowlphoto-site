@@ -1,5 +1,5 @@
 ---
-title: Golden Morning 2 – Boat on Mariager Fjord at Als Odde
+title: Golden Morning 2
 draft: false
 date: 2025-08-13
 location: Als Odde, Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
