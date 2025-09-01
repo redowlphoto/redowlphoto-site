@@ -8,7 +8,7 @@ cover:
   alt: Minimalist landscape photograph of Råbjerg Mile sand dunes near Skagen,
     Denmark, with a single person sitting alone under a wide cloudy sky.
   image: solitude-in-the-dunes.jpg
-featured: false
+featured: true
 categories:
   - dunes-sandscapes
 tags:
