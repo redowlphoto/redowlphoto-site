@@ -1,62 +1,21 @@
-{{- /* Related works nederst på enkeltsider i /works */ -}}
-{{- if and (eq .Section "works") (not .Draft) -}}
-  {{- $page := . -}}
-  {{- $pool := where site.RegularPages "Section" "works" -}}
-  {{- $pool = where $pool "Permalink" "ne" $page.Permalink -}}
+{{/* Footer-extensions only: social + diskret cookie-fri note */}}
 
-  {{- /* find matches på categories og tags */ -}}
-  {{- $byCats := slice -}}
-  {{- with $page.Params.categories -}}
-    {{- $byCats = where $pool "Params.categories" "intersect" . -}}
-  {{- end -}}
-  {{- $byTags := slice -}}
-  {{- with $page.Params.tags -}}
-    {{- $byTags = where $pool "Params.tags" "intersect" . -}}
-  {{- end -}}
+<div class="ro-footer-social">
+  <a href="https://www.instagram.com/redowlphoto/" target="_blank" rel="me noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+    <span>RedOwlPhoto</span>
+  </a>
+</div>
 
-  {{- $choices := (union $byCats $byTags) | uniq -}}
-  {{- $related := cond (gt (len $choices) 0) (first 6 $choices) (first 6 (sort $pool "Date" "desc")) -}}
+{{/* Vis cookie-fri note kun på forsiden, så den er diskret */}}
+{{ if .IsHome }}
+  <div class="ro-no-cookies">No cookies. Privacy-friendly website.</div>
+{{ end }}
 
-  {{- with $related -}}
-  <section class="mt-10 pt-6 border-t">
-    <h2 class="text-xl font-semibold mb-4">Related works</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-      {{- range . -}}
-        <a class="group block" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-          {{- $res := false -}}
-          {{- with .Params.cover.image -}}
-            {{- $res = (.Resources.GetMatch (printf "*%s*" .)) -}}
-          {{- end -}}
-          {{- if $res -}}
-            {{- $thumb := $res.Fit "600x400 q75" -}}
-            <figure class="rounded-lg overflow-hidden aspect-[4/3]">
-              <img loading="lazy" decoding="async"
-                   src="{{ $thumb.RelPermalink }}"
-                   alt="{{ $.Title }}"
-                   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-            </figure>
-          {{- else -}}
-            {{- with .Params.cover.image -}}
-              <figure class="rounded-lg overflow-hidden aspect-[4/3]">
-                <img loading="lazy" decoding="async"
-                     src="{{ . | relURL }}"
-                     alt="{{ $.Title }}"
-                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              </figure>
-            {{- end -}}
-          {{- end -}}
-          <p class="mt-2 text-sm opacity-80 group-hover:opacity-100">{{ .Title }}</p>
-        </a>
-      {{- end -}}
-    </div>
-  </section>
-  {{- end -}}
-{{- end -}}
-<div class="ro-no-cookies">No cookies. Privacy-friendly Website.</div>
 <style>
-  .ro-no-cookies{
-    margin-top:.5rem;
-    opacity:.75;
-    font-size:.95rem;
-  }
+  .ro-footer-social{margin-top:.75rem}
+  .ro-footer-social a{display:inline-flex;align-items:center;gap:.5rem;opacity:.9;text-decoration:none}
+  .ro-footer-social a:hover{opacity:1}
+  .ro-footer-social svg{width:20px;height:20px;vertical-align:middle}
+  .ro-no-cookies{margin-top:.5rem;opacity:.75;font-size:.95rem}
 </style>
