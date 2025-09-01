@@ -26,9 +26,6 @@ tags:
   - Scandinavian fine art nature
   - Nordic minimalist seascape
 ---
-
-
-
 On a quiet May morning, a mute swan glides across the pastel-colored surface of Mariager Fjord.
 
 The calm spring light reflects gently in the water, creating a serene atmosphere typical of Himmerland’s fjords.
@@ -41,7 +38,7 @@ and is also part of the [Warm Pastels series](https://redowlphoto.dk/categories/
 
 where soft tones and calm light define the Nordic landscape.
 
-For handpicked highlights, you can also visit my [Curated Picks](https://redowlphoto.dk/categories/curated-picks/?utm_source=chatgpt.com).
+For a selection of works awarded in international competitions or curated by galleries for exhibitions and sales, you can also visit my [Curated Picks](https://redowlphoto.dk/categories/curated-picks/?utm_source=chatgpt.com).
 
 If you want to explore the area yourself, Mariager Fjord is one of Denmark’s most scenic fjords.
 
@@ -50,8 +47,5 @@ Read more at [Visit Himmerland – Mariager Fjord](https://www.visithimmerland.d
 or [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
 
 {{< schema-work >}}
-
-
-
 
 <!--more-->
