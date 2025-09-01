@@ -280,22 +280,21 @@ main .prose{
   margin-right: auto !important;
 }
 
-/* Gør selve læsekolonnen (prose/content) bredere og centreret */
-.article-content,
-.content > article,
-.content > .prose,
-.single .prose,
-.page .prose{
-  /* lidt bredere læselinje – justér 72–80ch efter smag */
-  max-width: 78ch !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 /* Lidt mindre top-luft under headeren (du har en regel allerede; denne vinder) */
 main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 
 /* === Match Works/Home-bredden (samme som .ro-wrap) for About/Blog === */
+/* Lists (Works index, Blog index) and pages should span the site width */
+.content > article{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Let prose inherit the container width (don’t clamp to reading column) */
+.prose{ max-width: inherit !important; }
 
 /* Selve artikelteksten (Markdown-renderet) */
 .single .prose,
