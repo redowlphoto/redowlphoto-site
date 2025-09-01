@@ -490,29 +490,29 @@ body{
 .footer .footer-meta span:nth-child(2){ display: none !important; }
 
 /* =========================================
-   MOBIL: Ens side-margener på sider UDEN grid
-   (påvirker ikke .ro-wrap og ikke elementer med .grid)
+   MOBIL: Ens side-margener for sider UDEN grid
+   (rører ikke .ro-wrap / grid-sider)
    ========================================= */
-@media (max-width: 10px){
-  /* direkte børn af #main-content der typisk holder indholdet */
-  #main-content > :where(header, section, article, div)
-    :not(.ro-wrap):not(.grid) {
+@media (max-width: 900px){
+  /* Top-niveau blokke i <main>, uden vores egen wrapper eller grid */
+  #main-content > :where(header, section, article, div):not(.ro-wrap):not(.grid){
     padding-left: var(--ro-pad-x) !important;
     padding-right: var(--ro-pad-x) !important;
   }
 
-  /* sikre at “løse” blokke også flugter */
+  /* Typiske wrappers på About/Blog/Single/List */
   .page-header,
   .article-header,
   .article-content,
-  .prose:not(.grid) {
+  .prose:not(.grid),
+  .list:not(.grid){
     padding-left: var(--ro-pad-x) !important;
     padding-right: var(--ro-pad-x) !important;
   }
 
-  /* kommentar- og footer-områder skal have samme kant */
-  .giscus-wrap,
-  .site-footer, .page-footer, footer {
+  /* Kommentarer + footer skal flugte med samme kant */
+  .giscus, .giscus-wrap,
+  .site-footer, .page-footer, footer{
     padding-left: var(--ro-pad-x) !important;
     padding-right: var(--ro-pad-x) !important;
   }
