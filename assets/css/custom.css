@@ -5,11 +5,15 @@
 
 /* ---------- Globale variabler (ændr størrelser her) ---------- */
 :root{
-  /* vandret indryk + responsiv max-bredde (op til ~1680px) */
+  /* Vandret indryk (side-margin som padding) */
   --ro-pad-x: clamp(16px, 3vw, 32px);
-  --ro-maxw: clamp(1200px, 90vw, 1680px);
 
-  /* overskrifter */
+  /* Responsiv max-bredde:
+     = mindste af 1680px og (skærmbredde minus begge side-margener).
+     Så er der ALTID luft i siderne – også på mobil. */
+  --ro-maxw: min(1680px, calc(100vw - 2 * var(--ro-pad-x)));
+
+  /* Overskrifter */
   --ro-h1-size: clamp(3.25rem, 6.5vw, 5.75rem);
   --ro-works-h1: clamp(5.6rem, 10.4vw, 9.5rem);
 }
