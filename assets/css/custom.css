@@ -203,3 +203,55 @@ h1.title,
   }
 }
 
+/* =========================================
+   DESKTOP TWEAKS – bredere layout + mindre top-luft
+   ========================================= */
+
+/* Mindre luft under headeren */
+main { padding-top: clamp(0.25rem, 0.8vw, 0.75rem) !important; }
+
+/* Brug lidt større global max-bredde på store skærme */
+@media (min-width: 1200px){
+  :root{ --ro-maxw: 1320px; }  /* prøv 1360px eller 1400px hvis du vil have mere */
+}
+
+/* Sørg for at single-sider (About/Blog) bruger hele max-bredden og er centrerede */
+.single main .container,
+.single main .content,
+.single main .article-container,
+.page main .container,
+.page main .content,
+.page main .article-container,
+main .prose{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Blowfish sætter nogle gange en smal max-width på .prose */
+.prose{ max-width: none !important; }
+
+/* =========================================
+   ABOUT – Portræt layout
+   ========================================= */
+
+/* Gælder den wrapper vi brugte i shortcode'n (class="portrait") */
+.portrait{
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* To kolonner på desktop: billede til venstre, tekst til højre */
+@media (min-width: 980px){
+  .portrait{
+    grid-template-columns: 380px 1fr; /* justér 360–420 efter smag */
+    align-items: start;
+  }
+}
+
+.portrait figure{ margin: 0; }
+.portrait img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
