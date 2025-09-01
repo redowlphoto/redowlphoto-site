@@ -1,149 +1,146 @@
 ﻿/* =========================================================
-   RedOwlPhoto – Custom CSS
-   Placering: assets/css/custom.css
+   RedOwlPhoto – Custom CSS  (assets/css/custom.css)
    ========================================================= */
 
 /* ---------- Globale variabler ---------- */
 :root{
-  /* vandrette margener + samlet max-bredde for indhold */
-  --ro-pad-x: clamp(16px, 3vw, 32px);
-  --ro-maxw: clamp(1200px, 90vw, 1440px);
-
-  /* overskrifter */
-  --ro-h1-size: clamp(3.25rem, 6.5vw, 5.75rem);
-  --ro-works-h1: clamp(5.6rem, 10.4vw, 9.5rem);
+  --ro-pad-x: clamp(16px, 4vw, 28px);     /* sidepadding */
+  --ro-maxw: 1200px;                      /* base site-bredde */
 }
 
-/* ---------- Små poleringer ---------- */
-.heading-anchor{ display:none !important; }                 /* skjul # ankre */
-.site-footer, footer, .page-footer{ border-top:none !important; }
-.site-footer hr, .page-footer hr, footer hr{ display:none !important; }
-.ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
+/* lidt bredere på store skærme */
+@media (min-width: 1280px){ :root{ --ro-maxw: 1320px; } }
+@media (min-width: 1536px){ :root{ --ro-maxw: 1440px; } }
+
+/* ---------- Små generelle tweaks ---------- */
+.heading-anchor{ display:none !important; }              /* skjul # ankre */
+.site-footer, footer, .page-footer{ border-top: none; }
+.site-footer hr, .page-footer hr, footer hr{ display:none; }
+
+/* skjul "Powered by Hugo & Blowfish" uanset rækkefølge/tema */
+.footer-meta a[href*="blowfish"],
+.footer-meta a[href*="gohugo"]{ display:none !important; }
+
+/* Instagram-linje i footer */
+.ro-footer-social{ margin-top:.75rem }
+.ro-footer-social a{ display:inline-flex; gap:.5rem; opacity:.9; text-decoration:none }
+.ro-footer-social a:hover{ opacity:1 }
+.ro-footer-social svg{ width:20px; height:20px }
+
+/* Forsidens tagline */
 .ro-tagline{ color:inherit !important; opacity:.9 }
 
-/* ---------- Header-typografi ---------- */
-header .brand,
-header .site-brand,
-header .site-title,
-header .site-name,
-.site-header .brand,
-.site-header .site-brand,
-.site-header .site-title,
-.site-header .site-name{
-  font-size:clamp(1.35rem, 1.3vw + 1.05rem, 1.75rem) !important;
-  font-weight:700 !important;
-  letter-spacing:.01em; line-height:1.15 !important;
+/* Header-typografi (let opstramning) */
+header .brand, .site-header .brand,
+header .site-title, .site-header .site-title{
+  font-size: clamp(1.35rem, 1.3vw + 1.05rem, 1.75rem) !important;
+  font-weight:700 !important; line-height:1.15 !important;
 }
-header nav a, header .menu a, .site-header nav a, .site-header .menu a{
-  font-size:clamp(1.2rem, 1.05vw + 0.95rem, 1.45rem) !important;
+header nav a, .site-header nav a{
+  font-size: clamp(1.1rem, 1.05vw + .9rem, 1.35rem) !important;
   font-weight:600 !important; line-height:1.15 !important;
   text-underline-offset:.2em;
 }
-header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !important; }
-@media (max-width:820px){
-  header nav a, header .menu a, .site-header nav a, .site-header .menu a{ font-size:1rem !important; }
-  header .brand, .site-header .brand{ font-size:1.15rem !important; }
+header, .site-header{ padding-block:.55rem !important; }
+@media (max-width: 820px){
+  header nav a{ font-size:1rem !important; }
+  header .brand{ font-size:1.15rem !important; }
 }
 
 /* =========================================================
-   Ens bredde/gutters på ALLE sider (match Works/Forside)
+   1) Ens bredde og side-padding på ALLE sider
+   – matcher forsiden/Works
    ========================================================= */
 
-/* Centrer og giv samme max-bredde til typiske Blowfish-wrappers */
-:where(main, #main-content)
-  > :where(.container, .content, .content-wrapper, .article-container,
-           .page, .prose, .page-header, .article-header, .list){
+/* primære wrappers i <main> – centrer og begræns bredde */
+main,
+#main-content,
+main .container,
+main .content,
+main .article-container,
+main .page,
+main .list,
+main .terms,
+.page-header,
+.article-header{
   max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
 
-/* Selve tekstkolonnen må IKKE være kunstigt smal */
-.prose{ max-width: var(--ro-maxw) !important; }
-
-/* Kommentarer (giscus) skal også flugte */
-.giscus-wrap{
-  max-width: var(--ro-maxw) !important;
-  margin-left:auto !important; margin-right:auto !important;
-  padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
+/* Blowfish/Tailwind giver ofte smal læsekolonne via .prose – fjern den */
+.prose{
+  max-width: 100% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding-left: 0 !important;  /* styres af wrapper ovenfor */
+  padding-right: 0 !important;
 }
 
-/* Lidt mindre top-luft under headeren */
-main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
+/* Lidt mindre top-luft under headeren, ens overalt */
+main{ padding-top: clamp(.35rem, .9vw, .9rem) !important; }
 
-/* ---------- Mobil: sikre pæne side-margener ---------- */
-@media (max-width: 768px){
-  :where(main, #main-content)
-    > :where(.container, .content, .content-wrapper, .article-container,
-             .page, .prose, .page-header, .article-header, .list){
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+/* =========================================================
+   2) About-layout: første billede flyder pænt til højre
+   – falder tilbage til fuld bredde på mobil
+   ========================================================= */
+
+/* desktop/tablet */
+@media (min-width: 980px){
+  /* første “løse” billede eller figure i indholdet */
+  .page main .prose > p:first-of-type > img,
+  .page main .prose > figure:first-of-type img{
+    float:right;
+    max-width: min(40vw, 420px);
+    margin: .25rem 0 1rem 1.25rem;
+    border-radius: 14px;
+  }
+}
+/* mobil: centrer og drop float */
+@media (max-width: 979.98px){
+  .page main .prose > p:first-of-type > img,
+  .page main .prose > figure:first-of-type img{
+    float:none; display:block;
+    max-width: min(100%, 520px);
+    margin: .75rem auto 1rem;
+    border-radius: 14px;
   }
 }
 
 /* =========================================================
-   Forside: caption under slideshow
+   3) Giscus (kommentarer) – pæn indpasning
    ========================================================= */
+.giscus-wrap{
+  max-width: var(--ro-maxw);
+  margin-inline:auto;
+  padding-inline:var(--ro-pad-x);
+}
+.giscus{ margin-top:.5rem; }
+.giscus > iframe.giscus-frame{ background:transparent !important; border-radius:10px; }
+
+/* =========================================================
+   4) Works/hero små-poleringer der matcher bredden
+   ========================================================= */
+.ro-wrap{
+  max-width: var(--ro-maxw) !important;
+  margin-inline:auto !important;
+  padding-inline:var(--ro-pad-x) !important;
+}
 .ro-hero-cap{
   margin-top:.6rem;
   font-size:clamp(.95rem, 1.4vw, 1.1rem);
-  line-height:1.55;
-  opacity:.85;
+  line-height:1.55; opacity:.85;
 }
+
+/* Kategori-badges: lidt rundere */
+.ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
 /* =========================================================
-   Works-overskrift (beholder din store H1)
+   5) Mobil-sikkerhed: sørg for altid at have kant-margener
    ========================================================= */
-.ro-h1{
-  font-size: var(--ro-works-h1) !important;
-  font-weight: 800 !important;
-  letter-spacing: -.01em;
-  line-height: 1.15 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
-
-/* Øvrige H1-varianter (Blog/About/indlæg) */
-main :is(h1, h2, p).title,
-main :is(h1, h2, p).page-title,
-main header :is(h1, h2, p).title,
-main header :is(h1, h2, p).page-title,
-.page-header :is(h1, h2, p).title,
-.page-header :is(h1, h2, p).page-title,
-.article-header :is(h1, h2, p).title,
-.article-header :is(h1, h2, p).page-title,
-h1.page-title, h1.title, .single-title, .post-title, .article-title, .list-title{
-  font-size: var(--ro-h1-size) !important;
-  font-weight: 800 !important;
-  letter-spacing: -.01em;
-  line-height: 1.15 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
-
-/* =========================================================
-   About – portræt-billede (kun hvis du giver billedet klassen .about-photo)
-   ========================================================= */
-.about-photo{
-  display:block;
-  float:right;
-  max-width: clamp(260px, 32vw, 420px);
-  margin: .25rem 0 1rem 1.25rem;
-  border-radius: 14px;
-  overflow:hidden;
-}
-.about-photo img{ width:100%; height:auto; display:block; }
-
-@media (max-width: 900px){
-  .about-photo{
-    float:none;
-    margin:.75rem auto 1rem;
-    max-width:min(100%, 520px);
-  }
-}
-
-/* (pænt iframe-look til giscus – valgfrit) */
-.giscus > iframe.giscus-frame{
-  background: transparent !important;
-  border-radius: 10px;
+@media (max-width: 640px){
+  body{ padding-left:0; padding-right:0; } /* fjern evt. globale overrides */
+  main, #main-content{ padding-inline: var(--ro-pad-x) !important; }
 }
