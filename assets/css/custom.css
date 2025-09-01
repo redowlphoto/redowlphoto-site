@@ -5,17 +5,15 @@
 
 /* ---------- Globale variabler (ændr størrelser her) ---------- */
 :root{
-  /* vandret indryk + max bredde */
-  --ro-pad-x: clamp(1rem, 4vw, 3rem);
-  --ro-maxw: 1200px;
+  /* vandret indryk + responsiv max-bredde (op til ~1680px) */
+  --ro-pad-x: clamp(16px, 3vw, 32px);
+  --ro-maxw: clamp(1200px, 90vw, 1680px);
 
-  /* SIDE-OVERSKRIFTER
-     - Blog/About m.fl. bruger --ro-h1-size
-     - Works bruger --ro-works-h1
-     -> Skru op/ned efter smag */
+  /* overskrifter */
   --ro-h1-size: clamp(3.25rem, 6.5vw, 5.75rem);
   --ro-works-h1: clamp(5.6rem, 10.4vw, 9.5rem);
 }
+
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
 .heading-anchor{ display: none !important; }
@@ -346,6 +344,63 @@ main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 #main-content .page-header,
 #main-content .article-header,
 #main-content .list {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* === Ens, stor bredde + centrering på ALLE sider (som Works/Home) === */
+
+/* Gør selve body bredere og med mindre side-padding på desktop */
+body{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Centrer <main> og alle top-sektioner i main */
+#main-content{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Ram alle typiske Blowfish/Tailwind-wrappers på single- og page-views */
+.page main > .container,
+.page main > .content,
+.page main > .article-container,
+.single main > .container,
+.single main > .content,
+.single main > .article-container,
+.list main > .container,
+.list main > .content,
+.list main > .article-container,
+#main-content > .container,
+#main-content > .content,
+#main-content > .article-container,
+#main-content .page-header,
+#main-content .article-header{
+  max-width: var(--ro-maxw) !important;
+  width: min(100%, var(--ro-maxw)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Gør selve tekstkolonnen (.prose) lige så bred og centreret */
+.prose,
+.single .prose,
+.page .prose,
+.content .prose,
+.article-content,
+.article .prose{
   max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
   margin-right: auto !important;
