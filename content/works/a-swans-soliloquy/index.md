@@ -46,6 +46,6 @@ Read more at [Visit Himmerland – Mariager Fjord](https://www.visithimmerland.d
 
 or [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
 
-{{< schema-work >}}
-
 <!--more-->
+
+{{< schema-work >}}
