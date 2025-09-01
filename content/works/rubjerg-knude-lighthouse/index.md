@@ -24,17 +24,14 @@ tags:
   - Scandinavian fine art landscape
   - Nordic travel photography
 ---
+Rubjerg Knude Lighthouse stands among the migrating dunes on the North Jutland west coast and is one of Denmark’s most distinctive coastal landscapes. This photograph, taken on an August evening, shows the lighthouse in soft light with sand dunes in the foreground and open sky beyond.
 
+See more works in my [Dunes & Sandscapes collection](https://redowlphoto.dk/categories/dunes-sandscapes/?utm_source=chatgpt.com).
 
+For a selection of works awarded in international competitions or curated by galleries for exhibitions and sales, you can also visit my [Curated Picks](https://redowlphoto.dk/categories/curated-picks/?utm_source=chatgpt.com).
 
-Rubjerg Knude Fyr står blandt de vandrende klitter på Nordjyllands vestkyst og er i dag et af Danmarks mest markante kystlandskaber. Dette fotografi, taget en augustaften, viser fyret i blødt lys med sandklitterne i forgrunden og den åbne himmel bagved.
-
-Se flere værker i min [Dunes & Sandscapes collection](https://redowlphoto.dk/categories/dunes-sandscapes/?utm_source=chatgpt.com).
-
-Planlægger du et besøg, kan du læse mere hos [Enjoy Nordjylland](https://www.enjoynordjylland.dk/?utm_source=chatgpt.com) eller [Visit Nordvestkysten – Lønstrup](https://www.visitnordvestkysten.dk/nordvestkysten/feriesteder/loenstrup?utm_source=chatgpt.com).
+If you’re planning a visit, read more at [Enjoy Nordjylland](https://www.enjoynordjylland.dk/?utm_source=chatgpt.com) or [Visit Nordvestkysten – Lønstrup](https://www.visitnordvestkysten.dk/nordvestkysten/feriesteder/loenstrup?utm_source=chatgpt.com).
 
 {{< schema-work >}}
-
-
 
 <!--more-->
