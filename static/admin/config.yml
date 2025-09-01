@@ -111,7 +111,12 @@ collections:
     fields:
       - { label: "Title",        name: "title", widget: "string" }
       - { label: "Publish Date", name: "date",  widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Body",         name: "body",  widget: "markdown" }
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        default: |
+
+          {{< comments >}}
 
   - name: "site"
     label: "Site Settings"
