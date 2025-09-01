@@ -488,3 +488,32 @@ body{
 
 /* Skjul "Powered by Hugo & Blowfish" (igen, med !important) */
 .footer .footer-meta span:nth-child(2){ display: none !important; }
+
+/* =========================================
+   MOBIL: Ens side-margener på sider UDEN grid
+   (påvirker ikke .ro-wrap og ikke elementer med .grid)
+   ========================================= */
+@media (max-width: 768px){
+  /* direkte børn af #main-content der typisk holder indholdet */
+  #main-content > :where(header, section, article, div)
+    :not(.ro-wrap):not(.grid) {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+
+  /* sikre at “løse” blokke også flugter */
+  .page-header,
+  .article-header,
+  .article-content,
+  .prose:not(.grid) {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+
+  /* kommentar- og footer-områder skal have samme kant */
+  .giscus-wrap,
+  .site-footer, .page-footer, footer {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+}
