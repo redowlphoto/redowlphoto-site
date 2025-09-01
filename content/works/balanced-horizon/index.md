@@ -27,27 +27,21 @@ tags:
   - nature photography Denmark
   - redowlphoto
 ---
-A minimalist seascape from Øster Hurup on the Kattegat coast, captured on a calm early morning. 
+A minimalist seascape from Øster Hurup on the Kattegat coast, captured on a calm August morning.
 
-Sea mist drifts in from the north, soft sunlight is partly veiled by haze, and reflections spread across the still water. 
+Sea mist drifts in from the north, soft sunlight is partly veiled by haze, and reflections spread across the still water.
 
-This August scene reflects the quiet beauty of Mariager Fjord’s coastal villages and the changing light of Himmerland.
+This scene reflects the quiet beauty of **Mariager Fjord**’s coastal villages, the timeless atmosphere of **North Jutland**, and the changing light of Himmerland.
 
+See more works in my [Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/?utm_source=chatgpt.com)
 
+and the [Cool Blues series](https://redowlphoto.dk/categories/cool-blues/?utm_source=chatgpt.com).
 
-See more works in my \[Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/) 
+For a selection of works awarded in international competitions or curated by galleries for exhibitions and sales, you can also visit my [Curated Picks](https://redowlphoto.dk/categories/curated-picks/?utm_source=chatgpt.com).
 
-and the \[Cool Blues series](https://redowlphoto.dk/categories/cool-blues/).  
+If you’re planning a visit, read more about [Mariager Fjord at Visit Himmerland](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491?utm_source=chatgpt.com)
 
-For a selection of works awarded in international competitions or curated by galleries for exhibitions and sales, you can also visit my \[Curated Picks](https://redowlphoto.dk/categories/curated-picks/).  
-
-
-
-If you’re planning a visit, read more about \[Mariager Fjord at Visit Himmerland](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491) 
-
-or explore the region at \[Visit Himmerland](https://www.visithimmerland.dk).  
-
-
+or explore the region at [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
 
 <!--more-->
 
