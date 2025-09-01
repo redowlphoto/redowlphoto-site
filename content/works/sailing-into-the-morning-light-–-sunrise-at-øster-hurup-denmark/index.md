@@ -27,12 +27,22 @@ tags:
   - sailboat at sunrise Denmark
   - Scandinavian fine art photography
 ---
+On a calm summer morning by **Øster Hurup** on the Kattegat coast, a lone sailboat drifts across the still water under a pastel-colored sky.
 
-A calm summer morning by Øster Hurup on the Kattegat coast. The still
-  water, soft pastel sky and a lone sailboat capture the essence of freedom and
-  quiet beauty by Mariager Fjord and Himmerland’s coastline. A reminder of how
-  simple moments at sea can hold timeless meaning.
+The scene captures both the freedom of sailing and the quiet beauty of **Mariager Fjord** and **Himmerland’s coastline**, where the light of early summer mornings creates a timeless atmosphere.
 
-  <!--more-->
+This photograph highlights how even the simplest moments at sea can hold depth and meaning.
+
+See more works in my [Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/?utm_source=chatgpt.com)
+
+and the [Cool Blues series](https://redowlphoto.dk/categories/cool-blues/?utm_source=chatgpt.com).
+
+For a selection of works awarded in international competitions or curated by galleries for exhibitions and sales, you can also visit my [Curated Picks](https://redowlphoto.dk/categories/curated-picks/?utm_source=chatgpt.com).
+
+If you are planning a visit, read more about [Mariager Fjord at Visit Himmerland](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491?utm_source=chatgpt.com)
+
+or explore the region at [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
+
+<!--more-->
 
 {{< schema-work >}}
