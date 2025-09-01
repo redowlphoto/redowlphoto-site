@@ -462,3 +462,29 @@ body{
 
 /* Skjul "Powered by Hugo & Blowfish" igen */
 .footer .footer-meta span:nth-child(2){ display: none !important; }
+
+/* =========================================================
+   Desktop container-bredde (gælder også Blog-listen)
+   - Overstyrer Tailwinds body: max-w-7xl + store paddings
+   - Mobil/tablet er urørt
+   ========================================================= */
+@media (min-width: 1280px){
+  body{
+    max-width: var(--ro-maxw) !important;                 /* fx 1320–1680px alt efter din :root */
+    padding-left: clamp(16px, 2.5vw, 32px) !important;    /* samme side-padding som Works/Forside */
+    padding-right: clamp(16px, 2.5vw, 32px) !important;
+  }
+}
+
+/* Sikkerhedsnet: topsektioner i <main> centreres som på Works */
+#main-content > header,
+#main-content > section{
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Skjul "Powered by Hugo & Blowfish" (igen, med !important) */
+.footer .footer-meta span:nth-child(2){ display: none !important; }
