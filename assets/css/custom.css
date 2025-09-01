@@ -157,3 +157,29 @@ h1.title,
   line-height:1.55;
   opacity:.85;
 }
+
+/* =========================================================
+   10) Kommentarer (giscus) – container, note og spacing
+   ========================================================= */
+.giscus-wrap{
+  max-width: var(--ro-maxw);
+  margin-left: auto; margin-right: auto;
+  padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x);
+}
+
+.giscus-note{
+  font-size: .95rem;
+  opacity: .75;
+  margin: .25rem 0 .5rem;
+  color: inherit;            /* følger temaets farve */
+}
+
+.giscus{
+  margin-top: .5rem;         /* lidt luft over selve boksen */
+}
+
+/* (valgfrit) rund hjørner/transparent baggrund på iframe */
+.giscus > iframe.giscus-frame{
+  background: transparent !important;
+  border-radius: 10px;
+}
