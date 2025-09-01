@@ -26,7 +26,7 @@ tags:
 ---
 Rubjerg Knude Lighthouse rises above the shifting dunes of Lønstrup on Denmark’s North Sea coast, one of North Jutland’s most distinctive coastal landmarks.
 
-Photographed on an August evening, the lighthouse is bathed in soft light with the sand dunes in the foreground and the vast open sky beyond, capturing both the cultural heritage and the raw coastal nature of Denmarks’s western shoreline.
+Photographed on an August evening, the lighthouse is bathed in soft light with the sand dunes in the foreground and the vast open sky beyond, capturing both the cultural heritage and the raw coastal nature of Vendsyssel’s western shoreline.
 
 See more works in my [Dunes & Sandscapes collection](https://redowlphoto.dk/categories/dunes-sandscapes/?utm_source=chatgpt.com).
 
