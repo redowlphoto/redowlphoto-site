@@ -493,7 +493,7 @@ body{
    MOBIL: Ens side-margener på sider UDEN grid
    (påvirker ikke .ro-wrap og ikke elementer med .grid)
    ========================================= */
-@media (max-width: 768px){
+@media (max-width: 2000px){
   /* direkte børn af #main-content der typisk holder indholdet */
   #main-content > :where(header, section, article, div)
     :not(.ro-wrap):not(.grid) {
