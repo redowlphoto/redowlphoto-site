@@ -406,3 +406,32 @@ body{
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
+
+/* =========================================================
+   FIX: Works – gitter i 3 / 2 / 1 kolonner
+   (tvinger list/grid tilbage til multi-kolonner på desktop)
+   ========================================================= */
+
+/* Gælder kun listesider (Works) med grid */
+.list #main-content .grid,
+.list #main-content [class*="grid-cols"]{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important; /* desktop: 3 */
+  gap: 1.25rem !important; /* hold samme mellemrum */
+}
+
+/* Tablet: 2 kolonner */
+@media (max-width: 1024px){
+  .list #main-content .grid,
+  .list #main-content [class*="grid-cols"]{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Mobil: 1 kolonne */
+@media (max-width: 640px){
+  .list #main-content .grid,
+  .list #main-content [class*="grid-cols"]{
+    grid-template-columns: 1fr !important;
+  }
+}
