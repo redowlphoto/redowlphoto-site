@@ -26,11 +26,11 @@ tags:
   - Scandinavian fine art seascape
   - Nordic coast Denmark
 ---
-An August sunrise over Als Odde, where the rising sun paints Mariager Fjord in glowing gold.
+An August sunrise at Als Odde on the Kattegat coast, where the rising sun paints Mariager Fjord in glowing gold.
 
-A sailboat drifts on the horizon, reflecting the freedom of summer mornings by the Himmerland coast.
+A sailboat drifts on the horizon, embodying the freedom of summer mornings by Hadsund and the quiet beauty of the Himmerland coast.
 
-This scene captures the quiet rhythm of North Jutland’s fjords, where light and water meet in timeless harmony.
+This scene captures the timeless rhythm of North Jutland’s fjords, where golden light meets the still waters of Denmark’s east coast.
 
 See more works in my [Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/?utm_source=chatgpt.com).
 
@@ -39,7 +39,6 @@ For a selection of works awarded in international competitions or curated by gal
 If you are planning a visit, read more about [Mariager Fjord at Visit Himmerland](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491?utm_source=chatgpt.com)
 
 or explore the region at [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
-
 
 <!--more-->  
 
