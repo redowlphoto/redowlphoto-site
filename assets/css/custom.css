@@ -111,8 +111,6 @@ main .prose h1:first-child{ margin-top:.25rem !important; }
 
 /* =========================================================
    9) SIDE-OVERSKRIFTER (H1)
-   - Works: .ro-h1 (fra Works-list skabelonen)
-   - Øvrige (Blog/About/indlæg): griber Blowfish’ titel-varianter
    ========================================================= */
 
 /* Works-side (bruger variablen kun for Works) */
@@ -148,10 +146,13 @@ h1.title,
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
-/* Hide "Powered by Hugo & Blowfish" in footer */
-.footer .footer-meta span:nth-child(2) { display: none; }
+
+/* Skjul "Powered by Hugo & Blowfish" i footer */
+.footer .footer-meta span:nth-child(2) { display: none !important; }
+
 /* Cookie-free note */
 .ro-no-cookies { margin-top:.5rem; opacity:.78; font-size:.95rem; }
+
 /* Forside: caption under slideshow */
 .ro-hero-cap{
   margin-top:.6rem;
@@ -173,14 +174,13 @@ h1.title,
   font-size: .95rem;
   opacity: .75;
   margin: .25rem 0 .5rem;
-  color: inherit;            /* følger temaets farve */
+  color: inherit;
 }
 
 .giscus{
-  margin-top: .5rem;         /* lidt luft over selve boksen */
+  margin-top: .5rem;
 }
 
-/* (valgfrit) rund hjørner/transparent baggrund på iframe */
 .giscus > iframe.giscus-frame{
   background: transparent !important;
   border-radius: 10px;
@@ -212,9 +212,9 @@ h1.title,
 /* Mindre luft under headeren */
 main { padding-top: clamp(0.25rem, 0.8vw, 0.75rem) !important; }
 
-/* Brug lidt større global max-bredde på store skærme */
+/* Brug større global max-bredde på store skærme */
 @media (min-width: 1200px){
-  :root{ --ro-maxw: 1320px; }  /* prøv 1360px eller 1400px hvis du vil have mere */
+  :root{ --ro-maxw: 1680px; }  /* var 1320px */
 }
 
 /* Sørg for at single-sider (About/Blog) bruger hele max-bredden og er centrerede */
@@ -237,7 +237,6 @@ main .prose{
    ABOUT – Portræt layout
    ========================================= */
 
-/* Gælder den wrapper vi brugte i shortcode'n (class="portrait") */
 .portrait{
   display: grid;
   gap: 1.25rem;
@@ -246,7 +245,7 @@ main .prose{
 /* To kolonner på desktop: billede til venstre, tekst til højre */
 @media (min-width: 980px){
   .portrait{
-    grid-template-columns: 380px 1fr; /* justér 360–420 efter smag */
+    grid-template-columns: 400px 1fr; /* var 380px */
     align-items: start;
   }
 }
@@ -260,14 +259,12 @@ main .prose{
 
 /* ===== Desktop: brug mere bredde + centrer sider (overstyrer Tailwind) ===== */
 
-/* Gør hele siden (body) lidt bredere og reducerer stor sidepadding på desktop */
+/* Gør body bred og med samme side-padding som globalt (desktop) */
 @media (min-width: 1100px){
   body{
-    /* match din globale variabel – justér til 1360/1400px hvis du vil have mere */
     max-width: var(--ro-maxw) !important;
-    /* mindre sidepadding end Tailwinds lg:px-32 */
-    padding-left: clamp(16px, 1.6vw, 24px) !important;
-    padding-right: clamp(16px, 1.6vw, 24px) !important;
+    padding-left: var(--ro-pad-x) !important;   /* var clamp(16px, 1.6vw, 24px) */
+    padding-right: var(--ro-pad-x) !important;  /* var clamp(16px, 1.6vw, 24px) */
   }
 }
 
@@ -288,7 +285,6 @@ main .prose{
 main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 
 /* === Match Works/Home-bredden (samme som .ro-wrap) for About/Blog === */
-/* Lists (Works index, Blog index) and pages should span the site width */
 .content > article{
   max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
@@ -297,7 +293,6 @@ main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
   padding-right: var(--ro-pad-x) !important;
 }
 
-/* Let prose inherit the container width (don’t clamp to reading column) */
 .prose{ max-width: inherit !important; }
 
 /* Selve artikelteksten (Markdown-renderet) */
@@ -334,12 +329,11 @@ main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 
 /* === Ens bredde på ALLE sider (match Works/Home) === */
-/* Sæt alle top-niveau elementer i <main> til samme max-bredde og side-padding */
 #main-content > *:not(style):not(script) {
-  max-width: var(--ro-maxw) !important;           /* 1200px som på Works/Home */
+  max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;       /* samme side-padding */
+  padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
 
@@ -356,7 +350,7 @@ main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 
 /* === Ens, stor bredde + centrering på ALLE sider (som Works/Home) === */
 
-/* Gør selve body bredere og med mindre side-padding på desktop */
+/* Gør selve body bred og med samme side-padding som globalt (alle skærme) */
 body{
   max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
@@ -413,7 +407,6 @@ body{
 
 /* =========================================================
    FIX: Works – gitter i 3 / 2 / 1 kolonner
-   (tvinger list/grid tilbage til multi-kolonner på desktop)
    ========================================================= */
 
 /* Gælder kun listesider (Works) med grid */
@@ -421,7 +414,7 @@ body{
 .list #main-content [class*="grid-cols"]{
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important; /* desktop: 3 */
-  gap: 1.25rem !important; /* hold samme mellemrum */
+  gap: 1.25rem !important;
 }
 
 /* Tablet: 2 kolonner */
@@ -440,10 +433,7 @@ body{
   }
 }
 
-/* =========================================================
-   FIX: Works – gitter tilbage i 3 / 2 / 1 kolonner
-   (ram .ro-grid i stedet for Tailwind .grid)
-   ========================================================= */
+/* Gælder vores egen .ro-grid (fx Works forside) */
 .ro-grid{
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important; /* desktop */
@@ -464,33 +454,7 @@ body{
   }
 }
 
-/* Skjul "Powered by Hugo & Blowfish" igen */
-.footer .footer-meta span:nth-child(2){ display: none !important; }
-
-/* =========================================================
-   Desktop container-bredde (gælder også Blog-listen)
-   - Overstyrer Tailwinds body: max-w-7xl + store paddings
-   - Mobil/tablet er urørt
-   ========================================================= */
-@media (min-width: 1280px){
-  body{
-    max-width: var(--ro-maxw) !important;                 /* fx 1320–1680px alt efter din :root */
-    padding-left: clamp(16px, 2.5vw, 32px) !important;    /* samme side-padding som Works/Forside */
-    padding-right: clamp(16px, 2.5vw, 32px) !important;
-  }
-}
-
-/* Sikkerhedsnet: topsektioner i <main> centreres som på Works */
-#main-content > header,
-#main-content > section{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Skjul "Powered by Hugo & Blowfish" (igen, med !important) */
+/* Skjul "Powered by Hugo & Blowfish" igen (sikkerhed) */
 .footer .footer-meta span:nth-child(2){ display: none !important; }
 
 /* =========================================
@@ -498,13 +462,11 @@ body{
    (rører ikke .ro-wrap / grid-sider)
    ========================================= */
 @media (max-width: 900px){
-  /* Top-niveau blokke i <main>, uden vores egen wrapper eller grid */
   #main-content > :where(header, section, article, div):not(.ro-wrap):not(.grid){
     padding-left: var(--ro-pad-x) !important;
     padding-right: var(--ro-pad-x) !important;
   }
 
-  /* Typiske wrappers på About/Blog/Single/List */
   .page-header,
   .article-header,
   .article-content,
@@ -514,7 +476,6 @@ body{
     padding-right: var(--ro-pad-x) !important;
   }
 
-  /* Kommentarer + footer skal flugte med samme kant */
   .giscus, .giscus-wrap,
   .site-footer, .page-footer, footer{
     padding-left: var(--ro-pad-x) !important;
