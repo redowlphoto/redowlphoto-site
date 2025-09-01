@@ -1,0 +1,44 @@
+{{/* portrait shortcode
+   Brug: {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" class="about-photo" >}}
+   - 'src' kan være blot filnavn i samme mappe som index.md
+   - 'alt' er stærkt anbefalet
+   - 'class' valgfri, default "about-photo"
+*/}}
+
+{{ $src   := .Get "src" | default "portrait.jpg" }}
+{{ $alt   := .Get "alt" | default "Portrait" }}
+{{ $class := .Get "class" | default "about-photo" }}
+
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" $src) }}
+{{ if not $img }}
+  {{ errorf "portrait shortcode: kunne ikke finde '%s' som Page Resource på %s" $src .Page.File.Path }}
+{{ end }}
+
+{{/* Lav flere størrelser */}}
+{{ $w480  := $img.Fit "480x q85" }}
+{{ $w800  := $img.Fit "800x q85" }}
+{{ $w1200 := $img.Fit "1200x q85" }}
+
+{{ $a480  := $img.Fit "480x avif q80" }}
+{{ $a800  := $img.Fit "800x avif q80" }}
+{{ $a1200 := $img.Fit "1200x avif q80" }}
+
+{{ $w480p := $img.Fit "480x webp q85" }}
+{{ $w800p := $img.Fit "800x webp q85" }}
+{{ $w1200p := $img.Fit "1200x webp q85" }}
+
+<picture class="{{ $class }}">
+  <source type="image/avif"
+          srcset="{{ $a480.RelPermalink }} 480w, {{ $a800.RelPermalink }} 800w, {{ $a1200.RelPermalink }} 1200w"
+          sizes="(max-width: 720px) 100vw, 420px">
+  <source type="image/webp"
+          srcset="{{ $w480p.RelPermalink }} 480w, {{ $w800p.RelPermalink }} 800w, {{ $w1200p.RelPermalink }} 1200w"
+          sizes="(max-width: 720px) 100vw, 420px">
+  <img
+    src="{{ $w800.RelPermalink }}"
+    srcset="{{ $w480.RelPermalink }} 480w, {{ $w800.RelPermalink }} 800w, {{ $w1200.RelPermalink }} 1200w"
+    sizes="(max-width: 720px) 100vw, 420px"
+    alt="{{ $alt }}"
+    loading="lazy"
+    decoding="async">
+</picture>

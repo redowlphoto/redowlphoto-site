@@ -183,3 +183,16 @@ h1.title,
   background: transparent !important;
   border-radius: 10px;
 }
+
+/* About-portræt */
+.about-photo {
+  display:block;
+  max-width: min(420px, 42vw);
+  margin: 0 0 1rem 0;
+}
+.about-photo img { display:block; width:100%; height:auto; border-radius:14px; }
+
+/* Flyd fotoet højre på store skærme */
+@media (min-width: 900px){
+  .about-photo { float:right; margin: .25rem 0 1rem 1.25rem; }
+}
