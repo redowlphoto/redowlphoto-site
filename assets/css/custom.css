@@ -435,3 +435,30 @@ body{
     grid-template-columns: 1fr !important;
   }
 }
+
+/* =========================================================
+   FIX: Works – gitter tilbage i 3 / 2 / 1 kolonner
+   (ram .ro-grid i stedet for Tailwind .grid)
+   ========================================================= */
+.ro-grid{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important; /* desktop */
+  gap: 1.25rem !important;
+}
+
+/* Tablet: 2 kolonner */
+@media (max-width: 1024px){
+  .ro-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Mobil: 1 kolonne */
+@media (max-width: 640px){
+  .ro-grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Skjul "Powered by Hugo & Blowfish" igen */
+.footer .footer-meta span:nth-child(2){ display: none !important; }
