@@ -184,15 +184,22 @@ h1.title,
   border-radius: 10px;
 }
 
-/* About-portræt */
-.about-photo {
+/* About: portræt – mindre på desktop, fuld bredde på mobil */
+.about-photo{
   display:block;
-  max-width: min(420px, 42vw);
-  margin: 0 0 1rem 0;
+  float:right;
+  max-width: clamp(260px, 32vw, 420px); /* øvre cap ~420px */
+  margin: .5rem 0 1rem 1.25rem;         /* luft til venstre for billedet */
+  border-radius: 14px;
+  overflow: hidden;
 }
-.about-photo img { display:block; width:100%; height:auto; border-radius:14px; }
+.about-photo img{ display:block; width:100%; height:auto; }
 
-/* Flyd fotoet højre på store skærme */
-@media (min-width: 900px){
-  .about-photo { float:right; margin: .25rem 0 1rem 1.25rem; }
+@media (max-width: 900px){
+  .about-photo{
+    float:none;                 /* drop float på mobil */
+    margin: .75rem auto 1rem;   /* centrer billedet */
+    max-width: min(100%, 520px);
+  }
 }
+
