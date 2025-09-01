@@ -146,3 +146,5 @@ h1.title,
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
+/* Hide "Powered by Hugo & Blowfish" in footer */
+.footer .footer-meta span:nth-child(2) { display: none; }
