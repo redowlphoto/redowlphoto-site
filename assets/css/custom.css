@@ -148,3 +148,5 @@ h1.title,
 }
 /* Hide "Powered by Hugo & Blowfish" in footer */
 .footer .footer-meta span:nth-child(2) { display: none; }
+/* Cookie-free note */
+.ro-no-cookies { margin-top:.5rem; opacity:.78; font-size:.95rem; }
