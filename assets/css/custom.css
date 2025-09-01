@@ -3,17 +3,16 @@
    Placering: assets/css/custom.css
    ========================================================= */
 
-/* ---------- Globale variabler (ændr størrelser her) ---------- */
+/* ---------- Globale variabler ---------- */
 :root{
-  /* vandret indryk + responsiv max-bredde (op til ~1680px) */
-  --ro-pad-x: clamp(16px, 3vw, 32px);
-  --ro-maxw: clamp(1200px, 90vw, 1680px);
+  /* vandret indryk + responsiv max-bredde */
+  --ro-pad-x: clamp(16px, 4vw, 32px);           /* giver faste margener på mobil */
+  --ro-maxw: clamp(1200px, 92vw, 1600px);       /* desktop-øvre cap + lidt luft */
 
-  /* overskrifter */
+  /* Overskrifter */
   --ro-h1-size: clamp(3.25rem, 6.5vw, 5.75rem);
   --ro-works-h1: clamp(5.6rem, 10.4vw, 9.5rem);
 }
-
 
 /* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
 .heading-anchor{ display: none !important; }
@@ -31,11 +30,11 @@
 .ro-footer-social a:hover{ opacity:1 }
 .ro-footer-social svg{ width:20px; height:20px; vertical-align:middle }
 
-/* 4) “Instagram inline”-stil (fx på About-siden) */
+/* 4) “Instagram inline” (fx på About) */
 .ig-inline{ display:inline-flex; align-items:center; gap:.5rem }
 .ig-inline svg{ width:18px; height:18px }
 
-/* 5) Lidt polering af kategori-badge */
+/* 5) Badge-polish */
 .ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
 
 /* 6) Forsidens tagline skal skifte farve med temaet */
@@ -78,27 +77,34 @@ header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !impo
 }
 
 /* =========================================================
-   8) ENS vandrette indryk & maks-bredde på alle sider
+   8) ENS vandrette indryk & maks-bredde på alle sider (DESKTOP)
+   - Vi rører IKKE body-padding på mobil → marginer kommer tilbage
    ========================================================= */
-/* Vores egne wrappers */
+
+/* Egen wrapper du bruger på forsiden */
 .ro-wrap{
   max-width: var(--ro-maxw) !important;
   margin-left:auto !important; margin-right:auto !important;
   padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
 }
-/* Temaets wrappers */
-main .container,
-main .content,
-main .content-wrapper,
-main .page,
-main .article-container,
-main .prose{
-  max-width: var(--ro-maxw) !important;
-  margin-left:auto !important; margin-right:auto !important;
-  padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
+
+/* Temaets typiske wrappers: gør dem brede og centrerede på større skærme */
+@media (min-width: 1024px){
+  main .container,
+  main .content,
+  main .content-wrapper,
+  main .page,
+  main .article-container,
+  main .prose{
+    max-width: var(--ro-maxw) !important;
+    margin-left:auto !important; margin-right:auto !important;
+    padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
+  }
 }
+
 /* Lidt luft under headeren */
 main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
+
 /* Ens topmargin for første H1 */
 .ro-wrap h1:first-child,
 main .content h1:first-child,
@@ -107,11 +113,7 @@ main .prose h1:first-child{ margin-top:.25rem !important; }
 
 /* =========================================================
    9) SIDE-OVERSKRIFTER (H1)
-   - Works: .ro-h1 (fra Works-list skabelonen)
-   - Øvrige (Blog/About/indlæg): griber Blowfish’ titel-varianter
    ========================================================= */
-
-/* Works-side (bruger variablen kun for Works) */
 .ro-h1{
   font-size: var(--ro-works-h1) !important;
   font-weight: 800 !important;
@@ -119,8 +121,6 @@ main .prose h1:first-child{ margin-top:.25rem !important; }
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
-
-/* Blog/About/enkeltindlæg m.fl. */
 main :is(h1, h2, p).title,
 main :is(h1, h2, p).page-title,
 main header :is(h1, h2, p).title,
@@ -144,10 +144,13 @@ h1.title,
   line-height: 1.15 !important;
   margin: 0 0 1.25rem 0 !important;
 }
-/* Hide "Powered by Hugo & Blowfish" in footer */
-.footer .footer-meta span:nth-child(2) { display: none; }
+
+/* Hide "Powered by Hugo & Blowfish" i footer */
+.footer .footer-meta span:nth-child(2){ display:none; }
+
 /* Cookie-free note */
-.ro-no-cookies { margin-top:.5rem; opacity:.78; font-size:.95rem; }
+.ro-no-cookies{ margin-top:.5rem; opacity:.78; font-size:.95rem; }
+
 /* Forside: caption under slideshow */
 .ro-hero-cap{
   margin-top:.6rem;
@@ -157,252 +160,72 @@ h1.title,
 }
 
 /* =========================================================
-   10) Kommentarer (giscus) – container, note og spacing
+   10) Kommentarer (giscus)
    ========================================================= */
 .giscus-wrap{
   max-width: var(--ro-maxw);
   margin-left: auto; margin-right: auto;
   padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x);
 }
-
 .giscus-note{
   font-size: .95rem;
   opacity: .75;
   margin: .25rem 0 .5rem;
-  color: inherit;            /* følger temaets farve */
+  color: inherit;
 }
-
-.giscus{
-  margin-top: .5rem;         /* lidt luft over selve boksen */
-}
-
-/* (valgfrit) rund hjørner/transparent baggrund på iframe */
+.giscus{ margin-top: .5rem; }
 .giscus > iframe.giscus-frame{
   background: transparent !important;
   border-radius: 10px;
 }
 
-/* About: portræt – mindre på desktop, fuld bredde på mobil */
+/* =========================================================
+   11) ABOUT – Portræt layout (shortcode "portrait")
+   ========================================================= */
+.portrait{ display:grid; gap:1.25rem; }
+@media (min-width: 980px){
+  .portrait{ grid-template-columns: 380px 1fr; align-items:start; }
+}
+.portrait figure{ margin:0; }
+.portrait img{ width:100%; height:auto; border-radius:12px; }
+
+/* Hvis du bruger .about-photo varianten et sted, behold en fornuftig størrelse */
 .about-photo{
-  display:block;
-  float:right;
-  max-width: clamp(260px, 32vw, 420px); /* øvre cap ~420px */
-  margin: .5rem 0 1rem 1.25rem;         /* luft til venstre for billedet */
-  border-radius: 14px;
-  overflow: hidden;
+  display:block; float:right;
+  max-width: clamp(260px, 32vw, 420px);
+  margin: .5rem 0 1rem 1.25rem;
+  border-radius: 14px; overflow:hidden;
 }
 .about-photo img{ display:block; width:100%; height:auto; }
-
 @media (max-width: 900px){
-  .about-photo{
-    float:none;                 /* drop float på mobil */
-    margin: .75rem auto 1rem;   /* centrer billedet */
-    max-width: min(100%, 520px);
-  }
+  .about-photo{ float:none; margin:.75rem auto 1rem; max-width:min(100%,520px); }
 }
 
-/* =========================================
-   DESKTOP TWEAKS – bredere layout + mindre top-luft
-   ========================================= */
+/* =========================================================
+   12) BLOG – sørg for samme bredde som forsiden/works
+   (rammer både liste og single, men kun når body har .section-blog)
+   ========================================================= */
+.section-blog main .container,
+.section-blog main .content,
+.section-blog main .article-container,
+.section-blog .page-header,
+.section-blog .article-header,
+.section-blog .prose{
+  max-width: var(--ro-maxw) !important;
+  margin-left:auto !important; margin-right:auto !important;
+  padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
+}
 
-/* Mindre luft under headeren */
-main { padding-top: clamp(0.25rem, 0.8vw, 0.75rem) !important; }
-
-/* Brug lidt større global max-bredde på store skærme */
+/* =========================================================
+   13) WORKS – sikr kolonner på større skærme, hvis grid “falder sammen”
+   (har ingen effekt hvis Blowfishs egne grid-klasser allerede styrer det)
+   ========================================================= */
+@media (min-width: 900px){
+  .section-works .grid{ grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
 @media (min-width: 1200px){
-  :root{ --ro-maxw: 1320px; }  /* prøv 1360px eller 1400px hvis du vil have mere */
+  .section-works .grid{ grid-template-columns: repeat(3, minmax(0,1fr)) !important; }
 }
-
-/* Sørg for at single-sider (About/Blog) bruger hele max-bredden og er centrerede */
-.single main .container,
-.single main .content,
-.single main .article-container,
-.page main .container,
-.page main .content,
-.page main .article-container,
-main .prose{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Blowfish sætter nogle gange en smal max-width på .prose */
-.prose{ max-width: none !important; }
-
-/* =========================================
-   ABOUT – Portræt layout
-   ========================================= */
-
-/* Gælder den wrapper vi brugte i shortcode'n (class="portrait") */
-.portrait{
-  display: grid;
-  gap: 1.25rem;
-}
-
-/* To kolonner på desktop: billede til venstre, tekst til højre */
-@media (min-width: 980px){
-  .portrait{
-    grid-template-columns: 380px 1fr; /* justér 360–420 efter smag */
-    align-items: start;
-  }
-}
-
-.portrait figure{ margin: 0; }
-.portrait img{
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-/* ===== Desktop: brug mere bredde + centrer sider (overstyrer Tailwind) ===== */
-
-/* Gør hele siden (body) lidt bredere og reducerer stor sidepadding på desktop */
-@media (min-width: 1100px){
-  body{
-    /* match din globale variabel – justér til 1360/1400px hvis du vil have mere */
-    max-width: var(--ro-maxw) !important;
-    /* mindre sidepadding end Tailwinds lg:px-32 */
-    padding-left: clamp(16px, 1.6vw, 24px) !important;
-    padding-right: clamp(16px, 1.6vw, 24px) !important;
-  }
-}
-
-/* Tving single/page-containere til at centrere og bruge hele max-bredden */
-.page main > .container,
-.page main > .content,
-.page main > .article-container,
-.single main > .container,
-.single main > .content,
-.single main > .article-container{
-  width: 100%;
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Lidt mindre top-luft under headeren (du har en regel allerede; denne vinder) */
-main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
-
-/* === Match Works/Home-bredden (samme som .ro-wrap) for About/Blog === */
-/* Lists (Works index, Blog index) and pages should span the site width */
-.content > article{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Let prose inherit the container width (don’t clamp to reading column) */
-.prose{ max-width: inherit !important; }
-
-/* Selve artikelteksten (Markdown-renderet) */
-.single .prose,
-.page   .prose,
-.list   .prose,
-.content .prose {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Header/blokke omkring artiklen skal også flugte med samme bredde */
-.single .page-header,
-.single .article-header,
-.page   .page-header,
-.page   .article-header,
-.single main > .container,
-.page   main > .container,
-.single main > .content,
-.page   main > .content,
-.single main > .article-container,
-.page   main > .article-container {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Lidt mindre top-luft – samme følelse som Works/Home */
-main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
-
-/* === Ens bredde på ALLE sider (match Works/Home) === */
-/* Sæt alle top-niveau elementer i <main> til samme max-bredde og side-padding */
-#main-content > *:not(style):not(script) {
-  max-width: var(--ro-maxw) !important;           /* 1200px som på Works/Home */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;       /* samme side-padding */
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Ekstra: page/blog header-blokke kan have særklasser */
-#main-content .page-header,
-#main-content .article-header,
-#main-content .list {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* === Ens, stor bredde + centrering på ALLE sider (som Works/Home) === */
-
-/* Gør selve body bredere og med mindre side-padding på desktop */
-body{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Centrer <main> og alle top-sektioner i main */
-#main-content{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Ram alle typiske Blowfish/Tailwind-wrappers på single- og page-views */
-.page main > .container,
-.page main > .content,
-.page main > .article-container,
-.single main > .container,
-.single main > .content,
-.single main > .article-container,
-.list main > .container,
-.list main > .content,
-.list main > .article-container,
-#main-content > .container,
-#main-content > .content,
-#main-content > .article-container,
-#main-content .page-header,
-#main-content .article-header{
-  max-width: var(--ro-maxw) !important;
-  width: min(100%, var(--ro-maxw)) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* Gør selve tekstkolonnen (.prose) lige så bred og centreret */
-.prose,
-.single .prose,
-.page .prose,
-.content .prose,
-.article-content,
-.article .prose{
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
+@media (min-width: 1600px){
+  .section-works .grid{ grid-template-columns: repeat(4, minmax(0,1fr)) !important; }
 }
