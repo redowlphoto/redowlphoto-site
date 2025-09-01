@@ -6,7 +6,7 @@
 /* ---------- Globale variabler (ændr størrelser her) ---------- */
 :root{
   /* Vandret indryk (side-margin som padding) */
-  --ro-pad-x: clamp(16px, 3vw, 32px);
+  --ro-pad-x: clamp(32px, 6vw, 64px);
 
   /* Responsiv max-bredde:
      = mindste af 1680px og (skærmbredde minus begge side-margener).
