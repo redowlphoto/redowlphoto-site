@@ -13,6 +13,7 @@ cover:
 featured: false
 categories:
   - sea-fjord
+  - warm-pastels
 tags:
   - RedOwlPhoto
   - Mariager Fjord swan
