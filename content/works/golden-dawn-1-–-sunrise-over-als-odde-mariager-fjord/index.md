@@ -11,7 +11,7 @@ cover:
   alt: Golden sunrise over Mariager Fjord at Als Odde, Denmark, with sailboat on
     horizon in August morning light – by RedOwlPhoto.
   image: golden-dawn-1.jpg
-featured: true
+featured: false
 categories:
   - sea-fjord
 tags:
