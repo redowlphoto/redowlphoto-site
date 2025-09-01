@@ -1,12 +1,12 @@
 {{ define "main" }}
 <style>
   .ro-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
-  /* ændret ↓ */
+
   .ro-tagline{
     font-size:clamp(1.05rem,1.6vw,1.25rem);
     line-height:1.6;
     margin-bottom:1rem;
-    color:inherit;           /* arver temaets farve (mørk/lys) */
+    color:inherit;
     opacity:.9;
   }
 
@@ -21,11 +21,19 @@
     transition:opacity 900ms ease;
   }
   .ro-hero img.is-active{opacity:1;position:relative}
+
+  /* (valgfrit – hvis ikke allerede i custom.css) */
+  .ro-hero-cap{
+    margin-top:.6rem;
+    font-size:clamp(.95rem, 1.4vw, 1.1rem);
+    line-height:1.55;
+    opacity:.85;
+  }
 </style>
 
 <div class="ro-wrap">
   <div class="ro-tagline">
-    Minimalist seascapes and landscapes from Mariager Fjord, Als Odde, Øster Hurup and Beyond.
+    {{ with site.Data.home.tagline }}{{ . }}{{ else }}Minimal Nordic Seascapes{{ end }}
   </div>
 
   {{/* Vælg værker: først featured=true, ellers seneste 5 */}}
@@ -66,6 +74,10 @@
         {{ end }}
       </a>
     </div>
+
+    {{ with site.Data.home.hero_caption }}
+      <p class="ro-hero-cap">{{ . }}</p>
+    {{ end }}
   {{ end }}
 </div>
 

@@ -150,3 +150,10 @@ h1.title,
 .footer .footer-meta span:nth-child(2) { display: none; }
 /* Cookie-free note */
 .ro-no-cookies { margin-top:.5rem; opacity:.78; font-size:.95rem; }
+/* Forside: caption under slideshow */
+.ro-hero-cap{
+  margin-top:.6rem;
+  font-size:clamp(.95rem, 1.4vw, 1.1rem);
+  line-height:1.55;
+  opacity:.85;
+}
