@@ -331,3 +331,24 @@ main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
 
 /* Lidt mindre top-luft – samme følelse som Works/Home */
 main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
+
+/* === Ens bredde på ALLE sider (match Works/Home) === */
+/* Sæt alle top-niveau elementer i <main> til samme max-bredde og side-padding */
+#main-content > *:not(style):not(script) {
+  max-width: var(--ro-maxw) !important;           /* 1200px som på Works/Home */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;       /* samme side-padding */
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Ekstra: page/blog header-blokke kan have særklasser */
+#main-content .page-header,
+#main-content .article-header,
+#main-content .list {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
