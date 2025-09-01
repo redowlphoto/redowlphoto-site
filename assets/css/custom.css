@@ -255,3 +255,44 @@ main .prose{
   height: auto;
   border-radius: 12px;
 }
+
+/* ===== Desktop: brug mere bredde + centrer sider (overstyrer Tailwind) ===== */
+
+/* Gør hele siden (body) lidt bredere og reducerer stor sidepadding på desktop */
+@media (min-width: 1100px){
+  body{
+    /* match din globale variabel – justér til 1360/1400px hvis du vil have mere */
+    max-width: var(--ro-maxw) !important;
+    /* mindre sidepadding end Tailwinds lg:px-32 */
+    padding-left: clamp(16px, 1.6vw, 24px) !important;
+    padding-right: clamp(16px, 1.6vw, 24px) !important;
+  }
+}
+
+/* Tving single/page-containere til at centrere og bruge hele max-bredden */
+.page main > .container,
+.page main > .content,
+.page main > .article-container,
+.single main > .container,
+.single main > .content,
+.single main > .article-container{
+  width: 100%;
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Gør selve læsekolonnen (prose/content) bredere og centreret */
+.article-content,
+.content > article,
+.content > .prose,
+.single .prose,
+.page .prose{
+  /* lidt bredere læselinje – justér 72–80ch efter smag */
+  max-width: 78ch !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Lidt mindre top-luft under headeren (du har en regel allerede; denne vinder) */
+main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
