@@ -296,3 +296,38 @@ main .prose{
 
 /* Lidt mindre top-luft under headeren (du har en regel allerede; denne vinder) */
 main{ padding-top: clamp(.25rem, .8vw, .75rem) !important; }
+
+/* === Match Works/Home-bredden (samme som .ro-wrap) for About/Blog === */
+
+/* Selve artikelteksten (Markdown-renderet) */
+.single .prose,
+.page   .prose,
+.list   .prose,
+.content .prose {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Header/blokke omkring artiklen skal også flugte med samme bredde */
+.single .page-header,
+.single .article-header,
+.page   .page-header,
+.page   .article-header,
+.single main > .container,
+.page   main > .container,
+.single main > .content,
+.page   main > .content,
+.single main > .article-container,
+.page   main > .article-container {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Lidt mindre top-luft – samme følelse som Works/Home */
+main { padding-top: clamp(.25rem, .8vw, .75rem) !important; }
