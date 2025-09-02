@@ -1,0 +1,43 @@
+{{ define "main" }}
+<style>
+  .ro-wrap{max-width:var(--ro-maxw);margin:0 auto;padding:2rem 1.25rem}
+  .ro-h1{font-size:var(--ro-h1-size);font-weight:800;margin:0 0 1.25rem}
+  .ro-intro{max-width:70ch;opacity:.9;margin:-.25rem 0 1.25rem}
+
+  .ro-list{display:grid;gap:1.75rem}
+  .ro-item{border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:1.25rem}
+  .ro-item:last-child{border:none;padding-bottom:0}
+
+  .ro-item-title{
+    font-size:clamp(1.3rem,2.2vw,1.7rem);
+    font-weight:700;
+    margin-bottom:.4rem;
+    line-height:1.35;
+  }
+  .ro-item-title a{color:inherit;text-decoration:none}
+  .ro-item-title a:hover{text-decoration:underline}
+
+  .ro-meta{font-size:.95rem;opacity:.7;margin-bottom:.6rem}
+  .ro-excerpt{opacity:.85;line-height:1.55}
+</style>
+
+<div class="ro-wrap">
+  <h1 class="ro-h1">{{ .Title }}</h1>
+  {{ with .Content }}<div class="ro-intro">{{ . }}</div>{{ end }}
+
+  <div class="ro-list">
+    {{ range .Paginator.Pages }}
+      <article class="ro-item">
+        <h2 class="ro-item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="ro-meta">
+          {{ .Date | time.Format "January 2, 2006" }}
+          {{ with .Params.author }} · {{ . }}{{ end }}
+        </div>
+        {{ with .Summary }}<p class="ro-excerpt">{{ . }}</p>{{ end }}
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
