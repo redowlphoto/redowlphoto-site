@@ -1,0 +1,73 @@
+{{ define "main" }}
+<style>
+  .ro-wrap{
+    max-width: var(--ro-maxw);
+    margin: 0 auto;
+    padding: 2rem var(--ro-pad-x) 4rem;
+  }
+
+  .ro-title{
+    font-size: var(--ro-h1-size);
+    font-weight: 800;
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+  }
+
+  .ro-meta{
+    opacity: .75;
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+  }
+
+  .ro-figure{
+    margin: 0 0 1.5rem;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .ro-figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .ro-cap{
+    opacity: .85;
+    margin-top: .35rem;
+    font-size: .95rem;
+    line-height: 1.4;
+  }
+
+  /* Indholdstekst */
+  .ro-content{
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+</style>
+
+<div class="ro-wrap">
+  <h1 class="ro-title">{{ .Title }}</h1>
+
+  <div class="ro-meta">
+    {{ with .Date }}{{ .Format "January 2, 2006" }}{{ end }}
+  </div>
+
+  {{ $img := false }}
+  {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+  {{ if $img }}
+    {{ $w1200 := $img.Resize "1200x q85" }}
+    {{ $w2000 := $img.Resize "2000x q85" }}
+    <figure class="ro-figure">
+      <img
+        src="{{ $w1200.RelPermalink }}"
+        srcset="{{ $w1200.RelPermalink }} 1200w, {{ $w2000.RelPermalink }} 2000w"
+        sizes="(max-width: 1100px) 100vw, 1100px"
+        alt="{{ .Params.cover.alt }}"
+        loading="lazy" decoding="async">
+      {{ with .Params.caption }}<figcaption class="ro-cap">{{ . }}</figcaption>{{ end }}
+    </figure>
+  {{ end }}
+
+  <div class="ro-content prose dark:prose-invert">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
