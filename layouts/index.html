@@ -1,6 +1,14 @@
 {{ define "main" }}
 <style>
-  .ro-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
+  .ro-wrap{
+    max-width: var(--ro-maxw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ro-pad-x);
+    padding-right: var(--ro-pad-x);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
 
   .ro-tagline{
     font-size:clamp(1.05rem,1.6vw,1.25rem);
@@ -22,7 +30,6 @@
   }
   .ro-hero img.is-active{opacity:1;position:relative}
 
-  /* (valgfrit – hvis ikke allerede i custom.css) */
   .ro-hero-cap{
     margin-top:.6rem;
     font-size:clamp(.95rem, 1.4vw, 1.1rem);
@@ -36,13 +43,11 @@
     {{ with site.Data.home.tagline }}{{ . }}{{ else }}Minimal Nordic Seascapes{{ end }}
   </div>
 
-  {{/* Vælg værker: først featured=true, ellers seneste 5 */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $featured := where $works ".Params.featured" true }}
   {{ $pick := cond (gt (len $featured) 0) (sort $featured "Date" "desc") (sort $works "Date" "desc") }}
   {{ $pick = first 5 $pick }}
 
-  {{/* Byg slides med flere størrelser */}}
   {{ $slides := slice }}
   {{ range $p := $pick }}
     {{ $img := false }}
@@ -90,7 +95,7 @@
     slides[i].classList.remove('is-active');
     i = (i + 1) % slides.length;
     slides[i].classList.add('is-active');
-  }, 10000); // 10 sek.
+  }, 10000);
 })();
 </script>
 {{ end }}
