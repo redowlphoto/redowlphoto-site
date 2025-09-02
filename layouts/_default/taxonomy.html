@@ -1,30 +1,69 @@
 {{ define "main" }}
 {{ $root := . }}
 <style>
-  .ro-wrap{max-width:1200px;margin:0 auto;padding:2.5rem 1.25rem}
-  .ro-h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 1.25rem 0}
-  .ro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-  .ro-card{position:relative;display:block;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04)}
-  .ro-card img{display:block;width:100%;height:200px;object-fit:cover}
-  .ro-card-label{position:absolute;left:.75rem;bottom:.6rem;background:rgba(0,0,0,.55);color:#fff;padding:.25rem .5rem;border-radius:8px;font-size:.9rem;line-height:1}
-  .ro-card:hover{opacity:.94;transition:.2s}
-  .ro-empty{opacity:.75}
-  /* NYT: valgfri intro-tekst over grid */
-  .ro-intro{max-width:70ch;opacity:.9;margin:-.25rem 0 1.25rem}
+  /* Grid og kort styling – bruger globale variabler fra custom.css */
+  .ro-h1 {
+    font-size: var(--ro-h1-size);
+    margin: 0 0 1.25rem 0;
+  }
+
+  .ro-intro {
+    max-width: 70ch;
+    opacity: .9;
+    margin: -.25rem 0 1.25rem;
+  }
+
+  .ro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .ro-card {
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .04);
+  }
+
+  .ro-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .ro-card-label {
+    position: absolute;
+    left: .75rem;
+    bottom: .6rem;
+    background: rgba(0, 0, 0, .55);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 8px;
+    font-size: .9rem;
+    line-height: 1;
+  }
+
+  .ro-card:hover {
+    opacity: .94;
+    transition: .2s;
+  }
+
+  .ro-empty {
+    opacity: .75;
+  }
 </style>
 
 <div class="ro-wrap">
   <h1 class="ro-h1">{{ $root.Title }}</h1>
 
-  {{/* NYT: vis intro, hvis feltet findes på term-siden */}}
   {{ with $root.Params.intro }}
     <div class="ro-intro">{{ . | markdownify }}</div>
   {{ end }}
 
-  {{/* Start med de sider Hugo selv eksponerer for term-siden */}}
   {{ $pages := $root.Pages }}
-
-  {{/* Fallback: hvis .Pages er tom (fx pga. & / navn vs slug), slå op i taxonomien manuelt */}}
   {{ if or (not $pages) (eq (len $pages) 0) }}
     {{ $catmap := site.Taxonomies.categories | default (dict) }}
     {{ $key := "" }}
