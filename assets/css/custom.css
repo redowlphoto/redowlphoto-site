@@ -358,6 +358,12 @@ body{
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
+@media (max-width: 700px) {
+  body {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+}
 
 /* Centrer <main> og alle top-sektioner i main */
 #main-content{
@@ -455,12 +461,6 @@ body{
 }
 
 /* Skjul "Powered by Hugo & Blowfish" igen (sikkerhed) */
-.footer .footer-meta span:nth-child(2){ display: none !important; }
-
-/* =========================================
-   MOBIL: Ens side-margener for sider UDEN grid
-   (rører ikke .ro-wrap / grid-sider)
-   ========================================= */
 @media (max-width: 900px){
   #main-content > :where(header, section, article, div):not(.ro-wrap):not(.grid){
     padding-left: var(--ro-pad-x) !important;
@@ -476,6 +476,29 @@ body{
     padding-right: var(--ro-pad-x) !important;
   }
 
+  .giscus, .giscus-wrap,
+  .site-footer, .page-footer, footer{
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+}
+
+/* Sikrer at padding ikke overskrives under 700px */
+@media (max-width: 700px) {
+  #main-content,
+  .site-header,
+  .site-footer,
+  footer,
+  .page-footer,
+  .page-header,
+  .article-header,
+  .article-content,
+  .prose,
+  .list {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+}
   .giscus, .giscus-wrap,
   .site-footer, .page-footer, footer{
     padding-left: var(--ro-pad-x) !important;
