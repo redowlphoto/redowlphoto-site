@@ -504,7 +504,7 @@ body{
     padding-left: var(--ro-pad-x) !important;
     padding-right: var(--ro-pad-x) !important;
   }
-}
+
 
 /* =========================================================
    FIX: Margen på mobil for header + footer + single views
