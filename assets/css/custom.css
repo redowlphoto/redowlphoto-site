@@ -482,3 +482,42 @@ body{
     padding-right: var(--ro-pad-x) !important;
   }
 }
+
+/* =========================================================
+   FIX: Margen på mobil for header + footer + single views
+   ========================================================= */
+
+/* Sørg for at top (header) og bund (footer) ALTID har side-padding */
+.site-header,
+header.site-header,
+footer,
+.site-footer,
+.page-footer {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
+/* Tving single-views (Works billede, Blog post) til at få samme padding */
+.page-header,
+.article-header,
+.article-content,
+.article-footer,
+.single .content,
+.single .prose,
+.single main > .container,
+.page main > .container {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Ekstra: billeder i single view må aldrig røre kanten */
+.single img,
+.page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
