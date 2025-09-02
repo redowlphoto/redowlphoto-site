@@ -19,6 +19,11 @@
 
   .ro-meta{font-size:.95rem;opacity:.7;margin-bottom:.6rem}
   .ro-excerpt{opacity:.85;line-height:1.55}
+
+  /* Pagination */
+  .ro-pagination{display:flex;justify-content:space-between;margin-top:2rem}
+  .ro-pagination a{padding:.5rem 1rem;border-radius:8px;text-decoration:none;opacity:.9}
+  .ro-pagination a:hover{opacity:1}
 </style>
 
 <div class="ro-wrap">
@@ -38,6 +43,17 @@
     {{ end }}
   </div>
 
-  {{ template "_internal/pagination.html" . }}
+  {{ if gt .Paginator.TotalPages 1 }}
+  <nav class="ro-pagination">
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}">← Newer</a>
+    {{ else }}
+      <span></span>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}">Older →</a>
+    {{ end }}
+  </nav>
+  {{ end }}
 </div>
 {{ end }}
