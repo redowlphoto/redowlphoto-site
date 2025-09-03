@@ -1,5 +1,4 @@
-{{ define "main" }} 
-
+{{ define "main" }}
 <div class="ro-wrap">
   <h1 class="ro-h1">{{ .Title }}</h1>
   <div class="ro-grid">
@@ -7,7 +6,9 @@
       {{ $name := $term.Name }}
       {{ $p    := index ($term.Pages | sort "Date" "desc") 0 }}
       {{ $img := false }}
-      {{ with $p }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}{{ end }}
+      {{ with $p }}{{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}
+        {{ $img = . }}
+      {{ end }}{{ end }}
 
       <a class="ro-card" href="{{ $term.Page.RelPermalink }}" title="{{ $name }}">
         {{ if $img }}
