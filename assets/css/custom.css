@@ -53,9 +53,9 @@ header .site-title,
 header .site-name,
 header nav a:first-child,
 .main-menu nav a:first-child {
-  font-size: clamp(1.8rem, 2.2vw, 2.4rem) !important; /* større, næsten dobbelt */
+  font-size: clamp(1.5rem, 1.85vw, 2.0rem) !important; /* større, halvtreds */
   font-weight: 800 !important;                       /* ekstra fed */
-  color: var(--color-neutral-100, #fff) !important;  /* sikrer synlighed */
+  color: inherit !important;                         /* følger temaets farve */
   letter-spacing: -0.01em;                           /* lidt tættere bogstaver */
 }
 
