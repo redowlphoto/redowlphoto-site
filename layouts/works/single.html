@@ -1,112 +1,116 @@
 {{ define "main" }}
-  <style>
-    .ro-wrap{
-      max-width: var(--ro-maxw);
-      margin: 0 auto;
-      padding-left: var(--ro-pad-x);
-      padding-right: var(--ro-pad-x);
-      padding-top: 2rem;
-      padding-bottom: 4rem;
-    }
+<style>
+  .ro-wrap{
+    max-width: var(--ro-maxw);
+    margin: 0 auto;
+    padding: 2.5rem var(--ro-pad-x);
+  }
 
-    .ro-title{
-      font-size: var(--ro-h1-size);
-      font-weight: 800;
-      margin: 0 0 1rem;
-    }
+  .ro-title{
+    font-size: var(--ro-h1-size);
+    font-weight: 800;
+    margin: 0 0 1.25rem;
+  }
 
-    .ro-meta{
-      opacity: .75;
-      margin: 0 0 1.5rem;
-    }
+  .ro-meta{
+    opacity: .75;
+    margin: -.25rem 0 1.5rem;
+  }
 
-    .ro-figure{
-      margin: 0 0 1.25rem;
-      border-radius: 14px;
-      overflow: hidden;
-    }
+  .ro-figure{
+    margin: 0 0 1.25rem;
+    border-radius: 14px;
+    overflow: hidden;
+  }
 
-    .ro-figure img{
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 14px;
-    }
+  .ro-figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+  }
 
-    .ro-cap{
-      opacity: .85;
-      margin-top: .5rem;
-      font-size: .95rem;
-      line-height: 1.4;
-    }
+  .ro-cap{
+    opacity: .85;
+    margin-top: .5rem;
+    font-size: .95rem;
+    line-height: 1.4;
+  }
 
-    .ro-related{
-      margin-top: 2.25rem;
-    }
+  .ro-related{
+    margin-top: 2.25rem;
+  }
 
-    .ro-related h2{
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: .75rem;
-    }
+  .ro-related h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .75rem;
+  }
 
-    .ro-grid{
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
+  .ro-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
 
-    .ro-card{
-      display: block;
-      border-radius: 12px;
-      overflow: hidden;
-      opacity: .95;
-    }
+  .ro-card{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,.04);
+    transition: .2s;
+  }
 
-    .ro-card:hover{ opacity: 1; }
+  .ro-card:hover{ opacity: .94; }
 
-    .ro-card img{
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  .ro-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
 
-    .ro-card-title{
-      font-size: .95rem;
-      margin-top: .35rem;
-    }
+  .ro-card-title{
+    position: absolute;
+    left: .75rem;
+    bottom: .6rem;
+    background: rgba(0,0,0,.55);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 8px;
+    font-size: .9rem;
+    line-height: 1;
+  }
+</style>
 
-    @media (max-width: 900px){
-      .ro-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-
-    @media (max-width: 640px){
-      .ro-grid{ grid-template-columns: 1fr; }
-    }
-  </style>
-
-  <div class="ro-wrap">
-    <h1 class="ro-title">{{ .Title }}</h1>
-    <div class="ro-meta">
-      {{ with .Params.location }}{{ . }} · {{ end }}{{ .Date | time.Format "January 2, 2006" }}
-    </div>
-
-    {{ $img := false }}
-    {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
-    {{ if $img }}
-      {{ $w1200 := $img.Resize "1200x q85" }}
-      {{ $w2000 := $img.Resize "2000x q85" }}
-      <figure class="ro-figure">
-        <img
-          src="{{ $w1200.RelPermalink }}"
-          srcset="{{ $w1200.RelPermalink }} 1200w, {{ $w2000.RelPermalink }} 2000w"
-          sizes="(max-width: 1200px) 100vw, 1200px"
-          alt="{{ .Params.cover.alt }}"
-          loading="eager" decoding="async">
-        {{ with .Params.caption }}<figcaption class="ro-cap">{{ . }}</figcaption>{{ end }}
-      </figure>
-    {{ end }}
-
-    {{ partial "related-works.html" . }}
+<div class="ro-wrap">
+  <h1 class="ro-title">{{ .Title }}</h1>
+  <div class="ro-meta">
+    {{ with .Params.location }}{{ . }} · {{ end }}{{ .Date | time.Format "January 2, 2006" }}
   </div>
+
+  {{ $img := false }}
+  {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}{{ $img = . }}{{ end }}
+  {{ if $img }}
+    {{ $w1200 := $img.Resize "1200x q85" }}
+    {{ $w2000 := $img.Resize "2000x q85" }}
+    <figure class="ro-figure">
+      <img
+        src="{{ $w1200.RelPermalink }}"
+        srcset="{{ $w1200.RelPermalink }} 1200w, {{ $w2000.RelPermalink }} 2000w"
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        alt="{{ .Params.cover.alt }}"
+        loading="eager" decoding="async">
+      {{ with .Params.caption }}<figcaption class="ro-cap">{{ . }}</figcaption>{{ end }}
+    </figure>
+  {{ end }}
+
+  <div class="ro-related">
+    <h2>Related Works</h2>
+    <div class="ro-grid">
+      {{ partial "related-works.html" . }}
+    </div>
+  </div>
+</div>
 {{ end }}
