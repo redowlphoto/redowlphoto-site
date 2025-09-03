@@ -1,4 +1,4 @@
-{{ define "main" }} 
+{{ define "main" }}
 {{ $root := . }}
 
 <div class="ro-wrap">
@@ -26,13 +26,17 @@
     <div class="ro-grid">
       {{ range $p := (sort $pages "Date" "desc") }}
         {{ $img := false }}
-        {{ with $p.Resources.GetMatch (printf "*%s" (path.Base $p.Params.cover.image)) }}{{ $img = . }}{{ end }}
+        {{ with $p.Resources.GetMatch (printf "*%s" (path.Base $p.Params.cover.image)) }}
+          {{ $img = . }}
+        {{ end }}
         {{ if $img }}
           {{ $thumb := $img.Fit "800x450 q80" }}
           <a class="ro-card" href="{{ $p.RelPermalink }}" title="{{ $p.Title }}">
             <img src="{{ $thumb.RelPermalink }}" alt="{{ $p.Params.cover.alt | default $p.Title }}" loading="lazy" decoding="async">
             <span class="ro-card-label">{{ $p.Title }}</span>
           </a>
+        {{ else }}
+          <div class="ro-card ro-ph">{{ $p.Title }}</div>
         {{ end }}
       {{ end }}
     </div>
