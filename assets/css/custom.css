@@ -46,6 +46,12 @@
    HEADER
    ========================================================= */
 
+/* Tving headerens wrapper til samme side-padding som resten */
+.main-menu {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
+
 /* Brand-navn (øverst til venstre) */
 header .brand,
 header .site-brand,
@@ -53,23 +59,23 @@ header .site-title,
 header .site-name,
 header nav a:first-child,
 .main-menu nav a:first-child {
-  font-size: clamp(1.5rem, 1.85vw, 2.0rem) !important; /* større, halvtreds */
-  font-weight: 800 !important;                       /* ekstra fed */
-  color: inherit !important;                         /* følger temaets farve */
-  letter-spacing: -0.01em;                           /* lidt tættere bogstaver */
+  font-size: clamp(1.5rem, 1.85vw, 2.0rem) !important;
+  font-weight: 800 !important;
+  color: inherit !important;
+  letter-spacing: -0.01em;
   transition: color 0.25s ease;
-  margin-left: var(--ro-pad-x) !important;           /* samme venstre-margen som alt indhold */
-  text-decoration: none !important;                  /* fjern evt. underline */
+  text-decoration: none !important;
+  margin-left: 0 !important; /* fjern evt. ekstra margin */
 }
 
-/* Brand hover: samme logik som menu-links */
+/* Brand hover */
 header .brand:hover,
 header .site-brand:hover,
 header .site-title:hover,
 header .site-name:hover,
 header nav a:first-child:hover,
 .main-menu nav a:first-child:hover {
-  color: var(--color-primary, #3b82f6) !important;   /* samme hover som menupunkter */
+  color: var(--color-primary, #3b82f6) !important;
 }
 
 /* Menu-links (Works, Blog, About & Contact) */
@@ -86,6 +92,7 @@ header,
   padding-top: .55rem !important;
   padding-bottom: .55rem !important;
 }
+
 
 /* =========================================================
    WRAPPERS – alt indhold
