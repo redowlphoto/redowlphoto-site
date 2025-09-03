@@ -89,7 +89,7 @@ header .menu a {
 /* Header spacing */
 header,
 .site-header {
-  padding-top: .55rem !important;
+  padding-top: 1.1rem !important;
   padding-bottom: .55rem !important;
 }
 
