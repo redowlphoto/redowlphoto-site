@@ -18,26 +18,29 @@
     opacity:.9;
   }
 
-  /* HERO container med fast højde */
   .ro-hero{
-    position:relative;
-    border-radius:14px;
-    overflow:hidden;
-    height:clamp(240px,55vw,620px); /* fast ramme */
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
   }
-  .ro-hero-link{display:block;position:relative;height:100%}
 
-  /* Billeder ovenpå hinanden */
-  .ro-hero img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    transition:opacity 900ms ease;
+  .ro-hero-link{
+    display: block;
+    position: relative;
   }
-  .ro-hero img.is-active{opacity:1}
+
+  .ro-hero img{
+    display: none;           /* kun det aktive vises */
+    width: 100%;             /* tilpas til containerens bredde */
+    height: auto;            /* bevar proportionerne */
+    opacity: 0;
+    transition: opacity 900ms ease;
+  }
+
+  .ro-hero img.is-active{
+    display: block;
+    opacity: 1;
+  }
 
   .ro-hero-cap{
     margin-top:.6rem;
