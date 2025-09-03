@@ -207,3 +207,16 @@ footer.footer, .site-footer, .page-footer {
   max-width: 100%;
   height: auto;
 }
+
+/* =========================================================
+   BLOG – bredere indhold
+   ========================================================= */
+.single.blog .prose,
+.page.blog .prose,
+.article-content.blog {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
