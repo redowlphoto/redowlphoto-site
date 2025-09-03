@@ -57,6 +57,19 @@ header nav a:first-child,
   font-weight: 800 !important;                       /* ekstra fed */
   color: inherit !important;                         /* følger temaets farve */
   letter-spacing: -0.01em;                           /* lidt tættere bogstaver */
+  transition: color 0.25s ease;
+  margin-left: var(--ro-pad-x) !important;           /* samme venstre-margen som alt indhold */
+  text-decoration: none !important;                  /* fjern evt. underline */
+}
+
+/* Brand hover: samme logik som menu-links */
+header .brand:hover,
+header .site-brand:hover,
+header .site-title:hover,
+header .site-name:hover,
+header nav a:first-child:hover,
+.main-menu nav a:first-child:hover {
+  color: var(--color-primary, #3b82f6) !important;   /* samme hover som menupunkter */
 }
 
 /* Menu-links (Works, Blog, About & Contact) */
