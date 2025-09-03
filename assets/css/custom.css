@@ -212,3 +212,20 @@ body[class*="px-"] {
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
+
+/* Global default spacing */
+body {
+  max-width: var(--ro-maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--ro-pad-x);
+  padding-right: var(--ro-pad-x);
+}
+
+/* Footer skal også have luft */
+footer.footer, .site-footer, .page-footer {
+  padding-left: var(--ro-pad-x);
+  padding-right: var(--ro-pad-x);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
