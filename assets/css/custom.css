@@ -209,10 +209,10 @@ footer.footer, .site-footer, .page-footer {
 }
 
 /* =========================================================
-   BLOG – bredere indhold (tekst + kommentarer)
+   BLOG – bredere indhold
    ========================================================= */
-.single.blog .ro-wrap,
-.page.blog .ro-wrap {
+.single .ro-wrap,
+.page .ro-wrap {
   max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -220,11 +220,18 @@ footer.footer, .site-footer, .page-footer {
   padding-right: var(--ro-pad-x) !important;
 }
 
-.single.blog .ro-content,
-.page.blog .ro-content,
-.single.blog .giscus-wrap,
-.page.blog .giscus-wrap {
-  max-width: var(--ro-maxw) !important;
+.single .ro-content,
+.page .ro-content {
+  max-width: 70ch !important;   /* samme som dine Works-sider */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.single .giscus-wrap,
+.page .giscus-wrap {
+  max-width: 70ch !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: var(--ro-pad-x) !important;
