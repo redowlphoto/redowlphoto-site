@@ -229,3 +229,22 @@ footer.footer, .site-footer, .page-footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* Global fallback – sørger for at ALT indhold får lidt luft */
+body,
+main,
+footer,
+header {
+  max-width: var(--ro-maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--ro-pad-x);
+  padding-right: var(--ro-pad-x);
+}
+
+/* Ekstra spacing i footeren */
+footer.footer, .site-footer, .page-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;   /* Lidt ekstra luft over footeren */
+}
