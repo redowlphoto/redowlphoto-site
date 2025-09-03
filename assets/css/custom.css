@@ -198,3 +198,17 @@ main h1,
   height:auto;
   border-radius:0.5rem;
 }
+
+/* Sørg for at body ALTID har minimum side-padding */
+body {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: var(--ro-maxw) !important;
+}
+
+body[class*="px-"] {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
