@@ -209,11 +209,13 @@ footer.footer, .site-footer, .page-footer {
 }
 
 /* =========================================================
-   BLOG – bredere indhold
+   BLOG – bredere indhold (tekst + kommentarer)
    ========================================================= */
 .single.blog .prose,
 .page.blog .prose,
-.article-content.blog {
+.article-content.blog,
+.single.blog .giscus-wrap,
+.page.blog .giscus-wrap {
   max-width: var(--ro-maxw) !important;
   margin-left: auto !important;
   margin-right: auto !important;
