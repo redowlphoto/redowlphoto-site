@@ -1,6 +1,10 @@
 {{ define "main" }}
 <style>
-  .ro-wrap{max-width:1200px;margin:0 auto;padding:2.5rem 1.25rem}
+  .ro-wrap{
+    max-width: var(--ro-maxw);
+    margin: 0 auto;
+    padding: 2.5rem var(--ro-pad-x);
+  }
   .ro-h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 1.25rem 0}
   .ro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
   .ro-card{position:relative;display:block;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04)}
