@@ -16,7 +16,7 @@
     padding-bottom: 1rem;
   }
 
-  /* === Eksisterende CSS === */
+  /* === Forside wrapper === */
   .ro-wrap{
     max-width: var(--ro-maxw);
     margin-left: auto;
@@ -35,10 +35,16 @@
     opacity:.9;
   }
 
+  /* === Hero/slideshow === */
   .ro-hero{
     position: relative;
     border-radius: 14px;
     overflow: hidden;
+
+    /* Nyt: Sørg for at hero også har samme max bredde og padding */
+    max-width: var(--ro-maxw);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .ro-hero-link{
