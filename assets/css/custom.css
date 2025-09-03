@@ -198,3 +198,12 @@ footer.footer, .site-footer, .page-footer {
   padding-bottom: 1rem;
   margin-top: 2rem;   /* Ekstra luft over footeren */
 }
+
+/* Portrait shortcode billeder */
+.portrait-img {
+  border-radius: 14px; /* samme runding som øvrige billeder */
+  border: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
