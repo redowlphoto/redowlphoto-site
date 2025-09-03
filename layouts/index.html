@@ -20,15 +20,17 @@
 
   .ro-hero{position:relative;border-radius:14px;overflow:hidden}
   .ro-hero-link{display:block;position:relative}
+
+  /* Rettet billed-styles */
   .ro-hero img{
-    position:absolute;inset:0;
+    display:block;
     width:100%;
-    height:clamp(240px,55vw,620px);
+    height:auto;
     object-fit:cover;
     opacity:0;
     transition:opacity 900ms ease;
   }
-  .ro-hero img.is-active{opacity:1;position:relative}
+  .ro-hero img.is-active{opacity:1}
 
   .ro-hero-cap{
     margin-top:.6rem;
@@ -95,7 +97,7 @@
     slides[i].classList.remove('is-active');
     i = (i + 1) % slides.length;
     slides[i].classList.add('is-active');
-  }, 10000);
+  }, 5000); // 5 sek.
 })();
 </script>
 {{ end }}
