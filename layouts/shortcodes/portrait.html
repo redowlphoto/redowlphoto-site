@@ -31,6 +31,7 @@
           srcset="{{ $wp480.RelPermalink }} 480w, {{ $wp800.RelPermalink }} 800w, {{ $wp1200.RelPermalink }} 1200w"
           sizes="(max-width: 720px) 100vw, 420px">
   <img
+    class="portrait-img"
     src="{{ $w800.RelPermalink }}"
     srcset="{{ $w480.RelPermalink }} 480w, {{ $w800.RelPermalink }} 800w, {{ $w1200.RelPermalink }} 1200w"
     sizes="(max-width: 720px) 100vw, 420px"
@@ -38,3 +39,13 @@
     loading="lazy"
     decoding="async">
 </picture>
+
+<style>
+  .portrait-img {
+    border-radius: 14px;   /* samme hjørner som dine works-billeder */
+    border: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+</style>
