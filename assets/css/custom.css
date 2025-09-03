@@ -237,3 +237,15 @@ footer.footer, .site-footer, .page-footer {
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
+
+/* =========================================================
+   BLOG – titel mere markant
+   ========================================================= */
+.single .ro-title,
+.page .ro-title {
+  font-size: clamp(2.8rem, 6vw, 4.5rem) !important; /* større end works */
+  font-weight: 900 !important;                      /* ekstra fed */
+  line-height: 1.15 !important;                     /* tættere linjer */
+  margin-bottom: 1.5rem !important;                 /* lidt mere luft efter */
+  color: inherit;                                   /* bevar temaets farve */
+}
