@@ -302,3 +302,14 @@ main .prose,
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
 }
+
+/* =========================================================
+   GLOBAL WRAP FIX – ens margen på alle sider
+   ========================================================= */
+.ro-wrap {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
