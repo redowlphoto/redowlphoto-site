@@ -12,24 +12,24 @@
 {{- $pool  = first 6 (uniq $pool) -}}
 
 {{- if gt (len $pool) 0 -}}
-  <div class="ro-related">
-    <h2>Related Works</h2>
-    <div class="ro-grid">
-      {{- range $pool -}}
-        {{- $thumb := "" -}}
-        {{- $imgPath := "" -}}
-        {{- with .Params.cover }}{{ with .image }}{{ $imgPath = . }}{{ end }}{{ end -}}
-        {{- if $imgPath }}
-          {{- with .Resources.GetMatch (printf "*%s" (path.Base $imgPath)) -}}
-            {{- $r := .Resize "400x q80" -}}
-            {{- $thumb = $r.RelPermalink -}}
-          {{- end -}}
-        {{- end -}}
-        <a class="ro-card" href="{{ .RelPermalink }}">
-          {{- if $thumb -}}<img src="{{ $thumb }}" alt="{{ .Title }}">{{- end -}}
-          <div class="ro-card-title">{{ .Title }}</div>
-        </a>
+  {{- range $pool -}}
+    {{- $thumb := "" -}}
+    {{- $imgPath := "" -}}
+    {{- with .Params.cover }}{{ with .image }}{{ $imgPath = . }}{{ end }}{{ end -}}
+    {{- if $imgPath }}
+      {{- with .Resources.GetMatch (printf "*%s" (path.Base $imgPath)) -}}
+        {{- $r := .Fit "800x450 q80" -}}
+        {{- $thumb = $r.RelPermalink -}}
       {{- end -}}
-    </div>
-  </div>
+    {{- end -}}
+
+    <a class="ro-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+      {{- if $thumb -}}
+        <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy" decoding="async">
+      {{- else -}}
+        <div class="ro-ph">{{ .Title }}</div>
+      {{- end -}}
+      <span class="ro-card-label">{{ .Title }}</span>
+    </a>
+  {{- end -}}
 {{- end -}}
