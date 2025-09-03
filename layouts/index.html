@@ -18,14 +18,21 @@
     opacity:.9;
   }
 
-  .ro-hero{position:relative;border-radius:14px;overflow:hidden}
-  .ro-hero-link{display:block;position:relative}
+  /* HERO container med fast højde */
+  .ro-hero{
+    position:relative;
+    border-radius:14px;
+    overflow:hidden;
+    height:clamp(240px,55vw,620px); /* fast ramme */
+  }
+  .ro-hero-link{display:block;position:relative;height:100%}
 
-  /* Rettet billed-styles */
+  /* Billeder ovenpå hinanden */
   .ro-hero img{
-    display:block;
+    position:absolute;
+    inset:0;
     width:100%;
-    height:auto;
+    height:100%;
     object-fit:cover;
     opacity:0;
     transition:opacity 900ms ease;
@@ -97,7 +104,7 @@
     slides[i].classList.remove('is-active');
     i = (i + 1) % slides.length;
     slides[i].classList.add('is-active');
-  }, 5000); // 5 sek.
+  }, 5000); // 5 sek
 })();
 </script>
 {{ end }}
