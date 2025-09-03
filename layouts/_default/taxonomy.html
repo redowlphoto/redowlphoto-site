@@ -1,24 +1,25 @@
 {{ define "main" }}
 {{ $root := . }}
 <style>
-  /* Grid og kort styling – bruger globale variabler fra custom.css */
+  .ro-wrap{
+    max-width: var(--ro-maxw);
+    margin: 0 auto;
+    padding: 2.5rem var(--ro-pad-x);
+  }
   .ro-h1 {
     font-size: var(--ro-h1-size);
     margin: 0 0 1.25rem 0;
   }
-
   .ro-intro {
     max-width: 70ch;
     opacity: .9;
     margin: -.25rem 0 1.25rem;
   }
-
   .ro-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.25rem;
   }
-
   .ro-card {
     position: relative;
     display: block;
@@ -26,14 +27,12 @@
     overflow: hidden;
     background: rgba(255, 255, 255, .04);
   }
-
   .ro-card img {
     display: block;
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
-
   .ro-card-label {
     position: absolute;
     left: .75rem;
@@ -45,15 +44,8 @@
     font-size: .9rem;
     line-height: 1;
   }
-
-  .ro-card:hover {
-    opacity: .94;
-    transition: .2s;
-  }
-
-  .ro-empty {
-    opacity: .75;
-  }
+  .ro-card:hover { opacity: .94; transition: .2s; }
+  .ro-empty { opacity: .75; }
 </style>
 
 <div class="ro-wrap">
