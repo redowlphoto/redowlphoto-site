@@ -5,14 +5,13 @@ showAuthor: false
 showDate: false
 slug: about
 showTaxonomies: false
-title: About, Prints & Contact
 showReadingTime: false
 noPager: true
 
 ---
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
 
-## Artist statement
+## About
 I make quiet, pared-back photographs guided by minimalism and a modernist eye for form. Simple lines, open horizons and muted colour keep space and stillness in the frame. Whether on the coast, in a city square or on a mountain path, I look for clear structure-light against edge, mass against void. Sea, wall, tree or passer-by: the aim is always to remove distraction so the mood of a place can surface. The work sits between document and abstraction, suggesting more than it states. Most images are from Denmark’s east coast around Mariager Fjord, Als Odde and Øster Hurup, with ongoing series elsewhere.
 
 ## Licensing & Prints
