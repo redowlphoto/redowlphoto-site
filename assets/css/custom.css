@@ -280,3 +280,25 @@ footer.footer, .site-footer, .page-footer {
   margin-bottom: 1.5rem !important;                 /* lidt mere luft efter */
   color: inherit;                                   /* bevar temaets farve */
 }
+
+/* =========================================================
+   ALIGN MAIN CONTENT – samme venstre margen overalt
+   ========================================================= */
+
+/* Sikrer at alle hoved-sektioner (forside, categories, blog, works osv.)
+   flugter med brand-navnet i header */
+main,
+.ro-wrap,
+main .container,
+main .content,
+main .content-wrapper,
+main .page,
+main .article-container,
+main .prose,
+#main-content {
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
