@@ -314,9 +314,11 @@ footer.footer, .site-footer, .page-footer {
   padding-right: 0 !important;
 }
 
-/* Fjern ekstra venstre/højre padding på works- og taxonomy-sider */
-body.page-works main#main-content,
-body.page-taxonomy main#main-content {
+/* Fjern ekstra body-padding kun på Works og Taxonomy sider */
+body.section-works,
+body.taxonomy,
+body.term {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
