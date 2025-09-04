@@ -102,7 +102,7 @@ main .prose,
   margin-right:auto !important;
   padding-left:var(--ro-pad-x) !important;
   padding-right:var(--ro-pad-x) !important;
-  padding-top: 2.5rem;
+  padding-top: 2rem;    /* ens spacing */
   padding-bottom: 2.5rem;
 }
 
@@ -246,11 +246,13 @@ main h1,
   padding-right: var(--ro-pad-x);
 }
 .single img,
-.page img {
+.page img,
+.article-content img {
   display:block;
   max-width:100%;
   height:auto;
-  border-radius:0.5rem;
+  border-radius:0.5rem !important; /* sikrer rundede hjørner */
+  overflow:hidden;
 }
 
 /* =========================================================
@@ -267,81 +269,60 @@ footer.footer, .site-footer, .page-footer {
 /* =========================================================
    BLOG LIST – titler og datoer mere tydelige
    ========================================================= */
-
 .ro-item-title a {
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important; /* større og tydeligere */
-  font-weight: 800 !important;                        /* ekstra fed */
-  color: inherit !important;                          /* følger temaets farve */
-  text-decoration: none !important;                   /* ingen underline */
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important;
+  font-weight: 800 !important;
+  color: inherit !important;
+  text-decoration: none !important;
   display: block;
   margin-bottom: 0.25rem;
 }
-
 .ro-item-title a:hover {
-  color: var(--color-primary, #3b82f6) !important;     /* farve ved hover */
+  color: var(--color-primary, #3b82f6) !important;
 }
-
 .ro-meta {
-  font-size: 0.95rem !important;                       /* lidt mindre end brødtekst */
-  opacity: 0.8 !important;                             /* afdæmpet */
-  margin-bottom: 0.75rem;                              /* afstand til tekst */
+  font-size: 0.95rem !important;
+  opacity: 0.8 !important;
+  margin-bottom: 0.75rem;
   display: block;
 }
 
 /* =========================================================
    TYPOGRAFI JUSTERINGER – tagline, hero, titler
    ========================================================= */
-
-/* Hero-tekst → samme som .ro-title, men helt klar */
 .ro-hero-cap {
-  font-size: var(--ro-h1-size) !important; /* stor og markant */
+  font-size: var(--ro-h1-size) !important;
   font-weight: 900 !important;
   line-height: 1.15 !important;
   margin: 0 0 1.5rem 0 !important;
   color: inherit !important;
-  opacity: 1 !important; /* fuld styrke */
+  opacity: 1 !important;
 }
-
-/* Tagline → samme som hero, men dæmpet */
 .ro-tagline {
   font-size: var(--ro-h1-size) !important;
   font-weight: 900 !important;
   line-height: 1.15 !important;
   margin: 0 0 1.5rem 0 !important;
   color: inherit !important;
-  opacity: 0.85 !important; /* lidt mere diskret end hero */
+  opacity: 0.85 !important;
 }
-
-/* .ro-title → skal være som h2.relative.group (nu mindre) */
 .ro-title {
-  font-size: calc(var(--ro-h1-size) * 0.75) !important; /* 25% mindre */
+  font-size: calc(var(--ro-h1-size) * 0.75) !important;
   font-weight: 800 !important;
   line-height: 1.2 !important;
   margin: 0 0 1.25rem 0 !important;
   color: inherit !important;
 }
-
-/* h2.relative.group → 25% mindre end nu */
 h2.relative.group {
-  font-size: 75% !important; /* ca. 25% nedskalering */
+  font-size: 75% !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   margin: 0 0 1rem 0 !important;
 }
-
-/* p.ro-sub → skal være som h1.ro-h1 */
 p.ro-sub {
   font-size: var(--ro-h1-size) !important;
   font-weight: 900 !important;
   line-height: 1.15 !important;
   margin: 0 0 1.5rem 0 !important;
   color: inherit !important;
-}
-
-/* =========================================================
-   FIX – Ens afstand på Works og Categories
-   ========================================================= */
-.ro-wrap {
-  padding-top: 1.5rem !important; /* samme afstand som de andre sider */
-  padding-bottom: 2.5rem !important;
 }
