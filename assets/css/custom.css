@@ -317,8 +317,10 @@ body h1 {
 }
 
 /* Ens brødtekst på alle sider */
+.prose,
 .prose p,
-.page .prose p,
+.page .prose,
+.page .prose p
 .article-content p,
 .ro-cap,
 .ro-hero-cap {
