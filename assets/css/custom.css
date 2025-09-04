@@ -315,3 +315,18 @@ body h1 {
   font-weight: 900 !important;
   line-height: 1.25 !important;
 }
+
+/* Ensret brødtekst og billedtekster til blog-størrelse */
+p,
+p.ro-hero-cap,
+figcaption.ro-cap {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: inherit;
+}
+
+/* Men behold metadata-linjen mindre */
+.ro-meta {
+  font-size: 15px !important;
+  opacity: .85;
+}
