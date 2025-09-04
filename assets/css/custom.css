@@ -36,8 +36,8 @@
 /* Forside tagline */
 .ro-tagline {
   font-size: 26px !important;   /* samme som h1 */
-  font-weight: 900 !important;  /* gør den også fed ligesom h1 */
-  line-height: 1.25 !important;
+  font-weight: 600;   /* lettere vægt end h1 */
+  line-height: 1.4;
   margin-bottom: 1rem;
   color: inherit;
   opacity: .9;
