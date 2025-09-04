@@ -1,13 +1,20 @@
-<<<<<<< HEAD
-﻿public/
-resources/
-node_modules/
-.hugo_build.lock
-.DS_Store
-=======
+# Hugo build output
 public/
 resources/
-.hugo_build.lock
-.DS_Store
+
+# Node / package managers
 node_modules/
->>>>>>> origin/main
+package-lock.json
+yarn.lock
+
+# Hugo internals
+.hugo_build.lock
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Backup og kopier
+backup/
+* copy.*
+* copy/
