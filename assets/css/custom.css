@@ -306,3 +306,13 @@ body.section.works #main-content {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* =========================================================
+   FIX – fjern sidepadding for Works & Taxonomy
+   ========================================================= */
+body.section.works #main-content,
+body.taxonomy #main-content,
+body.term #main-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
