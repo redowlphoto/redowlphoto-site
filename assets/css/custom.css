@@ -337,3 +337,11 @@ p.ro-sub {
   margin: 0 0 1.5rem 0 !important;
   color: inherit !important;
 }
+
+/* =========================================================
+   FIX – Ens afstand på Works og Categories
+   ========================================================= */
+.ro-wrap {
+  padding-top: 1.5rem !important; /* samme afstand som de andre sider */
+  padding-bottom: 2.5rem !important;
+}
