@@ -115,22 +115,6 @@ main .prose,
 }
 
 /* =========================================================
-   OVERSKRIFTER – ENS
-   ========================================================= */
-.ro-h1,
-.ro-title,
-main h1,
-.page-header h1,
-.article-header h1,
-.single h1 {
-  font-size: var(--ro-h1-size) !important;
-  font-weight: 900 !important;
-  line-height: 1.15 !important;
-  margin: 0 0 1.5rem 0 !important;
-  color: inherit !important;
-}
-
-/* =========================================================
    ABOUT
    ========================================================= */
 .about-photo {
@@ -244,15 +228,7 @@ main h1,
 /* =========================================================
    SINGLE VIEW – billeder og tekst
    ========================================================= */
-.single .prose,
-.page .prose,
-.article-content {
-  max-width: var(--ro-maxw);
-  margin-left:auto;
-  margin-right:auto;
-  padding-left: var(--ro-pad-x);
-  padding-right: var(--ro-pad-x);
-}
+
 .single img,
 .page img {
   display:block;
@@ -289,12 +265,6 @@ footer.footer, .site-footer, .page-footer {
   color: var(--color-primary, #3b82f6) !important;     /* farve ved hover */
 }
 
-.ro-meta {
-  font-size: 0.95rem !important;                       /* lidt mindre end brødtekst */
-  opacity: 0.8 !important;                             /* afdæmpet */
-  margin-bottom: 0.75rem;                              /* afstand til tekst */
-  display: block;
-}
 
 /* Tving alle h1 overskrifter op i 26px – også works og single */
 h1,
