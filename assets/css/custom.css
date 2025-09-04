@@ -35,7 +35,7 @@
 
 /* Forside tagline */
 .ro-tagline {
-  font-size: 26px !important;   /* samme som h1 */
+  font-size: 22px !important;   /* samme som h1 */
   font-weight: 600;   /* lettere vægt end h1 */
   line-height: 1.25;
   margin-bottom: 1rem;
@@ -316,16 +316,16 @@ body h1 {
   line-height: 1.25 !important;
 }
 
-/* Ensartet brødtekst på tværs af hele sitet */
-.ro-wrap p,
+/* Ens brødtekst på alle sider */
 .prose p,
+.page .prose p,
+.article-content p,
 .ro-cap,
-.ro-hero-cap,
-.single .prose p,
-.page .prose p {
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-  color: inherit !important;
+.ro-hero-cap {
+  font-size: 16px !important;   /* samme som blog */
+  line-height: 1.6 !important;  /* behagelig læsning */
+  color: inherit !important;    /* fjern nedtoning */
+  opacity: 1 !important;        /* sikrer fuld styrke */
 }
 
 
