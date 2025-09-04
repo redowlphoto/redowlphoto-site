@@ -316,15 +316,18 @@ body h1 {
   line-height: 1.25 !important;
 }
 
-/* Ensartet brødtekst på alle sider */
+/* Ensartet brødtekst på tværs af hele sitet */
 .ro-wrap p,
 .prose p,
 .ro-cap,
-.ro-hero-cap {
-  font-size: 18px !important;
-  line-height: 1.65 !important;
+.ro-hero-cap,
+.single .prose p,
+.page .prose p {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
   color: inherit !important;
 }
+
 
 /* Metadata-linjen (sted + dato) skal stadig være mindre */
 .ro-meta {
