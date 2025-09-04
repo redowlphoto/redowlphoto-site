@@ -277,8 +277,8 @@ footer.footer, .site-footer, .page-footer {
    ========================================================= */
 
 .ro-item-title a {
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important; /* større og tydeligere */
-  font-weight: 800 !important;                        /* ekstra fed */
+  font-size: 20px !important;  /* fast størrelse */
+  font-weight: 700 !important;                        /* ekstra fed */
   color: inherit !important;                          /* følger temaets farve */
   text-decoration: none !important;                   /* ingen underline */
   display: block;
