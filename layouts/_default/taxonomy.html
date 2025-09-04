@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $root := . }}
 
-<div class="ro-wrap-flat">
-  <h1 class="ro-h1">{{ $root.Title }}</h1>
+<div class="ro-wrap">
+  <h1>{{ .Title }}</h1>
 
   {{ with $root.Params.intro }}
     <div class="ro-intro">{{ . | markdownify }}</div>

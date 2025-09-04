@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="ro-wrap">
-  <h1 class="ro-h1">{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
   <div class="ro-grid">
     {{ range $term := .Data.Terms.Alphabetical }}
       {{ $name := $term.Name }}
