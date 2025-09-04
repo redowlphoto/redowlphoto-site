@@ -316,17 +316,20 @@ body h1 {
   line-height: 1.25 !important;
 }
 
-/* Ensret brødtekst og billedtekster til blog-størrelse */
+/* Ens brødtekst på tværs af blog, about og captions */
 p,
 p.ro-hero-cap,
 figcaption.ro-cap {
   font-size: 18px !important;
-  line-height: 1.6 !important;
-  color: inherit;
+  line-height: 1.65 !important;   /* samme linjeafstand overalt */
+  font-weight: 400 !important;    /* normal vægt */
+  color: inherit !important;      /* følger sidens tekstfarve */
+  opacity: 1 !important;          /* fjern evt. udtoning */
 }
 
-/* Men behold metadata-linjen mindre */
+/* Metadata-linjen (sted + dato) skal stadig være mindre */
 .ro-meta {
-  font-size: 15px !important;
-  opacity: .85;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  opacity: .85;   /* lidt lysere/gråere */
 }
