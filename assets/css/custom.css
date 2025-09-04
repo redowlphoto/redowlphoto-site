@@ -316,15 +316,14 @@ body h1 {
   line-height: 1.25 !important;
 }
 
-/* Ens brødtekst på tværs af blog, about og captions */
-p,
-p.ro-hero-cap,
-figcaption.ro-cap {
+/* Ensartet brødtekst på alle sider */
+.ro-wrap p,
+.prose p,
+.ro-cap,
+.ro-hero-cap {
   font-size: 18px !important;
-  line-height: 1.65 !important;   /* samme linjeafstand overalt */
-  font-weight: 400 !important;    /* normal vægt */
-  color: inherit !important;      /* følger sidens tekstfarve */
-  opacity: 1 !important;          /* fjern evt. udtoning */
+  line-height: 1.65 !important;
+  color: inherit !important;
 }
 
 /* Metadata-linjen (sted + dato) skal stadig være mindre */
