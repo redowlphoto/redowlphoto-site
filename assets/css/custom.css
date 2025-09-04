@@ -287,3 +287,12 @@ footer.footer, .site-footer, .page-footer {
   margin-bottom: 0.75rem;                              /* afstand til tekst */
   display: block;
 }
+
+/* =========================================================
+   FIX – fjern dobbelt padding på sider med ro-wrap
+   ========================================================= */
+body.page-works,
+body.section-works {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
