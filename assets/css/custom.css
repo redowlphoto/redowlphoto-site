@@ -308,3 +308,12 @@ body h1 {
   line-height: 1.5 !important;
   opacity: .85;   /* lidt lysere/gråere */
 }
+
+/* Ens styling af undertekst under h1 på alle sider */
+.ro-sub {
+  font-size: 20px !important;   /* samme som brødtekst */
+  line-height: 1.875 !important;  /* behagelig læsning */
+  margin-bottom: 1rem !important; /* luft under underteksten */
+  color: inherit !important;    /* samme farve som brødtekst */
+  opacity: 1 !important;        /* fjern nedtoning */
+}
