@@ -1,11 +1,27 @@
 ---
 title: Building my own website
-date: 2025-08-28
+date: 2025-09-04
 ---
-Fun hard and challenging
+**Fun, hard and challenging**
 
 How do you like it?
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+Building this website has been a long and sometimes frustrating process. What begins with registering a domain and picking a provider soon turns into questions about design, structure and tools. At several points I was close to losing patience, especially when working with an AI helper that alternated between saving hours of work and sending me down rabbit holes of trial and error.
+
+But the real goal was clear from the start – I needed a site where adding new content would be easy. I’m not a programmer, so I wanted a system where I could upload new photos, create categories and write blog posts directly from the site’s own interface. No coding, no hidden files, just a simple way to keep the site alive and updated.
+
+That part has been worth the effort. The homepage, about section and blog are now connected so I can expand as I go. Whether it’s a new series of photos or a short story behind an image, I can publish it within minutes.
+
+The journey here wasn’t always smooth, but the result is practical: a site that grows with me instead of standing still.
+
+<!-- 
+
+SEO Title: Build a photography website the simple way  
+
+Meta Description: Learn how to build a photography website from domain to design, with easy tools for adding new photos and blog posts – no coding needed.  
+
+Keywords: photography website, build website for photographers, photo blog, no coding website, simple site for photographers
+
+\-->
 
 {{< comments >}}
