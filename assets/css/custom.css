@@ -288,17 +288,20 @@ body h1 {
 }
 
 /* Ens brødtekst på alle sider */
+p,
 .prose,
 .prose p,
 .page .prose,
 .page .prose p,
 .article-content p,
 .ro-cap,
-.ro-hero-cap {
-  font-size: 16px !important;   /* samme som blog */
+.ro-hero-cap,
+.ro-entry p,
+.ro-item p {
+  font-size: 16px !important;   /* fælles brødtekst */
   line-height: 1.6 !important;  /* behagelig læsning */
   color: inherit !important;    /* fjern nedtoning */
-  opacity: 1 !important;        /* sikrer fuld styrke */
+  opacity: 1 !important;        /* fuld styrke */
 }
 
 
