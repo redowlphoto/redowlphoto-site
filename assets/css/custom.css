@@ -1,19 +1,13 @@
 ﻿/* =========================================================
-   RedOwlPhoto – Custom CSS (renset version)
+   RedOwlPhoto – Custom CSS (ENS LAYOUT VERSION)
    Placering: assets/css/custom.css
    ========================================================= */
 
 /* ---------- Globale variabler ---------- */
 :root {
-  /* Vandret indryk (side-padding) */
-  --ro-pad-x: clamp(16px, 5vw, 32px);
-
-  /* Max bredde: altid luft i siderne, også på mobil */
-  --ro-maxw: min(1680px, calc(100vw - 2 * var(--ro-pad-x)));
-
-  /* Overskrifter */
-  --ro-h1-size: clamp(2.2rem, 5vw, 3.6rem);
-  --ro-works-h1: clamp(3rem, 7vw, 5rem);
+  --ro-pad-x: clamp(16px, 5vw, 32px); /* side-padding */
+  --ro-maxw: min(1680px, calc(100vw - 2 * var(--ro-pad-x))); /* max bredde */
+  --ro-h1-size: clamp(2.8rem, 6vw, 4.5rem); /* fælles h1 størrelse */
 }
 
 /* Skjul Blowfishs “#”-ankre */
@@ -46,7 +40,7 @@
    HEADER
    ========================================================= */
 
-/* Tving headerens wrapper til samme side-padding som resten */
+/* Header wrapper samme padding som alt andet */
 .main-menu {
   padding-left: var(--ro-pad-x) !important;
   padding-right: var(--ro-pad-x) !important;
@@ -65,10 +59,8 @@ header nav a:first-child,
   letter-spacing: -0.01em;
   transition: color 0.25s ease;
   text-decoration: none !important;
-  margin-left: 0 !important; /* fjern evt. ekstra margin */
+  margin-left: 0 !important;
 }
-
-/* Brand hover */
 header .brand:hover,
 header .site-brand:hover,
 header .site-title:hover,
@@ -78,7 +70,7 @@ header nav a:first-child:hover,
   color: var(--color-primary, #3b82f6) !important;
 }
 
-/* Menu-links (Works, Blog, About & Contact) */
+/* Menu-links */
 header nav a,
 header .menu a {
   font-size: clamp(1rem, 1.2vw, 1.3rem) !important;
@@ -93,11 +85,11 @@ header,
   padding-bottom: .55rem !important;
 }
 
-
 /* =========================================================
    WRAPPERS – alt indhold
    ========================================================= */
 .ro-wrap,
+main,
 main .container,
 main .content,
 main .content-wrapper,
@@ -105,28 +97,29 @@ main .page,
 main .article-container,
 main .prose,
 #main-content {
-  max-width: var(--ro-maxw);
-  margin-left:auto;
-  margin-right:auto;
-  padding-left:var(--ro-pad-x);
-  padding-right:var(--ro-pad-x);
+  max-width: var(--ro-maxw) !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding-left:var(--ro-pad-x) !important;
+  padding-right:var(--ro-pad-x) !important;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* =========================================================
-   OVERSKRIFTER
+   OVERSKRIFTER – ENS
    ========================================================= */
-.ro-h1 {
-  font-size: var(--ro-works-h1) !important;
-  font-weight: 800 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
+.ro-h1,
+.ro-title,
 main h1,
 .page-header h1,
 .article-header h1,
 .single h1 {
   font-size: var(--ro-h1-size) !important;
-  font-weight: 800 !important;
-  margin: 0 0 1.25rem 0 !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1.5rem 0 !important;
+  color: inherit !important;
 }
 
 /* =========================================================
@@ -140,13 +133,21 @@ main h1,
   border-radius: 14px;
 }
 .about-photo img { width:100%; height:auto; display:block; }
-
 @media (max-width: 900px) {
   .about-photo {
     float:none;
     margin: .75rem auto 1rem;
     max-width: min(100%, 520px);
   }
+}
+
+/* Portrait shortcode billeder */
+.portrait-img {
+  border-radius: 14px;
+  border: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* =========================================================
@@ -159,7 +160,6 @@ main h1,
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 1.25rem !important;
 }
-
 @media (max-width: 1024px) {
   .ro-grid,
   .list #main-content .grid,
@@ -173,6 +173,41 @@ main h1,
   .list #main-content [class*="grid-cols"] {
     grid-template-columns: 1fr !important;
   }
+}
+.ro-card {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .04);
+}
+.ro-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.ro-card-label {
+  position: absolute;
+  left: .75rem;
+  bottom: .6rem;
+  background: rgba(0, 0, 0, .55);
+  color: #fff;
+  padding: .25rem .5rem;
+  border-radius: 8px;
+  font-size: .9rem;
+  line-height: 1;
+}
+.ro-card:hover { opacity: .94; transition: .2s; }
+.ro-ph {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  opacity: .8;
+  border-radius: 12px;
 }
 
 /* =========================================================
@@ -210,7 +245,6 @@ main h1,
   padding-left: var(--ro-pad-x);
   padding-right: var(--ro-pad-x);
 }
-
 .single img,
 .page img {
   display:block;
@@ -227,159 +261,5 @@ footer.footer, .site-footer, .page-footer {
   padding-right: var(--ro-pad-x);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-top: 2rem;   /* Ekstra luft over footeren */
-}
-
-/* Portrait shortcode billeder */
-.portrait-img {
-  border-radius: 14px; /* samme runding som øvrige billeder */
-  border: none;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* =========================================================
-   BLOG – bredere indhold
-   ========================================================= */
-.single .ro-wrap,
-.page .ro-wrap {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-.single .ro-content,
-.page .ro-content {
-  max-width: 70ch !important;   /* samme som dine Works-sider */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.single .giscus-wrap,
-.page .giscus-wrap {
-  max-width: 70ch !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* =========================================================
-   BLOG – titel mere markant
-   ========================================================= */
-.single .ro-title,
-.page .ro-title {
-  font-size: clamp(2.8rem, 6vw, 4.5rem) !important; /* større end works */
-  font-weight: 900 !important;                      /* ekstra fed */
-  line-height: 1.15 !important;                     /* tættere linjer */
-  margin-bottom: 1.5rem !important;                 /* lidt mere luft efter */
-  color: inherit;                                   /* bevar temaets farve */
-}
-
-/* =========================================================
-   ALIGN MAIN CONTENT – samme venstre margen overalt
-   ========================================================= */
-
-/* Sikrer at alle hoved-sektioner (forside, categories, blog, works osv.)
-   flugter med brand-navnet i header */
-main,
-.ro-wrap,
-main .container,
-main .content,
-main .content-wrapper,
-main .page,
-main .article-container,
-main .prose,
-#main-content {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* =========================================================
-   GLOBAL WRAP FIX – ens margen på alle sider
-   ========================================================= */
-.ro-wrap {
-  max-width: var(--ro-maxw) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: var(--ro-pad-x) !important;
-  padding-right: var(--ro-pad-x) !important;
-}
-
-/* =========================================================
-   WORKS & CATEGORIES (fælles styling)
-   ========================================================= */
-
-.ro-wrap {
-  max-width: var(--ro-maxw);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2.5rem var(--ro-pad-x);
-}
-
-.ro-h1 {
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  margin: 0 0 1.25rem 0;
-}
-
-.ro-sub {
-  opacity: .9;
-  margin: -.25rem 0 1.25rem;
-}
-
-.ro-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.25rem;
-}
-
-.ro-card {
-  position: relative;
-  display: block;
-  border-radius: 12px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, .04);
-}
-
-.ro-card img {
-  display: block;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.ro-card-label {
-  position: absolute;
-  left: .75rem;
-  bottom: .6rem;
-  background: rgba(0, 0, 0, .55);
-  color: #fff;
-  padding: .25rem .5rem;
-  border-radius: 8px;
-  font-size: .9rem;
-  line-height: 1;
-}
-
-.ro-card:hover {
-  opacity: .94;
-  transition: .2s;
-}
-
-.ro-ph {
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  opacity: .8;
-  border-radius: 12px;
+  margin-top: 2rem;
 }
