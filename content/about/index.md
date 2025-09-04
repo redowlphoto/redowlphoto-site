@@ -4,6 +4,7 @@ showWordCount: false
 showAuthor: false
 showDate: false
 slug: about
+title: About, Prints & Contact
 showTaxonomies: false
 showReadingTime: false
 noPager: true

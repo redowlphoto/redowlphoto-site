@@ -1,113 +1,200 @@
 ﻿/* =========================================================
-   RedOwlPhoto – Custom CSS
+   RedOwlPhoto – Custom CSS (renset version)
    Placering: assets/css/custom.css
    ========================================================= */
 
-/* ---------- Basale variable ---------- */
-:root{
-  --ro-pad-x: clamp(1rem, 4vw, 3rem);       /* vandret indryk */
-  --ro-maxw: 1200px;                        /* max bredde på indhold */
-  --ro-h1-size: clamp(6rem, 9.6vw, 9rem); /* ENS side-overskrift på alle sider */
+/* ---------- Globale variabler ---------- */
+:root {
+  /* Vandret indryk (side-padding) */
+  --ro-pad-x: clamp(16px, 5vw, 32px);
+
+  /* Max bredde: altid luft i siderne, også på mobil */
+  --ro-maxw: min(1680px, calc(100vw - 2 * var(--ro-pad-x)));
+
+  /* Overskrifter */
+  --ro-h1-size: clamp(2.2rem, 5vw, 3.6rem);
+  --ro-works-h1: clamp(3rem, 7vw, 5rem);
 }
 
-/* 1) Skjul Blowfishs “#”-ankre ved overskrifter */
-.heading-anchor{ display: none !important; }
+/* Skjul Blowfishs “#”-ankre */
+.heading-anchor { display: none !important; }
 
-/* 2) Footer – fjern den lyse top-linje / divider */
-.site-footer, footer, .page-footer{ border-top: none !important; }
-.site-footer hr, .page-footer hr, footer hr{ display: none !important; }
+/* Footer divider fjernes */
+.site-footer, footer, .page-footer { border-top: none !important; }
+.site-footer hr, .page-footer hr, footer hr { display: none !important; }
 
-/* 3) Footer – Instagram-række (vores extend/partial) */
-.ro-footer-social{ margin-top:.75rem }
-.ro-footer-social a{
+/* Footer – Instagram */
+.ro-footer-social { margin-top:.75rem }
+.ro-footer-social a {
   display:inline-flex; align-items:center; gap:.5rem;
   opacity:.9; text-decoration:none;
 }
-.ro-footer-social a:hover{ opacity:1 }
-.ro-footer-social svg{ width:20px; height:20px; vertical-align:middle }
+.ro-footer-social a:hover { opacity:1 }
+.ro-footer-social svg { width:20px; height:20px; }
 
-/* 4) Genbrugelig “Instagram inline”-stil (fx på About-siden) */
-.ig-inline{ display:inline-flex; align-items:center; gap:.5rem }
-.ig-inline svg{ width:18px; height:18px }
+/* Inline Instagram */
+.ig-inline { display:inline-flex; align-items:center; gap:.5rem }
+.ig-inline svg { width:18px; height:18px }
 
-/* 5) Lille polering af kategori-badges */
-.ro-card-label{ backdrop-filter:blur(4px); border-radius:8px }
+/* Badge */
+.ro-card-label { backdrop-filter:blur(4px); border-radius:8px }
 
-/* 6) UNIFIED H1 (side-overskrifter) – Works/Blog/About m.fl. */
-.ro-h1,
-main h1:first-of-type,
-main header h1,
-main .page-header h1,
-main .article-header h1 {
-  font-size: var(--ro-h1-size) !important;
-  font-weight: 800 !important;
-  letter-spacing: -.01em;
-  line-height: 1.15 !important;
-  margin: 0 0 1.25rem 0 !important;
-}
-
-/* 7) Forsidens tagline skal skifte farve med temaet */
-.ro-tagline{ color:inherit !important; opacity:.9 }
+/* Forside tagline */
+.ro-tagline { color:inherit !important; opacity:.9 }
 
 /* =========================================================
-   8) HEADER / TOP-MENU – større, harmonisk typografi
+   HEADER
    ========================================================= */
 header .brand,
 header .site-brand,
 header .site-title,
-header .site-name,
-.site-header .brand,
-.site-header .site-brand,
-.site-header .site-title,
-.site-header .site-name{
-  font-size: clamp(1.35rem, 1.3vw + 1.05rem, 1.75rem) !important;
+header .site-name {
+  font-size: clamp(1.2rem, 1.5vw, 1.6rem) !important;
   font-weight: 700 !important;
-  letter-spacing: .01em;
-  line-height: 1.15 !important;
 }
 header nav a,
-header .menu a,
-.site-header nav a,
-.site-header .menu a{
-  font-size: clamp(1.2rem, 1.05vw + 0.95rem, 1.45rem) !important;
+header .menu a {
+  font-size: clamp(1rem, 1.2vw, 1.3rem) !important;
   font-weight: 600 !important;
-  line-height: 1.15 !important;
   text-underline-offset: .2em;
 }
-/* Ens vertikal padding i headeren på alle sider */
-header, .site-header{ padding-top:.55rem !important; padding-bottom:.55rem !important; }
-
-/* Lidt nedskalering på små skærme */
-@media (max-width: 820px){
-  header nav a,
-  header .menu a,
-  .site-header nav a,
-  .site-header .menu a{ font-size:1rem !important; }
-  header .brand, .site-header .brand{ font-size:1.15rem !important; }
+header, .site-header {
+  padding-top:.55rem !important;
+  padding-bottom:.55rem !important;
 }
 
 /* =========================================================
-   9) ENS HORIZONTALE INDRYK & MAKS-BREDDE PÅ ALLE SIDER
+   WRAPPERS – alt indhold
    ========================================================= */
-.ro-wrap{
-  max-width: var(--ro-maxw) !important;
-  margin-left:auto !important; margin-right:auto !important;
-  padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
-}
+.ro-wrap,
 main .container,
 main .content,
 main .content-wrapper,
 main .page,
 main .article-container,
-main .prose{
-  max-width: var(--ro-maxw) !important;
-  margin-left:auto !important; margin-right:auto !important;
-  padding-left:var(--ro-pad-x) !important; padding-right:var(--ro-pad-x) !important;
+main .prose,
+#main-content {
+  max-width: var(--ro-maxw);
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--ro-pad-x);
+  padding-right:var(--ro-pad-x);
 }
-/* Ens top-afstand under headeren før første indhold */
-main{ padding-top: clamp(.5rem, 1.2vw, 1.25rem) !important; }
-/* Ens topmargin for første H1 */
-.ro-wrap h1:first-child,
-main .content h1:first-child,
-main .container h1:first-child,
-main .prose h1:first-child{ margin-top:.25rem !important; }
+
+/* =========================================================
+   OVERSKRIFTER
+   ========================================================= */
+.ro-h1 {
+  font-size: var(--ro-works-h1) !important;
+  font-weight: 800 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+main h1,
+.page-header h1,
+.article-header h1,
+.single h1 {
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 800 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about-photo {
+  display:block;
+  float:right;
+  max-width: clamp(260px, 32vw, 420px);
+  margin: .5rem 0 1rem 1.25rem;
+  border-radius: 14px;
+}
+.about-photo img { width:100%; height:auto; display:block; }
+
+@media (max-width: 900px) {
+  .about-photo {
+    float:none;
+    margin: .75rem auto 1rem;
+    max-width: min(100%, 520px);
+  }
+}
+
+/* =========================================================
+   GRID – Works & Categories
+   ========================================================= */
+.ro-grid,
+.list #main-content .grid,
+.list #main-content [class*="grid-cols"] {
+  display:grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.25rem !important;
+}
+
+@media (max-width: 1024px) {
+  .ro-grid,
+  .list #main-content .grid,
+  .list #main-content [class*="grid-cols"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 640px) {
+  .ro-grid,
+  .list #main-content .grid,
+  .list #main-content [class*="grid-cols"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================================
+   MOBILE FIX – altid side-padding
+   ========================================================= */
+@media (max-width: 900px) {
+  #main-content > :where(header, section, article, div):not(.grid) {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+  .page-header,
+  .article-header,
+  .article-content,
+  .prose,
+  .list {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+  .giscus, .giscus-wrap,
+  .site-footer, footer {
+    padding-left: var(--ro-pad-x) !important;
+    padding-right: var(--ro-pad-x) !important;
+  }
+}
+
+/* =========================================================
+   SINGLE VIEW – billeder og tekst
+   ========================================================= */
+.single .prose,
+.page .prose,
+.article-content {
+  max-width: var(--ro-maxw);
+  margin-left:auto;
+  margin-right:auto;
+  padding-left: var(--ro-pad-x);
+  padding-right: var(--ro-pad-x);
+}
+
+.single img,
+.page img {
+  display:block;
+  max-width:100%;
+  height:auto;
+  border-radius:0.5rem;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer.footer, .site-footer, .page-footer {
+  padding-left: var(--ro-pad-x);
+  padding-right: var(--ro-pad-x);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;   /* Ekstra luft over footeren */
+}
