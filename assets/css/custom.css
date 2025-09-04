@@ -296,3 +296,15 @@ body.section-works {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* Fjern Hugo/Blowfish default body padding */
+body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Behold ensartet padding via ro-wrap */
+.ro-wrap {
+  padding-left: var(--ro-pad-x) !important;
+  padding-right: var(--ro-pad-x) !important;
+}
