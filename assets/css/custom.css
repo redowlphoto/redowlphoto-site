@@ -37,7 +37,7 @@
 .ro-tagline {
   font-size: 26px !important;   /* samme som h1 */
   font-weight: 600;   /* lettere vægt end h1 */
-  line-height: 1.4;
+  line-height: 1.25;
   margin-bottom: 1rem;
   color: inherit;
   opacity: .9;
