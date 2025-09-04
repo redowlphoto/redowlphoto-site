@@ -287,3 +287,53 @@ footer.footer, .site-footer, .page-footer {
   margin-bottom: 0.75rem;                              /* afstand til tekst */
   display: block;
 }
+
+/* =========================================================
+   TYPOGRAFI JUSTERINGER – tagline, hero, titler
+   ========================================================= */
+
+/* Hero-tekst → samme som .ro-title, men helt klar */
+.ro-hero-cap {
+  font-size: var(--ro-h1-size) !important; /* stor og markant */
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1.5rem 0 !important;
+  color: inherit !important;
+  opacity: 1 !important; /* fuld styrke */
+}
+
+/* Tagline → samme som hero, men dæmpet */
+.ro-tagline {
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1.5rem 0 !important;
+  color: inherit !important;
+  opacity: 0.85 !important; /* lidt mere diskret end hero */
+}
+
+/* .ro-title → skal være som h2.relative.group (nu mindre) */
+.ro-title {
+  font-size: calc(var(--ro-h1-size) * 0.75) !important; /* 25% mindre */
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 1.25rem 0 !important;
+  color: inherit !important;
+}
+
+/* h2.relative.group → 25% mindre end nu */
+h2.relative.group {
+  font-size: 75% !important; /* ca. 25% nedskalering */
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 1rem 0 !important;
+}
+
+/* p.ro-sub → skal være som h1.ro-h1 */
+p.ro-sub {
+  font-size: var(--ro-h1-size) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1.5rem 0 !important;
+  color: inherit !important;
+}
