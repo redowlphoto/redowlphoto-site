@@ -34,7 +34,15 @@
 .ro-card-label { backdrop-filter:blur(4px); border-radius:8px }
 
 /* Forside tagline */
-.ro-tagline { color:inherit !important; opacity:.9 }
+.ro-tagline {
+  font-size: 26px !important;   /* samme som h1 */
+  font-weight: 900 !important;  /* gør den også fed ligesom h1 */
+  line-height: 1.25 !important;
+  margin-bottom: 1rem;
+  color: inherit;
+  opacity: .9;
+}
+
 
 /* =========================================================
    HEADER
