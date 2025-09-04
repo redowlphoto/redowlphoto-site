@@ -302,4 +302,8 @@ h1.ro-title,
   line-height: 1.25 !important;
 }
 
-
+body h1 {
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+}
