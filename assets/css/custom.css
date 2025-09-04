@@ -263,3 +263,27 @@ footer.footer, .site-footer, .page-footer {
   padding-bottom: 1rem;
   margin-top: 2rem;
 }
+
+/* =========================================================
+   BLOG LIST – titler og datoer mere tydelige
+   ========================================================= */
+
+.ro-item-title a {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important; /* større og tydeligere */
+  font-weight: 800 !important;                        /* ekstra fed */
+  color: inherit !important;                          /* følger temaets farve */
+  text-decoration: none !important;                   /* ingen underline */
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.ro-item-title a:hover {
+  color: var(--color-primary, #3b82f6) !important;     /* farve ved hover */
+}
+
+.ro-meta {
+  font-size: 0.95rem !important;                       /* lidt mindre end brødtekst */
+  opacity: 0.8 !important;                             /* afdæmpet */
+  margin-bottom: 0.75rem;                              /* afstand til tekst */
+  display: block;
+}
