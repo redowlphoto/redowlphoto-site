@@ -288,8 +288,3 @@ footer.footer, .site-footer, .page-footer {
   display: block;
 }
 
-/* Fjern ekstra side-padding på Works siden */
-body.works .ro-wrap {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
