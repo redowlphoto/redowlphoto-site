@@ -298,3 +298,11 @@ body.term .ro-wrap {
   padding-right: 0 !important;
 }
 
+/* Fjern ekstra side-padding kun på works-sider */
+body.section.works #main-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: var(--ro-maxw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
