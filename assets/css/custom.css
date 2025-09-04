@@ -288,15 +288,18 @@ footer.footer, .site-footer, .page-footer {
   display: block;
 }
 
-/* Ensret alle H1 overskrifter (works, blog, about, single) */
+/* Tving alle h1 overskrifter op i 26px – også works og single */
 h1,
 h1.ro-h1,
 h1.ro-title,
 .page-header h1,
 .article-header h1,
-.single h1 {
-  font-size: 26px !important; /* matcher h2.relative.group */
+.single h1,
+.list h1,
+.taxonomy h1 {
+  font-size: 26px !important;
   font-weight: 900 !important;
   line-height: 1.25 !important;
 }
+
 
