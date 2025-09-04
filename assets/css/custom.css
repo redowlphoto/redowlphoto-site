@@ -288,3 +288,14 @@ footer.footer, .site-footer, .page-footer {
   display: block;
 }
 
+/* Works side – fjern dobbel-padding */
+.works-wrap {
+  max-width: var(--ro-maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  /* Fjern venstre/højre padding så den flugter */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
