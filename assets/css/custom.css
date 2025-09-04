@@ -299,3 +299,17 @@ footer.footer, .site-footer, .page-footer {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* =========================================================
+   WRAPPERS – alternativ til Works og Taxonomy
+   ========================================================= */
+.ro-wrap-flat {
+  max-width: var(--ro-maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  /* ingen venstre/højre padding */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
