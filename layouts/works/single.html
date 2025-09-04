@@ -2,7 +2,7 @@
 
 
 <div class="ro-wrap">
-  <h1 class="ro-title">{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
   <div class="ro-meta">
     {{ with .Params.location }}{{ . }} · {{ end }}{{ .Date | time.Format "January 2, 2006" }}
   </div>
