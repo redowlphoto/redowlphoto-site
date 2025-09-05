@@ -39,22 +39,6 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ with .Params.images }}{{ (index . 0) | absURL }}{{ else }}https://redowlphoto.dk/og-home.jpg{{ end }}">
 
-<!-- Twitter cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}
-  Minimal Nordic Seascapes | Fine Art Photography by RedOwlPhoto
-  {{ else }}
-    {{ .Title }} | RedOwlPhoto
-  {{ end }}">
-<meta name="twitter:description" content="{{ if .IsHome }}
-  Explore minimalist seascapes and landscapes from Mariager Fjord, Als Odde and Øster Hurup. Fine art photography in calm Nordic light.
-  {{ else if .IsPage }}
-    {{ with .Params.description }}{{ . }}{{ else }}Fine art photography and Nordic minimalism by RedOwlPhoto.{{ end }}
-  {{ else }}
-    Fine art photography with a focus on Nordic light and minimal landscapes.
-  {{ end }}">
-<meta name="twitter:image" content="{{ with .Params.images }}{{ (index . 0) | absURL }}{{ else }}https://redowlphoto.dk/og-home.jpg{{ end }}">
-
 <!-- JSON-LD structured data -->
 {{ if .IsHome }}
 <script type="application/ld+json">
