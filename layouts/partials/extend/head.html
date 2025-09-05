@@ -106,7 +106,7 @@
 </script>
 
 {{ else if .IsPage }}
-  {{ if eq .File.ContentBaseName "about" }}
+  {{ if in .Permalink "/about/" }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
