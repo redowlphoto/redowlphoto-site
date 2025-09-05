@@ -37,5 +37,3 @@ For a selection of works awarded in international competitions or curated by gal
 If you’re planning a visit, read more about [Skagen at Enjoy Nordjylland](https://www.enjoynordjylland.dk/skagen?utm_source=chatgpt.com).
 
 <!--more-->
-
-{{< schema-work >}}

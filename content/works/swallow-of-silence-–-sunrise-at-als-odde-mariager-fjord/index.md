@@ -35,5 +35,3 @@ For a selection of works awarded in international competitions or curated by gal
 If you’re planning to explore the region, Mariager Fjord is one of Denmark’s most scenic fjords. Read more at [Visit Himmerland – Mariager Fjord](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491?utm_source=chatgpt.com) or [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
 
 <!--more-->
-
-{{< schema-work >}}

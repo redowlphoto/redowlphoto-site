@@ -44,5 +44,3 @@ If you’re planning a visit, read more about [Mariager Fjord at Visit Himmerlan
 or explore the region at [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).
 
 <!--more-->
-
-{{< schema-work >}}

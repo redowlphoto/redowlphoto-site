@@ -42,5 +42,3 @@ If you are planning a visit, read more at [Enjoy Nordjylland](https://www.enjoyn
 or [Visit Nordvestkysten – Lønstrup](https://www.visitnordvestkysten.dk/nordvestkysten/feriesteder/loenstrup?utm_source=chatgpt.com).
 
 <!--more-->
-
-{{< schema-work >}}

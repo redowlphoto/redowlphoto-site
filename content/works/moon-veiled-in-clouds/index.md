@@ -42,5 +42,3 @@ Read more at [Enjoy Nordjylland – Lønstrup](https://www.enjoynordjylland.dk/?
 
 
 <!--more-->
-
-{{< schema-work >}}

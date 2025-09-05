@@ -35,5 +35,3 @@ For a selection of works awarded in international competitions or curated by gal
 If you’re planning a visit, read more at [Enjoy Nordjylland](https://www.enjoynordjylland.dk/?utm_source=chatgpt.com) or [Visit Nordvestkysten – Lønstrup](https://www.visitnordvestkysten.dk/nordvestkysten/feriesteder/loenstrup?utm_source=chatgpt.com).
 
 <!--more-->
-
-{{< schema-work >}}

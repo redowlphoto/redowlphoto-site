@@ -46,5 +46,3 @@ or explore the region at [Visit Himmerland](https://www.visithimmerland.dk?utm_s
 
 <!--more-->  
 
-
-{{< schema-work >}}
