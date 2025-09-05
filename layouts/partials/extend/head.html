@@ -1,4 +1,5 @@
 <!-- Basic SEO -->
+<!-- Title -->
 <title>
   {{ if .IsHome }}
     RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
@@ -9,12 +10,13 @@
   {{ end }}
 </title>
 
-<meta name="description" content="{{ if .IsHome }}
-  Discover minimal Nordic seascapes, fjord landscapes and fine art photography. Explore curated works, blog posts and stories about light, stillness and place.
+<!-- Meta Title -->
+<meta name="title" content="{{ if .IsHome }}
+  RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
   {{ else if .IsPage }}
-    {{ with .Params.description }}{{ . }}{{ else }}Fine art photography and Nordic minimalism by RedOwlPhoto.{{ end }}
+    {{ .Title }} | RedOwlPhoto
   {{ else }}
-    Fine art photography with a focus on Nordic light and minimal landscapes.
+    RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
   {{ end }}">
 
 <!-- Favicon -->
