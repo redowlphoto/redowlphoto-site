@@ -118,25 +118,26 @@
   "description": "{{ with .Params.description }}{{ . }}{{ else }}Fine art photography insights and stories from RedOwlPhoto.{{ end }}"
 }
 </script>
-{{ else if eq .File.BaseFileName "about" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "url": "https://redowlphoto.dk/about/",
-  "name": "About, Prints & Contact | RedOwlPhoto",
-  "description": "Learn more about RedOwlPhoto. Minimalist fine art photography and Nordic seascapes from Denmark’s east coast. Prints, licensing options, and contact information.",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Allan Andersen",
-    "alternateName": "RedOwlPhoto",
-    "image": "https://redowlphoto.dk/about/portrait.jpg",
-    "url": "https://redowlphoto.dk/",
-    "sameAs": [
-      "https://www.instagram.com/redowlphoto/"
-    ]
-  }
-}
-</script>
-{{ end }}
+{{ else if .IsPage }}
+  {{ if eq .File.ContentBaseName "about" }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "url": "https://redowlphoto.dk/about/",
+      "name": "About, Prints & Contact | RedOwlPhoto",
+      "description": "Learn more about RedOwlPhoto. Minimalist fine art photography and Nordic seascapes from Denmark’s east coast. Prints, licensing options, and contact information.",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Allan Andersen",
+        "alternateName": "RedOwlPhoto",
+        "image": "https://redowlphoto.dk/about/portrait.jpg",
+        "url": "https://redowlphoto.dk/",
+        "sameAs": [
+          "https://www.instagram.com/redowlphoto/"
+        ]
+      }
+    }
+    </script>
+  {{ end }}
 
