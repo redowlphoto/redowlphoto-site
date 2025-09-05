@@ -1,1 +1,6 @@
+{{ if eq .Section "works" }}
+  {{ partial "schema-work.html" . }}
+{{ else }}
+  ... den oprindelige schema-kode ...
+{{ end }}
 <!-- Overridden schema.html to remove default Article schema -->
