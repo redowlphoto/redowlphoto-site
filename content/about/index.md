@@ -6,8 +6,12 @@ showAuthor: false
 showDate: false
 slug: about
 showTaxonomies: false
-title: About, Prints & Contact
+title: "About, Prints & Contact | RedOwlPhoto"
+description: "Learn more about RedOwlPhoto. Minimalist fine art photography from Denmark’s east coast. Prints, licensing options, and contact information."
+images:
+  - "/about/portrait.jpg"
 showReadingTime: false
+draft: false
 ---
 ## About
 
@@ -27,7 +31,7 @@ Please email hello@redowlphoto.dk with the work title, intended use/size, and an
 ## Instagram
 
 I share new work and occasional behind-the-scenes on Instagram.\
-If my images speak to you, I’d appreciate a follow or a comment — I love hearing from people who enjoy the work.
+If my images speak to you, I’d appreciate a follow or a comment, I love hearing from people who enjoy the work.
 
 <a class="ig-inline" href="https://www.instagram.com/redowlphoto/" target="_blank" rel="me noopener" aria-label="Instagram">
   <svg viewBox="0 0 24 24" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.15em;margin-right:.35em">
