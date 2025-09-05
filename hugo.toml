@@ -65,6 +65,10 @@ term     = ["HTML", "RSS"]
   [params.footer]
     showMenu = false
 
+  # --- Slå Blowfishs egne schemaer fra ---
+  [params.schema]
+    disable = true
+
 # --- Topmenu ---
 [menu]
   [[menu.main]]
