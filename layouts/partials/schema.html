@@ -1,1 +1,9 @@
-<!-- Overridden schema.html to remove default Article schema -->
+{{ if .IsHome }}
+  {{ partial "schema-home.html" . }}
+{{ else if eq .Section "works" }}
+  {{ partial "schema-work.html" . }}
+{{ else if eq .Section "blog" }}
+  {{ partial "schema-blog.html" . }}
+{{ else if in .Permalink "/about/" }}
+  {{ partial "schema-about.html" . }}
+{{ end }}

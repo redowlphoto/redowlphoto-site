@@ -1,0 +1,24 @@
+{{- $p := .Page -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ $p.Title | jsonify }},
+  "image": {{ with $p.Params.images }}{{ (index . 0) | absURL | jsonify }}{{ else }}"https://redowlphoto.dk/og-home.jpg"{{ end }},
+  "datePublished": {{ ($p.PublishDate | default $p.Date) | time.Format "2006-01-02" | jsonify }},
+  "dateModified": {{ $p.Lastmod | time.Format "2006-01-02" | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "Allan Andersen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RedOwlPhoto",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://redowlphoto.dk/favicon.ico"
+    }
+  },
+  "description": {{ with $p.Params.description }}{{ . | jsonify }}{{ else }}"Fine art photography insights and stories from RedOwlPhoto."{{ end }}
+}
+</script>
