@@ -14,14 +14,14 @@
 
 <script type="application/ld+json">
 [{
-  "@context":"https://schema.org",
-  "@type":"Photograph",
+  "@context": "https://schema.org",
+  "@type": "Photograph",
   "name": {{ $name | jsonify }},
   "headline": {{ $name | jsonify }},
   "abstract": {{ $p.Summary | plainify | jsonify }},
   "inLanguage": {{ $p.Language.LanguageCode | default "en" | jsonify }},
   "url": {{ $p.Permalink | jsonify }},
-  "author": { "@type":"Person","name":"RedOwlPhoto" },
+  "author": { "@type": "Person", "name": "RedOwlPhoto" },
   "copyrightYear": {{ $p.Date.Format "2006" }},
   "dateCreated": {{ $p.Date | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
   "datePublished": {{ ($p.PublishDate | default $p.Date) | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
@@ -30,11 +30,11 @@
   "mainEntityOfPage": true
 },
 {
-  "@context":"https://schema.org",
-  "@type":["Photograph","ImageObject"],
+  "@context": "https://schema.org",
+  "@type": ["Photograph","ImageObject"],
   "caption": {{ $caption | jsonify }},
-  "contentLocation": { "@type":"Place","name": {{ $loc | jsonify }} },
-  "creator": { "@type":"Person","name":"Allan Andersen","url": {{ "https://redowlphoto.dk/" | jsonify }} },
+  "contentLocation": { "@type": "Place", "name": {{ $loc | jsonify }} },
+  "creator": { "@type": "Person", "name": "Allan Andersen", "url": {{ "https://redowlphoto.dk/" | jsonify }} },
   "datePublished": {{ $p.Date.Format "2006-01-02" | jsonify }},
   "genre": ["Minimalist","Seascape","Fine Art"],
   "image": {{ $coverAbs | jsonify }},
@@ -42,11 +42,9 @@
   "name": {{ $name | jsonify }},
   "sameAs": ["https://www.instagram.com/redowlphoto/"],
   "url": {{ $p.Permalink | jsonify }},
-
   "creditText": "Allan Andersen",
   "copyrightNotice": "© Allan Andersen / RedOwlPhoto",
   "license": {{ (print site.BaseURL "license/") | jsonify }},
   "acquireLicensePage": {{ (print site.BaseURL "about/") | jsonify }}
 }]
 </script>
-
