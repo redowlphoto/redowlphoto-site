@@ -1,4 +1,5 @@
 ---
+draft: false
 noPager: true
 showEdit: false
 showWordCount: false
@@ -6,17 +7,19 @@ showAuthor: false
 showDate: false
 slug: about
 showTaxonomies: false
-title: "About, Prints & Contact | RedOwlPhoto"
-description: "Learn more about RedOwlPhoto. Minimalist fine art photography from Denmark’s east coast. Prints, licensing options, and contact information."
+title: About, Prints & Contact | RedOwlPhoto
 images:
-  - "/about/portrait.jpg"
+  - /about/portrait.jpg
 showReadingTime: false
-draft: false
+description: Learn more about RedOwlPhoto. Minimalist fine art photography from
+  Denmark’s east coast. Prints, licensing options, and contact information.
 ---
 ## About
 
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
-I make quiet, pared-back photographs guided by minimalism and a modernist eye for form. Simple lines, open horizons and muted colour keep space and stillness in the frame. Whether on the coast, in a city square or on a mountain path, I look for clear structure-light against edge, mass against void. Sea, wall, tree or passer-by: the aim is always to remove distraction so the mood of a place can surface. The work sits between document and abstraction, suggesting more than it states. Most images are from Denmark’s east coast around Mariager Fjord, Als Odde and Øster Hurup, with ongoing series elsewhere.
+I am Allan Andersen – the photographer behind RedOwlPhoto.
+I make quiet, pared-back photographs guided by minimalism and a modernist eye for form. Simple lines, open horizons and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface. 
+Most images are from Denmark’s east coast around Mariager Fjord, Als Odde and Øster Hurup, with ongoing series elsewhere.
 
 ## Prints & Licensing
 
