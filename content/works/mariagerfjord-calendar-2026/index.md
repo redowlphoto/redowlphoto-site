@@ -17,7 +17,6 @@ cover:
 featured: true
 categories:
   - cool-blues
-  - sea-fjord
 tags:
   - Mariager Fjord calendar 2026
   - Øster Hurup Denmark
