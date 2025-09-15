@@ -5,11 +5,10 @@ date: 2025-09-15
 location: Hadsund, Mariagerfjord, Denmark
 caption: >-
   Explore the calm beauty of Mariager Fjord and Øster Hurup — now collected in
-  my 2026 fine art calendar. 
+  my 2026 fine art calendar. Available in several languages.
 
-  👉 [Order the calendar here via Saal Digital](https://photo-portal.shop/profiles/Allan-Andersen)
 
-  Available in several languages
+  👉 Order the calendar here via Saal Digital https://photo-portal.shop/profiles/Allan-Andersen
 cover:
   image: forside.png
   alt: Minimalist calendar cover photograph from Mariager Fjord with soft mist,
