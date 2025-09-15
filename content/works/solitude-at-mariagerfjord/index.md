@@ -9,7 +9,7 @@ cover:
   alt: Minimalist landscape photograph of Mariager Fjord near Hadsund on an early
     spring morning, with soft mist, calm water and a single boat reflecting in
     the still surface.
-featured: true
+featured: false
 categories:
   - cool-blues
   - sea-fjord
