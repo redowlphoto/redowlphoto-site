@@ -95,7 +95,7 @@
     </div>
 
     {{ with site.Data.home.hero_caption }}
-      <p class="ro-hero-cap">{{ . }}</p>
+      <p class="ro-hero-cap">{{ . | markdownify }}</p>
     {{ end }}
   {{ end }}
 </div>
