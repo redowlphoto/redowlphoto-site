@@ -1,5 +1,5 @@
 ---
-title: https://redowlphoto.dk/calendar2026-nl
+title: Achter de Mariagerfjord 2026 Kalender
 date: 2025-09-16
 ---
 *Seizoenen veranderen, het licht verschuift en de fjord vertelt elke maand een ander verhaal.*  
