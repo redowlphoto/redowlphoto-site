@@ -3,7 +3,14 @@ title: Solitude at Mariagerfjord
 draft: false
 date: 2025-03-07
 location: Hadsund, Mariagerfjord, Denmark
-caption: Quiet morning reflections at Mariager Fjord, Hadsund.
+caption: >-
+  Quiet morning reflections at Mariager Fjord, Hadsund.
+
+  <br>
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for July 
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: solitude-at-mariagerfjord.jpg
   alt: Minimalist landscape photograph of Mariager Fjord near Hadsund on an early
