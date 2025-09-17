@@ -13,6 +13,8 @@ caption: >-
 
   This photograph is part of my **Mariagerfjord 2026 Calendar** for November 
 
+  <br>
+
   👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: pastel-migration.jpg
