@@ -19,7 +19,7 @@
         sizes="(max-width: 1200px) 100vw, 1200px"
         alt="{{ .Params.cover.alt }}"
         loading="eager" decoding="async">
-      {{ with .Params.caption }}<figcaption class="ro-cap">{{ . }}</figcaption>{{ end }}
+      {{ with .Params.caption }}<figcaption class="ro-cap">{{ . | markdownify }}</figcaption>{{ end }}
     </figure>
   {{ end }}
 
