@@ -12,6 +12,8 @@ caption: >-
 
   This photograph is part of my **Mariagerfjord 2026 Calendar** for April  
 
+  <br>
+
   👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: chromatic-stillness.jpg
