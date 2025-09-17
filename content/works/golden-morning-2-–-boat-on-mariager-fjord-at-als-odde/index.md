@@ -12,6 +12,8 @@ caption: >-
 
   This photograph is part of my **Mariagerfjord 2026 Calendar** for August
 
+  <br>
+
   👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   alt: Boat leaving shore on calm August sunrise at Als Odde, Mariager Fjord,
