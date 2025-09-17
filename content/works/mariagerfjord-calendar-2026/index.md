@@ -8,7 +8,9 @@ caption: >
   2026 fine art calendar. Available in several languages.  
 
 
-  👉 [Order the calendar here](/calendar2026){onclick="return gtagSendEvent('/calendar2026')"}
+  👉 <a href="/calendar2026" onclick="return gtagSendEvent('/calendar2026')">
+    Order the calendar here
+  </a>
 cover:
   image: forside.png
   alt: Minimalist calendar cover photograph from Mariager Fjord with soft mist,
