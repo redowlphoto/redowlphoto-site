@@ -3,9 +3,16 @@ title: Chromatic Stillness
 draft: false
 date: 2025-03-31
 location: Als Odde, Mariager Fjord – Himmerland, North Jutland, Denmark
-caption: Pastel colors settle over Mariager Fjord at Als Odde on a quiet
-  evening. Wooden poles rise from the water as soft reflections spread across
-  the fjord – a brief moment of color magic where calm and minimalism meet.
+caption: >-
+  Pastel colors settle over Mariager Fjord at Als Odde on a quiet evening.
+  Wooden poles rise from the water as soft reflections spread across the fjord –
+  a brief moment of color magic where calm and minimalism meet.
+
+  <br>
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for April  
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: chromatic-stillness.jpg
   alt: Minimalist seascape photograph of Mariager Fjord at Als Odde, Denmark,
