@@ -3,9 +3,16 @@ title: Golden Dawn 2
 draft: false
 date: 2025-08-13
 location: Als Odde, Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
-caption: An August sunrise at Als Odde. A small boat heads out across the calm
-  water of Mariager Fjord, surrounded by golden light and the quiet rhythm of
-  the morning.
+caption: >-
+  An August sunrise at Als Odde. A small boat heads out across the calm water of
+  Mariager Fjord, surrounded by golden light and the quiet rhythm of the
+  morning.
+
+  <br>
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for August
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   alt: Boat leaving shore on calm August sunrise at Als Odde, Mariager Fjord,
     Denmark, with golden light over the water – by RedOwlPhoto.
