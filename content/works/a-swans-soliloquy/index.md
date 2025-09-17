@@ -3,9 +3,16 @@ title: A Swans Soliloquy
 draft: false
 date: 2025-05-12
 location: Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
-caption: A mute swan drifts across the calm waters of Mariager Fjord on a May
-  morning. The soft pastel reflections of spring light create a quiet atmosphere
-  along the Himmerland fjords.
+caption: >-
+  A mute swan drifts across the calm waters of Mariager Fjord on a May morning.
+  The soft pastel reflections of spring light create a quiet atmosphere along
+  the Himmerland fjords.
+
+  <br>
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for May 
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: a-swans-soliloquy.jpg
   alt: Mute swan gliding on pastel-colored water in spring light, Mariager Fjord,
