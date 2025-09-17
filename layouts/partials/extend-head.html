@@ -9,14 +9,14 @@
   gtag('config', 'AW-16579737203');
 
   // Helper-funktion til klik-tracking + delayed navigation
-  function gtagSendEvent(url) {
+  function gtagSendEvent(url, eventId) {
     var callback = function () {
       if (typeof url === 'string') {
         window.location = url;
       }
     };
     gtag('event', 'conversion', {
-      'send_to': 'AW-16579737203/order_calendar', // <-- her indsætter du dit rigtige konverterings-ID
+      'send_to': eventId,     // Hvert link får sit eget event-ID
       'event_callback': callback,
       'event_timeout': 2000
     });
