@@ -8,15 +8,16 @@
   // Standard konfiguration af Google Ads
   gtag('config', 'AW-16579737203');
 
-  // Helper-funktion til klik-tracking + delayed navigation
-  function gtagSendEvent(url, eventId) {
+  // Klik-tracking til kalender-links
+  function gtag_report_conversion(url) {
     var callback = function () {
-      if (typeof url === 'string') {
+      if (typeof(url) != 'undefined') {
         window.location = url;
       }
     };
     gtag('event', 'conversion', {
-      'send_to': eventId,     // Hvert link får sit eget event-ID
+      'send_to': 'AW-16579737203/cwrECN_F9JwbEPPs6uE9', // ID fra Google Ads for "Kalender Klik"
+      'transaction_id': '',
       'event_callback': callback,
       'event_timeout': 2000
     });
