@@ -8,7 +8,8 @@ caption: >
   2026 fine art calendar. Available in several languages.  
 
 
-  👉 <a href="/calendar2026" onclick="return gtagSendEvent('/calendar2026')">
+  👉 <a href="/calendar2026" 
+         onclick="return gtag_report_conversion('/calendar2026')">
     Order the calendar here
   </a>
 cover:
