@@ -3,12 +3,16 @@ title: Balanced Horizon
 draft: false
 date: 2025-03-08
 location: Øster Hurup, Kattegat, Denmark
-caption: |-
+caption: >-
   Morning haze over Kattegat at Øster Hurup.
+
   <br>
-  This photograph is part of my **Mariagerfjord 2026 Calendar** for January
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for January  
+
   <br>
-  👉 [See here](http://redowlphoto.dk/calendar2026)
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: balanced-horizon.jpg
   alt: Minimalist seascape photograph from Øster Hurup on the Kattegat coast,
