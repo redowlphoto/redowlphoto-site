@@ -3,10 +3,17 @@ title: Pastel Migration
 draft: false
 date: 2024-11-14
 location: Mariager Fjord – Hadsund, Himmerland, North Jutland, Denmark
-caption: On a clear November day by Mariager Fjord, a flock of migrating birds
-  crosses the sky beneath the pale moon. The soft autumn light and pastel tones
-  capture the quiet rhythm of nature along Himmerland’s coast – a reminder of
-  how the seasons shape the atmosphere of Denmark’s landscapes.
+caption: >-
+  On a clear November day by Mariager Fjord, a flock of migrating birds crosses
+  the sky beneath the pale moon. The soft autumn light and pastel tones capture
+  the quiet rhythm of nature along Himmerland’s coast – a reminder of how the
+  seasons shape the atmosphere of Denmark’s landscapes.
+
+  <br>
+
+  This photograph is part of my **Mariagerfjord 2026 Calendar** for November 
+
+  👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
 cover:
   image: pastel-migration.jpg
   alt: Autumn migration of birds under the moon on a pastel November sky,
