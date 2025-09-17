@@ -4,27 +4,27 @@ hero_caption: >
   My Mariagerfjord 2026 Calendar is available now  
 
   👉 <a href="/calendar2026" style="font-size:1.1em; text-decoration:underline;" 
-         onclick="return gtagSendEvent('/calendar2026','AW-16579737203/order_calendar_all')">
+         onclick="return gtag_report_conversion('/calendar2026')">
     Order here via Saal Digital (all editions)
   </a> 
 
   <a href="/calendar2026-dk" style="text-decoration:underline; margin-left:15px;" 
-         onclick="return gtagSendEvent('/calendar2026-dk','AW-16579737203/order_calendar_dk')">
+         onclick="return gtag_report_conversion('/calendar2026-dk')">
     DK
   </a> 
 
   <a href="/calendar2026-en" style="text-decoration:underline; margin-left:15px;" 
-         onclick="return gtagSendEvent('/calendar2026-en','AW-16579737203/order_calendar_en')">
+         onclick="return gtag_report_conversion('/calendar2026-en')">
     EN
   </a> 
 
   <a href="/calendar2026-de" style="text-decoration:underline; margin-left:15px;" 
-         onclick="return gtagSendEvent('/calendar2026-de','AW-16579737203/order_calendar_de')">
+         onclick="return gtag_report_conversion('/calendar2026-de')">
     DE
   </a> 
 
   <a href="/calendar2026-nl" style="text-decoration:underline; margin-left:15px;" 
-         onclick="return gtagSendEvent('/calendar2026-nl','AW-16579737203/order_calendar_nl')">
+         onclick="return gtag_report_conversion('/calendar2026-nl')">
     NL
   </a>  
 
@@ -35,7 +35,7 @@ hero_caption: >
   💡 New to Saal Digital?  
 
   Use my <a href="/saal-personal-voucher" style="text-decoration:underline;" 
-         onclick="return gtagSendEvent('/saal-personal-voucher','AW-16579737203/saal_voucher')">
+         onclick="return gtag_report_conversion('/saal-personal-voucher')">
     personal voucher link
   </a> to register and get a special discount on your first order.  
 
