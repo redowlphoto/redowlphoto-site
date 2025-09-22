@@ -12,7 +12,7 @@ caption: |
     Order the calendar here
   </a>
 cover:
-  image: skærmbillede-2025-09-15-170638.png
+  image: _skærmbillede_2025-09-15_170638.jpg
   alt: Minimalist seascape from Als Odde with small rples in the water. part of
     the RedOwlPhoto 2026 calendar featuring Mariagerfjord and Øster Hurup.
 featured: false
