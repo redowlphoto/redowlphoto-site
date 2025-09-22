@@ -17,7 +17,7 @@ cover:
   alt: Minimalist calendar cover photograph from Mariager Fjord with soft mist,
     calm waters and a single boat at dawn — part of the 2026 RedOwlPhoto
     calendar featuring Mariagerfjord and Øster Hurup.
-featured: true
+featured: false
 categories:
   - sea-fjord
 tags:
