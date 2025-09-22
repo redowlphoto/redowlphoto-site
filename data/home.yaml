@@ -8,12 +8,12 @@ tiles:
     hint: ""
     langs: []
     href: https://redowlphoto.dk/calendar2026
-    img: /uploads/forside.png
+    img: /uploads/forside_flise.jpg
     alt: Cover image – Mariagerfjord Calendar 2026
   - title: New to Saal Digital?
     sub: Click the image for a **discount**
     hint: "\n"
     langs: []
     href: https://redowlphoto.dk/saal-personal-voucher
-    img: /uploads/yourlogo.png
+    img: /uploads/saal_flise.jpg
     alt: Saal Digital – personal voucher for first-order discount
