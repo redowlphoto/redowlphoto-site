@@ -2,7 +2,7 @@
 title: Mariagerfjord Calendar 2026
 draft: false
 date: 2025-09-15
-location: Hadsund, Mariagerfjord, Denmark
+location: Mariagerfjord, Hadsund, Als Odde and Øster Hurup in Denmark
 caption: >
   Explore the calm beauty of Mariager Fjord and Øster Hurup, now collected in my
   2026 fine art calendar. Available in several languages.  
@@ -18,7 +18,8 @@ cover:
     calm waters and a single boat at dawn — part of the 2026 RedOwlPhoto
     calendar featuring Mariagerfjord and Øster Hurup.
 featured: false
-categories: []
+categories:
+  - calendar-2026
 tags:
   - Mariager Fjord calendar 2026
   - Øster Hurup Denmark
