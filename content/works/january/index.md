@@ -1,7 +1,7 @@
 ---
 title: 2026 January
 draft: false
-date: 2026-01-01
+date: 2025-01-02
 location: Øster Hurup, Kattegat, Denmark
 caption: >
   Minimal Nordic seascape from the Mariager Fjord region. Part of the 2026
@@ -15,9 +15,22 @@ featured: false
 categories:
   - calendar-2026
 tags:
-  - Mariager Fjord Øster Hurup Denmark wall calendar Nordic fine art calendar
-    Scandinavian minimalism seascape calm morning pastel light mist horizon boat
-    long exposure minimalism coastal landscape 2026 calendar
+  - Mariager Fjord
+  - Øster Hurup
+  - Denmark
+  - wall calendar
+  - Nordic fine art calendar
+  - Scandinavian
+  - minimalism seascape
+  - calm morning
+  - pastel light
+  - mist
+  - horizon
+  - boat
+  - long exposure
+  - minimalism
+  - coastal landscape
+  - 2026 calendar
 ---
 A special release for 2026:  
 this fine art calendar brings together 12 photographs from Mariager Fjord and Øster Hurup, two of Denmark’s most scenic coastal landscapes.
