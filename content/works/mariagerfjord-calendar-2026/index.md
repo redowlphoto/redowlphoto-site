@@ -18,8 +18,7 @@ cover:
     calm waters and a single boat at dawn — part of the 2026 RedOwlPhoto
     calendar featuring Mariagerfjord and Øster Hurup.
 featured: false
-categories:
-  - sea-fjord
+categories: []
 tags:
   - Mariager Fjord calendar 2026
   - Øster Hurup Denmark
