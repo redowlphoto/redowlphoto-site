@@ -5,32 +5,14 @@ hero_caption: |
 tiles:
   - title: Mariagerfjord Calendar 2026
     sub: Click the image to **buy**
-    hint: >-
-      <a href="/calendar2026-dk" style="text-decoration:underline;
-      margin-right:12px;"
-         onclick="return gtag_report_conversion('/calendar2026-dk')">DK</a>
-      <a href="/calendar2026-en" style="text-decoration:underline; margin-right:12px;"
-         onclick="return gtag_report_conversion('/calendar2026-en')">EN</a>
-      <a href="/calendar2026-de" style="text-decoration:underline; margin-right:12px;"
-         onclick="return gtag_report_conversion('/calendar2026-de')">DE</a>
-      <a href="/calendar2026-nl" style="text-decoration:underline;"
-         onclick="return gtag_report_conversion('/calendar2026-nl')">NL</a>
-    langs:
-      - DK
-      - EN
-      - DE
-      - NL
+    hint: ""
+    langs: []
     href: https://redowlphoto.dk/calendar2026
     img: /uploads/forside.png
     alt: Cover image – Mariagerfjord Calendar 2026
   - title: New to Saal Digital?
-    sub: Click the image for a discount **discount**
-    hint: >
-      💡 New to Saal Digital? Use my
-
-      <a href="/saal-personal-voucher" style="text-decoration:underline;"
-         onclick="return gtag_report_conversion('/saal-personal-voucher')">personal voucher link</a>
-      to register and get a special discount on your first order.
+    sub: Click the image for a **discount**
+    hint: "\n"
     langs: []
     href: https://redowlphoto.dk/saal-personal-voucher
     img: /uploads/yourlogo.png
