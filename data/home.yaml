@@ -1,46 +1,37 @@
-tagline: >-
-  Minimalist seascapes and landscapes from Mariager Fjord, Als Odde, Øster Hurup and beyond.
-
-hero_caption: >
-  My **Mariagerfjord 2026 Calendar** is available now.  
-  👉 <a href="/calendar2026" style="font-size:1.05em; text-decoration:underline;"
-        onclick="return gtag_report_conversion('/calendar2026')">Order here via Saal Digital (all editions)</a>  
-  <a href="/calendar2026-dk" style="text-decoration:underline; margin-right:12px;"
-        onclick="return gtag_report_conversion('/calendar2026-dk')">DK</a>
-  <a href="/calendar2026-en" style="text-decoration:underline; margin-right:12px;"
-        onclick="return gtag_report_conversion('/calendar2026-en')">EN</a>
-  <a href="/calendar2026-de" style="text-decoration:underline; margin-right:12px;"
-        onclick="return gtag_report_conversion('/calendar2026-de')">DE</a>
-  <a href="/calendar2026-nl" style="text-decoration:underline;"
-        onclick="return gtag_report_conversion('/calendar2026-nl')">NL</a>
-  
-  <br><br>
-
-  💡 New to Saal Digital?  
-  Use my <a href="/saal-personal-voucher" style="text-decoration:underline;"
-        onclick="return gtag_report_conversion('/saal-personal-voucher')">personal voucher link</a>
-  to register and get a special discount on your first order.
-
-  <br><br>
-
+tagline: Minimalist seascapes and landscapes from Mariager Fjord, Als Odde,
+  Øster Hurup and beyond.
+hero_caption: |
   Click the image to explore more works.
-
 tiles:
-  - title: "Mariagerfjord Calendar 2026"
-    sub: "Klik på billedet for at **købe**"
-    hint: "_All editions available_"
-    langs: ["DK","EN","DE","NL"]
-    # Sæt dette til din direkte Saal-købs-URL (eller midlertidigt til /calendar2026)
-    href: "https://YOUR-DIRECT-SAAL-LINK"
-    # Upload billedet i admin → det får typisk sti som /uploads/...
-    img: "/uploads/calendar-cover.jpg"
-    alt: "Cover image – Mariagerfjord Calendar 2026"
+  - title: Mariagerfjord Calendar 2026
+    sub: Click the image to **buy**
+    hint: >-
+      <a href="/calendar2026-dk" style="text-decoration:underline;
+      margin-right:12px;"
+         onclick="return gtag_report_conversion('/calendar2026-dk')">DK</a>
+      <a href="/calendar2026-en" style="text-decoration:underline; margin-right:12px;"
+         onclick="return gtag_report_conversion('/calendar2026-en')">EN</a>
+      <a href="/calendar2026-de" style="text-decoration:underline; margin-right:12px;"
+         onclick="return gtag_report_conversion('/calendar2026-de')">DE</a>
+      <a href="/calendar2026-nl" style="text-decoration:underline;"
+         onclick="return gtag_report_conversion('/calendar2026-nl')">NL</a>
+    langs:
+      - DK
+      - EN
+      - DE
+      - NL
+    href: https://redowlphoto.dk/calendar2026
+    img: /uploads/forside.png
+    alt: Cover image – Mariagerfjord Calendar 2026
+  - title: New to Saal Digital?
+    sub: Click the image for a discount **discount**
+    hint: >
+      💡 New to Saal Digital? Use my
 
-  - title: "Ny hos Saal Digital?"
-    sub: "Klik på billedet for **rabat**"
-    hint: "_Førstegangs-voucher_"
-    langs: ["DK","EN","DE","NL"]
-    # Sæt dette til din voucher-side eller direkte Saal-registreringslink
-    href: "/saal-personal-voucher"
-    img: "/uploads/calendar-detail.jpg"
-    alt: "Close-up of print and paper detail"
+      <a href="/saal-personal-voucher" style="text-decoration:underline;"
+         onclick="return gtag_report_conversion('/saal-personal-voucher')">personal voucher link</a>
+      to register and get a special discount on your first order.
+    langs: []
+    href: https://redowlphoto.dk/saal-personal-voucher
+    img: /uploads/yourlogo.png
+    alt: Saal Digital – personal voucher for first-order discount
