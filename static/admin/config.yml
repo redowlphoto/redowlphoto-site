@@ -71,7 +71,7 @@ collections:
 
           {{< schema-work >}}
 
-  # --- NY: Redigér kategorier + intro-tekst (120–200 ord) ---
+  # --- Redigér kategorier + intro-tekst ---
   - name: "category_terms"
     label: "Categories"
     label_singular: "Category"
@@ -115,7 +115,6 @@ collections:
         name: "body"
         widget: "markdown"
         default: |
-
           {{< comments >}}
 
   - name: "site"
@@ -127,5 +126,38 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: "Tagline (over image)", name: "tagline", widget: "text" }
-          - { label: "Hero caption (under image)", name: "hero_caption", widget: "text", required: false }
+          # Brug markdown så du kan lave links, linjeskift m.m.
+          - { label: "Tagline (over image)", name: "tagline", widget: "markdown", required: false }
+          - { label: "Hero caption (under image)", name: "hero_caption", widget: "markdown", required: false }
+
+          # Fliser (billedet er knappen til Saal)
+          - label: "Buy Tiles"
+            name: "tiles"
+            widget: "list"
+            summary: "{{fields.title}} → {{fields.href}}"
+            min: 1
+            max: 4
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Sub text (Markdown, fx: Klik på billedet for at købe)", name: "sub", widget: "markdown", required: false }
+              - { label: "Hint (Markdown, lille ekstra linje)", name: "hint", widget: "markdown", required: false }
+              - label: "Languages"
+                name: "langs"
+                widget: "list"
+                required: false
+                default: ["DK","EN","DE","NL"]
+              - label: "Link til Saal (href)"
+                name: "href"
+                widget: "string"
+                pattern:
+                  - "^https?://.+"
+                  - "Indsæt et gyldigt https:// link"
+              - label: "Tile image"
+                name: "img"
+                widget: "image"
+                choose_url: false
+                allow_multiple: false
+                media_library:
+                  config:
+                    multiple: false
+              - { label: "ALT text", name: "alt", widget: "string", required: false }
