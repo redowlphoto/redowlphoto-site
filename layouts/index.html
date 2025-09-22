@@ -20,81 +20,31 @@
   }
 
   /* === Hero/slideshow === */
-  .ro-hero{
-    position: relative;
-    border-radius: 14px;
-    overflow: hidden;
-  }
-  .ro-hero-link{
-    display: block;
-    position: relative;
-  }
+  .ro-hero{ position: relative; border-radius: 14px; overflow: hidden; }
+  .ro-hero-link{ display:block; position:relative; }
   .ro-hero img{
-    display: none;           /* kun det aktive vises */
-    width: 100%;             /* tilpas til containerens bredde */
-    height: auto;            /* bevar proportionerne */
-    opacity: 0;
-    transition: opacity 900ms ease;
+    display:none; width:100%; height:auto; opacity:0; transition:opacity 900ms ease;
   }
-  .ro-hero img.is-active{
-    display: block;
-    opacity: 1;
-  }
-  .ro-hero-cap{
-    margin-top:.6rem;
-    font-size:clamp(.95rem, 1.4vw, 1.1rem);
-    line-height:1.55;
-    opacity:.85;
-  }
+  .ro-hero img.is-active{ display:block; opacity:1; }
+  .ro-hero-cap{ margin-top:.6rem; font-size:clamp(.95rem,1.4vw,1.1rem); line-height:1.55; opacity:.85; }
 
   /* === BUY TILES === */
-  .ro-tiles{
-    display:grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-    gap: 1rem;
-    margin-top: 1.25rem;
-  }
-  @media (max-width: 900px){
-    .ro-tiles{ grid-template-columns: 1fr; }
-  }
-  .ro-tile{
-    background:#0e1a27;
-    border:1px solid rgba(255,255,255,.06);
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 6px 18px rgba(0,0,0,.25);
-  }
-  .ro-tile-head{
-    padding:.9rem 1rem .6rem;
-    color:#e7edf6;
-  }
-  .ro-tile-head h3{
-    margin:0 0 .25rem;
-    font-size:1.1rem;
-    line-height:1.25;
-  }
-  .ro-tile-head .sub,
-  .ro-tile-head .hint{
-    margin:.25rem 0 0;
-  }
-  .ro-tile-head .langs{
-    margin:.25rem 0 0;
-    font-size:.85rem;
-    opacity:.8;
-  }
+  .ro-tiles{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 1.25rem; }
+  @media (max-width: 900px){ .ro-tiles{ grid-template-columns: 1fr; } }
+
+  .ro-tile{ background:#0e1a27; border:1px solid rgba(255,255,255,.06); border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.25); }
   .ro-tile-img{ display:block; }
   .ro-tile-img img{
-    width:100%;
-    height:auto;
-    aspect-ratio:16/9;
-    object-fit:cover;
-    display:block;
-    transition: transform .18s ease;
+    width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; display:block; transition: transform .18s ease;
   }
-  .ro-tile-img:focus img,
-  .ro-tile-img:hover img{
-    transform: scale(1.02);
-  }
+  /* Brug 'fit: "contain"' i data/home.yaml for logoer o.l. */
+  .ro-tile--contain .ro-tile-img img{ object-fit:contain; background:#0b1622; padding:.5rem; }
+  .ro-tile-img:hover img, .ro-tile-img:focus img{ transform:scale(1.015); }
+
+  .ro-tile-head{ padding:.85rem 1rem 1rem; color:#e7edf6; }
+  .ro-tile-head h3{ margin:0 0 .35rem; font-size:1.1rem; line-height:1.25; }
+  .ro-tile-head .sub{ margin:0 0 .3rem; opacity:.92; }
+  .ro-tile-head .hint{ margin:.2rem 0 0; opacity:.88; }
 
   /* A11y helper */
   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -105,6 +55,7 @@
     {{ with site.Data.home.tagline }}{{ . | markdownify }}{{ else }}Minimal Nordic Seascapes{{ end }}
   </div>
 
+  {{/* ========= HERO ========= */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $featured := where $works ".Params.featured" true }}
   {{ $pick := cond (gt (len $featured) 0) (sort $featured "Date" "desc") (sort $works "Date" "desc") }}
@@ -118,12 +69,7 @@
       {{ $w1200 := $img.Resize "1200x q80" }}
       {{ $w1600 := $img.Resize "1600x q80" }}
       {{ $w2000 := $img.Resize "2000x q80" }}
-      {{ $slides = $slides | append (dict
-        "w1200" $w1200
-        "w1600" $w1600
-        "w2000" $w2000
-        "alt"   ($p.Params.cover.alt | default $p.Title)
-      ) }}
+      {{ $slides = $slides | append (dict "w1200" $w1200 "w1600" $w1600 "w2000" $w2000 "alt" ($p.Params.cover.alt | default $p.Title)) }}
     {{ end }}
   {{ end }}
 
@@ -147,29 +93,27 @@
     {{ end }}
   {{ end }}
 
-  {{/* ========= BUY TILES driven af data/home.* ========= */}}
+  {{/* ========= BUY TILES (én sektion) ========= */}}
   {{ $tiles := site.Data.home.tiles }}
   {{ if gt (len $tiles) 0 }}
     <section class="ro-tiles" aria-labelledby="buy-cal-title">
-      <h2 id="buy-cal-title" class="sr-only">Køb kalender</h2>
-
+      <h2 id="buy-cal-title" class="sr-only">Buy calendar</h2>
       {{ range first 2 $tiles }}
-        <div class="ro-tile">
-          <div class="ro-tile-head">
-            <h3>{{ .title }}</h3>
-            {{ with .sub }}<div class="sub">{{ . | markdownify }}</div>{{ end }}
-            {{ with .hint }}<div class="hint">{{ . | markdownify }}</div>{{ end }}
-            {{ with .langs }}<p class="langs">{{ delimit . " · " }}</p>{{ end }}
-          </div>
-
+        {{ $fit := .fit | default "cover" }}
+        <div class="ro-tile {{ if eq $fit "contain" }}ro-tile--contain{{ end }}">
           <a class="ro-tile-img"
              href="{{ .href | safeURL }}"
              {{ if strings.HasPrefix .href "http" }}target="_blank" rel="noopener"{{ end }}
-             aria-label="{{ .title }} – klik for at købe" role="button">
+             aria-label="{{ .title }} – click to open" role="button">
             <img src="{{ .img | relURL }}"
                  alt="{{ with .alt }}{{ . }}{{ else }}{{ .title }}{{ end }}"
                  loading="lazy" decoding="async">
           </a>
+          <div class="ro-tile-head">
+            <h3>{{ .title }}</h3>
+            {{ with .sub }}<div class="sub">{{ . | markdownify }}</div>{{ end }}
+            {{ with .hint }}<div class="hint">{{ . | markdownify }}</div>{{ end }}
+          </div>
         </div>
       {{ end }}
     </section>
@@ -185,7 +129,7 @@
     slides[i].classList.remove('is-active');
     i = (i + 1) % slides.length;
     slides[i].classList.add('is-active');
-  }, 7500); // 7,5 sek
+  }, 7500);
 })();
 </script>
 {{ end }}
