@@ -1,7 +1,7 @@
 ---
 title: Mariagerfjord Calendar 2026
 draft: false
-date: 2025-09-15
+date: 2025-01-01
 location: Mariagerfjord, Hadsund, Als Odde and Øster Hurup in Denmark
 caption: >
   Explore the calm beauty of Mariager Fjord and Øster Hurup, now collected in my
