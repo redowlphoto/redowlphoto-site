@@ -1,5 +1,5 @@
 ---
-title: January
+title: 2026 January
 draft: false
 date: 2026-01-01
 location: Øster Hurup, Kattegat, Denmark
