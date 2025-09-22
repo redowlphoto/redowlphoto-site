@@ -12,7 +12,7 @@ caption: |
     Order the calendar here
   </a>
 cover:
-  image: skærmbillede-2025-09-15-170648.png
+  image: _skærmbillede_2025-09-15_170648.jpg
   alt: Escape to the sea; part of the RedOwlPhoto 2026 calendar featuring
     Mariagerfjord and Øster Hurup.
 featured: false
