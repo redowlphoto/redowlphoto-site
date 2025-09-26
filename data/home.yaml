@@ -3,13 +3,13 @@ tagline: Minimalist seascapes and landscapes from Mariager Fjord, Als Odde,
 hero_caption: |
   Click the image to explore more works.
 tiles:
-  - title: Mariagerfjord Calendar 2026
+  - title: Mariagerfjord Calendar 2026 and Awarded Photo Prints
     sub: Click the image to **buy**
     hint: ""
     langs: []
-    href: https://redowlphoto.dk/calendar2026
+    href: https://photo-portal.shop/profiles/Allan-Andersen
     img: /uploads/forside_flise.jpg
-    alt: Cover image – Mariagerfjord Calendar 2026
+    alt: Cover image – Mariagerfjord Calendar 2026 and Awarded Prints
   - title: New to Saal Digital?
     sub: Click the image to **register**
     hint: "\n"
@@ -17,9 +17,3 @@ tiles:
     href: https://redowlphoto.dk/saal-personal-voucher
     img: /uploads/saal_konto_flise.png
     alt: Saal Digital – personal voucher for first-order discount
-  - langs: []
-    title: Awarded Photos Print
-    sub: Click the image to **buy**
-    img: /uploads/newborn-moon.jpg
-    href: https://photo-portal.shop/profiles/Allan-Andersen
-    alt: Cover image – Awarded photos
