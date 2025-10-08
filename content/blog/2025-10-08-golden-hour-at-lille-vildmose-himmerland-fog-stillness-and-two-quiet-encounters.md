@@ -16,5 +16,7 @@ What draws me to these mornings is the way fog **simplifies**. Color narrows to 
 
 If you’re visiting the area, the reserve is served by **Lille Vildmosecentret**, which is a good starting point for trails and current conditions. And if you enjoy this warm, low-sun atmosphere, you can browse more work from my **Golden Hour** series here: [/categories/golden-hour/](/categories/golden-hour/).
 
+{{< comments >}}
+
 
 
