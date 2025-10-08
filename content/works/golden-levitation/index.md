@@ -16,6 +16,7 @@ cover:
 featured: true
 categories:
   - curated-picks
+  - golden-hour
 tags:
   - Aalborg
   - Himmerland
