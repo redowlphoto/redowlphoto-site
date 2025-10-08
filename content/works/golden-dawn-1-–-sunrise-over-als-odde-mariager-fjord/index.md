@@ -14,6 +14,7 @@ cover:
 featured: false
 categories:
   - sea-fjord
+  - golden-hour
 tags:
   - RedOwlPhoto
   - Als Odde sunrise
