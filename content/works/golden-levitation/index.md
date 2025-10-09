@@ -13,7 +13,7 @@ cover:
   alt: Minimalist wildlife photograph of a red deer stag at Lille Vildmose in
     Himmerland near Aalborg during golden hour, where rising fog and first light
     make the animal appear to levitate above the ground.
-featured: true
+featured: false
 categories:
   - curated-picks
   - golden-hour
