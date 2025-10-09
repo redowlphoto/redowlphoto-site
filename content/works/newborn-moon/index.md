@@ -12,7 +12,7 @@ caption: >
   The image, titled **“Newborn Moon,”** was awarded *Global Photographer of the Year (Amateur)* at the **2025 Global Photography Awards**, organized by the International Awards Associate (IAA).  
 
 
-  The story behind the image is also featured by the [Danish Photographic Society (SDF)](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html) and on [Muse World](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year).  
+  The story behind the image is also featured by the [Selskabet for Dansk Fotografi (SDF)](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html) and on [Muse World](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year).  
 
 
   If you would like your own print, it is available through my [Saal Digital profile](https://photo-portal.shop/profiles/Allan-Andersen).  
