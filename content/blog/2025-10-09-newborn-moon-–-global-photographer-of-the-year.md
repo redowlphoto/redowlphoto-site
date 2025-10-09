@@ -31,7 +31,7 @@ So verstehe ich meine Arbeit: **Minimalismus als Form des Zuhörens.**
 [**RedOwlPhoto.dk**](https://redowlphoto.dk/?utm_source=chatgpt.com)  
 sowie als Fine-Art-Prints über mein [**Saal Digital Profil**](https://photo-portal.shop/profiles/Allan-Andersen) zu sehen.  
 
-Die Geschichte wurde außerdem von der [**Danish Photographic Society (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), auf [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) und auf [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners) vorgestellt.
+Die Geschichte wurde außerdem von der [**Selskabet for Dansk Fotografi (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), auf [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) und auf [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners) vorgestellt.
 
 *Fotografie schenkt manchmal mehr, als man erwartet, nicht durch Preise, sondern durch jene Momente, die uns daran erinnern, warum wir im kalten Licht stehen bleiben und warten.*
 
