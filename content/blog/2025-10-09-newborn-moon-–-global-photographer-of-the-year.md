@@ -9,11 +9,9 @@ Schließlich erschien der Mond durch den Nebel, noch immer vom roten Schatten de
 
 <!--more-->
 
-![Newborn Moon](../images/newborn-moon.jpg)
-
 ## Anerkennung einen Monat später
 
-Einen Monat später wurde die Fotografie von der **International Awards Associate (IAA)** bei den [**Global Photography Awards 2025**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) mit dem Titel **Global Photographer of the Year (Amateur)** ausgezeichnet.  
+Einen Monat später wurde die Fotografie von der **International Awards Associate (IAA)** bei den [**Global Photography Awards 2025**](https://globalphotographyawards.com/winner-info.php?id=2041) mit dem Titel **Global Photographer of the Year (Amateur)** ausgezeichnet.  
 Über 2.500 Einsendungen aus mehr als 45 Ländern wurden eingereicht – eine Anerkennung, die sich gleichermaßen surreal und bewegend anfühlte.
 
 Das internationale Fotomagazin **121clicks.com** beschrieb das Werk als *„eine ruhige, himmlische Aufnahme, die uns daran erinnert, wie klein – und doch unendlich – wir uns fühlen können.“*  
@@ -33,7 +31,7 @@ So verstehe ich meine Arbeit: **Minimalismus als Form des Zuhörens.**
 [**RedOwlPhoto.dk**](https://redowlphoto.dk/?utm_source=chatgpt.com)  
 sowie als Fine-Art-Prints über mein [**Saal Digital Profil**](https://photo-portal.shop/profiles/Allan-Andersen) zu sehen.  
 
-Die Geschichte wurde außerdem von der [**Danish Photographic Society (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), auf [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) und auf **121clicks.com** vorgestellt.
+Die Geschichte wurde außerdem von der [**Danish Photographic Society (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), auf [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) und auf [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners) vorgestellt.
 
 *Fotografie schenkt manchmal mehr, als man erwartet – nicht durch Preise, sondern durch jene Momente, die uns daran erinnern, warum wir im kalten Licht stehen bleiben und warten.*
 
