@@ -17,24 +17,27 @@ description: Learn more about RedOwlPhoto. Minimalist fine art photography from
 ## About
 
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
-I am Allan Andersen – the photographer behind RedOwlPhoto.
-I make quiet, pared-back photographs guided by minimalism and a modernist eye for form. Simple lines, open horizons and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface. 
-Most images are from Denmark’s east coast around Mariager Fjord, Als Odde and Øster Hurup, with ongoing series elsewhere.
+I am **Allan Andersen** – the photographer behind **RedOwlPhoto**.  
+I create quiet, pared-back photographs guided by **minimalism** and a **modernist eye for form**. Simple lines, open horizons, and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface.  
+
+Most of my work is from **Denmark’s east coast** around **Mariager Fjord, Als Odde, and Øster Hurup**, with ongoing series exploring light and atmosphere elsewhere in Scandinavia.  
+
+In 2025, my photograph *“Newborn Moon”* was awarded **Global Photographer of the Year (Amateur)** by the **International Awards Associate (IAA)**. My work has also been featured by international photo platforms and the **Danish Photographic Society (SDF)**, reflecting a continued dialogue between Nordic stillness and global recognition.
 
 ## Prints & Licensing
 
-My photographs can be licensed for editorial and commercial use.\
-I also offer fine-art prints on request (museum-grade papers, signed/numbered).\
-Please email hello@redowlphoto.dk with the work title, intended use/size, and any deadlines.
+My photographs can be licensed for **editorial and commercial use**.  
+I also offer **fine-art prints** on request (museum-grade papers, signed/numbered).  
+Please email [hello@redowlphoto.dk](mailto:hello@redowlphoto.dk) with the work title, intended use or size, and any deadlines.
 
 ## Contact
 
-**Email: [hello@redowlphoto.dk](mailto:hello@redowlphoto.dk)**
+**Email:** [hello@redowlphoto.dk](mailto:hello@redowlphoto.dk)
 
 ## Instagram
 
-I share new work and occasional behind-the-scenes on Instagram.\
-If my images speak to you, I’d appreciate a follow or a comment, I love hearing from people who enjoy the work.
+I share new work and occasional behind-the-scenes on Instagram.  
+If my images speak to you, I’d appreciate a follow or a comment — I love hearing from people who enjoy the work.
 
 <a class="ig-inline" href="https://www.instagram.com/redowlphoto/" target="_blank" rel="me noopener" aria-label="Instagram">
   <svg viewBox="0 0 24 24" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.15em;margin-right:.35em">
