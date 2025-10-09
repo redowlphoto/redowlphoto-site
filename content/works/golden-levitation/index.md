@@ -15,7 +15,6 @@ cover:
     make the animal appear to levitate above the ground.
 featured: false
 categories:
-  - curated-picks
   - golden-hour
 tags:
   - Aalborg
