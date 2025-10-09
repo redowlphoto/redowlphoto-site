@@ -6,7 +6,7 @@ location: Als, Kattegat, Denmark
 caption: >
   This photograph captures the lunar eclipse of September 2025. At first, the
   clouds hid the moon as it rose above the Kattegat, but eventually it appeared
-  through the mist — giving the illusion of a celestial birth.  
+  through the mist - giving the illusion of a celestial birth.  
 
 
   The image, titled **“Newborn Moon,”** was awarded *Global Photographer of the Year (Amateur)* at the **2025 Global Photography Awards**, organized by the International Awards Associate (IAA).  
