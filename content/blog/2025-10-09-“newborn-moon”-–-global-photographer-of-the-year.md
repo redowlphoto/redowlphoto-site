@@ -31,7 +31,7 @@ You can view *“Newborn Moon”* and other selected works on
 [**RedOwlPhoto.dk**](https://redowlphoto.dk/?utm_source=chatgpt.com)  
 or as fine art prints through my [**Saal Digital profile**](https://photo-portal.shop/profiles/Allan-Andersen).  
 
-The story has also been featured by the [**Danish Photographic Society (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), on [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year), and on [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners).
+The story has also been featured by the [**Selskabet for Dansk Fotografi (SDF)**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), on [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year), and on [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners).
 
 *Photography sometimes gives back more than you expect, not through prizes, but through moments that remind you why you stayed in the cold waiting for light.*
 
