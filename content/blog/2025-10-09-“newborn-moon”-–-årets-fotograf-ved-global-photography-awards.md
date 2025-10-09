@@ -31,7 +31,7 @@ Du kan se *“Newborn Moon”* og andre udvalgte billeder på
 [**RedOwlPhoto.dk**](https://redowlphoto.dk/?utm_source=chatgpt.com)  
 eller som fine art-print via mit [**Saal Digital-profil**](https://photo-portal.shop/profiles/Allan-Andersen).  
 
-Historien er også blevet bragt af [**SDF – Dansk Fotografisk Forening**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), på [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) og på [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners).
+Historien er også blevet bragt af [**SDF - Selskabet for Dansk Fotografi**](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html), på [**Muse World**](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year) og på [**121clicks.com**](https://121clicks.com/inspirations/global-photography-awards-2025-winners).
 
 *Fotografering giver nogle gange mere, end man forventer, ikke gennem priser, men gennem de øjeblikke der minder én om, hvorfor man bliver stående i kulden og venter på lyset.*
 
