@@ -1,5 +1,5 @@
 ---
-title: Besuche in Lille Vildmose – Elche, Rotwild und der Traum von einem Steinadler
+title: Besuche in Lille Vildmose - Elche, Rotwild und der Traum von einem Steinadler
 date: 2025-10-20
 ---
 Ich kehre immer wieder in die **Lille Vildmose** im **Himmerland** zurück, südlich von **Aalborg** und nahe **Øster Hurup**. Es ist eine Landschaft aus Hochmooren, Schilfgürteln und weitem Himmel. Viele Besuche sind schlicht: Auto parken, die Fenster einen Spalt öffnen, zuhören und das Licht entscheiden lassen, was als Nächstes passiert. Die Tiere hier sind Autos gewohnt, weshalb geduldiges Warten oft der beste Ansatz ist.
