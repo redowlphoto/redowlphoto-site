@@ -11,6 +11,7 @@ cover:
 featured: true
 categories:
   - dunes-sandscapes
+  - portfolio
 tags:
   - Råbjerg Mile
   - Skagen dunes
