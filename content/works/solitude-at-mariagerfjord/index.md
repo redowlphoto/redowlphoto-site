@@ -23,6 +23,7 @@ categories:
   - cool-blues
   - sea-fjord
   - curated-picks
+  - portfolio
 tags:
   - Mariager Fjord
   - Hadsund Denmark
