@@ -25,6 +25,7 @@ categories:
   - warm-pastels
   - sea-fjord
   - curated-picks
+  - portfolio
 tags:
   - RedOwlPhoto
   - Mariager Fjord sunset
