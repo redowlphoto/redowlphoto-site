@@ -11,6 +11,7 @@ cover:
 featured: false
 categories:
   - sea-fjord
+  - portfolio
 tags:
   - Mariager Fjord
   - Hadsund Denmark
