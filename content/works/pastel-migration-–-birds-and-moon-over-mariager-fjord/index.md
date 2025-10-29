@@ -24,6 +24,7 @@ featured: true
 categories:
   - warm-pastels
   - curated-picks
+  - portfolio
 tags:
   - RedOwlPhoto
   - Mariager Fjord autumn
