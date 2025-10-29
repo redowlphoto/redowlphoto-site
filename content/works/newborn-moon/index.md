@@ -22,6 +22,7 @@ cover:
 featured: true
 categories:
   - curated-picks
+  - portfolio
 tags:
   - Als
   - Kattegat
