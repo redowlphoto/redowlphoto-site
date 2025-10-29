@@ -16,6 +16,7 @@ cover:
 featured: false
 categories:
   - golden-hour
+  - portfolio
 tags:
   - Aalborg
   - Himmerland
