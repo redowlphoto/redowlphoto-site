@@ -24,6 +24,7 @@ categories:
   - cool-blues
   - sea-fjord
   - curated-picks
+  - portfolio
 tags:
   - Øster Hurup
   - Kattegat coast
