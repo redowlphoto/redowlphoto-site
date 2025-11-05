@@ -16,13 +16,27 @@ description: Learn more about RedOwlPhoto. Minimalist fine art photography from
 ---
 ## About
 
+
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
 I am **Allan Andersen** – the photographer behind **RedOwlPhoto**.  
 I create quiet, pared-back photographs guided by **minimalism** and a **modernist eye for form**. Simple lines, open horizons, and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface.  
 
+
 Most of my work is from **Denmark’s east coast** around **Mariager Fjord, Als Odde, and Øster Hurup**, with ongoing series exploring light and atmosphere elsewhere in Scandinavia.  
 
-In 2025, my photograph *“Newborn Moon”* was awarded **Global Photographer of the Year (Amateur)** by the **International Awards Associate (IAA)**. My work has also been featured by international photo platforms and the **Danish Photographic Society (SDF)**, reflecting a continued dialogue between Nordic stillness and global recognition.
+
+## Awards & Press
+
+In 2025 I won **Global Photographer of the Year (Amateur)** for *Newborn Moon*.  
+See the winning entry on the **Global Photography Awards** site:  
+[globalphotographyawards.com/winner-info.php?id=2041](https://globalphotographyawards.com/winner-info.php?id=2041)  
+View the photograph on my site:  
+[redowlphoto.dk/works/newborn-moon/](https://redowlphoto.dk/works/newborn-moon/)  
+Read more about my work and approach in this interview on **MUSE.World**:  
+[“A Sense of Stillness: Capturing Denmark’s Coastal Calm”](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)
+
+My work has also been featured by international photo platforms and the **Danish Photographic Society (SDF)**, reflecting a continued dialogue between Nordic stillness and global recognition.
+
 
 ## Prints & Licensing
 
