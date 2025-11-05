@@ -1,3 +1,4 @@
+<!-- AboutPage + Person -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -7,17 +8,29 @@
   "description": "Learn more about Allan Andersen – the photographer behind RedOwlPhoto. Minimalist fine art photography and Nordic seascapes from Denmark’s east coast. Prints, licensing options, and contact information.",
   "mainEntity": {
     "@type": "Person",
+    "@id": "https://redowlphoto.dk/#person",
     "name": "Allan Andersen",
     "alternateName": "Allan Ulrik Graakjær Andersen",
     "additionalName": "RedOwlPhoto",
     "image": "https://redowlphoto.dk/about/portrait.jpg",
-    "url": "https://redowlphoto.dk/",
+    "url": "https://redowlphoto.dk/about/",
     "jobTitle": "Fine-Art Photographer",
     "nationality": "Denmark",
     "worksFor": {
       "@type": "Organization",
-      "name": "RedOwlPhoto",
+      "@id": "https://redowlphoto.dk/#organization",
+      "name": "RedOwlPhoto v. Allan Andersen",
       "url": "https://redowlphoto.dk"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Mariagerfjord",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mariagerfjord",
+        "addressRegion": "Nordjylland",
+        "addressCountry": "DK"
+      }
     },
     "sameAs": [
       "https://redowlphoto.dk",
@@ -26,14 +39,72 @@
       "https://www.wikidata.org/wiki/Q136229607",
       "https://1x.com/redowlphoto",
       "https://www.saatchiart.com/en-dk/account/profile/2698173",
-      "https://fineartamerica.com/profiles/1x/art/allan+andersen"
+      "https://fineartamerica.com/profiles/1x/art/allan+andersen",
+      "https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen",
+      "https://airbnb.dk/x/redowlphoto",
+      "https://globalphotographyawards.com/winner-profile-info.php?id=719",
+      "https://sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html",
+      "https://ligeher.nu/mariagerfjord/nyheder/foto-af-blodmaane-gav-amatoerfotograf-international-pris/5773489",
+      "https://1839awards.com/artists/allan-andersen",
+      "https://aureaphotogallery.com/allan-andersen/",
+      "https://1839awards.com/entry/pastel-migration",
+      "https://1839awards.com/entry/a-swans-soliloquy",
+      "https://www.exposure.gallery/winner-f6CdCaAfA130747Df.htm"
     ],
     "knowsAbout": [
       "fine art photography",
       "minimalism",
       "landscape photography",
-      "Scandinavian seascapes"
+      "Scandinavian seascapes",
+      "Mariager Fjord",
+      "Als Odde",
+      "Øster Hurup",
+      "Hadsund",
+      "Lille Vildmose",
+      "Nordjylland",
+      "Jylland",
+      "Denmark"
     ]
-  }
+  },
+  "mentions": [
+    { "@type": "Place", "name": "Mariager Fjord" },
+    { "@type": "Place", "name": "Als Odde" },
+    { "@type": "Place", "name": "Øster Hurup" },
+    { "@type": "Place", "name": "Hadsund" },
+    { "@type": "Place", "name": "Lille Vildmose" },
+    { "@type": "Place", "name": "Nordjylland" },
+    { "@type": "Place", "name": "Jylland" },
+    { "@type": "Place", "name": "Denmark" }
+  ]
+}
+</script>
+
+<!-- Organization (brand/juridisk) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://redowlphoto.dk/#organization",
+  "name": "RedOwlPhoto",
+  "legalName": "RedOwlPhoto v. Allan Andersen",
+  "alternateName": ["Red Owl Photo"],
+  "url": "https://redowlphoto.dk/",
+  "logo": "https://redowlphoto.dk/images/logo.png",
+  "telephone": "+45 22171820",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+45 22171820",
+    "availableLanguage": ["da", "en"]
+  }],
+  "areaServed": ["Denmark", "Jylland", "Nordjylland", "Mariagerfjord", "Hadsund"],
+  "hasMap": "https://share.google/7ccDYVzNZRblWEYDS",
+  "sameAs": [
+    "https://www.instagram.com/redowlphoto/",
+    "https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen",
+    "https://airbnb.dk/x/redowlphoto",
+    "https://sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html",
+    "https://share.google/7ccDYVzNZRblWEYDS"
+  ]
 }
 </script>
