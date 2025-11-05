@@ -3,19 +3,22 @@ title: Newborn Moon
 draft: false
 date: 2025-09-07
 location: Als, Kattegat, Denmark
-caption: >
+caption: >+
   This photograph captures the lunar eclipse of September 2025. At first, the
   clouds hid the moon as it rose above the Kattegat, but eventually it appeared
-  through the mist - giving the illusion of a celestial birth.  
+  through the mist - giving the illusion of a celestial birth.
 
 
-  The image, titled **“Newborn Moon,”** was awarded *Global Photographer of the Year (Amateur)* at the **2025 Global Photography Awards**, organized by the International Awards Associate (IAA).  
+  The image, titled **“Newborn Moon,”** was awarded *Global Photographer of the Year (Amateur)* at the **2025 Global Photography Awards**, organized by the International Awards Associate (IAA).
 
 
-  The story behind the image is also featured by the [Selskabet for Dansk Fotografi (SDF)](https://www.sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html) and on [Muse World](https://www.muse.world/index.php/post/2025-global-photography-awards-honors-outstanding-photographers-category-winners-of-the-year).  
+  **Interview & Press:**  
+
+  [MUSE.World – A Sense of Stillness](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen) · [SDF – Artikel (dansk)](https://sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html) · [Global Photography Awards – Winner](https://globalphotographyawards.com/winner-info.php?id=2041)
 
 
-  If you would like your own print, it is available through my [Saal Digital profile](https://photo-portal.shop/profiles/Allan-Andersen).  
+  If you would like your own print, it is available through my [Saal Digital profile](https://photo-portal.shop/profiles/Allan-Andersen).
+
 cover:
   image: _ds1_1989-edit3-edit.jpg
   alt: "The newborn Bloodmoon "
@@ -36,6 +39,9 @@ tags:
   - night sky
   - minimalism
   - fine art photography
+  - global
+  - photography
+  - awards
 ---
 A minimalist nightscape from **Als**, by the **Kattegat coast** in **Mariagerfjord municipality, Denmark**, captured during the **lunar eclipse of September 2025**.  
 
@@ -54,5 +60,17 @@ If you’re planning a visit, **Als** and the nearby coastal town of **Øster Hu
 Read more at [Visit Himmerland – Mariager Fjord](https://www.visithimmerland.dk/himmerland/planlaeg-din-tur/mariager-fjord-gdk1098491?utm_source=chatgpt.com)  
 
 or [Visit Himmerland](https://www.visithimmerland.dk?utm_source=chatgpt.com).  
+
+## Interview & Press
+
+- **MUSE.World** — *A Sense of Stillness: Capturing Denmark’s Coastal Calm*  
+  https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen
+
+- **SDF – Selskabet for Dansk Fotografi** — *Allan Andersen vinder international pris for foto af blodmånen*  
+  https://sdf.dk/nyheder/nyheder/1172-allan-andersen-vinder-international-pris-for-foto-af-blodmanen.html
+
+- **Global Photography Awards** — *Winner page for “Newborn Moon”*  
+  https://globalphotographyawards.com/winner-info.php?id=2041
+
 
 <!--more-->
