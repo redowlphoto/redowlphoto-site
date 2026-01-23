@@ -1,17 +1,24 @@
-tagline: Stille havscener og landskaber fra Mariager Fjord, Als Odde, Øster
-  Hurup og resten af Nordjylland
-hero_caption: |
-  Click the image to explore more works.
+tagline: |
+  **Udvalgte værker og serier**  
+  Mariager Fjord og Nordjylland
+hero_caption: |+
+  _Se værkerne i sammenhæng_  
+  Klik på billedet
+
 tiles:
   - title: Mariagerfjordkalenderen 2026
-    sub: Klik for at **købe** brug koden Red40 for 40% rabat ved køb over 400 kr.
+    sub: |-
+      Klik for at **købe** kalender  
+      via producentens side
     hint: ""
     langs: []
     href: https://redowlphoto.dk/calendar2026
     img: /uploads/forside_flise.jpg
     alt: Cover image – Mariagerfjord Calendar 2026
   - title: Newborn Moon fra Als
-    sub: "Klik for at **købe** "
+    sub: |
+      Klik for at **vælge** fotoprodukt  
+      via producentens side
     hint: "\n"
     langs: []
     href: https://redowlphoto.dk/saal
