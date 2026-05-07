@@ -18,9 +18,11 @@ description: Learn more about RedOwlPhoto. Minimalist fine art photography from
 
 
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
-I am **Allan Andersen** – the photographer behind **RedOwlPhoto**.  
+I am **Allan Andersen** – the photographer behind **RedOwlPhoto**. 
+
 Læs den danske version her:  
 [Om Allan Andersen](https://redowlphoto.dk/om/)
+
 I create quiet, pared-back photographs guided by **minimalism** and a **modernist eye for form**. Simple lines, open horizons, and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface.  
 
 
