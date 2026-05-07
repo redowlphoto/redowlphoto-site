@@ -1,5 +1,5 @@
 ---
-title: Golden Levitation – Lille Vildmose Wildlife Photography
+title: Golden Levitation
 draft: false
 date: 2025-09-25
 location: Lille Vildmose, Himmerland, Nordjylland, Denmark
@@ -16,7 +16,6 @@ categories:
   - wildlife
 tags:
   - Lille Vildmose
-  - Lille Vildmose photography
   - wildlife photography Denmark
   - kronhjort
   - red deer Denmark
@@ -34,7 +33,8 @@ A red deer stag steps through the marsh as if weightless — the **golden hour f
 
 Captured in one of Denmark’s most atmospheric landscapes, **Lille Vildmose in Himmerland**, this moment reflects the quiet simplicity that defines Nordic wildlife photography. The combination of fog, low sun, and open terrain creates a rare stillness — where movement dissolves into light.
 
-This photograph was selected as *Photo of the Day* on **One Eyeland**.  
+This photograph was selected as *Photo of the Day* on **One Eyeland**, and has received **international jury diplomas in FIAP-recognized competitions**.
+
 View on Instagram:  
 https://www.instagram.com/p/DPT1-8qkpkO/?img_index=1
 
@@ -49,9 +49,18 @@ The area is especially known for:
 - strong seasonal atmosphere  
 - minimalistic compositions shaped by fog and distance  
 
-It is also home to a population of **elk**, which draw many visitors hoping to experience wildlife up close. While elk are often the main attraction, quieter moments like this — with red deer moving silently through the fog — reveal a more subtle and atmospheric side of Lille Vildmose.
+It is also home to a population of **elk**, which draw many visitors. While elk are often the main attraction, quieter moments like this — with red deer moving silently through the fog — reveal a more subtle side of Lille Vildmose.
 
-This image was captured in the early morning, where the rising light and moisture in the air briefly transform the landscape into something almost abstract.
+---
+
+## Recognition
+
+This work has been recognized in multiple international photography circuits:
+
+- AFI Diploma – *75th Iberic Trofeu Pell International Photo Circuit (Magenta Salon), Spain*  
+- FIAP Acceptance & Diploma Mention – *13th MIROC Digital Circuit 2026 (Serbia & Norway)*  
+
+These recognitions are part of FIAP-associated competitions, where works are judged by international panels.
 
 ---
 
