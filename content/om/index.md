@@ -14,8 +14,6 @@ showReadingTime: false
 description: "Allan Andersen er en prisvindende fine art fotograf fra Mariager Fjord. Minimalistisk landskabsfotografi, prints og kunst fra Nordjylland."
 ---
 
-# Om Allan Andersen (RedOwlPhoto)
-
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
 
 Jeg er **Allan Andersen** – fotografen bag **RedOwlPhoto**.
