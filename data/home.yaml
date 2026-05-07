@@ -1,26 +1,23 @@
 tagline: |
-  **Udvalgte værker og serier**  
-  Mariager Fjord og Nordjylland
-hero_caption: |+
-  _Se værkerne i sammenhæng_  
-  Klik på billedet for at åbne galleriet
+  **Selected works and series**  
+  Mariager Fjord and Northern Denmark
+
+hero_caption: |
+  _Explore selected works_  
 
 tiles:
-  - title: Mariagerfjordkalenderen 2026
-    sub: |-
-      Klik for at **købe** kalender  
-      via min producents side
-    hint: ""
-    langs: []
+  - title: Mariager Fjord Calendar 2026
+    sub: |
+      A curated collection of atmospheric landscapes from the fjord and coast
+    hint: View and order the calendar
     href: https://redowlphoto.dk/calendar2026
     img: /uploads/forside_flise.jpg
-    alt: Cover image – Mariagerfjord Calendar 2026
-  - title: Lønstrup
+    alt: Mariager Fjord Calendar 2026 cover with minimalist coastal landscape
+
+  - title: Fine Art Prints
     sub: |
-      Klik for at **købe** udvalgt print  
-      via min producents side
-    hint: "\n"
-    langs: []
+      Selected works available as high-quality prints for modern interiors
+    hint: Explore available prints
     href: https://redowlphoto.dk/saal
     img: /uploads/lonstrupflisel.png
-    alt: Saal Digital – photoproduct with my best photos
+    alt: Fine art photography prints from Danish coast and landscapes
