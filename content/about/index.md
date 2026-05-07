@@ -14,8 +14,6 @@ showReadingTime: false
 description: Learn more about RedOwlPhoto. Minimalist fine art photography from
   Denmark’s east coast. Prints, licensing options, and contact information.
 ---
-## About
-
 
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
 I am **Allan Andersen** – the photographer behind **RedOwlPhoto**. 
