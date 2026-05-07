@@ -7,7 +7,7 @@ showAuthor: false
 showDate: false
 slug: about
 showTaxonomies: false
-title: About, Prints & Contact | RedOwlPhoto
+title: About Allan Andersen | RedOwlPhoto
 images:
   - /about/portrait.jpg
 showReadingTime: false
