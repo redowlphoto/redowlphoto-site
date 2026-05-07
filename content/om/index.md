@@ -13,6 +13,9 @@ images:
 
 Jeg er **Allan Andersen** – fotografen bag **RedOwlPhoto**.
 
+Læs den engelske version her:  
+[About RedOwlPhoto](https://redowlphoto.dk/about/)
+
 Jeg arbejder med **minimalistisk landskabsfotografi**, hvor ro, lys og enkle former er i centrum. Mine billeder er bygget op omkring åbne horisonter, afdæmpede farver og et bevidst fravalg af støj. Målet er enkelt: at lade stemningen i et sted træde frem uden forstyrrelser.
 
 Mit arbejde udspringer primært fra **Danmarks østkyst**, særligt omkring **Mariager Fjord, Als Odde og Øster Hurup**, hvor jeg løbende udforsker nordisk lys og atmosfære – fra tågede morgener ved fjorden til stille vinterlandskaber i Vildmosen.
