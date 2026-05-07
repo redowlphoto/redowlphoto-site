@@ -32,25 +32,27 @@ tags:
   - awards
 ---
 
-**Awarded Global Photographer of the Year (Amateur), 2025.**
+**Awarded Global Photographer of the Year (Amateur), 2025**
 
-A minimalist nightscape from **Als**, along the **Kattegat coast** in **Mariagerfjord, Denmark**, captured during the **lunar eclipse of September 2025**.
+This photograph captures the lunar eclipse of September 2025. At first, the clouds hid the moon as it rose above the Kattegat.
 
-At first, the rising moon was hidden behind a thick layer of clouds. Slowly, it began to emerge through the mist above the sea - soft, diffuse, and almost unreal. In that moment, it no longer felt like a distant celestial body, but something newly formed - as if it had just come into existence.
+Slowly, it began to emerge through the mist - soft, diffuse, and almost unreal.
 
-This fleeting transition gave the image its title: *Newborn Moon*.
+In that moment, it no longer felt like a distant celestial body, but something newly formed.
 
-The photograph balances **cosmic drama** with **Nordic stillness**, transforming a rare astronomical event into a quiet study of **light, atmosphere, and emergence**.
-
-Rather than focusing on spectacle, the image follows a minimalist approach - reducing the scene to its essential elements. The result is not just a record of an eclipse, but a reflection on silence, scale, and the fragile presence of light in darkness.
+This is where the image found its name: *Newborn Moon*.
 
 ---
 
-## Location
+## The Moment
 
-The image was taken from **Als** on the eastern coast of Denmark, overlooking the **Kattegat**.
+A minimalist nightscape from **Als**, along the **Kattegat coast** in **Mariagerfjord, Denmark**, captured during the **lunar eclipse of September 2025**.
 
-This area is part of the **Mariagerfjord region**, known for its calm seascapes, soft horizons, and distinctive Nordic light.
+The scene balanced **cosmic drama** with **Nordic stillness** - a rare moment where scale, silence, and atmosphere aligned.
+
+Rather than focusing on spectacle, the image reduces the scene to its essentials.
+
+Light, mist, and space.
 
 ---
 
@@ -65,6 +67,14 @@ This area is part of the **Mariagerfjord region**, known for its calm seascapes,
 
 ---
 
+## Location
+
+The image was taken from **Als**, overlooking the **Kattegat** on Denmark’s east coast.
+
+The **Mariagerfjord region** is known for its calm waters, open horizons, and soft Nordic light - conditions that make moments like this possible.
+
+---
+
 ## Explore More
 
 - [Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/)  
@@ -75,7 +85,7 @@ This area is part of the **Mariagerfjord region**, known for its calm seascapes,
 
 ## Prints
 
-If you would like to own this photograph as a print, it is available here:
+If you would like to own this photograph as a print:
 
 👉 [View print options](https://photo-portal.shop/profiles/Allan-Andersen)
 
