@@ -7,53 +7,64 @@ showAuthor: false
 showDate: false
 slug: about
 showTaxonomies: false
-title: About Allan Andersen | RedOwlPhoto
+title: "About Allan Andersen | RedOwlPhoto"
 images:
   - /about/portrait.jpg
 showReadingTime: false
-description: Learn more about RedOwlPhoto. Minimalist fine art photography from
-  Denmark’s east coast. Prints, licensing options, and contact information.
+description: "Allan Andersen is an award-winning fine art photographer based by Mariager Fjord, Denmark. Minimalist landscape photography, prints and Nordic coastal imagery."
 ---
 
 {{< portrait src="portrait.jpg" alt="Allan Andersen, RedOwlPhoto" >}}
-I am **Allan Andersen** – the photographer behind **RedOwlPhoto**. 
+
+I am **Allan Andersen** – the photographer behind **RedOwlPhoto**.
 
 Læs på dansk:  
 [Om Allan Andersen](https://redowlphoto.dk/om/)
 
-I create quiet, pared-back photographs guided by **minimalism** and a **modernist eye for form**. Simple lines, open horizons, and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface.  
+I create quiet, pared-back photographs guided by **minimalism** and a **modernist eye for form**. Simple lines, open horizons, and muted colour keep space and stillness in the frame. The aim is always to remove distraction so the mood of a place can surface.
 
+Most of my work is from **Denmark’s east coast**, especially around **Mariager Fjord, Als Odde and Øster Hurup**, where I explore Nordic light and atmosphere – from misty mornings by the fjord to quiet winter landscapes in Lille Vildmose.
 
-Most of my work is from **Denmark’s east coast** around **Mariager Fjord, Als Odde, and Øster Hurup**, with ongoing series exploring light and atmosphere elsewhere in Scandinavia.  
-
+---
 
 ## Awards & Press
 
-In 2025 I won **Global Photographer of the Year (Amateur)** for *Newborn Moon*.  
-See the winning entry on the **Global Photography Awards** site:  
-[globalphotographyawards.com/winner-info.php?id=2041](https://globalphotographyawards.com/winner-info.php?id=2041)  
-View the photograph on my site:  
-[redowlphoto.dk/works/newborn-moon/](https://redowlphoto.dk/works/newborn-moon/)  
-Read more about my work and approach in this interview on **MUSE.World**:  
-[“A Sense of Stillness: Capturing Denmark’s Coastal Calm”](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)
+In 2025 I won **Global Photographer of the Year (Amateur)** at the Global Photography Awards for *Newborn Moon*.
 
-My work has also been featured by international photo platforms and the **Danish Photographic Society (SDF)**, reflecting a continued dialogue between Nordic stillness and global recognition.
+- [View “Newborn Moon”](https://redowlphoto.dk/works/newborn-moon/) – a minimal image of the blood moon seen from Als  
+- [Read the interview “A Sense of Stillness” on MUSE.World](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)  
+- [Read the article in HimmerlandsPosten](https://himmerlandsposten.dk/allan-andersen-fra-mariagerfjord-vinder-international-pris-for-foto-fanget-i-als/)
 
+My work has also been selected multiple times as *Picture of the Day* on international platforms such as **One Eyeland** (top 1% globally). Selected works have also been exhibited through the **Danish Photographic Society (SDF)**.
+
+---
 
 ## Prints & Licensing
 
-My photographs can be licensed for **editorial and commercial use**.  
-I also offer **fine-art prints** on request (museum-grade papers, signed/numbered).  
-Please email [hello@redowlphoto.dk](mailto:hello@redowlphoto.dk) with the work title, intended use or size, and any deadlines.
+All photographs are available for **editorial and commercial licensing**.
+
+I also offer **fine-art prints** on museum-grade paper, suitable for modern Nordic interiors in both private homes and businesses.
+
+In addition, I publish an annual calendar featuring images from the region:
+
+- [Mariagerfjord Calendar 2026](https://redowlphoto.dk/works/mariagerfjord-calendar-2026/)  
+- [Order the calendar here](https://photo-portal.shop/WebshopClient/#/CollectionShare/63a58b05acf9e3439279b3a78037b608_047c40c0-df6e-4f9a-9828-84ad74ffeeb5/da-DK/DuLvELR1jmOspvj9Bq4HekjwjrqI0SWM6jhymByAPFRGde4s0P8fL8wnoesnhqn3/)
+
+For print or licensing enquiries, feel free to email with the work title and preferred format.
+
+---
 
 ## Contact
 
 **Email:** [hello@redowlphoto.dk](mailto:hello@redowlphoto.dk)
 
+---
+
 ## Instagram
 
-I share new work and occasional behind-the-scenes on Instagram.  
-If my images speak to you, I’d appreciate a follow or a comment — I love hearing from people who enjoy the work.
+I share new work and occasional behind-the-scenes on Instagram.
+
+If my images resonate with you, you are very welcome to follow or reach out.
 
 <a class="ig-inline" href="https://www.instagram.com/redowlphoto/" target="_blank" rel="me noopener" aria-label="Instagram">
   <svg viewBox="0 0 24 24" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.15em;margin-right:.35em">
@@ -68,3 +79,44 @@ If my images speak to you, I’d appreciate a follow or a comment — I love hea
   .ig-inline{display:inline-flex;align-items:center;gap:.35em;text-decoration:none}
   .ig-inline:hover{opacity:.95}
 </style>
+
+---
+
+## Note
+
+*Allan Andersen (RedOwlPhoto) is an active fine art photographer based by Mariager Fjord. There are other individuals with the same name, but this page refers to the photographer behind RedOwlPhoto.*
+
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://redowlphoto.dk/about/",
+  "name": "About Allan Andersen | RedOwlPhoto",
+  "inLanguage": "en",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://redowlphoto.dk/about/"
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://redowlphoto.dk/#person",
+    "name": "Allan Andersen",
+    "alternateName": "RedOwlPhoto",
+    "image": "https://redowlphoto.dk/about/portrait.jpg",
+    "url": "https://redowlphoto.dk/about/",
+    "jobTitle": "Fine Art Photographer",
+    "nationality": "Denmark",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://redowlphoto.dk/#organization",
+      "name": "RedOwlPhoto"
+    },
+    "sameAs": [
+      "https://redowlphoto.dk",
+      "https://www.instagram.com/redowlphoto/"
+    ]
+  }
+}
+</script>
