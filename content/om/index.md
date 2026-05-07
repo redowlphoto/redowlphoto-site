@@ -85,3 +85,53 @@ Hvis billederne taler til dig, er du meget velkommen til at følge med eller skr
 ## Bemærk
 
 *Allan Andersen (RedOwlPhoto) er en aktiv kunstfotograf baseret ved Mariager Fjord. Der findes andre personer med samme navn, men denne side omhandler fotografen bag RedOwlPhoto.*
+
+---
+
+<!-- SCHEMA START -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://redowlphoto.dk/om/",
+  "name": "Om Allan Andersen | RedOwlPhoto",
+  "inLanguage": "da",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://redowlphoto.dk/"
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://redowlphoto.dk/#person",
+    "name": "Allan Andersen",
+    "alternateName": "Allan Ulrik Graakjær Andersen",
+    "additionalName": "RedOwlPhoto",
+    "image": "https://redowlphoto.dk/about/portrait.jpg",
+    "url": "https://redowlphoto.dk/",
+    "jobTitle": "Fine-Art Photographer",
+    "nationality": "Denmark",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://redowlphoto.dk/om/"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://redowlphoto.dk/#organization",
+      "name": "RedOwlPhoto"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Mariagerfjord"
+    },
+    "sameAs": [
+      "https://www.instagram.com/redowlphoto/",
+      "https://1x.com/redowlphoto",
+      "https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen",
+      "https://globalphotographyawards.com/winner-profile-info.php?id=719"
+    ]
+  }
+}
+</script>
+
+<!-- SCHEMA END -->
