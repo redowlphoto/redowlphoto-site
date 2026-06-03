@@ -13,14 +13,16 @@
     {{ $w1200 := $img.Resize "1200x q85" }}
     {{ $w2000 := $img.Resize "2000x q85" }}
     <figure class="ro-figure">
-      <img
-        src="{{ $w1200.RelPermalink }}"
-        srcset="{{ $w1200.RelPermalink }} 1200w, {{ $w2000.RelPermalink }} 2000w"
-        sizes="(max-width: 1200px) 100vw, 1200px"
-        alt="{{ .Params.cover.alt }}"
-        loading="eager" decoding="async">
-      {{ with .Params.caption }}<figcaption class="ro-cap">{{ . | markdownify }}</figcaption>{{ end }}
-    </figure>
+  <a href="https://photo-portal.shop/profiles/Allan-Andersen" target="_blank">
+    <img
+      src="{{ $w1200.RelPermalink }}"
+      srcset="{{ $w1200.RelPermalink }} 1200w, {{ $w2000.RelPermalink }} 2000w"
+      sizes="(max-width: 1200px) 100vw, 1200px"
+      alt="{{ .Params.cover.alt }}"
+      loading="eager" decoding="async">
+  </a>
+  {{ with .Params.caption }}<figcaption class="ro-cap">{{ . | markdownify }}</figcaption>{{ end }}
+</figure>
   {{ end }}
 
  <div class="ro-related" style="margin-top: 2.5rem;">
