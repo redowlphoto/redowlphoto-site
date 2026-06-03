@@ -34,6 +34,8 @@ tags:
   - moon photography print
   - minimalist wall art
   - scandinavian photography
+
+print_url: "/saal-newborn-moon"
 ---
 
 **Award-winning fine art moon photography from Denmark**
