@@ -321,3 +321,20 @@ p,
   color: inherit !important;    /* samme farve som brødtekst */
   opacity: 1 !important;        /* fjern nedtoning */
 }
+
+/* =========================================================
+   CLICKABLE IMAGE (PRINT LINK)
+   ========================================================= */
+
+.ro-figure a {
+  display: block;
+}
+
+.ro-figure a > img {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.ro-figure a:hover > img {
+  opacity: 0.92;
+}
