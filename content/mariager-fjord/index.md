@@ -11,7 +11,7 @@ draft: false
 </div>
 
 <p class="intro">
-Et roligt motiv fra Mariager Fjord, skabt til at fungere som kunsttryk i hjemmet.
+Minimalistisk kunsttryk fra Mariager Fjord – til ro og balance i dit hjem.
 </p>
 
 ---
@@ -24,7 +24,7 @@ Motivet er bygget op omkring ro, balance og et enkelt fokuspunkt. Det gør, at b
 
 Den type motiv vælges ofte som kunsttryk, fordi det tilfører stemning fremfor at kræve opmærksomhed.
 
-Motivet har modtaget anerkendelse i fotokonkurrencer og er udvalgt blandt værker med international deltagelse.
+Motivet er udvalgt i internationale FIAP-fotokonkurrencer med deltagelse fra fotografer verden over.
 
 ---
 
@@ -38,20 +38,85 @@ Motivet har modtaget anerkendelse i fotokonkurrencer og er udvalgt blandt værke
 ---
 
 ## Vælg størrelse
+
 Vælg det format, der passer til din væg og dit rum:
+
 <div class="print-options">
+
   <a href="/prints/solitude-at-mariagerfjord-30x20" class="print-card">
-    <div>30x20 cm</div>
+    <div class="size">30x20 cm</div>
     <div class="price">150 kr</div>
   </a>
 
-  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card">
-    <div>70x50 cm</div>
+  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card highlight">
+    <div class="badge">Mest valgt</div>
+    <div class="size">70x50 cm</div>
     <div class="price">600 kr</div>
   </a>
+
+</div>
+
+<div class="size-help">
+  <div>30x20 cm passer til mindre vægge og hylder</div>
+  <div>70x50 cm fungerer som centralt blikfang i rummet</div>
 </div>
 
 ---
+
+<style>
+.print-options {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.print-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #64748b; /* din nye mellem-farve */
+  transition: 0.2s;
+  position: relative;
+}
+
+.print-card:hover {
+  border-color: #94a3b8;
+}
+
+.print-card.highlight {
+  border: 1px solid #cbd5f5;
+}
+
+.size {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.price {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  background: #cbd5f5;
+  color: #0f172a;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.size-help {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+</style>
 
 ## Se flere billeder
 
