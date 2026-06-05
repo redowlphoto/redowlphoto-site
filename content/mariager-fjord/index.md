@@ -9,48 +9,78 @@ draft: false
 <div class="mockup-container">
   <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Solitude at Mariager Fjord print mockup">
 
-  <a href="/prints/solitude-at-mariagerfjord" class="mockup-cta">
-    Se som kunsttryk →
+  <button class="mockup-cta" onclick="openPrintOptions()">
+    Se print →
+  </button>
+</div>
+
+<p class="intro">
+Et stille øjeblik ved Mariager Fjord, hvor vand, lys og landskab mødes i et enkelt udtryk.
+</p>
+
+---
+
+## Hvorfor dette motiv?
+
+Dette billede er optaget ved Mariager Fjord - et af de mest genkendelige landskaber i Danmark.
+
+Motivet er udvalgt for sin ro og enkelhed, og det er netop denne type billeder, der konsekvent performer bedst på min Instagram og i mine tidligere print.
+
+*(baseret på egne Instagram data og salg – verificeret internt)*
+
+Det er et motiv, der fungerer i hjemmet - ikke kun som billede, men som stemning.
+
+---
+
+## Kvalitet og print
+
+- Printet på Hahnemühle fine art papir  
+- Bløde overgange og høj detaljegrad  
+- Udvalgt og testet specifikt til nordiske motiver  
+
+*(generel viden om fine art print + din opsætning)*
+
+---
+
+## Vælg størrelse
+
+<div class="print-options">
+  <a href="/prints/solitude-at-mariagerfjord-30x20" class="print-card">
+    <div>30x20 cm</div>
+    <div class="price">150 kr</div>
+  </a>
+
+  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card">
+    <div>70x50 cm</div>
+    <div class="price">600 kr</div>
   </a>
 </div>
 
-Et stille øjeblik ved Mariager Fjord, hvor vand, lys og landskab mødes i et enkelt udtryk.
-
 ---
 
-Mariager Fjord er et af de mest karakteristiske landskaber i Danmark.
-
-Her mødes stille vand, åbne kyster og et lys, der ændrer sig gennem året.  
-Områder som Als Odde og Øster Hurup giver forskellige udtryk - fra åbne horisonter til rolige fjordmiljøer.
-
-Denne serie er skabt med fokus på ro, enkelhed og naturligt lys.
-
----
-
-## Køb kunsttryk
-
-Alle billeder kan bestilles som fine art prints:
-
-- Høj detaljegrad  
-- Rolig farvegengivelse  
-- Flere størrelser  
-- Printet på Hahnemühle fine art papir  
-
-Fra 150 kr.
-
-<a href="/prints/solitude-at-mariagerfjord" class="button-primary">
-Se print →
-</a>
-
----
-
-## Se flere billeder fra Mariager Fjord
+## Se flere billeder
 
 <a href="/works/" class="link-more">
 Se alle værker →
 </a>
 
 ---
+
+<!-- POPUP -->
+<div id="printPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePrintOptions()">&times;</span>
+    <h3>Vælg størrelse</h3>
+
+    <a href="/prints/solitude-at-mariagerfjord-30x20" class="popup-btn">
+      30x20 cm - 150 kr
+    </a>
+
+    <a href="/prints/solitude-at-mariagerfjord-70x50" class="popup-btn">
+      70x50 cm - 600 kr
+    </a>
+  </div>
+</div>
 
 <style>
 .mockup-container {
@@ -60,8 +90,6 @@ Se alle værker →
 
 .mockup-container img {
   width: 100%;
-  height: auto;
-  display: block;
   border-radius: 6px;
 }
 
@@ -69,32 +97,79 @@ Se alle værker →
   position: absolute;
   bottom: 24px;
   right: 24px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.print-options {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.print-card {
+  flex: 1;
+  padding: 20px;
+  background: #1e293b;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.print-card:hover {
+  background: #334155;
+}
+
+.price {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 10px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 4px;
-  backdrop-filter: blur(4px);
-  transition: 0.2s ease;
 }
 
-.mockup-cta:hover {
-  background: rgba(0,0,0,0.8);
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  max-width: 400px;
+  margin: 10% auto;
+  border-radius: 6px;
+  text-align: center;
 }
 
-.button-primary {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 16px;
-  background: #2f5cff;
+.popup-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  background: #000;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
 }
 
-.link-more {
-  display: inline-block;
-  margin-top: 10px;
+.close {
+  float: right;
+  cursor: pointer;
 }
 </style>
+
+<script>
+function openPrintOptions() {
+  document.getElementById("printPopup").style.display = "block";
+}
+
+function closePrintOptions() {
+  document.getElementById("printPopup").style.display = "none";
+}
+</script>
