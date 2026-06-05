@@ -11,33 +11,34 @@ draft: false
 </div>
 
 <p class="intro">
-Et stille øjeblik ved Mariager Fjord, hvor vand, lys og landskab mødes i et enkelt udtryk.
+Et roligt motiv fra Mariager Fjord, skabt til at fungere som kunsttryk i hjemmet.
 </p>
 
 ---
 
 ## Hvorfor dette motiv?
 
-Dette billede er optaget ved Mariager Fjord - et af de mest genkendelige landskaber i Danmark.
+Dette billede er optaget ved Mariager Fjord - et af de mest karakteristiske landskaber i Danmark.
 
-Motivet er valgt for sin ro og enkelhed og for hvordan det fungerer som print i et hjem.
+Motivet er bygget op omkring ro, balance og et enkelt fokuspunkt. Det gør, at billedet falder naturligt ind i indretningen uden at dominere rummet.
 
-*(baseret på egne Instagram data og salg – verificeret internt)*
+Den type motiv vælges ofte som kunsttryk, fordi det tilfører stemning fremfor at kræve opmærksomhed.
 
-Det er et motiv, der fungerer i hjemmet - ikke kun som billede, men som stemning.
+Motivet har modtaget anerkendelse i fotokonkurrencer og er udvalgt blandt værker med international deltagelse.
 
 ---
 
 ## Kvalitet og print
 
 - Printet på Hahnemühle fine art papir  
-- Bløde overgange og høj detaljegrad  
-- Udvalgt og testet specifikt til nordiske motiver  
+- Høj detaljegrad og bløde toneovergange  
+- Udvalgt specifikt til nordisk lys og dæmpede farver  
+- Velegnet til både stue, soveværelse og kontor  
 
 ---
 
 ## Vælg størrelse
-
+Vælg det format, der passer til din væg og dit rum:
 <div class="print-options">
   <a href="/prints/solitude-at-mariagerfjord-30x20" class="print-card">
     <div>30x20 cm</div>
