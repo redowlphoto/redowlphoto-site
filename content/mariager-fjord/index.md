@@ -33,7 +33,7 @@ Motivet er udvalgt i internationale FIAP-fotokonkurrencer med deltagelse fra fot
 - Printet på Hahnemühle fine art papir  
 - Høj detaljegrad og bløde toneovergange  
 - Udvalgt specifikt til nordisk lys og dæmpede farver  
-- Produceret på bestilling af et professionelt fotolaboratorium for at sikre stabil høj kvalitet  
+- Produceret på bestilling hos et professionelt fotolaboratorium med præcis farvegengivelse og dokumenteret høj printkvalitet  
 
 ---
 
