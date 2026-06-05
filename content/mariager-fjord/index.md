@@ -18,6 +18,14 @@ url: /mariager-fjord/
 
 # Kunsttryk fra Mariager Fjord
 
+![Solitude at Mariager Fjord](/works/solitude-at-mariagerfjord/solitude-at-mariagerfjord.jpg)
+
+Et stille øjeblik ved Mariager Fjord, hvor vand, lys og landskab mødes i et enkelt udtryk.
+
+[Se som kunsttryk →](/works/solitude-at-mariagerfjord/)
+
+---
+
 Mariager Fjord er et af de mest karakteristiske landskaber i Danmark.
 
 Her mødes stille vand, åbne kyster og et lys, der ændrer sig gennem året. Områder som Als Odde og Øster Hurup giver forskellige udtryk – fra åbne horisonter til mere rolige fjordmiljøer.
@@ -28,33 +36,63 @@ Denne samling består af fotografier skabt over tid med fokus på ro, enkelhed o
 
 ## Udvalgte billeder fra Mariager Fjord
 
-### Solitude at Mariager Fjord  
-Et stille øjeblik ved fjorden med fokus på ro og enkelthed.  
-→ [/works/solitude-at-mariagerfjord/](/works/solitude-at-mariagerfjord/)
+### Sailing into the Mist
 
-### Sailing into the Mist  
-En båd forsvinder i morgendis over fjorden.  
-→ [/works/sailing-into-the-mist/](/works/sailing-into-the-mist/)
+![Sailing into the Mist](/works/sailing-into-the-mist/sailing-into-the-mist.jpg)
 
-### Chromatic Stillness – Sunset at Als Odde  
-Farver og ro ved solnedgang ved Als Odde.  
-→ [/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/](/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/)
+En båd forsvinder i morgendis over fjorden.
 
-### Balanced Horizon  
-Minimalistisk landskab med fokus på balance og linjer.  
-→ [/works/balanced-horizon/](/works/balanced-horizon/)
+[Se som kunsttryk →](/works/sailing-into-the-mist/)
 
-### Golden Morning – Boat on Mariager Fjord  
-Blødt morgenlys ved Als Odde.  
-→ [/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/](/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/)
+---
 
-### Pastel Migration – Birds and Moon  
-Fugle og måne over fjorden i bløde pasteller.  
-→ [/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/](/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/)
+### Chromatic Stillness – Sunset at Als Odde
 
-### A Swan’s Soliloquy  
-En enkelt svane i et roligt og minimalistisk udtryk.  
-→ [/works/a-swans-soliloquy/](/works/a-swans-soliloquy/)
+![Chromatic Stillness](/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/chromatic-stillness.jpg)
+
+Farver og ro ved solnedgang ved Als Odde.
+
+[Se som kunsttryk →](/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/)
+
+---
+
+### Balanced Horizon
+
+![Balanced Horizon](/works/balanced-horizon/balanced-horizon.jpg)
+
+Minimalistisk landskab med fokus på balance og linjer.
+
+[Se som kunsttryk →](/works/balanced-horizon/)
+
+---
+
+### Golden Morning – Boat on Mariager Fjord
+
+![Golden Morning Boat](/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/golden-dawn-2.jpg)
+
+Blødt morgenlys ved Als Odde.
+
+[Se som kunsttryk →](/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/)
+
+---
+
+### Pastel Migration – Birds and Moon
+
+![Pastel Migration](/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/pastel-migration.jpg)
+
+Fugle og måne over fjorden i bløde pasteller.
+
+[Se som kunsttryk →](/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/)
+
+---
+
+### A Swan’s Soliloquy
+
+![A Swans Soliloquy](/works/a-swans-soliloquy/a-swans-soliloquy.jpg)
+
+En enkelt svane i et roligt og minimalistisk udtryk.
+
+[Se som kunsttryk →](/works/a-swans-soliloquy/)
 
 ---
 
@@ -70,8 +108,6 @@ Området er kendt for:
 - åbne kyststrækninger  
 - skiftende lys gennem året  
 
-Det er netop disse forhold, der danner grundlaget for billederne.
-
 ---
 
 ## Kunsttryk til hjemmet
@@ -82,30 +118,14 @@ Alle billeder kan bestilles som fine art prints.
 - rolig farvegengivelse  
 - flere størrelser  
 
-Motiverne egner sig til:
-
-- stue  
-- soveværelse  
-- kontor  
-
----
-
-## Lokal tilknytning
-
-Billederne er skabt over tid med fokus på Mariager Fjord og områderne omkring.
-
-Det giver en mere præcis forståelse af lys, vejr og stemning – og dermed billeder, der ikke bare viser et sted, men formidler det.
-
-Hvis du har en relation til området, vil motiverne ofte føles genkendelige.
-
 ---
 
 ## Se flere billeder
 
-→ [Se alle værker](/works/)
+[Se alle værker →](/works/)
 
 ---
 
 ## Print
 
-→ [Se print muligheder](/prints/)
+[Se print muligheder →](/prints/)
