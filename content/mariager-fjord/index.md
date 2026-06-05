@@ -33,7 +33,7 @@ Motivet er udvalgt i internationale FIAP-fotokonkurrencer med deltagelse fra fot
 - Printet på Hahnemühle fine art papir  
 - Høj detaljegrad og bløde toneovergange  
 - Udvalgt specifikt til nordisk lys og dæmpede farver  
-- Velegnet til både stue, soveværelse og kontor  
+- Produceret på bestilling af et professionelt fotolaboratorium for at sikre stabil høj kvalitet  
 
 ---
 
@@ -57,66 +57,11 @@ Vælg det format, der passer til din væg og dit rum:
 </div>
 
 <div class="size-help">
-  <div>30x20 cm passer til mindre vægge og hylder</div>
-  <div>70x50 cm fungerer som centralt blikfang i rummet</div>
+  <div>30x20 cm passer til mindre vægge, hylder og stille hjørner</div>
+  <div>70x50 cm fungerer som et roligt blikfang og samler rummet</div>
 </div>
 
 ---
-
-<style>
-.print-options {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.print-card {
-  flex: 1;
-  padding: 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #64748b; /* din nye mellem-farve */
-  transition: 0.2s;
-  position: relative;
-}
-
-.print-card:hover {
-  border-color: #94a3b8;
-}
-
-.print-card.highlight {
-  border: 1px solid #cbd5f5;
-}
-
-.size {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.price {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-.badge {
-  position: absolute;
-  top: -10px;
-  right: 12px;
-  background: #cbd5f5;
-  color: #0f172a;
-  font-size: 0.7rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.size-help {
-  margin-top: 16px;
-  font-size: 0.9rem;
-  color: #94a3b8;
-  line-height: 1.6;
-}
-</style>
 
 ## Se flere billeder
 
