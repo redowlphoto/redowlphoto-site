@@ -22,6 +22,8 @@ Dette billede er optaget ved Mariager Fjord - et af de mest genkendelige landska
 
 Motivet er valgt for sin ro og enkelhed og for hvordan det fungerer som print i et hjem.
 
+*(baseret på egne Instagram data og salg – verificeret internt)*
+
 Det er et motiv, der fungerer i hjemmet - ikke kun som billede, men som stemning.
 
 ---
@@ -42,7 +44,7 @@ Det er et motiv, der fungerer i hjemmet - ikke kun som billede, men som stemning
     <div class="price">150 kr</div>
   </a>
 
-  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card featured">
+  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card">
     <div>70x50 cm</div>
     <div class="price">600 kr</div>
   </a>
@@ -82,7 +84,10 @@ Se alle værker →
   text-decoration: none;
   color: #fff;
   border-radius: 6px;
-  border: 1px solid #334155;
+
+  /* NY: ensartet mellemfarve */
+  border: 1px solid #64748b;
+
   transition: all 0.2s ease;
   display: block;
 }
@@ -91,10 +96,6 @@ Se alle værker →
   border-color: #ffffff;
   background: #273449;
   transform: translateY(-2px);
-}
-
-.print-card.featured {
-  border: 1px solid #ffffff;
 }
 
 .price {
