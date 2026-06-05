@@ -95,12 +95,10 @@ Se alle værker →
   text-decoration: none;
   color: #fff;
   border-radius: 6px;
-
-  /* NY: ensartet mellemfarve */
   border: 1px solid #64748b;
-
   transition: all 0.2s ease;
   display: block;
+  position: relative;
 }
 
 .print-card:hover {
@@ -112,5 +110,29 @@ Se alle værker →
 .price {
   margin-top: 8px;
   font-weight: bold;
+}
+
+/* FIX: spacing + bedre læsbarhed */
+.size-help {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #9ca3af;
+  padding-left: 4px;
+}
+
+.size-help div {
+  margin-top: 6px;
+}
+
+/* badge */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: #cbd5f5;
+  color: #111827;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 </style>
