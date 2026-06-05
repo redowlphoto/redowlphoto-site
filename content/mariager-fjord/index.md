@@ -112,16 +112,17 @@ Se alle værker →
   font-weight: bold;
 }
 
-/* FIX: spacing + bedre læsbarhed */
+/* VIGTIG FIX: align tekst under hver boks */
 .size-help {
-  margin-top: 20px;
-  line-height: 1.6;
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
   color: #9ca3af;
-  padding-left: 4px;
 }
 
 .size-help div {
-  margin-top: 6px;
+  flex: 1;
+  line-height: 1.5;
 }
 
 /* badge */
