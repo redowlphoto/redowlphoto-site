@@ -1,19 +1,8 @@
 ---
-title: Kunsttryk fra Mariager Fjord – Dansk landskabsfotografi
-description: Køb kunsttryk fra Mariager Fjord. Fine art landskabsfotografi fra Als Odde, Øster Hurup og Kattegat.
-draft: false
+title: Kunsttryk fra Mariager Fjord - Dansk landskabsfotografi
 date: 2026-06-05
-
-keywords:
-  - Mariager Fjord billeder
-  - Mariager Fjord plakat
-  - kunsttryk Mariager Fjord
-  - Als Odde billeder
-  - Øster Hurup fotografi
-  - dansk landskabsfotografi
-  - natur billeder Danmark
-
-url: /mariager-fjord/
+draft: false
+description: Fine art fotografier fra Mariager Fjord. Køb kunsttryk med motiver fra Als Odde, Øster Hurup og det østlige Jylland.
 ---
 
 # Kunsttryk fra Mariager Fjord
@@ -28,7 +17,7 @@ Et stille øjeblik ved Mariager Fjord, hvor vand, lys og landskab mødes i et en
 
 Mariager Fjord er et af de mest karakteristiske landskaber i Danmark.
 
-Her mødes stille vand, åbne kyster og et lys, der ændrer sig gennem året. Områder som Als Odde og Øster Hurup giver forskellige udtryk – fra åbne horisonter til mere rolige fjordmiljøer.
+Her mødes stille vand, åbne kyster og et lys, der ændrer sig gennem året. Områder som Als Odde og Øster Hurup giver forskellige udtryk - fra åbne horisonter til mere rolige fjordmiljøer.
 
 Denne samling består af fotografier skabt over tid med fokus på ro, enkelhed og naturligt lys.
 
@@ -36,63 +25,44 @@ Denne samling består af fotografier skabt over tid med fokus på ro, enkelhed o
 
 ## Udvalgte billeder fra Mariager Fjord
 
-### Sailing into the Mist
+<div class="works-grid">
 
-![Sailing into the Mist](/works/sailing-into-the-mist/sailing-into-the-mist.jpg)
+<a href="/works/solitude-at-mariagerfjord/">
+  <img src="/works/solitude-at-mariagerfjord/solitude-at-mariagerfjord.jpg" alt="Solitude at Mariager Fjord">
+  <p>Solitude</p>
+</a>
 
-En båd forsvinder i morgendis over fjorden.
+<a href="/works/sailing-into-the-mist/">
+  <img src="/works/sailing-into-the-mist/sailing-into-the-mist.jpg" alt="Sailing into the Mist">
+  <p>Sailing into the Mist</p>
+</a>
 
-[Se som kunsttryk →](/works/sailing-into-the-mist/)
+<a href="/works/chromatic-stillness-sunset-at-als-odde-mariager-fjord/">
+  <img src="/works/chromatic-stillness-sunset-at-als-odde-mariager-fjord/chromatic-stillness.jpg" alt="Chromatic Stillness">
+  <p>Chromatic Stillness</p>
+</a>
 
----
+<a href="/works/balanced-horizon/">
+  <img src="/works/balanced-horizon/balanced-horizon.jpg" alt="Balanced Horizon">
+  <p>Balanced Horizon</p>
+</a>
 
-### Chromatic Stillness – Sunset at Als Odde
+<a href="/works/golden-morning-2-boat-on-mariager-fjord-at-als-odde/">
+  <img src="/works/golden-morning-2-boat-on-mariager-fjord-at-als-odde/golden-dawn-2.jpg" alt="Golden Morning">
+  <p>Golden Morning</p>
+</a>
 
-![Chromatic Stillness](/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/chromatic-stillness.jpg)
+<a href="/works/pastel-migration-birds-and-moon-over-mariager-fjord/">
+  <img src="/works/pastel-migration-birds-and-moon-over-mariager-fjord/pastel-migration.jpg" alt="Pastel Migration">
+  <p>Pastel Migration</p>
+</a>
 
-Farver og ro ved solnedgang ved Als Odde.
+<a href="/works/a-swans-soliloquy/">
+  <img src="/works/a-swans-soliloquy/a-swans-soliloquy.jpg" alt="A Swans Soliloquy">
+  <p>Swan’s Soliloquy</p>
+</a>
 
-[Se som kunsttryk →](/works/chromatic-stillness-–-sunset-at-als-odde-mariager-fjord/)
-
----
-
-### Balanced Horizon
-
-![Balanced Horizon](/works/balanced-horizon/balanced-horizon.jpg)
-
-Minimalistisk landskab med fokus på balance og linjer.
-
-[Se som kunsttryk →](/works/balanced-horizon/)
-
----
-
-### Golden Morning – Boat on Mariager Fjord
-
-![Golden Morning Boat](/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/golden-dawn-2.jpg)
-
-Blødt morgenlys ved Als Odde.
-
-[Se som kunsttryk →](/works/golden-morning-2-–-boat-on-mariager-fjord-at-als-odde/)
-
----
-
-### Pastel Migration – Birds and Moon
-
-![Pastel Migration](/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/pastel-migration.jpg)
-
-Fugle og måne over fjorden i bløde pasteller.
-
-[Se som kunsttryk →](/works/pastel-migration-–-birds-and-moon-over-mariager-fjord/)
-
----
-
-### A Swan’s Soliloquy
-
-![A Swans Soliloquy](/works/a-swans-soliloquy/a-swans-soliloquy.jpg)
-
-En enkelt svane i et roligt og minimalistisk udtryk.
-
-[Se som kunsttryk →](/works/a-swans-soliloquy/)
+</div>
 
 ---
 
@@ -108,24 +78,22 @@ Området er kendt for:
 - åbne kyststrækninger  
 - skiftende lys gennem året  
 
+Det er disse forhold, der danner grundlaget for billederne.
+
 ---
 
 ## Kunsttryk til hjemmet
 
-Alle billeder kan bestilles som fine art prints.
+Alle billeder kan bestilles som fine art prints:
 
 - høj detaljegrad  
 - rolig farvegengivelse  
 - flere størrelser  
+
+[Se print muligheder →](/prints/)
 
 ---
 
 ## Se flere billeder
 
 [Se alle værker →](/works/)
-
----
-
-## Print
-
-[Se print muligheder →](/prints/)
