@@ -3,6 +3,9 @@ title: Solitude at Mariagerfjord
 draft: false
 date: 2025-03-07
 location: Hadsund, Mariagerfjord, Denmark
+
+print_url: "/prints/solitude-at-mariagerfjord"
+
 caption: >-
   Quiet morning reflections at Mariager Fjord, Hadsund.
 
@@ -13,17 +16,21 @@ caption: >-
   <br>
 
   👉 <a href="http://redowlphoto.dk/calendar2026" style="text-decoration:underline;">Order it here</a>
+
 cover:
   image: solitude-at-mariagerfjord.jpg
   alt: Minimalist landscape photograph of Mariager Fjord near Hadsund on an early
     spring morning, with soft mist, calm water and a single boat reflecting in
     the still surface.
+
 featured: false
+
 categories:
   - cool-blues
   - sea-fjord
   - curated-picks
   - portfolio
+
 tags:
   - Mariager Fjord
   - Hadsund Denmark
