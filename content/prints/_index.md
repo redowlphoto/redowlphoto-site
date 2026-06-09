@@ -152,7 +152,7 @@ Alle prints produceres på bestilling i høj kvalitet.
   <div class="print-content">
     <div>
       <h3>Echoes in Pastel Waters</h3>
-      <p>Månedsvinder – Als Odde</p>
+      <p>CEWE Månedsvinder – Als Odde</p>
     </div>
     <div class="print-actions">
       <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se print</a>
@@ -168,7 +168,7 @@ Alle prints produceres på bestilling i høj kvalitet.
   <div class="print-content">
     <div>
       <h3>Solitude at Mariagerfjord</h3>
-      <p>Minimalistisk fjordmotiv – Mariager</p>
+      <p>Minimalistisk fjordmotiv – Hadsund</p>
     </div>
     <div class="print-actions">
       <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Se print</a>
