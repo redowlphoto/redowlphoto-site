@@ -14,8 +14,9 @@ caption: >-
   Available as fine art print.
 cover:
   image: echoes_in_pastel_waters.jpg
-  alt: Minimalist seascape with wooden poles in still pastel water at Als Odde, Denmark
-featured: false
+  alt: Minimalist seascape with wooden poles in still pastel water at Als Odde,
+    Denmark
+featured: true
 categories:
   - curated-picks
   - warm-pastels
@@ -34,8 +35,7 @@ tags:
   - coastal landscape
   - redowlphoto
   - allan andersen
-
-print_url: "/prints/echoes-in-pastel-waters"
+print_url: /prints/echoes-in-pastel-waters
 ---
 
 <!--more-->
