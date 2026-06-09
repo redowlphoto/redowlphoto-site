@@ -77,6 +77,11 @@ term     = ["HTML", "RSS"]
     weight  = 10
 
   [[menu.main]]
+    name    = "Prints"
+    pageRef = "prints"
+    weight  = 15
+
+  [[menu.main]]
     name    = "Blog"
     pageRef = "blog"
     weight  = 20
