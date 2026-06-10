@@ -178,3 +178,19 @@ Alle prints produceres på bestilling i høj kvalitet.
 
 </div>
 </div>
+
+<!-- AGAINST THE SNOW -->
+<div class="print-tile">
+  <a href="/prints/against-the-snow" class="print-image">
+    <img src="/mockups/Against_the_Snow_Mockup.jpg" alt="Against the Snow">
+  </a>
+  <div class="print-content">
+    <div>
+      <h3>Against the Snow</h3>
+      <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
+    </div>
+    <div class="print-actions">
+      <a href="/prints/against-the-snow" class="buy-btn">Se print</a>
+    </div>
+  </div>
+</div>
