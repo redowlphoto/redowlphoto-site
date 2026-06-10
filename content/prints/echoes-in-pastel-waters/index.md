@@ -146,8 +146,8 @@ Se alle værker →
   padding: 4px 8px;
   border-radius: 4px;
 }
-</style>
 
+/* CEWE BOX */
 .cewe-feature {
   margin-top: 20px;
   padding: 18px;
@@ -176,3 +176,4 @@ Se alle værker →
 .cewe-button:hover {
   background: #a5b4fc;
 }
+</style>
