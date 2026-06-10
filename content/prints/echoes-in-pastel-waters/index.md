@@ -25,6 +25,14 @@ En stille aprilaften, hvor vinden lagde sig, og vandet blev spejlblankt. Solen v
 De enkle pæle står tilbage i vandet og skaber et roligt, grafisk udtryk. Refleksionerne giver motivet en næsten drømmende fornemmelse, hvor himmel og hav flyder sammen.
 
 Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – et motiv, hvor ro, timing og lys går op i en højere enhed.
+<div class="cewe-feature">
+  <p>
+    Billedet er også omtalt af CEWE i et interview om historien bag motivet og arbejdet med fotografiet.
+  </p>
+  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" class="cewe-button">
+    Læs interviewet om Echoes in Pastel Waters hos CEWE →
+  </a>
+</div>
 
 ---
 
@@ -139,3 +147,32 @@ Se alle værker →
   border-radius: 4px;
 }
 </style>
+
+.cewe-feature {
+  margin-top: 20px;
+  padding: 18px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+}
+
+.cewe-feature p {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.cewe-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #cbd5f5;
+  color: #111827;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cewe-button:hover {
+  background: #a5b4fc;
+}
