@@ -11,11 +11,10 @@ caption: >-
 
   This image is part of my ongoing work with minimalist Nordic landscapes, focusing on light, balance and silence.
 
-  Available as fine art print.
+  Available as fine art print. This work is also recognized as a Scandinavian monthly winner in the CEWE Photo Award.
 cover:
   image: echoes_in_pastel_waters.jpg
-  alt: Minimalist seascape with wooden poles in still pastel water at Als Odde,
-    Denmark
+  alt: Minimalist seascape with wooden poles in still pastel water at Als Odde, Denmark
 featured: true
 categories:
   - curated-picks
@@ -52,8 +51,16 @@ In this scene, movement disappears.
 
 Only light, reflection, and space remain.
 
-Available as a fine art print, this piece is created for collectors of minimalist wall art
-and Scandinavian landscape photography.
+Available as a fine art print.
+
+<div class="cewe-feature">
+  <p>
+    This photograph was selected as a Scandinavian monthly winner in the CEWE Photo Award 2027 and is featured in an official interview about the story behind the image.
+  </p>
+  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" class="cewe-link">
+    Read the full interview on CEWE →
+  </a>
+</div>
 
 ---
 
@@ -96,6 +103,14 @@ The area is known for its shallow waters, changing light, and calm atmospheric c
 
 ---
 
+## Prints
+
+This photograph is available as a museum-quality fine art print, suitable for modern and minimalist interiors:
+
+👉 [View print options](/prints/echoes-in-pastel-waters)
+
+---
+
 ## Explore More
 
 - [Sea & Fjord collection](https://redowlphoto.dk/categories/sea-fjord/)  
@@ -104,11 +119,31 @@ The area is known for its shallow waters, changing light, and calm atmospheric c
 
 ---
 
-## Prints
+<style>
+.cewe-feature {
+  margin-top: 24px;
+  padding: 16px;
+  background: #0f172a;
+  border-left: 3px solid #cbd5f5;
+  border-radius: 4px;
+}
 
-This photograph is available as a museum-quality fine art print, suitable for modern and minimalist interiors:
+.cewe-feature p {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
 
-👉 [View print options](https://photo-portal.shop/profiles/Allan-Andersen)
+.cewe-link {
+  color: #a5b4fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cewe-link:hover {
+  text-decoration: underline;
+}
+</style>
 
 ---
 
