@@ -4,11 +4,11 @@ draft: false
 date: 2026-01-12
 location: Hadsund, Mariagerfjord, Denmark
 caption: >-
-  A quiet winter scene in North Jutland, where a solitary oak tree stands against the snow.
+  In the quiet of winter, a solitary oak tree stands against the snow, its
+  branches etched sharply into the pale landscape. Fog softens the horizon,
+  leaving only form, balance, and stillness.
 
-  Fog softens the horizon, reducing the landscape to form, balance, and stillness.
-
-  This image is part of my ongoing work exploring minimalist Nordic landscapes, shaped by light, season, and restraint.
+  This image is part of my ongoing work exploring minimalism and Nordic landscapes, shaped by light, season, and restraint.
 
   Available as fine art print.
 cover:
@@ -16,20 +16,18 @@ cover:
   alt: Solitary oak tree in snow with foggy horizon in Denmark, minimalist Nordic winter landscape
 featured: true
 categories:
-  - curated-picks
+  - portfolio
 tags:
-  - minimalism
-  - nordic landscape
-  - winter photography
-  - black and white
-  - solitary tree
-  - denmark
-  - mariagerfjord
-  - fine art photography
-  - minimalist photography
-  - nordic winter
-  - redowlphoto
-  - allan andersen
+  - RedOwlPhoto
+  - Danish winter landscape
+  - Nordic minimalism photography
+  - Scandinavian fine art photo
+  - solitary tree in snow
+  - winter nature Denmark
+  - North Jutland landscape
+  - Himmerland winter scene
+  - minimalist tree photograph
+  - Nordic black and white landscape
 print_url: /prints/against-the-snow
 ---
 
