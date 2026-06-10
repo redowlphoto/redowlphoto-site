@@ -20,16 +20,17 @@ Prisvindende kunsttryk fra Als Odde – et stille øjeblik hvor lys og vand smel
 
 Billedet er skabt ved Als Odde, hvor Mariager Fjord møder Kattegat – et af de mest stemningsfulde steder i området.
 
-En stille aprilaften, hvor vinden lagde sig, og vandet blev spejlblankt. Solen var netop gået ned, og efterlod et blødt lys i blå og rosa nuancer.
+En stille aprilaften, hvor vinden lagde sig, og vandet blev spejlblankt. Solen var netop gået ned og efterlod et blødt lys i blå og rosa nuancer.
 
 De enkle pæle står tilbage i vandet og skaber et roligt, grafisk udtryk. Refleksionerne giver motivet en næsten drømmende fornemmelse, hvor himmel og hav flyder sammen.
 
 Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – et motiv, hvor ro, timing og lys går op i en højere enhed.
+
 <div class="cewe-feature">
   <p>
     Billedet er også omtalt af CEWE i et interview om historien bag motivet og arbejdet med fotografiet.
   </p>
-  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" class="cewe-button">
+  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" rel="noopener" class="cewe-button">
     Læs interviewet om Echoes in Pastel Waters hos CEWE →
   </a>
 </div>
@@ -76,104 +77,3 @@ Vælg det format, der passer til din væg og dit rum:
 <a href="/works/" class="link-more">
 Se alle værker →
 </a>
-
----
-
-<style>
-.mockup-container {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.mockup-container img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.print-options {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.print-card {
-  flex: 1;
-  padding: 22px;
-  background: #1e293b;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 6px;
-  border: 1px solid #64748b;
-  transition: all 0.2s ease;
-  display: block;
-  position: relative;
-}
-
-.print-card:hover {
-  border-color: #ffffff;
-  background: #273449;
-  transform: translateY(-2px);
-}
-
-.price {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-.size-help {
-  display: flex;
-  gap: 20px;
-  margin-top: 16px;
-  color: #9ca3af;
-}
-
-.size-help div {
-  flex: 1;
-  line-height: 1.6;
-}
-
-.size-help div:first-child {
-  padding-right: 10px;
-}
-
-.badge {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  background: #cbd5f5;
-  color: #111827;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-/* CEWE BOX */
-.cewe-feature {
-  margin-top: 20px;
-  padding: 18px;
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 6px;
-}
-
-.cewe-feature p {
-  margin-bottom: 10px;
-  color: #cbd5f5;
-  line-height: 1.6;
-}
-
-.cewe-button {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #cbd5f5;
-  color: #111827;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.cewe-button:hover {
-  background: #a5b4fc;
-}
-</style>
