@@ -7,24 +7,26 @@ draft: false
 ## Kunsttryk fra Mariager Fjord
 
 <div class="mockup-container">
-  <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Solitude at Mariager Fjord print mockup">
+  <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Minimalistisk kunsttryk fra Mariager Fjord i Danmark">
 </div>
 
 <p class="intro">
-Minimalistisk kunsttryk fra Mariager Fjord – til ro og balance i dit hjem.
+Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og balance i dit hjem.
 </p>
 
 ---
 
 ## Hvorfor dette motiv?
 
-Dette billede er optaget ved Mariager Fjord - et af de mest karakteristiske landskaber i Danmark.
+Dette billede er optaget ved Mariager Fjord – et af de mest karakteristiske landskaber i Danmark.
 
 Motivet er bygget op omkring ro, balance og et enkelt fokuspunkt. Det gør, at billedet falder naturligt ind i indretningen uden at dominere rummet.
 
 Den type motiv vælges ofte som kunsttryk, fordi det tilfører stemning fremfor at kræve opmærksomhed.
 
-Motivet er udvalgt i internationale FIAP-fotokonkurrencer med deltagelse fra fotografer verden over.
+Motivet er tildelt dommerdiplom ved Den Jyske Fotokonkurrence 2026.
+
+Et stille øjeblik fra Mariager Fjord – anerkendt for sin ro, balance og enkle komposition.
 
 ---
 
@@ -68,72 +70,3 @@ Vælg det format, der passer til din væg og dit rum:
 <a href="/works/" class="link-more">
 Se alle værker →
 </a>
-
----
-
-<style>
-.mockup-container {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.mockup-container img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.print-options {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.print-card {
-  flex: 1;
-  padding: 22px;
-  background: #1e293b;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 6px;
-  border: 1px solid #64748b;
-  transition: all 0.2s ease;
-  display: block;
-  position: relative;
-}
-
-.print-card:hover {
-  border-color: #ffffff;
-  background: #273449;
-  transform: translateY(-2px);
-}
-
-.price {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-/* VIGTIG FIX: align tekst under hver boks */
-.size-help {
-  display: flex;
-  gap: 20px;
-  margin-top: 12px;
-  color: #9ca3af;
-}
-
-.size-help div {
-  flex: 1;
-  line-height: 1.5;
-}
-
-/* badge */
-.badge {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  background: #cbd5f5;
-  color: #111827;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-</style>
