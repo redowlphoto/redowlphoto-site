@@ -1,5 +1,5 @@
 ---
-title: "Newborn Moon - Kunsttryk af blodmåne over Danmark"
+title: "Blodmåne plakat – Kunsttryk af måneformørkelse i Danmark | Newborn Moon"
 date: 2026-06-05
 draft: false
 ---
@@ -7,18 +7,18 @@ draft: false
 ## Newborn Moon
 
 <div class="mockup-container">
-  <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon kunsttryk - blodmåne over Danmark">
+  <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – måneformørkelse over Danmark">
 </div>
 
 <p class="intro">
-Prisvindende kunsttryk af en sjælden blodmåne – fanget i de få minutter, hvor alt gik op i en højere enhed.
+Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
 </p>
 
 ---
 
 ## Hvorfor dette motiv?
 
-Billedet er taget under en næsten overstået måneformørkelse i 2025.
+Billedet er taget under en næsten overstået måneformørkelse i Danmark i 2025.
 
 Forholdene var langt fra ideelle. Kraftig blæst og skyer dækkede himlen, og det så længe ud til, at motivet aldrig ville opstå.
 
@@ -28,9 +28,9 @@ Men i få minutter brød månen frem – stadig rød, stadig intens.
 
 Det øjeblik blev til *Newborn Moon*.
 
-Motivet har siden vundet Global Photography Awards og opnået topplaceringer i flere internationale konkurrencer.
+Som kunsttryk eller plakat bringer motivet et dramatisk og roligt fokus ind i rummet – et sjældent naturfænomen, gengivet med dybde og balance.
 
-Billedet står som et eksempel på, hvad timing, tålmodighed og stædighed kan skabe.
+Motivet har siden vundet Global Photography Awards og opnået topplaceringer i flere internationale konkurrencer.
 
 ---
 
@@ -66,6 +66,10 @@ Vælg det format, der passer til din væg og dit rum:
   <div>30x20 cm passer til mindre vægge og som del af en billedvæg</div>
   <div>70x50 cm fungerer som et markant blikfang og skaber dybde i rummet</div>
 </div>
+
+---
+
+Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, mørke toner og ro skaber stemning.
 
 ---
 
