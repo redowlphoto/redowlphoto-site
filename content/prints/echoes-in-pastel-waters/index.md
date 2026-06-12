@@ -22,25 +22,25 @@ De enkle pæle står tilbage i vandet og skaber et roligt, grafisk udtryk. Refle
 Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – et motiv, hvor ro, timing og lys går op i en højere enhed.
 
 <div class="cewe-feature">
-  <p>
+  <p class="feature-text">
     Billedet er omtalt i forbindelse med prisen, både i interview hos CEWE og i lokal presse.
   </p>
 
-  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" 
-     target="_blank" 
-     rel="noopener" 
-     class="cewe-button">
-    Læs interviewet hos CEWE →
-  </a>
+  <div class="feature-links">
+    <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" 
+       target="_blank" 
+       rel="noopener">
+      CEWE interview
+    </a>
 
-  <br>
+    <span>·</span>
 
-  <a href="https://mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris/" 
-     target="_blank" 
-     rel="noopener" 
-     class="cewe-button">
-    Læs omtalen i Mariagerfjordposten →
-  </a>
+    <a href="https://mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris/" 
+       target="_blank" 
+       rel="noopener">
+      Mariagerfjordposten
+    </a>
+  </div>
 </div>
 
 ---
