@@ -21,13 +21,30 @@ De enkle pæle står tilbage i vandet og skaber et roligt, grafisk udtryk. Refle
 
 Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – et motiv, hvor ro, timing og lys går op i en højere enhed.
 
-<div class="cewe-feature"> <p> Billedet er også omtalt af CEWE og Mariagerfjordposten i et interview om historien bag motivet og arbejdet med fotografiet. 
-</p> <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" rel="noopener" class="cewe-button"> 
-  Læs interviewet om Echoes in Pastel Waters hos CEWE → </a> </div>
-  </p> <a href="https://www.mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris.html" target="_blank" rel="noopener" class="cewe-button"> 
-  Læs interviewet om Echoes in Pastel Waters hos Mariagerfjordposten → </a> </div>
+<div class="cewe-feature">
 
----
+  <p>
+    Billedet er også omtalt af CEWE og Mariagerfjordposten i et interview om historien bag motivet og arbejdet med fotografiet.
+  </p>
+
+  <p>
+    <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html"
+       target="_blank"
+       rel="noopener"
+       class="cewe-button">
+      CEWE interview →
+    </a>
+
+    <a href="https://www.mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris.html"
+       target="_blank"
+       rel="noopener"
+       class="cewe-button"
+       style="margin-left:10px;">
+      Mariagerfjordposten →
+    </a>
+  </p>
+
+</div>---
 
 ## Kvalitet og print
 
