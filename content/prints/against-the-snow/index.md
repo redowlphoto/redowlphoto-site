@@ -11,14 +11,14 @@ draft: false
 </div>
 
 <p class="intro">
-Minimalistisk kunsttryk af et ensomt egetræ i sne – et motiv skabt til ro, stilhed og balance i dit hjem.
+Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord – et roligt vintermotiv skabt til stilhed og balance i moderne hjem.
 </p>
 
 ---
 
 ## Hvorfor dette motiv?
 
-Dette billede er taget en stille vinterdag ved Mariagerfjord, hvor landskabet var reduceret til det mest enkle.
+Dette billede er taget en stille vinterdag ved Mariager Fjord, hvor landskabet var reduceret til det mest enkle.
 
 Et enkelt egetræ står alene i sneen. Ingen forstyrrelser. Ingen bevægelse.
 
@@ -26,7 +26,7 @@ Tågen opløser baggrunden og efterlader kun form, struktur og balance.
 
 Motivet er bygget op omkring minimalisme og negativ plads – elementer der gør, at billedet falder naturligt ind i moderne nordiske hjem.
 
-Det er et motiv, der ikke kræver opmærksomhed, men som skaber ro i rummet.
+Som kunsttryk eller plakat fungerer motivet som et roligt visuelt anker i rummet, uden at tage opmærksomhed.
 
 ---
 
