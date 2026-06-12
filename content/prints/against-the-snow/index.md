@@ -65,6 +65,10 @@ Vælg det format, der passer til din væg og dit rum:
 
 ---
 
+Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, mørke toner og ro skaber stemning.
+
+---
+
 ## Se flere billeder
 
 <a href="/works/" class="link-more">
