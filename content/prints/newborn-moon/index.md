@@ -32,6 +32,30 @@ Som kunsttryk eller plakat bringer motivet et dramatisk og roligt fokus ind i ru
 
 Motivet har siden vundet Global Photography Awards og opnået topplaceringer i flere internationale konkurrencer.
 
+<div class="cewe-feature">
+
+  <p>
+    Billedet er dokumenteret som officiel vinder hos Global Photography Awards og omtalt i det internationale kunstmagasin Muse.World.
+  </p>
+
+  <p style="margin-top:10px;">
+    <a href="https://globalphotographyawards.com/winner-info.php?id=2041"
+       target="_blank"
+       rel="noopener">
+      Se vinderprofil hos Global Photography Awards →
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen"
+       target="_blank"
+       rel="noopener">
+      Læs artikel hos Muse.World →
+    </a>
+  </p>
+
+</div>
+
 ---
 
 ## Kvalitet og print
