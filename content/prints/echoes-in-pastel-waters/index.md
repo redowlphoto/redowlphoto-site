@@ -2,7 +2,7 @@
 
 <div class="mockup-container">
   <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" 
-       alt="Kunsttryk fra Als Odde ved Mariager Fjord i pastelfarver – Echoes in Pastel Waters">
+       alt="Kunsttryk fra Mariager Fjord – Plakat fra Als Odde | Echoes in Pastel Waters">
 </div>
 
 <p class="intro">
