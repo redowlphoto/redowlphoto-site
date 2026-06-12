@@ -44,7 +44,6 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
   </p>
 
 </div>
----
 
 ## Kvalitet og print
 
