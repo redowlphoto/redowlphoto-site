@@ -27,14 +27,15 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
     Billedet er også omtalt af CEWE og Mariagerfjordposten i et interview om historien bag motivet og arbejdet med fotografiet.
   </p>
 
-  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html"
-     target="_blank"
-     rel="noopener"
-     class="cewe-button">
-    Læs interview hos CEWE →
-  </a>
-
   <p style="margin-top:10px;">
+    <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html"
+       target="_blank"
+       rel="noopener">
+      Læs interview hos CEWE →
+    </a>
+  </p>
+
+  <p>
     <a href="https://www.mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris.html"
        target="_blank"
        rel="noopener">
