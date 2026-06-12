@@ -36,7 +36,7 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
   </p>
 
   <p>
-    <a href="https://www.mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris.html"
+    <a href="https://mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris"
        target="_blank"
        rel="noopener">
       Læs omtalen i Mariagerfjordposten →
