@@ -1,17 +1,12 @@
----
-title: "Echoes in Pastel Waters - Kunsttryk fra Als Odde"
-date: 2026-06-05
-draft: false
----
-
 ## Echoes in Pastel Waters
 
 <div class="mockup-container">
-  <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" alt="Echoes in Pastel Waters print mockup">
+  <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" 
+       alt="Kunsttryk fra Als Odde ved Mariager Fjord i pastelfarver – Echoes in Pastel Waters">
 </div>
 
 <p class="intro">
-Prisvindende kunsttryk fra Als Odde – et stille øjeblik hvor lys og vand smelter sammen i bløde pastelfarver.
+Prisvindende kunsttryk fra Als Odde – også velegnet som eksklusiv plakat til hjemmet, hvor lys og vand smelter sammen i bløde pastelfarver.
 </p>
 
 ---
@@ -28,10 +23,23 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
 
 <div class="cewe-feature">
   <p>
-    Billedet er også omtalt af CEWE i et interview om historien bag motivet og arbejdet med fotografiet.
+    Billedet er omtalt i forbindelse med prisen, både i interview hos CEWE og i lokal presse.
   </p>
-  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" target="_blank" rel="noopener" class="cewe-button">
-    Læs interviewet om Echoes in Pastel Waters hos CEWE →
+
+  <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html" 
+     target="_blank" 
+     rel="noopener" 
+     class="cewe-button">
+    Læs interviewet hos CEWE →
+  </a>
+
+  <br>
+
+  <a href="https://mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris/" 
+     target="_blank" 
+     rel="noopener" 
+     class="cewe-button">
+    Læs omtalen i Mariagerfjordposten →
   </a>
 </div>
 
@@ -69,6 +77,12 @@ Vælg det format, der passer til din væg og dit rum:
   <div>30x20 cm passer til mindre vægge, hylder og stille hjørner</div>
   <div>70x50 cm fungerer som et roligt blikfang og samler rummet</div>
 </div>
+
+---
+
+<p class="seo-extra">
+Dette motiv fås som kunsttryk og plakat i høj kvalitet – perfekt til moderne, nordiske hjem med fokus på ro og balance.
+</p>
 
 ---
 
