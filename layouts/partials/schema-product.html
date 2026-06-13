@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-{{ if in .Permalink "/prints/" }}
+{{ if and (not (eq .Kind "home")) (isset . "Permalink") }}
 
 <script type="application/ld+json">
 {
