@@ -83,9 +83,9 @@ Se alle værker →
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Against the Snow - Kunsttryk med egetræ i vinterlandskab",
-  "image": "https://redowlphoto.dk/mockups/against_the_snow_mockup.jpg",
-  "description": "Minimalistisk kunsttryk af egetræ i sne ved Mariager Fjord – roligt vintermotiv i sort/hvid.",
+  "name": "{{ .Title }}",
+  "image": "{{ "mockups/against_the_snow_mockup.jpg" | absURL }}",
+  "description": "{{ .Params.description }}",
   "brand": {
     "@type": "Brand",
     "name": "RedOwlPhoto"
@@ -93,19 +93,17 @@ Se alle værker →
   "offers": [
     {
       "@type": "Offer",
-      "url": "https://redowlphoto.dk/prints/against-the-snow-70x50",
+      "url": "{{ "/prints/against-the-snow-70x50" | absURL }}",
       "priceCurrency": "DKK",
-      "price": "600",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
+      "price": "{{ site.Data.prices.medium }}",
+      "availability": "https://schema.org/InStock"
     },
     {
       "@type": "Offer",
-      "url": "https://redowlphoto.dk/prints/against-the-snow-30x20",
+      "url": "{{ "/prints/against-the-snow-30x20" | absURL }}",
       "priceCurrency": "DKK",
-      "price": "150",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
+      "price": "{{ site.Data.prices.small }}",
+      "availability": "https://schema.org/InStock"
     }
   ]
 }
