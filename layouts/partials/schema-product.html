@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-{{ if and (isset . "RelPermalink") (in $page.RelPermalink "/prints/") }}
+{{ if in .Permalink "/prints/" }}
 
 <script type="application/ld+json">
 {
