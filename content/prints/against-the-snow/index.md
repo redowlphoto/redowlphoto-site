@@ -95,14 +95,14 @@ Se alle værker →
       "@type": "Offer",
       "url": "https://redowlphoto.dk/prints/against-the-snow-70x50",
       "priceCurrency": "DKK",
-      "price": "{{ site.Data.prices.medium }}",
+      "price": {{ site.Data.prices.medium }},
       "availability": "https://schema.org/InStock"
     },
     {
       "@type": "Offer",
       "url": "https://redowlphoto.dk/prints/against-the-snow-30x20",
       "priceCurrency": "DKK",
-      "price": "{{ site.Data.prices.small }}",
+      "price": {{ site.Data.prices.small }},
       "availability": "https://schema.org/InStock"
     }
   ]
