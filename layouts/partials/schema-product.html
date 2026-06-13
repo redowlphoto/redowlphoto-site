@@ -1,14 +1,12 @@
-{{ $page := . }}
-
-{{ if $page.Params.slug }}
+{{ if .IsPage }}
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Product",
-  "name": "{{ $page.Title }}",
-  "image": "{{ $page.Params.image }}",
-  "description": "{{ $page.Params.description }}",
+  "name": "{{ .Title }}",
+  "image": "{{ .Params.image | absURL }}",
+  "description": "{{ .Params.description }}",
   "brand": {
     "@type": "Brand",
     "name": "RedOwlPhoto"
@@ -16,21 +14,21 @@
   "offers": [
     {
       "@type": "Offer",
-      "url": "/prints/{{ $page.Params.slug }}-30x20",
+      "url": "{{ .Permalink }}",
       "priceCurrency": "DKK",
       "price": "150",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
-      "name": "{{ $page.Title }} – 30x20 cm"
+      "name": "{{ .Title }} – 30x20 cm"
     },
     {
       "@type": "Offer",
-      "url": "/prints/{{ $page.Params.slug }}-70x50",
+      "url": "{{ .Permalink }}",
       "priceCurrency": "DKK",
       "price": "600",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
-      "name": "{{ $page.Title }} – 70x50 cm"
+      "name": "{{ .Title }} – 70x50 cm"
     }
   ]
 }
