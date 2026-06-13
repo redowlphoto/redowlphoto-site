@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-{{ if and $page.Title (in $page.RelPermalink "/prints/") }}
+{{ if $page.Params.slug }}
 
 <script type="application/ld+json">
 {
