@@ -1,14 +1,12 @@
-{{- $p := .Page -}}
-
-{{ if and $p $p.Params.slug }}
+{{ if .Params.slug }}
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": {{ $p.Title | jsonify }},
-  "image": {{ $p.Params.image | absURL | jsonify }},
-  "description": {{ $p.Params.description | jsonify }},
+  "name": {{ .Title | jsonify }},
+  "image": {{ .Params.image | absURL | jsonify }},
+  "description": {{ .Params.description | jsonify }},
   "brand": {
     "@type": "Brand",
     "name": "RedOwlPhoto"
@@ -16,21 +14,19 @@
   "offers": [
     {
       "@type": "Offer",
-      "url": {{ (printf "/prints/%s-70x50" $p.Params.slug) | jsonify }},
+      "url": {{ (printf "%sprints/%s-70x50" .Site.BaseURL .Params.slug) | jsonify }},
       "priceCurrency": "DKK",
       "price": "600",
       "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": {{ printf "%s – 70x50 cm" $p.Title | jsonify }}
+      "itemCondition": "https://schema.org/NewCondition"
     },
     {
       "@type": "Offer",
-      "url": {{ (printf "/prints/%s-30x20" $p.Params.slug) | jsonify }},
+      "url": {{ (printf "%sprints/%s-30x20" .Site.BaseURL .Params.slug) | jsonify }},
       "priceCurrency": "DKK",
       "price": "150",
       "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": {{ printf "%s – 30x20 cm" $p.Title | jsonify }}
+      "itemCondition": "https://schema.org/NewCondition"
     }
   ]
 }
