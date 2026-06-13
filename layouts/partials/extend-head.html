@@ -18,4 +18,6 @@
 }
 </script>
 
-{{ partial "schema-product.html" $ }}
+{{ if .IsPage }}
+  {{ partial "schema-product.html" . }}
+{{ end }}
