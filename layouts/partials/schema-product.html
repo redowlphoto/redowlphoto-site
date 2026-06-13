@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-{{ if and (not (eq .Kind "home")) (isset . "Permalink") }}
+{{ if .IsPage }}
 
 <script type="application/ld+json">
 {
