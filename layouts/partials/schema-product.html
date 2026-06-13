@@ -1,12 +1,14 @@
-{{ if in .RelPermalink "/prints/" }}
+{{ $page := . }}
+
+{{ if and (isset . "RelPermalink") (in $page.RelPermalink "/prints/") }}
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Product",
-  "name": "{{ .Title }}",
-  "image": "{{ .Site.BaseURL }}{{ .Params.image }}",
-  "description": "{{ .Params.description }}",
+  "name": "{{ $page.Title }}",
+  "image": "{{ $page.Site.BaseURL }}{{ $page.Params.image }}",
+  "description": "{{ $page.Params.description }}",
   "brand": {
     "@type": "Brand",
     "name": "RedOwlPhoto"
@@ -14,21 +16,21 @@
   "offers": [
     {
       "@type": "Offer",
-      "url": "{{ .Site.BaseURL }}prints/{{ .Params.slug }}-30x20",
+      "url": "{{ $page.Site.BaseURL }}prints/{{ $page.Params.slug }}-30x20",
       "priceCurrency": "DKK",
       "price": "150",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
-      "name": "{{ .Title }} – 30x20 cm"
+      "name": "{{ $page.Title }} – 30x20 cm"
     },
     {
       "@type": "Offer",
-      "url": "{{ .Site.BaseURL }}prints/{{ .Params.slug }}-70x50",
+      "url": "{{ $page.Site.BaseURL }}prints/{{ $page.Params.slug }}-70x50",
       "priceCurrency": "DKK",
       "price": "600",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
-      "name": "{{ .Title }} – 70x50 cm"
+      "name": "{{ $page.Title }} – 70x50 cm"
     }
   ]
 }
