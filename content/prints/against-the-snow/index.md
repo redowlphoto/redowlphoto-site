@@ -2,6 +2,10 @@
 title: "Against the Snow - Kunsttryk med egetræ i vinterlandskab"
 date: 2026-06-10
 draft: false
+
+image: "mockups/against_the_snow_mockup.jpg"
+description: "Minimalistisk kunsttryk af egetræ i sne ved Mariager Fjord – roligt vintermotiv i sort/hvid."
+slug: "against-the-snow"
 ---
 
 ## Against the Snow
