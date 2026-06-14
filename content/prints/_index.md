@@ -2,6 +2,7 @@
 title: Fine Art Prints
 layout: single
 slug: prints
+image: "mockups/Newborn_Moon_Mockup.jpeg" 
 ---
 
 <div class="print-wrap">
