@@ -1,30 +1,30 @@
 {{ define "main" }} 
 <style>
   .ro-wrap{ max-width: var(--ro-maxw); margin-left: auto; margin-right: auto; padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x); padding-top: 2rem; padding-bottom: 4rem; }
-  .ro-h1{ font-size:clamp(1.6rem,2.6vw,2.2rem); line-height:1.3; margin-bottom:.6rem; font-weight:600; }
-  .ro-tagline{ font-size:clamp(1.05rem,1.6vw,1.25rem); line-height:1.6; margin-bottom:2rem; opacity:.9; }
+  .ro-h1{ font-size:clamp(1.8rem,3vw,2.5rem); line-height:1.2; margin-bottom:0.5rem; font-weight:700; }
   
-  /* AWARD BADGE */
-  .ro-award { font-weight: 600; color: #ffce7a; margin-bottom: 1rem; display: block; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
-
-  /* TILES & KNAPPER */
-  .ro-tiles{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1rem; margin-top:1rem; align-items: start; }
+  /* OPPDATERET AWARD TEKST */
+  .ro-award { display: block; margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 600; color: #ffce7a; }
+  
+  .ro-tagline{ font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.5; margin-bottom:2.5rem; opacity:0.95; max-width: 800px; }
+  
+  .ro-tiles{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1.5rem; margin-top:1rem; align-items: start; }
   @media (max-width:900px){ .ro-tiles{ grid-template-columns:1fr; } }
   .ro-tile{ background:#0e1a27; border:1px solid rgba(255,255,255,.06); border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.25); display: flex; flex-direction: column; }
+  
   .ro-tile-img { display: block; position: relative; overflow: hidden; height: 320px; width: 100%; }
   .ro-tile-img img, .ro-slide { width: 100%; height: 100%; object-fit: cover; display: block; }
   .ro-slide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 900ms ease; }
   .ro-slide.is-active { opacity: 1; }
   
-  .ro-tile-head{ padding:1.2rem; color:#e7edf6; flex-grow: 1; }
-  .ro-tile-head h3{ margin:0 0 .5rem; font-size:1.2rem; }
-  .ro-tile-head .hint{ opacity:0.8; margin-bottom: 1rem; }
+  .ro-tile-head{ padding:1.5rem; color:#e7edf6; flex-grow: 1; }
+  .ro-tile-head h3{ margin:0 0 0.5rem; font-size:1.3rem; }
+  .ro-tile-head .hint{ opacity:0.85; margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.4; }
   
-  /* KNAP DESIGN */
-  .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.7rem 1.2rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+  .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
   .ro-btn:hover { background: #e7edf6; }
 
-  .ro-hero-cta{ position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,.55); padding:.5rem .8rem; border-radius:6px; font-size:.95rem; color:#fff; backdrop-filter: blur(4px); z-index: 10; }
+  .ro-hero-cta{ position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,.6); padding:0.6rem 1rem; border-radius:6px; font-size:1rem; color:#fff; backdrop-filter: blur(4px); z-index: 10; font-weight: 600; }
 </style>
 
 <div class="ro-wrap">
@@ -32,7 +32,7 @@
   <h1 class="ro-h1">Skandinavisk Fine Art Fotografi</h1>
   <span class="ro-award">★ Prisvindende naturfotografi fra Mariagerfjord</span>
   <div class="ro-tagline">
-    Minimalistiske landskaber fra Mariagerfjord, Lille Vildmose og den danske kyst – med fokus på lys og ro.
+    Minimalistiske kunsttryk til din væg – skabt med fokus på ro, lys og skandinavisk enkelhed.
   </div>
 
   {{ $tiles := site.Data.home.tiles }}
@@ -41,21 +41,19 @@
     {{ if eq .title "Fine Art Prints" }}{{ $printTile = . }}{{ else if eq .title "Mariager Fjord Calendar 2026" }}{{ $calTile = . }}{{ end }}
   {{ end }}
 
-  {{/* PRINTS - FULD BREDDE */}}
   {{ if $printTile }}
     <section style="margin-bottom: 2rem;">
       <div class="ro-tile">
         <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;"><img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager"></a>
         <div class="ro-tile-head">
-          <h3>{{ $printTile.title }}</h3>
-          <div class="hint">Fine art prints fra Danmark – produceret på Hahnemühle papir i gallerikvalitet.</div>
-          <a href="{{ $printTile.href | relURL }}" class="ro-btn">Køb Fine Art Prints (fra {{ site.Data.prices.small }} kr.)</a>
+          <h3>Fine Art Prints</h3>
+          <div class="hint">Gallerikvalitet på Hahnemühle papir. Perfekt til det minimalistiske hjem.</div>
+          <a href="{{ $printTile.href | relURL }}" class="ro-btn">Køb kunsttryk (fra {{ site.Data.prices.small }} kr.)</a>
         </div>
       </div>
     </section>
   {{ end }}
 
-  {{/* KALENDER & WORKS */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
@@ -70,7 +68,7 @@
         <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}"><img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy"></a>
         <div class="ro-tile-head">
           <h3>{{ $calTile.title }}</h3>
-          <div class="hint">Pris: {{ site.Data.prices.calendar }} DKK</div>
+          <div class="hint">En hyldest til Mariagerfjord gennem 12 måneders landskaber.</div>
           <a href="{{ $calTile.href | relURL }}" class="ro-btn">Bestil kalender</a>
         </div>
       </div>
@@ -78,14 +76,14 @@
 
     <div class="ro-tile">
       <a class="ro-tile-img" href="{{ "works" | relURL }}">
-        <div class="ro-hero-cta">Se galleri</div>
+        <div class="ro-hero-cta">Se portfolio</div>
         {{ range $i, $s := $slides }}
           <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $s.img }}" alt="{{ $s.alt }}" loading="lazy">
         {{ end }}
       </a>
       <div class="ro-tile-head">
         <h3>Udvalgte Værker</h3>
-        <div class="hint">Minimalistiske landskaber – Udforsk hele portfolioen</div>
+        <div class="hint">Gå på opdagelse i hele samlingen af minimalistiske naturmotiver.</div>
         <a href="{{ "works" | relURL }}" class="ro-btn">Se alle værker</a>
       </div>
     </div>
