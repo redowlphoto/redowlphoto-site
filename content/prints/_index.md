@@ -10,7 +10,7 @@ slug: prints
 
 <p class="print-intro">
 Udvalgte værker fra Mariagerfjord og nordiske landskaber.  
-Alle prints produceres på bestilling i høj kvalitet.
+Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og unikke løsninger.
 </p>
 
 <div class="print-grid">
