@@ -2,6 +2,9 @@
 title: "Blodmåne plakat – Kunsttryk af måneformørkelse i Danmark | Newborn Moon"
 date: 2026-06-05
 draft: false
+image: "mockups/Newborn_Moon_Mockup.jpeg"
+description: "Prisvindende kunsttryk af en sjælden blodmåne over Danmark – dramatisk motiv til din væg."
+slug: "newborn-moon"
 ---
 
 ## Newborn Moon
@@ -33,11 +36,9 @@ Som kunsttryk eller plakat bringer motivet et dramatisk og roligt fokus ind i ru
 Motivet har siden vundet Global Photography Awards og opnået topplaceringer i flere internationale konkurrencer.
 
 <div class="cewe-feature">
-
   <p>
     Billedet er dokumenteret som officiel vinder hos Global Photography Awards og omtalt i det internationale kunstmagasin Muse.World.
   </p>
-
   <p style="margin-top:10px;">
     <a href="https://globalphotographyawards.com/winner-info.php?id=2041"
        target="_blank"
@@ -45,7 +46,6 @@ Motivet har siden vundet Global Photography Awards og opnået topplaceringer i f
       Se vinderprofil hos Global Photography Awards →
     </a>
   </p>
-
   <p>
     <a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen"
        target="_blank"
@@ -53,7 +53,6 @@ Motivet har siden vundet Global Photography Awards og opnået topplaceringer i f
       Læs artikel hos Muse.World →
     </a>
   </p>
-
 </div>
 
 ---
@@ -73,15 +72,15 @@ Vælg det format, der passer til din væg og dit rum:
 
 <div class="print-options">
 
-  <a href="/prints/newborn-moon-30x20" class="print-card">
+  <a href="/prints/{{ .Params.slug }}-30x20" class="print-card">
     <div class="size">30x20 cm</div>
-    <div class="price">150 kr</div>
+    <div class="price">{{< price "small" >}} kr</div>
   </a>
 
-  <a href="/prints/newborn-moon-70x50" class="print-card highlight">
+  <a href="/prints/{{ .Params.slug }}-70x50" class="print-card highlight">
     <div class="badge">Mest valgt</div>
     <div class="size">70x50 cm</div>
-    <div class="price">600 kr</div>
+    <div class="price">{{< price "medium" >}} kr</div>
   </a>
 
 </div>
@@ -93,7 +92,9 @@ Vælg det format, der passer til din væg og dit rum:
 
 ---
 
+<p class="seo-extra">
 Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, mørke toner og ro skaber stemning.
+</p>
 
 ---
 
