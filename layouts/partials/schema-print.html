@@ -1,4 +1,8 @@
 {{- $p := .Page -}}
+
+{{- /* LÅS: Kør kun dette Product-schema på faktiske print-sider (ikke på _index.md / prints-oversigten) */ -}}
+{{- if and $p.IsPage (ne $p.Slug "prints") -}}
+
 {{- $name := $p.Title -}}
 {{- $desc := $p.Params.description | default $p.Summary | plainify -}}
 {{- $image := $p.Params.image | default "" -}}
@@ -84,3 +88,5 @@
 <script type="application/ld+json">
 {{ $schema | jsonify | safeJS }}
 </script>
+
+{{- end -}}
