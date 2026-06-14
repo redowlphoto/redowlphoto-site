@@ -6,8 +6,6 @@ slug: prints
 
 <div class="print-wrap">
 
-<h1>Fine Art Prints</h1>
-
 <p class="print-intro">
 Udvalgte værker fra Mariagerfjord og nordiske landskaber.  
 Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og unikke løsninger.
@@ -85,30 +83,9 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Fine Art Prints by RedOwlPhoto",
-  "description": "Udvalgte værker fra Mariagerfjord og nordiske landskaber, produceret på bestilling i høj kvalitet.",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://redowlphoto.dk/prints/newborn-moon"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://redowlphoto.dk/prints/echoes-in-pastel-waters"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://redowlphoto.dk/prints/solitude-at-mariagerfjord"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://redowlphoto.dk/prints/against-the-snow"
-    }
-  ]
+  "@type": "WebSite",
+  "name": "RedOwlPhoto Fine Art Prints",
+  "url": "https://redowlphoto.dk/prints/",
+  "description": "Udvalgte kunsttryk fra Mariagerfjord og nordiske landskaber."
 }
 </script>
