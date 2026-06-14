@@ -7,73 +7,49 @@ description: "Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og bal
 slug: "solitude-at-mariagerfjord"
 ---
 
-## Solitude at Mariager Fjord
-
 <div class="mockup-container">
   <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Minimalistisk kunsttryk fra Mariager Fjord i Danmark">
 </div>
 
+<h1>Solitude at Mariager Fjord</h1>
 <p class="intro">
 Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og balance i dit hjem.
 </p>
 
----
-
-## Hvorfor dette motiv?
-
-Dette billede er optaget ved Mariager Fjord – et af de mest karakteristiske landskaber i Danmark.
-
-Motivet er bygget op omkring ro, balance og et enkelt fokuspunkt. Det gør, at billedet falder naturligt ind i indretningen uden at dominere rummet.
-
-Den type motiv vælges ofte som kunsttryk, fordi det tilfører stemning fremfor at kræve opmærksomhed.
-
-Motivet er tildelt dommerdiplom ved Den Jyske Fotokonkurrence 2026.
-
-Et stille øjeblik fra Mariager Fjord – anerkendt for sin ro, balance og enkle komposition.
-
----
-
-## Kvalitet og print
-
-- Printet på Hahnemühle fine art papir  
-- Høj detaljegrad og bløde toneovergange  
-- Udvalgt specifikt til nordisk lys og dæmpede farver  
-- Produceret på bestilling hos et professionelt fotolaboratorium med præcis farvegengivelse og dokumenteret høj printkvalitet  
-
----
-
-## Vælg størrelse
-
-Vælg det format, der passer til din væg og dit rum:
-
-<div class="print-options">
-
-  <a href="/prints/solitude-at-mariagerfjord-30x20" class="print-card">
-    <div class="size">30x20 cm</div>
-    <div class="price">{{< price "small" >}} kr</div>
+<!-- Købsknapper -->
+<div class="print-options-top">
+  <a href="/prints/solitude-at-mariagerfjord-30x20" class="btn-primary">
+    Køb 30x20 cm ({{< price "small" >}} kr)
   </a>
-
-  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card highlight">
-    <div class="badge">Mest valgt</div>
-    <div class="size">70x50 cm</div>
-    <div class="price">{{< price "medium" >}} kr</div>
+  <a href="/prints/solitude-at-mariagerfjord-70x50" class="btn-primary-highlight">
+    <span class="badge">Mest valgt</span>
+    Køb 70x50 cm ({{< price "medium" >}} kr)
   </a>
-
 </div>
 
-<div class="size-help">
-  <div>30x20 cm passer til mindre vægge, hylder og stille hjørner</div>
-  <div>70x50 cm fungerer som et roligt blikfang og samler rummet</div>
+<!-- Fragt-linje -->
+<div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
+  <span>🚚 Gratis fragt</span>
+  <span>🛡️ Produceret på bestilling</span>
+  <span>📅 5-10 dages levering</span>
 </div>
 
----
+<h2>Hvorfor dette motiv?</h2>
+<p>Dette billede er optaget ved Mariager Fjord – et af de mest karakteristiske landskaber i Danmark. Motivet er bygget op omkring ro, balance og et enkelt fokuspunkt, hvilket gør, at billedet falder naturligt ind i indretningen uden at dominere rummet.</p>
+<p>Motivet er tildelt dommerdiplom ved Den Jyske Fotokonkurrence 2026 og anerkendt for sin enkle komposition.</p>
 
-Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, lyse toner og ro skaber stemning.
+<hr>
 
----
+<h2>Kvalitet og print</h2>
+<ul>
+  <li>Printet på Hahnemühle fine art papir</li>
+  <li>Høj detaljegrad og bløde toneovergange</li>
+  <li>Udvalgt specifikt til nordisk lys og dæmpede farver</li>
+  <li>Produceret på bestilling hos et professionelt fotolaboratorium med præcis farvegengivelse</li>
+</ul>
 
-## Se flere billeder
+<hr>
 
-<a href="/works/" class="link-more">
-Se alle værker →
-</a>
+<h2>Skræddersyede løsninger</h2>
+<p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
+<a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
