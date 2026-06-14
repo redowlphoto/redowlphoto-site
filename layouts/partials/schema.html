@@ -4,6 +4,8 @@
   {{ partial "schema-work.html" . }}
 {{ else if eq .Section "blog" }}
   {{ partial "schema-blog.html" . }}
+{{ else if eq .Section "prints" }}
+  {{ partial "schema-print.html" . }}
 {{ else if in .Permalink "/about/" }}
   {{ partial "schema-about.html" . }}
 {{ end }}
