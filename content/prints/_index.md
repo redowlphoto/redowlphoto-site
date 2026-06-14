@@ -85,12 +85,30 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
+  "@type": "ItemList",
   "name": "Fine Art Prints by RedOwlPhoto",
   "description": "Udvalgte værker fra Mariagerfjord og nordiske landskaber, produceret på bestilling i høj kvalitet.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "RedOwlPhoto"
-  }
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://redowlphoto.dk/prints/newborn-moon"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://redowlphoto.dk/prints/echoes-in-pastel-waters"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://redowlphoto.dk/prints/solitude-at-mariagerfjord"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://redowlphoto.dk/prints/against-the-snow"
+    }
+  ]
 }
 </script>
