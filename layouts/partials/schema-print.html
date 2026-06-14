@@ -7,34 +7,36 @@
   {{- $imageAbs = printf "%s%s" site.BaseURL (strings.TrimPrefix "/" $image) -}}
 {{- end -}}
 
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Product"
+  "name" $name
+  "image" $imageAbs
+  "description" $desc
+  "brand" (dict
+    "@type" "Brand"
+    "name" "RedOwlPhoto"
+  )
+  "offers" (slice
+    (dict
+      "@type" "Offer"
+      "name" "70x50 cm"
+      "url" (printf "%s-70x50" (strings.TrimSuffix "/" $p.Permalink))
+      "priceCurrency" "DKK"
+      "price" site.Data.prices.medium
+      "availability" "https://schema.org/InStock"
+    )
+    (dict
+      "@type" "Offer"
+      "name" "30x20 cm"
+      "url" (printf "%s-30x20" (strings.TrimSuffix "/" $p.Permalink))
+      "priceCurrency" "DKK"
+      "price" site.Data.prices.small
+      "availability" "https://schema.org/InStock"
+    )
+  )
+-}}
+
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": {{ $name | jsonify }},
-  "image": {{ $imageAbs | jsonify }},
-  "description": {{ $desc | jsonify }},
-  "brand": {
-    "@type": "Brand",
-    "name": "RedOwlPhoto"
-  },
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "70x50 cm",
-      "url": {{ printf "%s-70x50" (strings.TrimSuffix "/" $p.Permalink) | jsonify }},
-      "priceCurrency": "DKK",
-      "price": {{ site.Data.prices.medium }},
-      "availability": "https://schema.org/InStock"
-    },
-    {
-      "@type": "Offer",
-      "name": "30x20 cm",
-      "url": {{ printf "%s-30x20" (strings.TrimSuffix "/" $p.Permalink) | jsonify }},
-      "priceCurrency": "DKK",
-      "price": {{ site.Data.prices.small }},
-      "availability": "https://schema.org/InStock"
-    }
-  ]
-}
+{{ $schema | jsonify | safeJS }}
 </script>
