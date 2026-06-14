@@ -7,56 +7,50 @@ description: "Prisvindende kunsttryk af en sjælden blodmåne over Danmark – d
 slug: "newborn-moon"
 ---
 
-<!-- Billede -->
+<!-- Billede og hovedsektion -->
 <div class="mockup-container">
   <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – måneformørkelse over Danmark">
 </div>
 
-<!-- Overskrift og Intro -->
 <h1>Newborn Moon</h1>
 <p class="intro">
 Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
 </p>
 
-<!-- Købsknapper flyttet til toppen -->
+<!-- Købsknapper - opdateret struktur -->
 <div class="print-options-top">
-  <a href="/prints/newborn-moon-30x20" class="print-card-highlight">
-    <div class="size">30x20 cm</div>
-    <div class="price">150 kr</div>
-    <div class="btn">Køb 30x20 cm</div>
-  </a>
-
-  <a href="/prints/newborn-moon-70x50" class="print-card-highlight">
-    <div class="badge">Mest valgt</div>
-    <div class="size">70x50 cm</div>
-    <div class="price">600 kr</div>
-    <div class="btn">Køb 70x50 cm</div>
+  <a href="/prints/newborn-moon-30x20" class="btn-primary">Køb 30x20 cm (150 kr)</a>
+  <a href="/prints/newborn-moon-70x50" class="btn-primary-highlight">
+    <span class="badge">Mest valgt</span>
+    Køb 70x50 cm (600 kr)
   </a>
 </div>
 
-<!-- Fragt-linje placeret direkte under købsknapperne -->
+<!-- Fragt-linje -->
 <div class="shipping-info">
-  <span>🚚 Gratis fragt i Danmark og EU</span>
+  <span>🚚 Gratis fragt i Danmark</span>
   <span>🛡️ Produceret på bestilling</span>
-  <span>📅 Levering 5–10 hverdage</span>
+  <span>📅 Levering 5–7 hverdage</span>
 </div>
 
 <hr>
 
-<!-- Historie og Omtale (bevaret) -->
+<!-- Historie og Omtale -->
 <h2>Hvorfor dette motiv?</h2>
-<p>Billedet er taget under en næsten overstået måneformørkelse i Danmark i 2025...</p>
-<!-- Resten af din eksisterende tekst -->
+<p>Billedet er taget under en næsten overstået måneformørkelse i Danmark i 2025. Forholdene var langt fra ideelle, men i få minutter brød månen frem – stadig rød, stadig intens. Motivet har vundet Global Photography Awards og er omtalt hos Muse.World.</p>
 
 <div class="cewe-feature">
-  <p>Billedet er dokumenteret som officiel vinder hos Global Photography Awards og omtalt i det internationale kunstmagasin Muse.World.</p>
-  <a href="https://globalphotographyawards.com/winner-info.php?id=2041" target="_blank" rel="noopener">Se vinderprofil hos Global Photography Awards →</a>
-  <a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a>
+  <p>
+    <a href="https://globalphotographyawards.com/winner-info.php?id=2041" target="_blank" rel="noopener">Se vinderprofil hos Global Photography Awards →</a>
+  </p>
+  <p>
+    <a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a>
+  </p>
 </div>
 
 <hr>
 
-<!-- Kvalitet (bevaret) -->
+<!-- Kvalitet -->
 <h2>Kvalitet og print</h2>
 <ul>
   <li>Printet på Hahnemühle fine art papir</li>
@@ -67,7 +61,7 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 
 <hr>
 
-<!-- Skræddersyede løsninger (nederst) -->
+<!-- Skræddersyede løsninger -->
 <h2>Skræddersyede løsninger</h2>
 <p>Specialstørrelser, indrammede prints eller akustikprint. Jeg hjælper dig med at finde den perfekte løsning.</p>
 <a href="mailto:hello@redowlphoto.dk" class="btn-main">Få et tilbud</a>
