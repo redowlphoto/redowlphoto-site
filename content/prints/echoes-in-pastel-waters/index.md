@@ -1,3 +1,12 @@
+---
+title: "Echoes in Pastel Waters - Kunsttryk fra Als Odde"
+date: 2026-06-10
+draft: false
+image: "mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg"
+description: "Prisvindende kunsttryk fra Als Odde – pastelfarvet Mariager Fjord motiv."
+slug: "echoes-in-pastel-waters"
+---
+
 ## Echoes in Pastel Waters
 
 <div class="mockup-container">
@@ -22,11 +31,9 @@ De enkle pæle står tilbage i vandet og skaber et roligt, grafisk udtryk. Refle
 Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – et motiv, hvor ro, timing og lys går op i en højere enhed.
 
 <div class="cewe-feature">
-
   <p>
     Billedet er også omtalt af CEWE og Mariagerfjordposten i et interview om historien bag motivet og arbejdet med fotografiet.
   </p>
-
   <p style="margin-top:10px;">
     <a href="https://www.cewe.dk/inspiration/interview-allan-andersen.html"
        target="_blank"
@@ -34,7 +41,6 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
       Læs interview hos CEWE →
     </a>
   </p>
-
   <p>
     <a href="https://mariagerfjordposten.dk/allan-andersen-vinder-cewe-pris"
        target="_blank"
@@ -42,8 +48,9 @@ Billedet er udvalgt som skandinavisk månedsvinder i CEWE Photo Award 2027 – e
       Læs omtalen i Mariagerfjordposten →
     </a>
   </p>
-
 </div>
+
+---
 
 ## Kvalitet og print
 
