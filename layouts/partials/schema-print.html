@@ -7,7 +7,10 @@
   {{- $imageAbs = printf "%s%s" site.BaseURL (strings.TrimPrefix "/" $image) -}}
 {{- end -}}
 
-{{- /* Definer Gratis Fragt til EU inkl. leveringstid */ -}}
+{{- /* Definer EU destinationer */ -}}
+{{- $euCountries := slice "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IE" "IT" "LV" "LT" "LU" "MT" "NL" "PL" "PT" "RO" "SK" "SI" "ES" "SE" -}}
+
+{{- /* Definer Gratis Fragt & Leveringstid */ -}}
 {{- $shipping := dict
   "@type" "OfferShippingDetails"
   "shippingRate" (dict
@@ -17,7 +20,7 @@
   )
   "shippingDestination" (dict
     "@type" "DefinedRegion"
-    "addressCountry" (slice "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IE" "IT" "LV" "LT" "LU" "MT" "NL" "PL" "PT" "RO" "SK" "SI" "ES" "SE")
+    "addressCountry" $euCountries
   )
   "deliveryTime" (dict
     "@type" "ShippingDeliveryTime"
@@ -34,6 +37,14 @@
       "unitCode" "d"
     )
   )
+-}}
+
+{{- /* Definer Returpolitik (Kun ved fejl/skader) */ -}}
+{{- $returnPolicy := dict
+  "@type" "MerchantReturnPolicy"
+  "returnPolicyCategory" "https://schema.org/MerchantReturnNotPermitted"
+  "applicableCountry" $euCountries
+  "description" "Ingen generel fortrydelsesret da varen produceres på bestilling. Returnering accepteres kun hvis varen er fejltrykt eller beskadiget under transport."
 -}}
 
 {{- $schema := dict
@@ -55,6 +66,7 @@
       "price" site.Data.prices.medium
       "availability" "https://schema.org/InStock"
       "shippingDetails" $shipping
+      "hasMerchantReturnPolicy" $returnPolicy
     )
     (dict
       "@type" "Offer"
@@ -64,13 +76,10 @@
       "price" site.Data.prices.small
       "availability" "https://schema.org/InStock"
       "shippingDetails" $shipping
+      "hasMerchantReturnPolicy" $returnPolicy
     )
   )
 -}}
-
-<script type="application/ld+json">
-{{ $schema | jsonify | safeJS }}
-</script>
 
 <script type="application/ld+json">
 {{ $schema | jsonify | safeJS }}
