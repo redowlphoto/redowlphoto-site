@@ -1,5 +1,5 @@
 ---
-title: "Blodmåne plakat – Kunsttryk af måneformørkelse i Danmark | Newborn Moon"
+title: "Newborn Moon – Kunsttryk af måneformørkelse i Danmark"
 date: 2026-06-05
 draft: false
 image: "mockups/Newborn_Moon_Mockup.jpeg"
@@ -55,5 +55,5 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 <hr>
 
 <h2>Skræddersyede løsninger</h2>
-<p>Specialstørrelser, indrammede prints eller akustikprint. Jeg hjælper dig med at finde den perfekte løsning.</p>
+<p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
 <a href="mailto:hello@redowlphoto.dk" class="btn-primary">Få et tilbud</a>
