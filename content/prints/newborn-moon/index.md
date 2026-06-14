@@ -1,105 +1,40 @@
----
-title: "Blodmåne plakat – Kunsttryk af måneformørkelse i Danmark | Newborn Moon"
-date: 2026-06-05
-draft: false
-image: "mockups/Newborn_Moon_Mockup.jpeg"
-description: "Prisvindende kunsttryk af en sjælden blodmåne over Danmark – dramatisk motiv til din væg."
-slug: "newborn-moon"
----
-
-## Newborn Moon
-
-<div class="mockup-container">
-  <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – måneformørkelse over Danmark">
+<!-- Top-sektion med billede og hovedknapper -->
+<div class="product-hero">
+  <div class="mockup-container">
+    <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon mockup">
+  </div>
+  
+  <div class="product-info">
+    <h1>Newborn Moon</h1>
+    <p>Et sjældent øjeblik fanget under måneformørkelse i Danmark. Kraftig blæst, røde skyer og et intenst lys skabte dette unikke motiv.</p>
+    
+    <!-- Stripe købslink med begge størrelser (indsæt dit "newborn-moon-select" link) -->
+    <a href="/prints/newborn-moon-select" class="btn-main">Vælg størrelse og køb</a>
+    
+    <!-- Kontakt-knap -->
+    <a href="mailto:hello@redowlphoto.dk" class="btn-secondary">Kontakt om specialløsninger</a>
+  </div>
 </div>
 
-<p class="intro">
-Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
-</p>
-
----
-
-## Hvorfor dette motiv?
-
-Billedet er taget under en næsten overstået måneformørkelse i Danmark i 2025.
-
-Forholdene var langt fra ideelle. Kraftig blæst og skyer dækkede himlen, og det så længe ud til, at motivet aldrig ville opstå.
-
-De fleste var taget hjem.
-
-Men i få minutter brød månen frem – stadig rød, stadig intens.
-
-Det øjeblik blev til *Newborn Moon*.
-
-Som kunsttryk eller plakat bringer motivet et dramatisk og roligt fokus ind i rummet – et sjældent naturfænomen, gengivet med dybde og balance.
-
-Motivet har siden vundet Global Photography Awards og opnået topplaceringer i flere internationale konkurrencer.
-
-<div class="cewe-feature">
-  <p>
-    Billedet er dokumenteret som officiel vinder hos Global Photography Awards og omtalt i det internationale kunstmagasin Muse.World.
-  </p>
-  <p style="margin-top:10px;">
-    <a href="https://globalphotographyawards.com/winner-info.php?id=2041"
-       target="_blank"
-       rel="noopener">
-      Se vinderprofil hos Global Photography Awards →
-    </a>
-  </p>
-  <p>
-    <a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen"
-       target="_blank"
-       rel="noopener">
-      Læs artikel hos Muse.World →
-    </a>
-  </p>
-</div>
-
----
-
-## Kvalitet og print
-
-- Printet på Hahnemühle fine art papir  
-- Høj detaljegrad og dyb kontrast  
-- Udvalgt til at bevare de mørke toner og den røde glød  
-- Produceret på bestilling hos et professionelt fotolaboratorium med præcis farvegengivelse og dokumenteret høj printkvalitet  
-
----
-
-## Vælg størrelse
-
-Vælg det format, der passer til din væg og dit rum:
-
+<!-- Vælg størrelse sektion -->
 <div class="print-options">
-
   <a href="/prints/newborn-moon-30x20" class="print-card">
     <div class="size">30x20 cm</div>
-    <div class="price">{{< price "small" >}} kr</div>
+    <div class="price">150 kr</div>
+    <div class="btn">Køb 30x20 cm</div>
   </a>
 
   <a href="/prints/newborn-moon-70x50" class="print-card highlight">
     <div class="badge">Mest valgt</div>
     <div class="size">70x50 cm</div>
-    <div class="price">{{< price "medium" >}} kr</div>
+    <div class="price">600 kr</div>
+    <div class="btn">Køb 70x50 cm</div>
   </a>
-
 </div>
 
-<div class="size-help">
-  <div>30x20 cm passer til mindre vægge og som del af en billedvæg</div>
-  <div>70x50 cm fungerer som et markant blikfang og skaber dybde i rummet</div>
+<!-- Skræddersyede løsninger sektion (nederst) -->
+<div class="custom-solutions">
+  <h3>Skræddersyede løsninger</h3>
+  <p>Specialstørrelser, indrammede prints eller akustikprint. Jeg hjælper dig med at finde den perfekte løsning.</p>
+  <a href="mailto:hello@redowlphoto.dk" class="btn-main">Få et tilbud</a>
 </div>
-
----
-
-<p class="seo-extra">
-Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, mørke toner og ro skaber stemning.
-</p>
-
----
-
-## Se flere billeder
-
-<a href="/works/" class="link-more">
-Se alle værker →
-</a>
