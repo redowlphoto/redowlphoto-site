@@ -7,7 +7,7 @@
   {{- $imageAbs = printf "%s%s" site.BaseURL (strings.TrimPrefix "/" $image) -}}
 {{- end -}}
 
-{{- /* Definer Gratis Fragt til EU */ -}}
+{{- /* Definer Gratis Fragt til EU inkl. leveringstid */ -}}
 {{- $shipping := dict
   "@type" "OfferShippingDetails"
   "shippingRate" (dict
@@ -18,6 +18,21 @@
   "shippingDestination" (dict
     "@type" "DefinedRegion"
     "addressCountry" (slice "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IE" "IT" "LV" "LT" "LU" "MT" "NL" "PL" "PT" "RO" "SK" "SI" "ES" "SE")
+  )
+  "deliveryTime" (dict
+    "@type" "ShippingDeliveryTime"
+    "handlingTime" (dict
+      "@type" "QuantitativeValue"
+      "minValue" 0
+      "maxValue" 0
+      "unitCode" "d"
+    )
+    "transitTime" (dict
+      "@type" "QuantitativeValue"
+      "minValue" 5
+      "maxValue" 7
+      "unitCode" "d"
+    )
   )
 -}}
 
@@ -52,6 +67,10 @@
     )
   )
 -}}
+
+<script type="application/ld+json">
+{{ $schema | jsonify | safeJS }}
+</script>
 
 <script type="application/ld+json">
 {{ $schema | jsonify | safeJS }}
