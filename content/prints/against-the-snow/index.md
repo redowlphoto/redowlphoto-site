@@ -2,79 +2,54 @@
 title: "Against the Snow - Kunsttryk med egetræ i vinterlandskab"
 date: 2026-06-10
 draft: false
-
 image: "mockups/against_the_snow_mockup.jpg"
 description: "Minimalistisk kunsttryk af egetræ i sne ved Mariager Fjord – roligt vintermotiv i sort/hvid."
 slug: "against-the-snow"
 ---
 
-## Against the Snow
-
 <div class="mockup-container">
   <img src="/mockups/against_the_snow_mockup.jpg" alt="Minimalistisk kunsttryk med egetræ i sne ved Mariagerfjord">
 </div>
 
+<h1>Against the Snow</h1>
 <p class="intro">
 Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord – et roligt vintermotiv skabt til stilhed og balance i moderne hjem.
 </p>
 
----
-
-## Hvorfor dette motiv?
-
-Dette billede er taget en stille vinterdag ved Mariager Fjord, hvor landskabet var reduceret til det mest enkle.
-
-Et enkelt egetræ står alene i sneen. Ingen forstyrrelser. Ingen bevægelse.
-
-Tågen opløser baggrunden og efterlader kun form, struktur og balance.
-
-Motivet er bygget op omkring minimalisme og negativ plads – elementer der gør, at billedet falder naturligt ind i moderne nordiske hjem.
-
-Som kunsttryk eller plakat fungerer motivet som et roligt visuelt anker i rummet, uden at tage opmærksomhed.
-
----
-
-## Kvalitet og print
-
-- Printet på Hahnemühle fine art papir  
-- Høj detaljegrad i grene og struktur  
-- Bløde overgange i sne og tåge  
-- Produceret på bestilling hos professionelt fotolaboratorium med præcis farvegengivelse  
-
----
-
-## Vælg størrelse
-
-Vælg det format, der passer til din væg og dit rum:
-
-<div class="print-options">
-
-  <a href="/prints/against-the-snow-30x20" class="print-card">
-  <div class="size">30x20 cm</div>
-  <div class="price">{{< price "small" >}} kr</div>
-</a>
-
-<a href="/prints/against-the-snow-70x50" class="print-card highlight">
-  <div class="badge">Mest valgt</div>
-  <div class="size">70x50 cm</div>
-  <div class="price">{{< price "medium" >}} kr</div>
-</a>
-
+<!-- Købsknapper -->
+<div class="print-options-top">
+  <a href="/prints/against-the-snow-30x20" class="btn-primary">
+    Køb 30x20 cm ({{< price "small" >}} kr)
+  </a>
+  <a href="/prints/against-the-snow-70x50" class="btn-primary-highlight">
+    <span class="badge">Mest valgt</span>
+    Køb 70x50 cm ({{< price "medium" >}} kr)
+  </a>
 </div>
 
-<div class="size-help">
-  <div>30x20 cm passer til mindre vægge, hylder og rolige hjørner</div>
-  <div>70x50 cm fungerer som et stilrent blikfang i lyse rum</div>
+<!-- Fragt-linje -->
+<div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
+  <span>🚚 Gratis fragt</span>
+  <span>🛡️ Produceret på bestilling</span>
+  <span>📅 5-10 dages levering</span>
 </div>
 
----
+<h2>Hvorfor dette motiv?</h2>
+<p>Dette billede er taget en stille vinterdag ved Mariager Fjord, hvor landskabet var reduceret til det mest enkle. Et enkelt egetræ står alene i sneen. Ingen forstyrrelser. Ingen bevægelse.</p>
+<p>Tågen opløser baggrunden og efterlader kun form, struktur og balance. Motivet er bygget op omkring minimalisme og negativ plads – elementer der gør, at billedet falder naturligt ind i moderne nordiske hjem.</p>
 
-Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne hjem, hvor kontrast, mørke toner og ro skaber stemning.
+<hr>
 
----
+<h2>Kvalitet og print</h2>
+<ul>
+  <li>Printet på Hahnemühle fine art papir</li>
+  <li>Høj detaljegrad i grene og struktur</li>
+  <li>Bløde overgange i sne og tåge</li>
+  <li>Produceret på bestilling hos professionelt fotolaboratorium med præcis farvegengivelse</li>
+</ul>
 
-## Se flere billeder
+<hr>
 
-<a href="/works/" class="link-more">
-Se alle værker →
-</a>
+<h2>Skræddersyede løsninger</h2>
+<p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
+<a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
