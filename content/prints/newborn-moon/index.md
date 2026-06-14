@@ -17,9 +17,11 @@ slug: "newborn-moon"
 Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
 </p>
 
-<!-- Købsknapper - opdateret struktur -->
+<!-- Købsknapper - opdateret med korrekt nesting -->
 <div class="print-options-top">
-  <a href="/prints/newborn-moon-30x20" class="btn-primary">Køb 30x20 cm (150 kr)</a>
+  <a href="/prints/newborn-moon-30x20" class="btn-primary">
+    Køb 30x20 cm (150 kr)
+  </a>
   <a href="/prints/newborn-moon-70x50" class="btn-primary-highlight">
     <span class="badge">Mest valgt</span>
     Køb 70x50 cm (600 kr)
