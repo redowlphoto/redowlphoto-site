@@ -29,6 +29,7 @@
     position: relative;
     border-radius: 14px;
     overflow: hidden;
+    margin-top: 2rem; /* Tilføjet lidt luft i toppen, da den nu ligger under fliserne */
   }
 
   .ro-hero-link{
@@ -126,7 +127,6 @@
 
 <div class="ro-wrap">
 
-  <!-- H1 + tagline -->
   <h1 class="ro-h1">
     Scandinavian Fine Art Photography from Denmark
   </h1>
@@ -135,7 +135,46 @@
     Minimalist landscapes from Mariager Fjord, Lille Vildmose and the Danish coast - focused on light and stillness.
   </div>
 
-  {{/* HERO */}}
+  {{/* TILES - FLYTTET OP */}}
+  {{ $tiles := site.Data.home.tiles }}
+  {{ if gt (len $tiles) 0 }}
+    <section class="ro-tiles" aria-labelledby="tiles-title">
+      <h2 id="tiles-title" class="sr-only">Collections and prints</h2>
+
+      {{ range first 2 $tiles }}
+        <div class="ro-tile">
+          <a class="ro-tile-img"
+             href="{{ .href | safeURL }}"
+             {{ if strings.HasPrefix .href "http" }}target="_blank" rel="noopener"{{ end }}
+             aria-label="{{ .title }} – view details">
+
+            <img src="{{ .img | relURL }}"
+                 alt="{{ with .alt }}{{ . }}{{ else }}{{ .title }}{{ end }}"
+                 loading="lazy">
+          </a>
+
+          <div class="ro-tile-head">
+            <h3>{{ .title }}</h3>
+            {{ with .sub }}<div class="sub">{{ . }}</div>{{ end }}
+            
+            <div class="hint">
+              {{ if eq .title "Fine Art Prints" }}
+                Priser fra {{ site.Data.prices.small }} DKK – Se og køb
+              {{ else if eq .title "Mariager Fjord Calendar 2026" }}
+                Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil
+              {{ else }}
+                {{ .hint }}
+              {{ end }}
+            </div>
+            
+          </div>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+
+  {{/* HERO - FLYTTET NED */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $featured := where $works ".Params.featured" true }}
   {{ $pick := cond (gt (len $featured) 0) (sort $featured "Date" "desc") (sort $works "Date" "desc") }}
@@ -179,44 +218,6 @@
       Fine art photography prints available as wall art and licensed images.
     </p>
 
-  {{ end }}
-
-  {{/* TILES */}}
-  {{ $tiles := site.Data.home.tiles }}
-  {{ if gt (len $tiles) 0 }}
-    <section class="ro-tiles" aria-labelledby="tiles-title">
-      <h2 id="tiles-title" class="sr-only">Collections and prints</h2>
-
-      {{ range first 2 $tiles }}
-        <div class="ro-tile">
-          <a class="ro-tile-img"
-             href="{{ .href | safeURL }}"
-             {{ if strings.HasPrefix .href "http" }}target="_blank" rel="noopener"{{ end }}
-             aria-label="{{ .title }} – view details">
-
-            <img src="{{ .img | relURL }}"
-                 alt="{{ with .alt }}{{ . }}{{ else }}{{ .title }}{{ end }}"
-                 loading="lazy">
-          </a>
-
-          <div class="ro-tile-head">
-            <h3>{{ .title }}</h3>
-            {{ with .sub }}<div class="sub">{{ . }}</div>{{ end }}
-            
-            <div class="hint">
-              {{ if eq .title "Fine Art Prints" }}
-                Priser fra {{ site.Data.prices.small }} DKK – Se og køb
-              {{ else if eq .title "Mariager Fjord Calendar 2026" }}
-                Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil
-              {{ else }}
-                {{ .hint }}
-              {{ end }}
-            </div>
-            
-          </div>
-        </div>
-      {{ end }}
-    </section>
   {{ end }}
 
 </div>
