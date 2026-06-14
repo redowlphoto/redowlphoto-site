@@ -17,25 +17,21 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 </p>
 
 <div class="print-options-top">
-  
   <a href="/prints/solitude-at-mariagerfjord-30x20" class="btn-primary">
     Køb 30x20 cm ({{< price "small" >}} kr)
   </a>
-
   <a href="/prints/solitude-at-mariagerfjord-70x50" class="btn-primary-highlight">
     <span class="badge">Mest valgt</span>
     Køb 70x50 cm ({{< price "medium" >}} kr)
   </a>
-  
 </div>
 
-<div class="shipping-info">
+<!-- Ingen <hr> her, så vi sparer pladsen -->
+<div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
   <span>🚚 Gratis fragt</span>
   <span>🛡️ Produceret på bestilling</span>
   <span>📅 5-7 dages levering</span>
 </div>
-
-<hr>
 
 <h2>Hvorfor dette motiv?</h2>
 <p>Billedet er taget under en næsten overstået måneformørkelse i Danmark i 2025. Forholdene var langt fra ideelle, men i få minutter brød månen frem – stadig rød, stadig intens. Motivet har vundet Global Photography Awards og er omtalt hos Muse.World.</p>
@@ -59,4 +55,5 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 
 <h2>Skræddersyede løsninger</h2>
 <p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
-<a href="mailto:hello@redowlphoto.dk" class="btn-primary">Få et tilbud</a>
+<!-- Her har jeg givet knappen btn-primary-highlight klassen så den matcher 70x50 knappen -->
+<a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
