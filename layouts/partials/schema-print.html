@@ -7,6 +7,20 @@
   {{- $imageAbs = printf "%s%s" site.BaseURL (strings.TrimPrefix "/" $image) -}}
 {{- end -}}
 
+{{- /* Definer Gratis Fragt til EU */ -}}
+{{- $shipping := dict
+  "@type" "OfferShippingDetails"
+  "shippingRate" (dict
+    "@type" "MonetaryAmount"
+    "value" 0
+    "currency" "DKK"
+  )
+  "shippingDestination" (dict
+    "@type" "DefinedRegion"
+    "addressCountry" (slice "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IE" "IT" "LV" "LT" "LU" "MT" "NL" "PL" "PT" "RO" "SK" "SI" "ES" "SE")
+  )
+-}}
+
 {{- $schema := dict
   "@context" "https://schema.org"
   "@type" "Product"
@@ -25,6 +39,7 @@
       "priceCurrency" "DKK"
       "price" site.Data.prices.medium
       "availability" "https://schema.org/InStock"
+      "shippingDetails" $shipping
     )
     (dict
       "@type" "Offer"
@@ -33,6 +48,7 @@
       "priceCurrency" "DKK"
       "price" site.Data.prices.small
       "availability" "https://schema.org/InStock"
+      "shippingDetails" $shipping
     )
   )
 -}}
