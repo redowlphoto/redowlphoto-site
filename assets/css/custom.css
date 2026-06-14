@@ -502,3 +502,65 @@ p,
 .buy-btn:hover {
   background: #3b516b;
 }
+
+/* =========================================================
+   NEWBORN MOON - TOP LAYOUT FIXES
+   ========================================================= */
+
+/* Hovedknapper øverst */
+.print-options-top {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn-primary, .btn-primary-highlight {
+  flex: 1;
+  padding: 16px 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #fff;
+}
+
+.btn-primary-highlight {
+  border: 2px solid #cbd5f5;
+  background: #273449;
+  position: relative;
+}
+
+/* Badge fix inde i knappen */
+.btn-primary-highlight .badge {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  font-size: 0.7rem;
+  background: #cbd5f5;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Fragt-linje under knapper */
+.shipping-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #334155;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .print-options-top { flex-direction: column; }
+  .shipping-info { flex-direction: column; gap: 8px; align-items: center; }
+}
