@@ -3,20 +3,15 @@
 <title>
   {{ if .IsHome }}
     RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
-  {{ else if .IsPage }}
-    {{ .Title }} | RedOwlPhoto
   {{ else }}
-    RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
+    {{ .Title }} | RedOwlPhoto
   {{ end }}
 </title>
 
-<!-- Meta Title -->
 <meta name="title" content="{{ if .IsHome }}
   RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
-  {{ else if .IsPage }}
-    {{ .Title }} | RedOwlPhoto
   {{ else }}
-    RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
+    {{ .Title }} | RedOwlPhoto
   {{ end }}">
 
 <!-- Favicon -->
