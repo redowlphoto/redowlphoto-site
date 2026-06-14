@@ -30,7 +30,7 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 <div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
   <span>🚚 Gratis fragt</span>
   <span>🛡️ Produceret på bestilling</span>
-  <span>📅 5-7 dages levering</span>
+  <span>📅 5-10 dages levering</span>
 </div>
 
 <h2>Hvorfor dette motiv?</h2>
