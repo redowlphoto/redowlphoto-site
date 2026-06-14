@@ -8,6 +8,7 @@
   {{ end }}
 </title>
 
+<!-- Meta Title -->
 <meta name="title" content="{{ if .IsHome }}
   RedOwlPhoto | Minimal Nordic Seascapes & Fine Art Photography
   {{ else }}
@@ -20,20 +21,20 @@
 
 <!-- Open Graph (SoMe previews) -->
 <meta property="og:site_name" content="RedOwlPhoto">
-<meta property="og:type" content="{{ if .IsHome }}website{{ else if eq .Section "blog" }}article{{ else if eq .Section "works" }}photo{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if eq .Section "blog" }}article{{ else }}website{{ end }}">
 
 <meta property="og:title" content="{{ if .IsHome }}
   Minimal Nordic Seascapes | Fine Art Photography by RedOwlPhoto
   {{ else }}
     {{ .Title }} | RedOwlPhoto
   {{ end }}">
+
 <meta property="og:description" content="{{ if .IsHome }}
   Explore minimalist seascapes and landscapes from Mariager Fjord, Als Odde and Øster Hurup. Fine art photography in calm Nordic light.
-  {{ else if .IsPage }}
-    {{ with .Params.description }}{{ . }}{{ else }}Fine art photography and Nordic minimalism by RedOwlPhoto.{{ end }}
   {{ else }}
-    Fine art photography with a focus on Nordic light and minimal landscapes.
+    {{ with .Params.description }}{{ . }}{{ else }}Fine art photography and Nordic minimalism by RedOwlPhoto.{{ end }}
   {{ end }}">
+
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ with .Params.images }}{{ (index . 0) | absURL }}{{ else }}https://redowlphoto.dk/og-home.jpg{{ end }}">
 
