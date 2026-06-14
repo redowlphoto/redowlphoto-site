@@ -9,7 +9,7 @@ tiles:
   - title: Fine Art Prints
     sub: |
       Fine art prints fra Danmark – produceret på Hahnemühle papir i gallerikvalitet.
-    hint: Priser fra {{ site.Data.prices.small }} DKK – Se og køb
+    hint: Priser fra {{< price "small" >}} kr DKK – Se og køb
     href: /prints
     img: /mockups/Newborn_Moon_Mockup.jpeg
     alt: Award-winning fine art prints from Denmark for modern interiors
@@ -17,7 +17,7 @@ tiles:
   - title: Mariager Fjord Calendar 2026
     sub: |
       En kurateret samling af atmosfæriske landskaber fra fjord og kyst.
-    hint: Se og bestil kalenderen
+    hint: Pris: {{< price "calendar" >}} DKK – Se og bestil
     href: /calendar2026
     img: /uploads/forside_flise.jpg
     alt: Mariager Fjord Calendar 2026 cover with minimalist coastal landscape
