@@ -17,13 +17,16 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 </p>
 
 <div class="print-options-top">
-  <a href="/prints/newborn-moon-30x20" class="btn-primary">
-    Køb 30x20 cm (150 kr)
+  
+  <a href="/prints/solitude-at-mariagerfjord-30x20" class="btn-primary">
+    Køb 30x20 cm ({{< price "small" >}} kr)
   </a>
-  <a href="/prints/newborn-moon-70x50" class="btn-primary-highlight">
+
+  <a href="/prints/solitude-at-mariagerfjord-70x50" class="btn-primary-highlight">
     <span class="badge">Mest valgt</span>
-    Køb 70x50 cm (600 kr)
+    Køb 70x50 cm ({{< price "medium" >}} kr)
   </a>
+  
 </div>
 
 <div class="shipping-info">
