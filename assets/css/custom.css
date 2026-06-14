@@ -564,3 +564,11 @@ p,
   .print-options-top { flex-direction: column; }
   .shipping-info { flex-direction: column; gap: 8px; align-items: center; }
 }
+
+/* Styling af datoen, så den passer til dit design */
+.post-date, .article-date, .page-header .date {
+    display: block !important;
+    font-size: 16px !important;
+    opacity: 0.85 !important;
+    margin-bottom: 1rem !important;
+}
