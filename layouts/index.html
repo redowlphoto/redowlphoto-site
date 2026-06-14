@@ -3,8 +3,8 @@
   .ro-wrap{ max-width: var(--ro-maxw); margin-left: auto; margin-right: auto; padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x); padding-top: 2rem; padding-bottom: 4rem; }
   .ro-h1{ font-size:clamp(1.8rem,3vw,2.5rem); line-height:1.2; margin-bottom:0.5rem; font-weight:700; }
   
-  /* OPPDATERET AWARD TEKST */
-  .ro-award { display: block; margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 600; color: #ffce7a; }
+  /* OPPDATERET AWARD TEKST - STØRRE OG MERE FREMHÆVET */
+  .ro-award { display: block; margin-bottom: 1.5rem; font-size: 1.3rem; font-weight: 700; color: #ffce7a; letter-spacing: 0.02em; }
   
   .ro-tagline{ font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.5; margin-bottom:2.5rem; opacity:0.95; max-width: 800px; }
   
@@ -24,7 +24,7 @@
   .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
   .ro-btn:hover { background: #e7edf6; }
 
-  .ro-hero-cta{ position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,.6); padding:0.6rem 1rem; border-radius:6px; font-size:1rem; color:#fff; backdrop-filter: blur(4px); z-index: 10; font-weight: 600; }
+  /* Fjernet .ro-hero-cta da knappen er væk */
 </style>
 
 <div class="ro-wrap">
@@ -76,15 +76,13 @@
 
     <div class="ro-tile">
       <a class="ro-tile-img" href="{{ "works" | relURL }}">
-        <div class="ro-hero-cta">Se portfolio</div>
         {{ range $i, $s := $slides }}
           <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $s.img }}" alt="{{ $s.alt }}" loading="lazy">
         {{ end }}
       </a>
       <div class="ro-tile-head">
         <h3>Udvalgte Værker</h3>
-        <div class="hint">Gå på opdagelse i hele samlingen af minimalistiske naturmotiver.</div>
-        <a href="{{ "works" | relURL }}" class="ro-btn">Se alle værker</a>
+        <div class="hint">Gå på opdagelse i flere af mine samlinger.</div>
       </div>
     </div>
   </section>
