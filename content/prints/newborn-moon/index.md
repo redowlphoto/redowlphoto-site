@@ -72,12 +72,12 @@ Vælg det format, der passer til din væg og dit rum:
 
 <div class="print-options">
 
-  <a href="/prints/{{ .Params.slug }}-30x20" class="print-card">
+  <a href="/prints/newborn-moon-30x20" class="print-card">
     <div class="size">30x20 cm</div>
     <div class="price">{{< price "small" >}} kr</div>
   </a>
 
-  <a href="/prints/{{ .Params.slug }}-70x50" class="print-card highlight">
+  <a href="/prints/newborn-moon-70x50" class="print-card highlight">
     <div class="badge">Mest valgt</div>
     <div class="size">70x50 cm</div>
     <div class="price">{{< price "medium" >}} kr</div>
