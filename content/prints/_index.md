@@ -66,7 +66,7 @@ Alle prints produceres på bestilling i høj kvalitet.
 <!-- AGAINST THE SNOW -->
 <div class="print-tile">
   <a href="/prints/against-the-snow" class="print-image">
-    <img src="/mockups/Against_the_Snow_Mockup.jpg" alt="Against the Snow kunsttryk">
+    <img src="/mockups/against_the_snow_mockup.jpg" alt="Against the Snow kunsttryk">
   </a>
   <div class="print-content">
     <div>
@@ -81,3 +81,16 @@ Alle prints produceres på bestilling i høj kvalitet.
 
 </div>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Fine Art Prints by RedOwlPhoto",
+  "description": "Udvalgte værker fra Mariagerfjord og nordiske landskaber, produceret på bestilling i høj kvalitet.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "RedOwlPhoto"
+  }
+}
+</script>
