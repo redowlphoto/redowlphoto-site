@@ -2,6 +2,9 @@
 title: "Kunsttryk fra Mariager Fjord - Dansk landskabsfotografi"
 date: 2026-06-05
 draft: false
+image: "mockups/Solitude-at-Mariagerfjord-jpeg.jpg"
+description: "Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og balance i dit hjem."
+slug: "solitude-at-mariagerfjord"
 ---
 
 ## Kunsttryk fra Mariager Fjord
@@ -45,15 +48,15 @@ Vælg det format, der passer til din væg og dit rum:
 
 <div class="print-options">
 
-  <a href="/prints/solitude-at-mariagerfjord-30x20" class="print-card">
+  <a href="/prints/{{ .Params.slug }}-30x20" class="print-card">
     <div class="size">30x20 cm</div>
-    <div class="price">150 kr</div>
+    <div class="price">{{< price "small" >}} kr</div>
   </a>
 
-  <a href="/prints/solitude-at-mariagerfjord-70x50" class="print-card highlight">
+  <a href="/prints/{{ .Params.slug }}-70x50" class="print-card highlight">
     <div class="badge">Mest valgt</div>
     <div class="size">70x50 cm</div>
-    <div class="price">600 kr</div>
+    <div class="price">{{< price "medium" >}} kr</div>
   </a>
 
 </div>
