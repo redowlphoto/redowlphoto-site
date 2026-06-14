@@ -78,33 +78,3 @@ Dette motiv fås som kunsttryk og plakat i høj kvalitet – ideelt til moderne 
 <a href="/works/" class="link-more">
 Se alle værker →
 </a>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Against the Snow - Kunsttryk med egetræ i vinterlandskab",
-  "image": "https://redowlphoto.dk/mockups/against_the_snow_mockup.jpg",
-  "description": "Minimalistisk kunsttryk af egetræ i sne ved Mariager Fjord – roligt vintermotiv i sort/hvid.",
-  "brand": {
-    "@type": "Brand",
-    "name": "RedOwlPhoto"
-  },
-  "offers": [
-    {
-      "@type": "Offer",
-      "url": "https://redowlphoto.dk/prints/against-the-snow-70x50",
-      "priceCurrency": "DKK",
-      "price": {{< price "medium" >}},
-      "availability": "https://schema.org/InStock"
-    },
-    {
-      "@type": "Offer",
-      "url": "https://redowlphoto.dk/prints/against-the-snow-30x20",
-      "priceCurrency": "DKK",
-      "price": {{< price "small" >}},
-      "availability": "https://schema.org/InStock"
-    }
-  ]
-}
-</script>
