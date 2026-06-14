@@ -202,7 +202,17 @@
           <div class="ro-tile-head">
             <h3>{{ .title }}</h3>
             {{ with .sub }}<div class="sub">{{ . }}</div>{{ end }}
-            {{ with .hint }}<div class="hint">{{ . }}</div>{{ end }}
+            
+            <div class="hint">
+              {{ if eq .title "Fine Art Prints" }}
+                Priser fra {{ site.Data.prices.small }} DKK – Se og køb
+              {{ else if eq .title "Mariager Fjord Calendar 2026" }}
+                Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil
+              {{ else }}
+                {{ .hint }}
+              {{ end }}
+            </div>
+            
           </div>
         </div>
       {{ end }}
