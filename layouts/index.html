@@ -20,66 +20,16 @@
   .ro-tagline{
     font-size:clamp(1.05rem,1.6vw,1.25rem);
     line-height:1.6;
-    margin-bottom:1.2rem;
+    margin-bottom:2rem;
     opacity:.9;
   }
 
-  /* HERO */
-  .ro-hero{
-    position: relative;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-top: 2rem; /* Tilføjet lidt luft i toppen, da den nu ligger under fliserne */
-  }
-
-  .ro-hero-link{
-    display:block;
-    position:relative;
-  }
-
-  .ro-hero img{
-    display:none;
-    width:100%;
-    opacity:0;
-    transition:opacity 900ms ease;
-  }
-
-  .ro-hero img.is-active{
-    display:block;
-    opacity:1;
-  }
-
-  .ro-hero-cta{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    background:rgba(0,0,0,.55);
-    padding:.5rem .8rem;
-    border-radius:6px;
-    font-size:.95rem;
-    color:#fff;
-    backdrop-filter: blur(4px);
-  }
-
-  .ro-hero-cap{
-    margin-top:.7rem;
-    font-size:clamp(.95rem,1.4vw,1.05rem);
-    line-height:1.5;
-    opacity:.85;
-  }
-
-  .ro-seo-text{
-    font-size:.9rem;
-    opacity:.65;
-    margin-top:.3rem;
-  }
-
-  /* TILES */
+  /* Kasser / Fliser */
   .ro-tiles{
     display:grid;
     grid-template-columns: repeat(2, minmax(0,1fr));
     gap:1rem;
-    margin-top:1.4rem;
+    margin-top:1rem;
   }
 
   @media (max-width:900px){
@@ -94,6 +44,12 @@
     box-shadow:0 6px 18px rgba(0,0,0,.25);
   }
 
+  .ro-tile-img{
+    display:block;
+    position:relative;
+    overflow:hidden;
+  }
+
   .ro-tile-img img{
     width:100%;
     aspect-ratio:16/9;
@@ -102,7 +58,8 @@
     transition:transform .18s ease;
   }
 
-  .ro-tile-img:hover img{
+  .ro-tile-img:hover img,
+  .ro-tile-img:hover .ro-slide.is-active {
     transform:scale(1.015);
   }
 
@@ -119,6 +76,34 @@
   .ro-tile-head .sub{ opacity:.9; }
   .ro-tile-head .hint{ opacity:.75; margin-top:.2rem; }
 
+  /* Slideshow Specifikt */
+  .ro-hero-cta{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background:rgba(0,0,0,.55);
+    padding:.5rem .8rem;
+    border-radius:6px;
+    font-size:.95rem;
+    color:#fff;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+  }
+
+  .ro-slide {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: none;
+    opacity: 0;
+    transition: opacity 900ms ease, transform .18s ease;
+  }
+
+  .ro-slide.is-active {
+    display: block;
+    opacity: 1;
+  }
+
   .sr-only{
     position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0
@@ -127,54 +112,52 @@
 
 <div class="ro-wrap">
 
+  <!-- H1 + tagline (Oversat til dansk) -->
   <h1 class="ro-h1">
-    Scandinavian Fine Art Photography from Denmark
+    Skandinavisk Fine Art Fotografi
   </h1>
 
   <div class="ro-tagline">
-    Minimalist landscapes from Mariager Fjord, Lille Vildmose and the Danish coast - focused on light and stillness.
+    Minimalistiske landskaber fra Mariagerfjord, Lille Vildmose og den danske kyst – med fokus på lys og ro.
   </div>
 
-  {{/* TILES - FLYTTET OP */}}
+  {{/* HENT DATA OG SORTER FLISER */}}
   {{ $tiles := site.Data.home.tiles }}
-  {{ if gt (len $tiles) 0 }}
-    <section class="ro-tiles" aria-labelledby="tiles-title">
-      <h2 id="tiles-title" class="sr-only">Collections and prints</h2>
+  {{ $printTile := false }}
+  {{ $calTile := false }}
+  
+  {{ range $tiles }}
+    {{ if eq .title "Fine Art Prints" }}
+      {{ $printTile = . }}
+    {{ else if eq .title "Mariager Fjord Calendar 2026" }}
+      {{ $calTile = . }}
+    {{ end }}
+  {{ end }}
 
-      {{ range first 2 $tiles }}
-        <div class="ro-tile">
-          <a class="ro-tile-img"
-             href="{{ .href | safeURL }}"
-             {{ if strings.HasPrefix .href "http" }}target="_blank" rel="noopener"{{ end }}
-             aria-label="{{ .title }} – view details">
-
-            <img src="{{ .img | relURL }}"
-                 alt="{{ with .alt }}{{ . }}{{ else }}{{ .title }}{{ end }}"
-                 loading="lazy">
-          </a>
-
-          <div class="ro-tile-head">
-            <h3>{{ .title }}</h3>
-            {{ with .sub }}<div class="sub">{{ . }}</div>{{ end }}
-            
-            <div class="hint">
-              {{ if eq .title "Fine Art Prints" }}
-                Priser fra {{ site.Data.prices.small }} DKK – Se og køb
-              {{ else if eq .title "Mariager Fjord Calendar 2026" }}
-                Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil
-              {{ else }}
-                {{ .hint }}
-              {{ end }}
-            </div>
-            
-          </div>
+  {{/* 1. SEKTION: PRINTS (Alene i toppen, fuld bredde) */}}
+  {{ if $printTile }}
+    <section class="ro-top-section" style="margin-bottom: 2rem;">
+      <h2 class="sr-only">Køb Fine Art Prints</h2>
+      <div class="ro-tile">
+        <a class="ro-tile-img"
+           href="{{ $printTile.href | safeURL }}"
+           {{ if strings.HasPrefix $printTile.href "http" }}target="_blank" rel="noopener"{{ end }}
+           aria-label="{{ $printTile.title }} – vis detaljer">
+          <img src="{{ $printTile.img | relURL }}"
+               alt="{{ with $printTile.alt }}{{ . }}{{ else }}{{ $printTile.title }}{{ end }}"
+               loading="eager" fetchpriority="high">
+        </a>
+        <div class="ro-tile-head">
+          <h3>{{ $printTile.title }}</h3>
+          {{ with $printTile.sub }}<div class="sub">{{ . }}</div>{{ end }}
+          <div class="hint">Priser fra {{ site.Data.prices.small }} DKK – Se og køb</div>
         </div>
-      {{ end }}
+      </div>
     </section>
   {{ end }}
 
 
-  {{/* HERO - FLYTTET NED */}}
+  {{/* FORBERED SLIDESHOW TIL WORKS */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $featured := where $works ".Params.featured" true }}
   {{ $pick := cond (gt (len $featured) 0) (sort $featured "Date" "desc") (sort $works "Date" "desc") }}
@@ -190,35 +173,52 @@
     {{ end }}
   {{ end }}
 
-  {{ if gt (len $slides) 0 }}
-    <div class="ro-hero">
-      <a class="ro-hero-link" href="{{ "works" | relURL }}" aria-label="Explore photography gallery">
+  {{/* 2. SEKTION: KALENDER & WORKS VED SIDEN AF HINANDEN */}}
+  <section class="ro-tiles" aria-labelledby="tiles-title">
+    <h2 id="tiles-title" class="sr-only">Kalender og Portfolio</h2>
 
-        <div class="ro-hero-cta">
-          Explore Work
+    <!-- Kalender Flise -->
+    {{ if $calTile }}
+      <div class="ro-tile">
+        <a class="ro-tile-img"
+           href="{{ $calTile.href | safeURL }}"
+           {{ if strings.HasPrefix $calTile.href "http" }}target="_blank" rel="noopener"{{ end }}
+           aria-label="{{ $calTile.title }} – vis detaljer">
+          <img src="{{ $calTile.img | relURL }}"
+               alt="{{ with $calTile.alt }}{{ . }}{{ else }}{{ $calTile.title }}{{ end }}"
+               loading="lazy">
+        </a>
+        <div class="ro-tile-head">
+          <h3>{{ $calTile.title }}</h3>
+          {{ with $calTile.sub }}<div class="sub">{{ . }}</div>{{ end }}
+          <div class="hint">Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil</div>
         </div>
+      </div>
+    {{ end }}
 
-        {{ range $i, $s := $slides }}
-          <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}"
-               src="{{ $s.w1200.RelPermalink }}"
-               srcset="{{ $s.w1200.RelPermalink }} 1200w, {{ $s.w1600.RelPermalink }} 1600w, {{ $s.w2000.RelPermalink }} 2000w"
-               sizes="100vw"
-               alt="{{ $s.alt }}"
-               {{ if eq $i 0 }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
-        {{ end }}
+    <!-- Works / Portfolio Flise (Med indbygget slideshow) -->
+    {{ if gt (len $slides) 0 }}
+      <div class="ro-tile">
+        <a class="ro-tile-img" href="{{ "works" | relURL }}" aria-label="Udforsk fotogalleri">
+          <div class="ro-hero-cta">Se galleri</div>
+          {{ range $i, $s := $slides }}
+            <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}"
+                 src="{{ $s.w1200.RelPermalink }}"
+                 srcset="{{ $s.w1200.RelPermalink }} 1200w, {{ $s.w1600.RelPermalink }} 1600w, {{ $s.w2000.RelPermalink }} 2000w"
+                 sizes="(max-width: 900px) 100vw, 50vw"
+                 alt="{{ $s.alt }}"
+                 {{ if eq $i 0 }}loading="lazy"{{ else }}loading="lazy"{{ end }}>
+          {{ end }}
+        </a>
+        <div class="ro-tile-head">
+          <h3>Udvalgte Værker</h3>
+          <div class="sub">Udforsk minimalistiske landskaber fra Mariagerfjord til Skagen og Lille Vildmose.</div>
+          <div class="hint">Gå til portfolio</div>
+        </div>
+      </div>
+    {{ end }}
 
-      </a>
-    </div>
-
-    <p class="ro-hero-cap">
-      Explore selected works from across Denmark - from Mariager Fjord to Skagen and Lille Vildmose.
-    </p>
-
-    <p class="ro-seo-text">
-      Fine art photography prints available as wall art and licensed images.
-    </p>
-
-  {{ end }}
+  </section>
 
 </div>
 
