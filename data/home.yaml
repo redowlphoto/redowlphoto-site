@@ -1,23 +1,23 @@
 tagline: |
-  **Selected works and series**  
-  Mariager Fjord and Northern Denmark
+  **Fine art prints til dit hjem**  
+  Minimalistiske landskaber fra Mariagerfjord og den danske kyst.
 
 hero_caption: |
-  _Explore selected works_  
+  _Se udvalgte værker_  
 
 tiles:
-  - title: Mariager Fjord Calendar 2026
-    sub: |
-      A curated collection of atmospheric landscapes from the fjord and coast
-    hint: View and order the calendar
-    href: /calendar2026
-    img: /uploads/forside_flise.jpg
-    alt: Mariager Fjord Calendar 2026 cover with minimalist coastal landscape
-
   - title: Fine Art Prints
     sub: |
-      Selected works available as high-quality prints for modern interiors
-    hint: Shop fine art prints
+      Kvalitetsprint fra Mariagerfjord. Produceret i Danmark og klar til ophæng.
+    hint: Se og køb prints
     href: /prints
     img: /mockups/Newborn_Moon_Mockup.jpeg
     alt: Award-winning fine art prints from Denmark for modern interiors
+
+  - title: Mariager Fjord Calendar 2026
+    sub: |
+      En kurateret samling af atmosfæriske landskaber fra fjord og kyst.
+    hint: Se og bestil kalenderen
+    href: /calendar2026
+    img: /uploads/forside_flise.jpg
+    alt: Mariager Fjord Calendar 2026 cover with minimalist coastal landscape
