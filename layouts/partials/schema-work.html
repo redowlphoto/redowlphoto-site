@@ -13,38 +13,30 @@
 {{- end }}
 
 <script type="application/ld+json">
-[{
+{
   "@context": "https://schema.org",
-  "@type": "Photograph",
+  "@type": ["Photograph", "ImageObject"],
   "name": {{ $name | jsonify }},
   "headline": {{ $name | jsonify }},
   "abstract": {{ $p.Summary | plainify | jsonify }},
-  "inLanguage": {{ $p.Language.LanguageCode | default "en" | jsonify }},
+  "caption": {{ $caption | jsonify }},
+  "image": {{ $coverAbs | jsonify }},
   "url": {{ $p.Permalink | jsonify }},
-  "author": { "@type": "Person", "name": "RedOwlPhoto" },
-  "copyrightYear": {{ $p.Date.Format "2006" }},
+  "creator": { 
+    "@type": "Person", 
+    "name": "Allan Andersen",
+    "alternateName": "RedOwlPhoto",
+    "url": {{ "https://redowlphoto.dk/" | jsonify }}
+  },
+  "contentLocation": { "@type": "Place", "name": {{ $loc | jsonify }} },
   "dateCreated": {{ $p.Date | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "datePublished": {{ ($p.PublishDate | default $p.Date) | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "datePublished": {{ ($p.PublishDate | default $p.Date) | time.Format "2006-01-02" | jsonify }},
   "dateModified": {{ $p.Lastmod | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
   "keywords": {{ $p.Params.tags | default slice | jsonify }},
-  "mainEntityOfPage": true
-},
-{
-  "@context": "https://schema.org",
-  "@type": ["Photograph","ImageObject"],
-  "caption": {{ $caption | jsonify }},
-  "contentLocation": { "@type": "Place", "name": {{ $loc | jsonify }} },
-  "creator": { "@type": "Person", "name": "Allan Andersen", "url": {{ "https://redowlphoto.dk/" | jsonify }} },
-  "datePublished": {{ $p.Date.Format "2006-01-02" | jsonify }},
-  "genre": ["Minimalist","Seascape","Fine Art"],
-  "image": {{ $coverAbs | jsonify }},
-  "inLanguage": {{ $p.Language.LanguageCode | default "en" | jsonify }},
-  "name": {{ $name | jsonify }},
-  "sameAs": ["https://www.instagram.com/redowlphoto/"],
-  "url": {{ $p.Permalink | jsonify }},
-  "creditText": "Allan Andersen",
+  "genre": ["Minimalist", "Seascape", "Fine Art"],
   "copyrightNotice": "© Allan Andersen / RedOwlPhoto",
   "license": {{ (print site.BaseURL "license/") | jsonify }},
-  "acquireLicensePage": {{ (print site.BaseURL "about/") | jsonify }}
-}]
+  "acquireLicensePage": {{ (print site.BaseURL "about/") | jsonify }},
+  "mainEntityOfPage": true
+}
 </script>
