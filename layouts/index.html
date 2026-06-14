@@ -1,120 +1,36 @@
 {{ define "main" }} 
 <style>
-  .ro-wrap{
-    max-width: var(--ro-maxw);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--ro-pad-x);
-    padding-right: var(--ro-pad-x);
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-  }
+  .ro-wrap{ max-width: var(--ro-maxw); margin-left: auto; margin-right: auto; padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x); padding-top: 2rem; padding-bottom: 4rem; }
+  .ro-h1{ font-size:clamp(1.6rem,2.6vw,2.2rem); line-height:1.3; margin-bottom:.6rem; font-weight:600; }
+  .ro-tagline{ font-size:clamp(1.05rem,1.6vw,1.25rem); line-height:1.6; margin-bottom:2rem; opacity:.9; }
+  
+  /* AWARD BADGE */
+  .ro-award { font-weight: 600; color: #ffce7a; margin-bottom: 1rem; display: block; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
 
-  .ro-h1{
-    font-size:clamp(1.6rem,2.6vw,2.2rem);
-    line-height:1.3;
-    margin-bottom:.6rem;
-    font-weight:600;
-  }
+  /* TILES & KNAPPER */
+  .ro-tiles{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1rem; margin-top:1rem; align-items: start; }
+  @media (max-width:900px){ .ro-tiles{ grid-template-columns:1fr; } }
+  .ro-tile{ background:#0e1a27; border:1px solid rgba(255,255,255,.06); border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.25); display: flex; flex-direction: column; }
+  .ro-tile-img { display: block; position: relative; overflow: hidden; height: 320px; width: 100%; }
+  .ro-tile-img img, .ro-slide { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ro-slide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 900ms ease; }
+  .ro-slide.is-active { opacity: 1; }
+  
+  .ro-tile-head{ padding:1.2rem; color:#e7edf6; flex-grow: 1; }
+  .ro-tile-head h3{ margin:0 0 .5rem; font-size:1.2rem; }
+  .ro-tile-head .hint{ opacity:0.8; margin-bottom: 1rem; }
+  
+  /* KNAP DESIGN */
+  .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.7rem 1.2rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+  .ro-btn:hover { background: #e7edf6; }
 
-  .ro-tagline{
-    font-size:clamp(1.05rem,1.6vw,1.25rem);
-    line-height:1.6;
-    margin-bottom:2rem;
-    opacity:.9;
-  }
-
-  /* Kasser / Fliser */
-  .ro-tiles{
-    display:grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-    gap:1rem;
-    margin-top:1rem;
-    align-items: start;
-  }
-
-  @media (max-width:900px){
-    .ro-tiles{ grid-template-columns:1fr; }
-  }
-
-  .ro-tile{
-    background:#0e1a27;
-    border:1px solid rgba(255,255,255,.06);
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 6px 18px rgba(0,0,0,.25);
-  }
-
-  /* FAST RAMME FOR ALLE BILLEDER */
-  .ro-tile-img {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 320px; /* LÅST HØJDE */
-    width: 100%;
-  }
-
-  .ro-tile-img img, .ro-slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Dette sikrer de altid udfylder flisen ensartet */
-    display: block;
-    transition: transform .18s ease;
-  }
-
-  /* Slideshow logik */
-  .ro-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 900ms ease, transform .18s ease;
-  }
-
-  .ro-slide.is-active {
-    opacity: 1;
-  }
-
-  .ro-tile-img:hover .ro-slide.is-active {
-    transform: scale(1.03);
-  }
-
-  .ro-tile-head{
-    padding:.85rem 1rem 1rem;
-    color:#e7edf6;
-  }
-
-  .ro-tile-head h3{
-    margin:0 0 .35rem;
-    font-size:1.1rem;
-  }
-
-  .ro-tile-head .sub{ opacity:.9; }
-  .ro-tile-head .hint{ opacity:.75; margin-top:.2rem; }
-
-  /* Slideshow CTA */
-  .ro-hero-cta{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    background:rgba(0,0,0,.55);
-    padding:.5rem .8rem;
-    border-radius:6px;
-    font-size:.95rem;
-    color:#fff;
-    backdrop-filter: blur(4px);
-    z-index: 10;
-  }
-
-  .sr-only{
-    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
-    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0
-  }
+  .ro-hero-cta{ position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,.55); padding:.5rem .8rem; border-radius:6px; font-size:.95rem; color:#fff; backdrop-filter: blur(4px); z-index: 10; }
 </style>
 
 <div class="ro-wrap">
 
   <h1 class="ro-h1">Skandinavisk Fine Art Fotografi</h1>
+  <span class="ro-award">★ Prisvindende naturfotografi fra Mariagerfjord</span>
   <div class="ro-tagline">
     Minimalistiske landskaber fra Mariagerfjord, Lille Vildmose og den danske kyst – med fokus på lys og ro.
   </div>
@@ -125,20 +41,21 @@
     {{ if eq .title "Fine Art Prints" }}{{ $printTile = . }}{{ else if eq .title "Mariager Fjord Calendar 2026" }}{{ $calTile = . }}{{ end }}
   {{ end }}
 
+  {{/* PRINTS - FULD BREDDE */}}
   {{ if $printTile }}
-    <section class="ro-top-section" style="margin-bottom: 2rem;">
+    <section style="margin-bottom: 2rem;">
       <div class="ro-tile">
-        <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;">
-          <img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager">
-        </a>
+        <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;"><img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager"></a>
         <div class="ro-tile-head">
           <h3>{{ $printTile.title }}</h3>
-          <div class="hint">Priser fra {{ site.Data.prices.small }} DKK – Se og køb</div>
+          <div class="hint">Fine art prints fra Danmark – produceret på Hahnemühle papir i gallerikvalitet.</div>
+          <a href="{{ $printTile.href | relURL }}" class="ro-btn">Køb Fine Art Prints (fra {{ site.Data.prices.small }} kr.)</a>
         </div>
       </div>
     </section>
   {{ end }}
 
+  {{/* KALENDER & WORKS */}}
   {{ $works := where .Site.RegularPages "Section" "works" }}
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
@@ -150,12 +67,11 @@
   <section class="ro-tiles">
     {{ if $calTile }}
       <div class="ro-tile">
-        <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}">
-          <img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy">
-        </a>
+        <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}"><img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy"></a>
         <div class="ro-tile-head">
           <h3>{{ $calTile.title }}</h3>
-          <div class="hint">Pris: {{ site.Data.prices.calendar }} DKK – Se og bestil</div>
+          <div class="hint">Pris: {{ site.Data.prices.calendar }} DKK</div>
+          <a href="{{ $calTile.href | relURL }}" class="ro-btn">Bestil kalender</a>
         </div>
       </div>
     {{ end }}
@@ -169,22 +85,14 @@
       </a>
       <div class="ro-tile-head">
         <h3>Udvalgte Værker</h3>
-        <div class="hint">Minimalistiske landskaber – Gå til portfolio</div>
+        <div class="hint">Minimalistiske landskaber – Udforsk hele portfolioen</div>
+        <a href="{{ "works" | relURL }}" class="ro-btn">Se alle værker</a>
       </div>
     </div>
   </section>
 </div>
 
 <script>
-(function(){
-  var slides = document.querySelectorAll('.ro-slide');
-  if(!slides.length) return;
-  var i = 0;
-  setInterval(function(){
-    slides[i].classList.remove('is-active');
-    i = (i + 1) % slides.length;
-    slides[i].classList.add('is-active');
-  }, 7500);
-})();
+(function(){ var slides = document.querySelectorAll('.ro-slide'); if(!slides.length) return; var i = 0; setInterval(function(){ slides[i].classList.remove('is-active'); i = (i + 1) % slides.length; slides[i].classList.add('is-active'); }, 7500); })();
 </script>
 {{ end }}
