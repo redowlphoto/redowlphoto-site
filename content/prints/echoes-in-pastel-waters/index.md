@@ -60,15 +60,15 @@ Vælg det format, der passer til din væg og dit rum:
 
 <div class="print-options">
 
-  <a href="/prints/echoes-in-pastel-waters-30x20" class="print-card">
+  <a href="/prints/{{ .Params.slug }}-30x20" class="print-card">
     <div class="size">30x20 cm</div>
-    <div class="price">150 kr</div>
+    <div class="price">{{< price "small" >}} kr</div>
   </a>
 
-  <a href="/prints/echoes-in-pastel-waters-70x50" class="print-card highlight">
+  <a href="/prints/{{ .Params.slug }}-70x50" class="print-card highlight">
     <div class="badge">Mest valgt</div>
     <div class="size">70x50 cm</div>
-    <div class="price">600 kr</div>
+    <div class="price">{{< price "medium" >}} kr</div>
   </a>
 
 </div>
