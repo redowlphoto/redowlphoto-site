@@ -25,7 +25,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Prisvindende kunsttryk – Als, Danmark</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/newborn-moon" class="buy-btn">Se print</a>
+      <a href="/prints/newborn-moon" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -41,7 +41,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>CEWE Månedsvinder – Als Odde</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se print</a>
+      <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -57,7 +57,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Minimalistisk fjordmotiv – Hadsund</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Se print</a>
+      <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -73,7 +73,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/against-the-snow" class="buy-btn">Se print</a>
+      <a href="/prints/against-the-snow" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -89,7 +89,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Prisvindende naturfotografi – Lille Vildmose</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/golden-levitation" class="buy-btn">Se print</a>
+      <a href="/prints/golden-levitation" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
