@@ -27,6 +27,10 @@ tags:
   - minimalism
   - Nordic wildlife
   - RedOwlPhoto
+  - fine art photography
+  - minimalist wall art
+
+print_url: "/prints/golden-levitation"
 ---
 
 A red deer stag steps through the marsh as if weightless — the **golden hour fog at Lille Vildmose** lifts from the ground and turns the first light into a veil. With distance reduced to tone and silhouette, the animal seems to **levitate**.
@@ -35,8 +39,7 @@ Captured in one of Denmark’s most atmospheric landscapes, **Lille Vildmose in 
 
 This photograph was selected as *Photo of the Day* on **One Eyeland**, and has received **international jury diplomas in FIAP-recognized competitions**.
 
-View on Instagram:  
-https://www.instagram.com/p/DPT1-8qkpkO/?img_index=1
+[View on Instagram](https://www.instagram.com/p/DPT1-8qkpkO/?img_index=1)
 
 ---
 
@@ -57,8 +60,9 @@ It is also home to a population of **elk**, which draw many visitors. While elk 
 
 This work has been recognized in multiple international photography circuits:
 
-- AFI Diploma – *75th Iberic Trofeu Pell International Photo Circuit (Magenta Salon), Spain*  
-- FIAP Acceptance & Diploma Mention – *13th MIROC Digital Circuit 2026 (Serbia & Norway)*  
+- **Photo of the Day** – *One Eyeland*
+- **AFI Diploma** – *75th Iberic Trofeu Pell International Photo Circuit (Magenta Salon), Spain*  
+- **FIAP Acceptance & Diploma Mention** – *13th MIROC Digital Circuit 2026 (Serbia & Norway)*  
 
 These recognitions are part of FIAP-associated competitions, where works are judged by international panels.
 
@@ -66,12 +70,72 @@ These recognitions are part of FIAP-associated competitions, where works are jud
 
 ## Explore more
 
-- Wildlife photography → [/categories/wildlife/](/categories/wildlife/)  
-- Golden hour series → [/categories/golden-hour/](/categories/golden-hour/)  
-- More from Lille Vildmose → [/tags/Lille%20Vildmose/](/tags/Lille%20Vildmose/)
+- [Wildlife photography](/categories/wildlife/)  
+- [Golden hour series](/categories/golden-hour/)  
+- [More from Lille Vildmose](/tags/Lille%20Vildmose/)
 
 ---
 
-If you are visiting **Lille Vildmose**, early morning and late evening offer the best chances to experience its unique atmosphere and wildlife.
+## Prints
+
+This photograph is available as a museum-quality fine art print, perfect for bringing a sense of calm and Nordic minimalism into modern interiors:
+
+👉 [View print options and pricing](/prints/golden-levitation/)
+
+---
 
 <!--more-->
+
+If you are visiting **Lille Vildmose**, early morning and late evening offer the best chances to experience its unique atmosphere and wildlife.
+
+<!-- SCHEMA START -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "@id": "https://redowlphoto.dk/works/golden-levitation/#artwork",
+  "name": "Golden Levitation",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://redowlphoto.dk/#person"
+  },
+  "artform": "Photography",
+  "artMedium": "Digital Photography",
+  "genre": [
+    "Fine Art Photography",
+    "Minimalism",
+    "Wildlife Photography",
+    "Landscape Photography"
+  ],
+  "description": "Minimalist wildlife photograph of a red deer stag appearing to float in the golden hour fog at Lille Vildmose, Denmark.",
+  "image": {
+    "@type": "ImageObject",
+    "contentUrl": "https://redowlphoto.dk/works/golden-levitation/golden-levitation-lille-vildmose.jpg",
+    "creator": {
+      "@type": "Person",
+      "@id": "https://redowlphoto.dk/#person"
+    },
+    "creditText": "Allan Andersen / RedOwlPhoto"
+  },
+  "dateCreated": "2025-09",
+  "contentLocation": {
+    "@type": "Place",
+    "name": "Lille Vildmose, Himmerland, Nordjylland, Denmark"
+  },
+  "keywords": [
+    "Golden Levitation",
+    "Lille Vildmose",
+    "kronhjort",
+    "red deer",
+    "Himmerland",
+    "Denmark",
+    "minimalism",
+    "fine art photography",
+    "golden hour"
+  ],
+  "award": "Photo of the Day - One Eyeland, AFI Diploma - 75th Iberic Trofeu Pell International Photo Circuit"
+}
+</script>
+
+<!-- SCHEMA END -->
