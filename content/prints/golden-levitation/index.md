@@ -8,7 +8,7 @@ slug: "golden-levitation"
 ---
 
 <div class="mockup-container">
-  <img src="/mockups/golden_levitation_mockup.jpg" alt="Minimalistisk kunsttryk med svævende kronhjort i morgentåge fra Lille Vildmose">
+  <img src="/mockups/golden-levitation-mockup.jpg" alt="Minimalistisk kunsttryk med svævende kronhjort i morgentåge fra Lille Vildmose">
 </div>
 
 <h1>Golden Levitation</h1>
