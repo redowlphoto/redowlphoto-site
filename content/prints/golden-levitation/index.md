@@ -2,7 +2,7 @@
 title: "Golden Levitation - Kunsttryk med svævende hjort i tåge"
 date: 2026-06-15
 draft: false
-image: "mockups/golden_levitation_mockup.jpg"
+image: "mockups/golden-levitation-mockup.jpg"
 description: "Prisvindende minimalistisk kunsttryk af en kronhjort i den gyldne morgentåge ved Lille Vildmose."
 slug: "golden-levitation"
 ---
