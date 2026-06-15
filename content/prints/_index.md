@@ -78,6 +78,22 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
   </div>
 </div>
 
+<!-- GOLDEN LEVITATION -->
+<div class="print-tile">
+  <a href="/prints/golden-levitation" class="print-image">
+    <img src="/mockups/golden-levitation-mockup.jpg" alt="Golden Levitation kunsttryk">
+  </a>
+  <div class="print-content">
+    <div>
+      <h3>Golden Levitation</h3>
+      <p>Prisvindende naturfotografi – Lille Vildmose</p>
+    </div>
+    <div class="print-actions">
+      <a href="/prints/golden-levitation" class="buy-btn">Se print</a>
+    </div>
+  </div>
+</div>
+
 </div>
 </div>
 
