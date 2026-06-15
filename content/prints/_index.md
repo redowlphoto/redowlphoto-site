@@ -5,6 +5,29 @@ slug: prints
 image: "mockups/Newborn_Moon_Mockup.jpeg" 
 ---
 
+<style>
+  /* Gør billed-containeren relativ, så badget kan placeres i hjørnet */
+  .print-image {
+    position: relative;
+    display: block;
+  }
+  
+  /* Styling af selve badget */
+  .ro-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #e7edf6; /* Lyseblå/grå farve der matcher dit design */
+    color: #0e1a27;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+</style>
+
 <div class="print-wrap">
 
 <p class="print-intro">
@@ -17,6 +40,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
 <!-- NEWBORN MOON -->
 <div class="print-tile">
   <a href="/prints/newborn-moon" class="print-image">
+    <span class="ro-badge">Award-winning</span>
     <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon kunsttryk">
   </a>
   <div class="print-content">
@@ -65,6 +89,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
 <!-- AGAINST THE SNOW -->
 <div class="print-tile">
   <a href="/prints/against-the-snow" class="print-image">
+    <span class="ro-badge">Most popular</span>
     <img src="/mockups/against_the_snow_mockup.jpg" alt="Against the Snow kunsttryk">
   </a>
   <div class="print-content">
