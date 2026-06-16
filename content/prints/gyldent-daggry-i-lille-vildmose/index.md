@@ -49,6 +49,7 @@ Et unikt triptykon – tre sammenhængende motiver fra samme magiske morgen i Hi
 
 <hr>
 
-<h2>Skræddersyede løsninger</h2>
-<p>Ønsker du kun et enkelt af motiverne, eller har du brug for hjælp til indramning af sættet?</p>
+<h2>Skræddersyede løsninger og enkeltkøb</h2>
+<p>Når du klikker på 'Køb', overføres hele sættet til din kurv. Her kan du nemt fravælge enkelte motiver, hvis du kun ønsker et eller to af dem.<br><br>
+Har du brug for hjælp til indramning eller specialmål?</p>
 <a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Kontakt for specialløsning</a>
