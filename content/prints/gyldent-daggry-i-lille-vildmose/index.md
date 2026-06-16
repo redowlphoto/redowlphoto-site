@@ -4,7 +4,7 @@ date: 2026-06-16
 draft: false
 image: "mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg"
 description: "Et eksklusivt sæt af 3 minimalistiske kunsttryk fra Lille Vildmose. Fanget i den gyldne morgentåge."
-slug: "gyldent-daggry"
+slug: "gyldent-daggry-i-lille-vildmose"
 ---
 
 <div class="mockup-container">
