@@ -35,7 +35,7 @@ Et unikt triptykon – tre sammenhængende motiver fra samme magiske morgen i Hi
 
 <h2>Historien om de tre øjeblikke</h2>
 <p>Denne serie blev til en morgen i Lille Vildmose, hvor vejret gav mig en sjælden kombination: næsten ingen vind, en kølig nat og en klar himmel ved solopgang. Det skabte den perfekte jordtåge, der forvandlede afstand til bløde toner.</p>
-<p>Som det første lys steg over Himmerland, åbnede og lukkede tågen sig i langsomme åndedrag. De tre motiver i dette sæt fanger denne proces: fra den svævende kronhjorts silhuet til de græssende køer, der opløses i lyset. Det er minimalisme, der ikke er skabt i redigeringen, men givet direkte af vejret.</p>
+<p>Som det første lys steg over Himmerland, åbnede og lukkede tågen sig i langsomme åndedrag. De tre motiver i dette sæt fanger denne proces: fra den svævende kronhjorts silhuet til de græssende køer, der opløses i lyset. Det er minimalisme, der ikke er skabt i redigeringen, men givet direkte af vejret og lyset.</p>
 
 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e1e1e1;">
   <h3 style="color: #0e1a27; margin-top: 0;">Inspiration</h3>
