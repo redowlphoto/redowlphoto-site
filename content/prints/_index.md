@@ -70,6 +70,23 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
   </div>
 </div>
 
+<!-- GYLDENT DAGGRY SERIE -->
+<div class="print-tile">
+  <a href="/prints/gyldent-daggry-i-lille-vildmose" class="print-image">
+    <span class="ro-badge">Sæt af 3</span>
+    <img src="/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg" alt="Gyldent daggry i Lille Vildmose triptykon">
+  </a>
+  <div class="print-content">
+    <div>
+      <h3>Gyldent daggry</h3>
+      <p>Eksklusiv fotoserie – Lille Vildmose</p>
+    </div>
+    <div class="print-actions">
+      <a href="/prints/gyldent-daggry-i-lille-vildmose" class="buy-btn">Se serie - fra {{< price "small" >}} kr/stk.</a>
+    </div>
+  </div>
+</div>
+
 <!-- SOLITUDE -->
 <div class="print-tile">
   <a href="/prints/solitude-at-mariagerfjord" class="print-image">
