@@ -16,7 +16,6 @@ slug: "newborn-moon"
 Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
 </p>
 
-<!-- Købsknapper - Rettet til Newborn Moon -->
 <div class="print-options-top">
   <a href="/prints/newborn-moon-30x20" class="btn-primary">
     Køb 30x20 cm ({{< price "small" >}} kr)
@@ -41,9 +40,9 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
   <p><a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a></p>
 </div>
 
-<!-- Link til print-forsiden for at drive trafik -->
-<div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e1e1e1;">
-  <h3>Leder du efter mere til din væg?</h3>
+<!-- Dynamisk boks der følger temaet -->
+<div class="cta-box" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid currentColor; opacity: 0.8;">
+  <h3 style="margin-top: 0;">Leder du efter mere til din væg?</h3>
   <p>Udforsk hele min samling af minimalistiske kunsttryk fra den danske natur.</p>
   <a href="/prints/" style="font-weight: bold; text-decoration: underline;">Se hele print-kollektionen her →</a>
 </div>
