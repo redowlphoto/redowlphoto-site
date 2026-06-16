@@ -16,17 +16,17 @@ slug: "newborn-moon"
 Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fanget i de få minutter, hvor lys, skyer og timing gik op i en højere enhed.
 </p>
 
+<!-- Købsknapper - Rettet til Newborn Moon -->
 <div class="print-options-top">
-  <a href="/prints/solitude-at-mariagerfjord-30x20" class="btn-primary">
+  <a href="/prints/newborn-moon-30x20" class="btn-primary">
     Køb 30x20 cm ({{< price "small" >}} kr)
   </a>
-  <a href="/prints/solitude-at-mariagerfjord-70x50" class="btn-primary-highlight">
+  <a href="/prints/newborn-moon-70x50" class="btn-primary-highlight">
     <span class="badge">Mest valgt</span>
     Køb 70x50 cm ({{< price "medium" >}} kr)
   </a>
 </div>
 
-<!-- Ingen <hr> her, så vi sparer pladsen -->
 <div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
   <span>🚚 Gratis fragt</span>
   <span>🛡️ Produceret på bestilling</span>
@@ -39,6 +39,13 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 <div class="cewe-feature">
   <p><a href="https://globalphotographyawards.com/winner-info.php?id=2041" target="_blank" rel="noopener">Se vinderprofil hos Global Photography Awards →</a></p>
   <p><a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a></p>
+</div>
+
+<!-- Link til print-forsiden for at drive trafik -->
+<div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e1e1e1;">
+  <h3>Leder du efter mere til din væg?</h3>
+  <p>Udforsk hele min samling af minimalistiske kunsttryk fra den danske natur.</p>
+  <a href="/prints/" style="font-weight: bold; text-decoration: underline;">Se hele print-kollektionen her →</a>
 </div>
 
 <hr>
@@ -55,5 +62,4 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
 
 <h2>Skræddersyede løsninger</h2>
 <p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
-<!-- Her har jeg givet knappen btn-primary-highlight klassen så den matcher 70x50 knappen -->
 <a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
