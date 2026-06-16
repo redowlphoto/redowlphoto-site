@@ -29,10 +29,11 @@ Mit arbejde udspringer primært fra **Danmarks østkyst**, særligt omkring **Ma
 
 ## Priser & omtale
 
-I 2025 blev jeg kåret som **Global Photographer of the Year (Amateur)** ved Global Photography Awards for værket *Newborn Moon*.
+I 2025 blev jeg kåret som **Global Photographer of the Year (Amateur)** ved Global Photography Awards for værket *Newborn Moon*. Mit arbejde er efterfølgende blevet fremhævet i internationale medier, hvor jeg fortæller om min tilgang til at indfange atmosfære og følelser i det danske landskab.
 
+- **Feature hos MUSE.World:** [Beyond Documentation: How Category Winner Allan Andersen Shapes Emotion & Atmosphere](https://www.muse.world/post/beyond-documentation-how-category-winner-allan-andersen-shapes-emotion-atmosphere-in-photography)
+- [Læs interviewet “A Sense of Stillness” på MUSE.World](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)
 - [Se værket “Newborn Moon”](https://redowlphoto.dk/works/newborn-moon/) – et stemningsfuldt billede af blodmånen set fra Kirkebakken i Als  
-- [Læs interviewet “A Sense of Stillness” på MUSE.World](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)  
 - [Læs artikel i HimmerlandsPosten](https://himmerlandsposten.dk/allan-andersen-fra-mariagerfjord-vinder-international-pris-for-foto-fanget-i-als/)
 
 Mine billeder er desuden flere gange blevet udvalgt som *Picture of the Day* på internationale platforme som **One Eyeland** (top 1% globalt). Udvalgte værker har også været vist i regi af **Selskabet for Dansk Fotografi (SDF)**.
