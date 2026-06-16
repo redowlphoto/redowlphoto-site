@@ -9,15 +9,14 @@ Am Abend vorher habe ich den Wetterbericht geprüft und eine seltene Kombination
 
 Als das erste Licht über **Himmerland** südlich von **Aalborg** aufging, öffnete und schloss sich der Nebel in langsamen Atemzügen. Formen lösten sich auf und kehrten als Silhouetten zurück. In diesem wechselnden Schleier entstanden zwei Bilder vom selben Morgen:
 
-- **Golden Levitation** – ein Rothirsch, der über dem Moor zu schweben scheint, weil der Nebel die ersten Strahlen der **goldenen Stunde** auffängt. Hier ansehen: [Golden Levitation](https://redowlphoto.dk/works/golden-levitation/).
+- **Golden Levitation** – ein Rothirsch, der über dem Moor zu schweben scheint, weil der Nebel die ersten Strahlen der **goldenen Stunde** auffängt. Die Serie als Kunstdruck ansehen: [Goldene Dämmerung in Lille Vildmose](/prints/gyldent-daggry-i-lille-vildmose/).
+- **Cows in Golden Mist** – zwei weidende Kühe, halb vom Leuchten ausgelöscht, mehr Andeutung als Detail, als gehörten sie zum Licht statt zur Wiese.
 
-![Golden Levitation - Rothirsch im goldenen Nebel in Lille Vildmose](/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
+![Goldene Dämmerung in Lille Vildmose - Set aus 3 Kunstdrucken im Nebel](/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg)
 
 <div style="margin: 1.5rem 0;">
-  <a href="/prints/golden-levitation" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Fine Art Print ansehen und kaufen</a>
+  <a href="/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Die Serie als Fine Art Print ansehen und kaufen</a>
 </div>
-
-- **Cows in Golden Mist** – zwei weidende Kühe, halb vom Leuchten ausgelöscht, mehr Andeutung als Detail, als gehörten sie zum Licht statt zur Wiese.
 
 Mich ziehen diese Morgen an, weil der Nebel **vereinfacht**. Die Farbe verdichtet sich zu einem warmen Ton, Kanten werden weich, und die Landschaft wird so ruhig, dass ein einziges Motiv das Bild tragen kann. Das ist eine Form von Minimalismus, die nicht in der Nachbearbeitung erzwungen wird, sie wird **vom Wetter geschenkt**.
 
