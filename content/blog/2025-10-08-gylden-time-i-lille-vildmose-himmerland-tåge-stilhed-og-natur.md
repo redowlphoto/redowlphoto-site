@@ -8,15 +8,14 @@ Jeg tjekkede vejrudsigten aftenen før og så en sjælden kombination: næsten i
 
 Da det første lys steg over **Himmerland** syd for **Aalborg**, åbnede og lukkede tågen sig i langsomme åndedrag. Former forsvandt og kom tilbage som silhouetter. I det skiftende slør lavede jeg to billeder fra samme morgen:
 
-- **Golden Levitation** – en kronhjort der ser ud til at svæve over mosen, fordi tågen fanger de første stråler fra den **gyldne time**. Se det her: [Golden Levitation](https://redowlphoto.dk/works/golden-levitation/).
+- **Golden Levitation** – en kronhjort der ser ud til at svæve over mosen, fordi tågen fanger de første stråler fra den **gyldne time**. Se serien som kunsttryk her: [Gyldent daggry i Lille Vildmose](/prints/gyldent-daggry-i-lille-vildmose/).
+- **Cows in Golden Mist** – to græssende køer forsvindende i tågen, mere antydning end detalje, som om de hører til lyset snarere end marken.
 
-![Golden Levitation - Kronhjort i gylden tåge i Lille Vildmose](/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
+![Gyldent daggry i Lille Vildmose - Sæt af 3 kunsttryk i tåge](/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg)
 
 <div style="margin: 1.5rem 0;">
-  <a href="/prints/golden-levitation" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Se og køb Fine Art Print</a>
+  <a href="/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Se og køb serien som Fine Art Print</a>
 </div>
-
-- **Cows in Golden Mist** – to græssende køer forsvindende i tågen, mere antydning end detalje, som om de hører til lyset snarere end marken.
 
 Det, der trækker mig til disse morgener, er måden tågen **forenkler** på. Farven samler sig i en varm tone, kanterne blødgøres, og landskabet bliver så stille, at ét motiv kan bære rammen. Det er en form for minimalisme, der ikke presses frem i redigeringen, den er **givet af vejret**.
 
