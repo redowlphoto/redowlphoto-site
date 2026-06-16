@@ -29,10 +29,11 @@ Most of my work is from **Denmark’s east coast**, especially around **Mariager
 
 ## Awards & Press
 
-In 2025 I won **Global Photographer of the Year (Amateur)** at the Global Photography Awards for *Newborn Moon*.
+In 2025 I won **Global Photographer of the Year (Amateur)** at the Global Photography Awards for *Newborn Moon*. My work has since been featured in international media, where I discuss my approach to capturing the atmosphere and emotional presence of the Danish landscape.
 
+- **MUSE.World Feature:** [Beyond Documentation: How Category Winner Allan Andersen Shapes Emotion & Atmosphere](https://www.muse.world/post/beyond-documentation-how-category-winner-allan-andersen-shapes-emotion-atmosphere-in-photography)
+- [Read the interview “A Sense of Stillness” on MUSE.World](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)
 - [View “Newborn Moon”](https://redowlphoto.dk/works/newborn-moon/) – a minimal image of the blood moon seen from Als  
-- [Read the interview “A Sense of Stillness” on MUSE.World](https://www.muse.world/post/a-sense-of-stillness-capturing-denmarks-coastal-calm-with-allan-andersen)  
 - [Read the article in HimmerlandsPosten](https://himmerlandsposten.dk/allan-andersen-fra-mariagerfjord-vinder-international-pris-for-foto-fanget-i-als/)
 
 My work has also been selected multiple times as *Picture of the Day* on international platforms such as **One Eyeland** (top 1% globally). Selected works have also been exhibited through the **Danish Photographic Society (SDF)**.
