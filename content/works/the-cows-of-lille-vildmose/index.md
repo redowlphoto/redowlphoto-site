@@ -3,6 +3,9 @@ title: The Cows of Lille Vildmose
 draft: false
 date: 2025-09-25
 location: Lille Vildmose, Himmerland, Nordjylland, Denmark
+
+print_url: "/prints/gyldent-daggry-i-lille-vildmose/"
+
 caption: >
   Cattle grazing in golden hour fog at Lille Vildmose, Himmerland - forms
   dissolving in the first light near Aalborg.
@@ -43,7 +46,4 @@ This image leans into pastoral minimalism: a reduced palette, simple shapes, and
 - See the **Golden Hour** series → [/categories/golden-hour/?utm_source=site&utm_medium=work&utm_campaign=cows-golden-mist](/categories/golden-hour/?utm_source=site&utm_medium=work&utm_campaign=cows-golden-mist)  
 - More **Wildlife** works → [/categories/wildlife/?utm_source=site&utm_medium=work&utm_campaign=cows-golden-mist](/categories/wildlife/?utm_source=site&utm_medium=work&utm_campaign=cows-golden-mist)
 
-**About the place**  
-**Lille Vildmose** is one of Denmark’s richest nature reserves in **Himmerland**, south of **Aalborg**. Trails and open views often blend morning fog with low sun, creating scenes where subjects soften into tone. You can learn more at Lille Vildmosecentret.
-
-<!--more-->
+**About the place** **Lille Vildmose** is one of Denmark’s richest nature reserves in **Himmerland**, south of **Aalborg**. Trails and open views often blend morning fog with low sun, creating scenes where subjects soften into tone. You can learn more at Lille Vildmosecentret.
