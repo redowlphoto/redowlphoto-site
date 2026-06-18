@@ -15,7 +15,8 @@
   .ro-slide.is-active { opacity: 1; }
   
   .ro-tile-head{ padding:1.5rem; color:#e7edf6; flex-grow: 1; }
-  .ro-tile-head h3{ margin:0 0 0.5rem; font-size:1.3rem; }
+  /* Ændret fra h3 til h2 for at fikse accessibility scoren */
+  .ro-tile-head h2{ margin:0 0 0.5rem; font-size:1.3rem; font-weight: 700; }
   .ro-tile-head .hint{ opacity:0.85; margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.4; }
   
   .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
@@ -26,7 +27,6 @@
 
   <h1 class="ro-h1">Fine art prints til din væg</h1>
   
-  {{/* Løsning: Tailwind-klasser for idiotsikker dark/light-mode skift. Dyb kobber i lyst tema, guld i mørkt */}}
   <span class="block mb-6 text-[1.3rem] font-bold tracking-[0.02em] text-[#603800] dark:text-[#ffce7a]">★ Internationalt prisvindende naturfotografi</span>
   
   <div class="ro-tagline">
@@ -45,7 +45,6 @@
         <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;">
           {{ $printImgRes := resources.Get (strings.TrimPrefix "/" $printTile.img) }}
           {{ if $printImgRes }}
-            {{/* Genererer både et mobilvenligt og et desktop-venligt WebP billede */}}
             {{ $img800 := $printImgRes.Resize "800x webp q80" }}
             {{ $img1200 := $printImgRes.Resize "1200x webp q80" }}
             <img src="{{ $img1200.RelPermalink }}" 
@@ -61,7 +60,7 @@
           {{ end }}
         </a>
         <div class="ro-tile-head">
-          <h3>Fine Art Prints</h3>
+          <h2>Fine Art Prints</h2>
           <div class="hint">Gallerikvalitet på Hahnemühle papir. Perfekt til dit hjem eller som gave.</div>
           <a href="{{ $printTile.href | relURL }}" class="ro-btn">Se og køb print fra {{ site.Data.prices.small }} kr.</a>
         </div>
@@ -73,7 +72,8 @@
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
     {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}
-      {{ $imgWebp := .Resize "800x webp q80" }}
+      {{/* Løsning: Skåret ned til 600px for at fjerne den sidste PageSpeed advarsel */}}
+      {{ $imgWebp := .Resize "600x webp q80" }}
       {{ $slides = $slides | append (dict "img" $imgWebp.RelPermalink "width" $imgWebp.Width "height" $imgWebp.Height "alt" .Title) }}
     {{ end }}
   {{ end }}
@@ -84,14 +84,15 @@
         <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}">
           {{ $calImgRes := resources.Get (strings.TrimPrefix "/" $calTile.img) }}
           {{ if $calImgRes }}
-            {{ $calImgWebp := $calImgRes.Resize "800x webp q80" }}
+            {{/* Løsning: Skåret ned til 600px for kalenderbilledet også */}}
+            {{ $calImgWebp := $calImgRes.Resize "600x webp q80" }}
             <img src="{{ $calImgWebp.RelPermalink }}" width="{{ $calImgWebp.Width }}" height="{{ $calImgWebp.Height }}" alt="{{ $calTile.title }}" loading="lazy">
           {{ else }}
             <img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy">
           {{ end }}
         </a>
         <div class="ro-tile-head">
-          <h3>{{ $calTile.title }}</h3>
+          <h2>{{ $calTile.title }}</h2>
           <div class="hint">En hyldest til Mariagerfjord gennem 12 måneders landskaber.</div>
           <a href="{{ $calTile.href | relURL }}" class="ro-btn">Bestil kalender</a>
         </div>
@@ -105,7 +106,7 @@
         {{ end }}
       </a>
       <div class="ro-tile-head">
-        <h3>Udvalgte Værker</h3>
+        <h2>Udvalgte Værker</h2>
         <div class="hint">Gå på opdagelse i flere af mine samlinger.</div>
         <a href="{{ "works" | relURL }}" class="ro-btn">Se alle værker</a>
       </div>
