@@ -15,8 +15,8 @@
   .ro-slide.is-active { opacity: 1; }
   
   .ro-tile-head{ padding:1.5rem; color:#e7edf6; flex-grow: 1; }
-  /* Ændret fra h3 til h2 for at fikse accessibility scoren */
-  .ro-tile-head h2{ margin:0 0 0.5rem; font-size:1.3rem; font-weight: 700; }
+  /* Låst styling for h2 i tiles */
+  .ro-tile-head h2{ margin:0 0 0.5rem 0 !important; font-size:1.3rem !important; font-weight: 700 !important; line-height: 1.2 !important; color: #e7edf6 !important; }
   .ro-tile-head .hint{ opacity:0.85; margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.4; }
   
   .ro-btn { display: inline-block; background: #fff; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
@@ -72,7 +72,6 @@
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
     {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}
-      {{/* Løsning: Skåret ned til 600px for at fjerne den sidste PageSpeed advarsel */}}
       {{ $imgWebp := .Resize "600x webp q80" }}
       {{ $slides = $slides | append (dict "img" $imgWebp.RelPermalink "width" $imgWebp.Width "height" $imgWebp.Height "alt" .Title) }}
     {{ end }}
@@ -84,7 +83,6 @@
         <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}">
           {{ $calImgRes := resources.Get (strings.TrimPrefix "/" $calTile.img) }}
           {{ if $calImgRes }}
-            {{/* Løsning: Skåret ned til 600px for kalenderbilledet også */}}
             {{ $calImgWebp := $calImgRes.Resize "600x webp q80" }}
             <img src="{{ $calImgWebp.RelPermalink }}" width="{{ $calImgWebp.Width }}" height="{{ $calImgWebp.Height }}" alt="{{ $calTile.title }}" loading="lazy">
           {{ else }}
