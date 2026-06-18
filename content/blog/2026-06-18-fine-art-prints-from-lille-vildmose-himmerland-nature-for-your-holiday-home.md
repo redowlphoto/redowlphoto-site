@@ -20,6 +20,6 @@ The scenes are completely unconstructed. They emerged during a brief, magical wi
 
 The work behind these images has been recognized with diplomas in **international photography competitions** – a professional validation of the artistic expression that arises in the Northern Jutland nature when conditions are perfect. As art prints, these motifs serve as a visual extension of the landscape from which they were born. Something that naturally brings a sense of serenity indoors.
 
-If you are visiting the area, the **Lille Vildmose Centre** is a great starting point for hikes and exciting nature experiences. If you enjoy the warm, low sun, you can see more in my **Golden Hour** series here: [/en/categories/golden-hour/](/en/categories/golden-hour/).
+If you are visiting the area, the **Lille Vildmose Centre** is a great starting point for hikes and exciting nature experiences. If you enjoy the warm, low sun, you can see more in my **Golden Hour** series here: [/categories/golden-hour/](/categories/golden-hour/).
 
 {{< comments >}}
