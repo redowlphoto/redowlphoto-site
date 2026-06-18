@@ -13,7 +13,7 @@ This series was captured in exactly that light – created with the purpose of h
 ![Golden Dawn in Lille Vildmose - Set of 3 fine art prints in the mist](/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg)
 
 <div style="margin: 1.5rem 0;">
-  <a href="/en/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">View and Purchase the Series as Fine Art Prints</a>
+  <a href="/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">View and Purchase the Series as Fine Art Prints</a>
 </div>
 
 The scenes are completely unconstructed. They emerged during a brief, magical window where weather, light, and silence converge in the bog. The series is available as **fine art prints** in several sizes, allowing them to work beautifully as a standalone focal piece or as a curated gallery wall in a living room or summer house.
