@@ -13,7 +13,7 @@ slug: "gyldent-daggry-i-lille-vildmose"
 
 <h1>Gyldent daggry i Lille Vildmose</h1>
 <p class="intro">
-Et unikt triptykon – tre sammenhængende motiver fra samme magiske morgen i Himmerland. Når tågen letter over Lille Vildmose, skabes et spil af lys og stilhed, der forener væggene i dit hjem med den nordiske natur.
+Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende grad er blevet et symbol på naturen omkring Øster Hurup og Himmerland. Skabt til at hænge samlet og bringe den ro og stemning, området er kendt for, ind i hjem og sommerhuse.
 </p>
 
 <!-- Købsknapper - Pris pr. print -->
