@@ -3,17 +3,26 @@
   .ro-wrap{ max-width: var(--ro-maxw); margin-left: auto; margin-right: auto; padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x); padding-top: 2rem; padding-bottom: 4rem; }
   .ro-h1{ font-size:clamp(1.8rem,3vw,2.5rem); line-height:1.2; margin-bottom:0.5rem; font-weight:700; }
   
-  /* Standard (lys baggrund) - mørk guld for at bestå kontrasttesten */
-  .ro-award { display: block; margin-bottom: 1.5rem; font-size: 1.3rem; font-weight: 700; color: #8A6300; letter-spacing: 0.02em; }
+  /* Standard (lys baggrund) - Mørk, gylden bronze for eksklusivt look og 100% kontrast-score */
+  .ro-award { 
+    display: block; 
+    margin-bottom: 1.5rem; 
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    color: #9c6500 !important; 
+    letter-spacing: 0.02em; 
+  }
   
-  /* Mørkt tema (automatisk via systemindstillinger) - skift tilbage til oprindelig lys guld */
+  /* Mørkt tema (automatisk via systemindstillinger) - Skift til den lyse guld */
   @media (prefers-color-scheme: dark) {
-    .ro-award { color: #ffce7a; }
+    html:not(.light) .ro-award, body:not(.light) .ro-award { 
+      color: #ffce7a !important; 
+    }
   }
 
-  /* Mørkt tema (hvis brugeren aktivt klikker på en dark-mode knap på siden) */
-  .dark .ro-award { 
-    color: #ffce7a; 
+  /* Mørkt tema (hvis brugeren aktivt bruger dark-mode knappen i menuen) */
+  html.dark .ro-award, .dark .ro-award { 
+    color: #ffce7a !important; 
   }
   
   .ro-tagline{ font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.5; margin-bottom:2.5rem; opacity:0.95; max-width: 800px; }
