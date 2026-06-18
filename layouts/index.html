@@ -45,8 +45,17 @@
         <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;">
           {{ $printImgRes := resources.Get (strings.TrimPrefix "/" $printTile.img) }}
           {{ if $printImgRes }}
-            {{ $printImgWebp := $printImgRes.Resize "1200x webp q80" }}
-            <img src="{{ $printImgWebp.RelPermalink }}" width="{{ $printImgWebp.Width }}" height="{{ $printImgWebp.Height }}" alt="{{ $printTile.title }}" loading="eager" fetchpriority="high">
+            {{/* Genererer både et mobilvenligt og et desktop-venligt WebP billede */}}
+            {{ $img800 := $printImgRes.Resize "800x webp q80" }}
+            {{ $img1200 := $printImgRes.Resize "1200x webp q80" }}
+            <img src="{{ $img1200.RelPermalink }}" 
+                 srcset="{{ $img800.RelPermalink }} 800w, {{ $img1200.RelPermalink }} 1200w" 
+                 sizes="(max-width: 900px) 100vw, 50vw" 
+                 width="{{ $img1200.Width }}" 
+                 height="{{ $img1200.Height }}" 
+                 alt="{{ $printTile.title }}" 
+                 loading="eager" 
+                 fetchpriority="high">
           {{ else }}
             <img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager" fetchpriority="high">
           {{ end }}
