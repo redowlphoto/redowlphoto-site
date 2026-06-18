@@ -20,6 +20,6 @@ Die Motive sind nicht konstruiert. Sie sind in dem kurzen, magischen Zeitfenster
 
 Die Arbeit an diesen Bildern wurde mit Urkunden bei **internationalen Fotowettbewerben** ausgezeichnet – eine professionelle Bestätigung für den künstlerischen Ausdruck, der in der nordjütländischen Natur entsteht, wenn die Bedingungen optimal sind. Als Kunstdrucke dienen die Motive als natürliche Erweiterung der Landschaft, in der sie entstanden sind. Ein ästhetisches Detail, das die nordische Ruhe mit nach drinnen bringt.
 
-Wenn Sie die Gegend besuchen, ist das **Lille Vildmosecentret** ein guter Ausgangspunkt für Wanderungen und spannende Naturerlebnisse. Wenn Ihnen die warme, tiefstehende Sonne gefällt, können Sie hier mehr in meiner **Golden Hour** Serie sehen: [/de/categories/golden-hour/](/de/categories/golden-hour/).
+Wenn Sie die Gegend besuchen, ist das **Lille Vildmosecentret** ein guter Ausgangspunkt für Wanderungen und spannende Naturerlebnisse. Wenn Ihnen die warme, tiefstehende Sonne gefällt, können Sie hier mehr in meiner **Golden Hour** Serie sehen: [/categories/golden-hour/](/categories/golden-hour/).
 
 {{< comments >}}
