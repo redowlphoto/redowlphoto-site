@@ -3,28 +3,6 @@
   .ro-wrap{ max-width: var(--ro-maxw); margin-left: auto; margin-right: auto; padding-left: var(--ro-pad-x); padding-right: var(--ro-pad-x); padding-top: 2rem; padding-bottom: 4rem; }
   .ro-h1{ font-size:clamp(1.8rem,3vw,2.5rem); line-height:1.2; margin-bottom:0.5rem; font-weight:700; }
   
-  /* Standard (lys baggrund) - Mørk, gylden bronze for eksklusivt look og 100% kontrast-score */
-  .ro-award { 
-    display: block; 
-    margin-bottom: 1.5rem; 
-    font-size: 1.3rem; 
-    font-weight: 700; 
-    color: #9c6500 !important; 
-    letter-spacing: 0.02em; 
-  }
-  
-  /* Mørkt tema (automatisk via systemindstillinger) - Skift til den lyse guld */
-  @media (prefers-color-scheme: dark) {
-    html:not(.light) .ro-award, body:not(.light) .ro-award { 
-      color: #ffce7a !important; 
-    }
-  }
-
-  /* Mørkt tema (hvis brugeren aktivt bruger dark-mode knappen i menuen) */
-  html.dark .ro-award, .dark .ro-award { 
-    color: #ffce7a !important; 
-  }
-  
   .ro-tagline{ font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.5; margin-bottom:2.5rem; opacity:0.95; max-width: 800px; }
   
   .ro-tiles{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1.5rem; margin-top:1rem; align-items: start; }
@@ -47,7 +25,10 @@
 <div class="ro-wrap">
 
   <h1 class="ro-h1">Fine art prints til din væg</h1>
-  <span class="ro-award">★ Internationalt prisvindende naturfotografi</span>
+  
+  {{/* Løsning: Tailwind-klasser for idiotsikker dark/light-mode skift. Dyb kobber i lyst tema, guld i mørkt */}}
+  <span class="block mb-6 text-[1.3rem] font-bold tracking-[0.02em] text-[#603800] dark:text-[#ffce7a]">★ Internationalt prisvindende naturfotografi</span>
+  
   <div class="ro-tagline">
     Minimalistiske kunsttryk til hjemmet – skabt med fokus på ro, lys og skandinavisk enkelhed.
   </div>
@@ -62,7 +43,6 @@
     <section style="margin-bottom: 2rem;">
       <div class="ro-tile">
         <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;">
-          {{/* Løsning: Hent billede, konverter til WebP og indsæt width/height */}}
           {{ $printImgRes := resources.Get (strings.TrimPrefix "/" $printTile.img) }}
           {{ if $printImgRes }}
             {{ $printImgWebp := $printImgRes.Resize "1200x webp q80" }}
@@ -84,7 +64,6 @@
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
     {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}
-      {{/* Løsning: Tilføj konvertering til WebP og gem width/height i dict */}}
       {{ $imgWebp := .Resize "800x webp q80" }}
       {{ $slides = $slides | append (dict "img" $imgWebp.RelPermalink "width" $imgWebp.Width "height" $imgWebp.Height "alt" .Title) }}
     {{ end }}
@@ -94,7 +73,6 @@
     {{ if $calTile }}
       <div class="ro-tile">
         <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}">
-          {{/* Løsning: Kalenderbillede optimeres ligeledes */}}
           {{ $calImgRes := resources.Get (strings.TrimPrefix "/" $calTile.img) }}
           {{ if $calImgRes }}
             {{ $calImgWebp := $calImgRes.Resize "800x webp q80" }}
@@ -113,7 +91,6 @@
 
     <div class="ro-tile">
       <a class="ro-tile-img" href="{{ "works" | relURL }}">
-        {{/* Løsning: Slideshow udskriver nu width og height */}}
         {{ range $i, $s := $slides }}
           <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $s.img }}" width="{{ $s.width }}" height="{{ $s.height }}" alt="{{ $s.alt }}" loading="lazy">
         {{ end }}
