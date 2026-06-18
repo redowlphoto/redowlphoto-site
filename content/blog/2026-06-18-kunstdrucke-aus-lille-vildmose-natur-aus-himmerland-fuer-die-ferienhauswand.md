@@ -13,7 +13,7 @@ Diese Serie entstand genau in diesem Licht – mit dem Ziel, als stilvolle Kunst
 ![Goldene Dämmerung in Lille Vildmose - 3er-Set Kunstdrucke im Nebel](/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg)
 
 <div style="margin: 1.5rem 0;">
-  <a href="/de/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Die Serie als Fine Art Print ansehen und kaufen</a>
+  <a href="/prints/gyldent-daggry-i-lille-vildmose/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Die Serie als Fine Art Print ansehen und kaufen</a>
 </div>
 
 Die Motive sind nicht konstruiert. Sie sind in dem kurzen, magischen Zeitfenster entstanden, in dem Wetter, Licht und Stille im Moor zusammentreffen. Die Serie ist als **Fine Art Print** in verschiedenen Größen erhältlich, sodass sie sowohl als eindrucksvolles Einzelwerk als auch als harmonische Galerie-Lösung an einer Wand im Wohn- oder Ferienhaus wirkt.
