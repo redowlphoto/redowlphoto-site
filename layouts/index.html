@@ -41,7 +41,16 @@
   {{ if $printTile }}
     <section style="margin-bottom: 2rem;">
       <div class="ro-tile">
-        <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;"><img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager"></a>
+        <a class="ro-tile-img" href="{{ $printTile.href | safeURL }}" style="height: auto;">
+          {{/* Løsning: Hent billede, konverter til WebP og indsæt width/height */}}
+          {{ $printImgRes := resources.Get (strings.TrimPrefix "/" $printTile.img) }}
+          {{ if $printImgRes }}
+            {{ $printImgWebp := $printImgRes.Resize "1200x webp q80" }}
+            <img src="{{ $printImgWebp.RelPermalink }}" width="{{ $printImgWebp.Width }}" height="{{ $printImgWebp.Height }}" alt="{{ $printTile.title }}" loading="eager" fetchpriority="high">
+          {{ else }}
+            <img src="{{ $printTile.img | relURL }}" alt="{{ $printTile.title }}" loading="eager" fetchpriority="high">
+          {{ end }}
+        </a>
         <div class="ro-tile-head">
           <h3>Fine Art Prints</h3>
           <div class="hint">Gallerikvalitet på Hahnemühle papir. Perfekt til dit hjem eller som gave.</div>
@@ -55,14 +64,25 @@
   {{ $slides := slice }}
   {{ range first 5 (sort (where $works ".Params.featured" true) "Date" "desc") }}
     {{ with .Resources.GetMatch (printf "*%s" (path.Base .Params.cover.image)) }}
-      {{ $slides = $slides | append (dict "img" (.Resize "1200x q80").RelPermalink "alt" .Title) }}
+      {{/* Løsning: Tilføj konvertering til WebP og gem width/height i dict */}}
+      {{ $imgWebp := .Resize "800x webp q80" }}
+      {{ $slides = $slides | append (dict "img" $imgWebp.RelPermalink "width" $imgWebp.Width "height" $imgWebp.Height "alt" .Title) }}
     {{ end }}
   {{ end }}
 
   <section class="ro-tiles">
     {{ if $calTile }}
       <div class="ro-tile">
-        <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}"><img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy"></a>
+        <a class="ro-tile-img" href="{{ $calTile.href | safeURL }}">
+          {{/* Løsning: Kalenderbillede optimeres ligeledes */}}
+          {{ $calImgRes := resources.Get (strings.TrimPrefix "/" $calTile.img) }}
+          {{ if $calImgRes }}
+            {{ $calImgWebp := $calImgRes.Resize "800x webp q80" }}
+            <img src="{{ $calImgWebp.RelPermalink }}" width="{{ $calImgWebp.Width }}" height="{{ $calImgWebp.Height }}" alt="{{ $calTile.title }}" loading="lazy">
+          {{ else }}
+            <img src="{{ $calTile.img | relURL }}" alt="{{ $calTile.title }}" loading="lazy">
+          {{ end }}
+        </a>
         <div class="ro-tile-head">
           <h3>{{ $calTile.title }}</h3>
           <div class="hint">En hyldest til Mariagerfjord gennem 12 måneders landskaber.</div>
@@ -73,8 +93,9 @@
 
     <div class="ro-tile">
       <a class="ro-tile-img" href="{{ "works" | relURL }}">
+        {{/* Løsning: Slideshow udskriver nu width og height */}}
         {{ range $i, $s := $slides }}
-          <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $s.img }}" alt="{{ $s.alt }}" loading="lazy">
+          <img class="ro-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $s.img }}" width="{{ $s.width }}" height="{{ $s.height }}" alt="{{ $s.alt }}" loading="lazy">
         {{ end }}
       </a>
       <div class="ro-tile-head">
