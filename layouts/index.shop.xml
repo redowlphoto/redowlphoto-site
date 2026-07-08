@@ -1,0 +1,20 @@
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Site.BaseURL }}</link>
+    <description>Fine Art Prints fra RedOwlPhoto</description>
+    {{ range (where .Site.RegularPages "Section" "prints") }}
+    <item>
+      <g:id>{{ .Slug | default .File.ContentBaseName }}</g:id>
+      <g:title>{{ .Title }}</g:title>
+      <g:description>{{ .Description | default .Summary }}</g:description>
+      <g:link>{{ .Permalink }}</g:link>
+      <g:image_link>{{ .Site.BaseURL }}{{ .Params.image | relURL }}</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>{{ .Site.Data.prices.medium }} DKK</g:price>
+      <g:brand>RedOwlPhoto</g:brand>
+    </item>
+    {{ end }}
+  </channel>
+</rss>
