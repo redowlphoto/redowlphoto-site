@@ -11,12 +11,16 @@ enableGitInfo = true
 # Sørg for at taxonomy/term-sider rent faktisk bliver genereret
 disableKinds = []
 
+[outputFormats.SHOP]
+  mediaType = "application/rss+xml"
+  baseName = "shop"
+
 [outputs]
-home     = ["HTML", "RSS"]
-page     = ["HTML"]
-section  = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-term     = ["HTML", "RSS"]
+  home     = ["HTML", "RSS", "SHOP"]
+  page     = ["HTML"]
+  section  = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term     = ["HTML", "RSS"]
 
 [markup]
   [markup.goldmark]
