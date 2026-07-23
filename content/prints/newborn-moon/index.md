@@ -8,22 +8,65 @@ slug: "newborn-moon"
 ---
 
 <style>
-  .product-gallery { position: relative; overflow: hidden; width: 100%; aspect-ratio: 4/3; border-radius: 6px; margin-bottom: 20px; }
-  .product-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .ro-slide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 900ms ease; }
-  .ro-slide.is-active { opacity: 1; z-index: 2; }
+  .product-gallery-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  .product-gallery { 
+    position: relative; 
+    width: 100%; 
+    aspect-ratio: 4/3; 
+  }
+  .product-gallery img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+  }
+  .ro-slide { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0; 
+    transition: opacity 900ms ease; 
+  }
+  .ro-slide.is-active { 
+    opacity: 1; 
+    z-index: 2; 
+  }
+  /* Genbrug af din badge-styling fra print-siden */
+  .ro-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #e7edf6;
+    color: #0e1a27;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
 </style>
 
-<div class="product-gallery">
-  <!-- Slide 1: Det nye, varme mockup (Vises først) -->
-  <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
-  
-  <!-- Slide 2: Det rene fotografi til detaljer -->
-  <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
-  
-  <!-- Slide 3: Det klassiske, bredere stuemiljø -->
-  <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
-</div>
+<!-- Hele herligheden er svøbt i et link -->
+<a href="/prints/newborn-moon-70x50" class="product-gallery-link">
+  <span class="ro-badge">Køb her</span>
+  <div class="product-gallery">
+    <!-- Slide 1: Det nye, varme mockup (Vises først) -->
+    <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
+    
+    <!-- Slide 2: Det rene fotografi til detaljer -->
+    <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
+    
+    <!-- Slide 3: Det klassiske, bredere stuemiljø -->
+    <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
+  </div>
+</a>
 
 <script>
 (function(){ 
