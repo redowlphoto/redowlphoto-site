@@ -41,7 +41,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
 <div class="print-tile">
   <a href="/prints/newborn-moon" class="print-image">
     <span class="ro-badge">Award-winning</span>
-    <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon kunsttryk">
+    <img src="/mockups/Newborn_Moon_Mockup_v2.jpeg" alt="Newborn Moon kunsttryk">
   </a>
   <div class="print-content">
     <div>
