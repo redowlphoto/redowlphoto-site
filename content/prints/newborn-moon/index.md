@@ -37,7 +37,6 @@ slug: "newborn-moon"
     opacity: 1; 
     z-index: 2; 
   }
-  /* Genbrug af din badge-styling fra print-siden */
   .ro-badge {
     position: absolute;
     top: 12px;
@@ -53,17 +52,11 @@ slug: "newborn-moon"
   }
 </style>
 
-<!-- Hele herligheden er svøbt i et link -->
 <a href="/prints/newborn-moon-70x50" class="product-gallery-link">
   <span class="ro-badge">Køb her</span>
   <div class="product-gallery">
-    <!-- Slide 1: Det nye, varme mockup (Vises først) -->
     <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
-    
-    <!-- Slide 2: Det rene fotografi til detaljer -->
     <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
-    
-    <!-- Slide 3: Det klassiske, bredere stuemiljø -->
     <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
   </div>
 </a>
