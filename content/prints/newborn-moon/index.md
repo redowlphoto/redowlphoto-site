@@ -2,14 +2,40 @@
 title: "Newborn Moon – Kunsttryk af måneformørkelse i Danmark"
 date: 2026-06-05
 draft: false
-image: "mockups/Newborn_Moon_Mockup.jpeg"
+image: "mockups/Newborn_Moon_Mockup_v2.jpg"
 description: "Prisvindende kunsttryk af en sjælden blodmåne over Danmark – dramatisk motiv til din væg."
 slug: "newborn-moon"
 ---
 
-<div class="mockup-container">
-  <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – måneformørkelse over Danmark">
+<style>
+  /* Genbruger din logik fra forsiden, men tilpasset produktbilledets container */
+  .product-gallery { position: relative; overflow: hidden; width: 100%; aspect-ratio: 4/3; border-radius: 6px; margin-bottom: 20px; }
+  .product-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ro-slide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 900ms ease; }
+  .ro-slide.is-active { opacity: 1; z-index: 2; }
+</style>
+
+<div class="product-gallery">
+  <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
+  
+  <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
+  
+  <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
 </div>
+
+<script>
+// Dit eget letvægts-script fra forsiden – genbrugt!
+(function(){ 
+  var slides = document.querySelectorAll('.product-gallery .ro-slide'); 
+  if(!slides.length) return; 
+  var i = 0; 
+  setInterval(function(){ 
+    slides[i].classList.remove('is-active'); 
+    i = (i + 1) % slides.length; 
+    slides[i].classList.add('is-active'); 
+  }, 4500); // Skifter billede hver 4,5 sekunder
+})();
+</script>
 
 <h1>Newborn Moon</h1>
 <p class="intro">
@@ -40,7 +66,6 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
   <p><a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a></p>
 </div>
 
-<!-- Dynamisk boks der følger temaet -->
 <div class="cta-box" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid currentColor; opacity: 0.8;">
   <h3 style="margin-top: 0;">Leder du efter mere til din væg?</h3>
   <p>Udforsk hele min samling af minimalistiske kunsttryk fra den danske natur.</p>
