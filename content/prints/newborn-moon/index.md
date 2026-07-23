@@ -15,20 +15,14 @@ slug: "newborn-moon"
 </style>
 
 <div class="product-gallery">
-  {{ $mockupV2 := resources.Get "mockups/Newborn_Moon_Mockup_v2.jpg" }}
-  {{ if $mockupV2 }}
-    <img class="ro-slide is-active" src="{{ $mockupV2.RelPermalink }}" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
-  {{ end }}
+  <!-- Slide 1: Det nye, varme mockup (Vises først) -->
+  <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
   
-  {{ $photo := resources.Get "uploads/newborn-moon-als.jpg" }}
-  {{ if $photo }}
-    <img class="ro-slide" src="{{ $photo.RelPermalink }}" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
-  {{ end }}
+  <!-- Slide 2: Det rene fotografi til detaljer -->
+  <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
   
-  {{ $mockupV1 := resources.Get "mockups/Newborn_Moon_Mockup.jpeg" }}
-  {{ if $mockupV1 }}
-    <img class="ro-slide" src="{{ $mockupV1.RelPermalink }}" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
-  {{ end }}
+  <!-- Slide 3: Det klassiske, bredere stuemiljø -->
+  <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
 </div>
 
 <script>
@@ -73,6 +67,7 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
   <p><a href="https://www.muse.world/post/a-quiet-emergence-newborn-moon-by-allan-andersen" target="_blank" rel="noopener">Læs artikel hos Muse.World →</a></p>
 </div>
 
+<!-- Dynamisk boks der følger temaet -->
 <div class="cta-box" style="padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid currentColor; opacity: 0.8;">
   <h3 style="margin-top: 0;">Leder du efter mere til din væg?</h3>
   <p>Udforsk hele min samling af minimalistiske kunsttryk fra den danske natur.</p>
