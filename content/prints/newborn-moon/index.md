@@ -8,7 +8,6 @@ slug: "newborn-moon"
 ---
 
 <style>
-  /* Genbruger din logik fra forsiden, men tilpasset produktbilledets container */
   .product-gallery { position: relative; overflow: hidden; width: 100%; aspect-ratio: 4/3; border-radius: 6px; margin-bottom: 20px; }
   .product-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .ro-slide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 900ms ease; }
@@ -16,15 +15,23 @@ slug: "newborn-moon"
 </style>
 
 <div class="product-gallery">
-  <img class="ro-slide is-active" src="/mockups/Newborn_Moon_Mockup_v2.jpg" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
+  {{ $mockupV2 := resources.Get "mockups/Newborn_Moon_Mockup_v2.jpg" }}
+  {{ if $mockupV2 }}
+    <img class="ro-slide is-active" src="{{ $mockupV2.RelPermalink }}" alt="Blodmåne kunsttryk over skænk - eksklusiv nordisk indretning">
+  {{ end }}
   
-  <img class="ro-slide" src="/uploads/newborn-moon-als.jpg" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
+  {{ $photo := resources.Get "uploads/newborn-moon-als.jpg" }}
+  {{ if $photo }}
+    <img class="ro-slide" src="{{ $photo.RelPermalink }}" alt="Newborn Moon - Detaljer af den danske måneformørkelse">
+  {{ end }}
   
-  <img class="ro-slide" src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
+  {{ $mockupV1 := resources.Get "mockups/Newborn_Moon_Mockup.jpeg" }}
+  {{ if $mockupV1 }}
+    <img class="ro-slide" src="{{ $mockupV1.RelPermalink }}" alt="Blodmåne kunsttryk og plakat – klassisk galleri indramning">
+  {{ end }}
 </div>
 
 <script>
-// Dit eget letvægts-script fra forsiden – genbrugt!
 (function(){ 
   var slides = document.querySelectorAll('.product-gallery .ro-slide'); 
   if(!slides.length) return; 
@@ -33,7 +40,7 @@ slug: "newborn-moon"
     slides[i].classList.remove('is-active'); 
     i = (i + 1) % slides.length; 
     slides[i].classList.add('is-active'); 
-  }, 4500); // Skifter billede hver 4,5 sekunder
+  }, 4500); 
 })();
 </script>
 
