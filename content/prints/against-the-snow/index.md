@@ -29,7 +29,7 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
 
 <!-- Fragt- og Ramme-info -->
 <div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
-  <span>🖼️ Sælges uindrammet (leveres i beskyttende rør)</span><br>
+  <span>🖼️ Sælges uindrammet (leveres i sikker, afstivet emballage)</span><br>
   <span>🚚 Gratis fragt</span> • 
   <span>🛡️ Produceret på bestilling</span> • 
   <span>📅 5-10 dages levering</span>
