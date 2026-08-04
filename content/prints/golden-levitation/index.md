@@ -54,10 +54,10 @@ Prisvindende minimalistisk kunsttryk fra Lille Vildmose, hvor en kronhjort nærm
 
 <h2>Kvalitet og print</h2>
 <ul>
-  <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir i gallerikvalitet med 100+ års farveholdbarhed.</li>
-  <li><strong>Præcision:</strong> Naturtro gengivelse af de varme, gyldne morgentoner og bløde overgange i tågen i kontrast til hjortens skarpe silhuet.</li>
-  <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt dansk fotolaboratorium.</li>
-  <li><strong>Levering:</strong> Sælges som løst print uden ramme, rullet og afstivet forsvarligt i kraftigt rør.</li>
+  <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
+  <li><strong>Præcision:</strong> Høj detaljegrad, dybe mørke toner og naturtro farvegengivelse.</li>
+  <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt fotolaboratorium.</li>
+  <li><strong>Levering:</strong> Sælges som uindrammet kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
