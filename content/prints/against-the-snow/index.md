@@ -27,10 +27,11 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
   </a>
 </div>
 
-<!-- Fragt-linje -->
+<!-- Fragt- og Ramme-info -->
 <div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
-  <span>🚚 Gratis fragt</span>
-  <span>🛡️ Produceret på bestilling</span>
+  <span>🖼️ Sælges uindrammet (leveres i beskyttende rør)</span><br>
+  <span>🚚 Gratis fragt</span> • 
+  <span>🛡️ Produceret på bestilling</span> • 
   <span>📅 5-10 dages levering</span>
 </div>
 
@@ -42,23 +43,23 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
 
 <h2>Kvalitet og print</h2>
 <ul>
-  <li>Printet på Hahnemühle fine art papir</li>
-  <li>Høj detaljegrad i grene og struktur</li>
-  <li>Bløde overgange i sne og tåge</li>
-  <li>Produceret på bestilling hos professionelt fotolaboratorium med præcis farvegengivelse</li>
+  <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
+  <li><strong>Præcision:</strong> Høj detaljegrad i grene, dybe mørke toner og bløde overgange i sne og tåge.</li>
+  <li><strong>Fremstilling:</strong> Produceret på bestilling hos professionelt fotolaboratorium for optimal farvegengivelse.</li>
+  <li><strong>Levering:</strong> Sælges som løst print uden ramme, rullet og afstivet forsvarligt i kraftigt rør.</li>
 </ul>
 
 <hr>
 
-<h2>Skræddersyede løsninger</h2>
-<p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
-<a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
+<h2>Skræddersyede løsninger & Indramning</h2>
+<p>Billedet sælges standard uden ramme, men ønsker du rådgivning om valg af den helt rigtige ramme, trætype eller passepartout, der matcher din indretning? Eller har du brug for specialstørrelser og akustikprint?</p>
+<a href="mailto:hello@redowlphoto.dk?subject=Forespørgsel%20på%20ramme%20eller%20specialstørrelse%20-%20Against%20the%20Snow" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Kontakt mig vedr. ramme eller tilbud</a>
 
 <!-- Mobil Sticky Købs-bjælke -->
 <div class="mobile-sticky-buy-bar">
   <div class="sticky-buy-info">
     <span class="sticky-title">Against the Snow</span>
-    <span class="sticky-subtitle">70x50 cm • {{< price "medium" >}} kr</span>
+    <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr</span>
   </div>
   <a href="/prints/against-the-snow-70x50" class="sticky-buy-btn">
     Køb 70x50 cm
@@ -66,60 +67,60 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
 </div>
 
 <style>
-/* CSS til Sticky Mobile Bar - kan også flyttes til din globale CSS-fil */
-.mobile-sticky-buy-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: #1b2333; /* Matcher din mørke baggrund */
-  border-top: 1px solid #2d3748;
-  padding: 12px 16px;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
-  align-items: center;
-  justify-content: space-between;
-}
-
-.sticky-buy-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 55%;
-}
-
-.sticky-title {
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.sticky-subtitle {
-  color: #a0aec0;
-  font-size: 0.75rem;
-}
-
-.sticky-buy-btn {
-  background-color: #2b3648;
-  color: #ffffff;
-  border: 1px solid #4a5568;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-decoration: none;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
+/* Mobil Sticky Bar Reset & Override */
+@media screen and (max-width: 767px) {
   .mobile-sticky-buy-bar {
-    display: flex;
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+    background-color: #1b2333 !important;
+    border-top: 1px solid #2d3748 !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5) !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
   }
+
+  .sticky-buy-info {
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 60% !important;
+  }
+
+  .sticky-title {
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !alignment;
+  }
+
+  .sticky-subtitle {
+    color: #a0aec0 !important;
+    font-size: 0.75rem !important;
+  }
+
+  .sticky-buy-btn {
+    background-color: #2b3648 !important;
+    color: #ffffff !important;
+    border: 1px solid #4a5568 !important;
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  /* Sørg for at footeren har plads i bunden */
   body {
-    padding-bottom: 75px; /* Sørger for at bunden af siden ikke dækkes */
+    padding-bottom: 80px !important;
   }
 }
 </style>
