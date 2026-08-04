@@ -67,7 +67,12 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
 </div>
 
 <style>
-/* Mobil Sticky Bar Reset & Override */
+/* 1. Skjul altid den mobile sticky-bar på desktop/PC som standard */
+.mobile-sticky-buy-bar {
+  display: none !important;
+}
+
+/* 2. Aktiver og stil bjælken UDELUKKENDE på mobil (skærme under 768px) */
 @media screen and (max-width: 767px) {
   .mobile-sticky-buy-bar {
     display: flex !important;
@@ -98,7 +103,7 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
     font-weight: 600 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    text-overflow: ellipsis !alignment;
+    text-overflow: ellipsis !important;
   }
 
   .sticky-subtitle {
