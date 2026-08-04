@@ -43,10 +43,10 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
 
 <h2>Kvalitet og print</h2>
 <ul>
-  <li><strong>Museumskvalitet:</strong> Sæt af 3 Fine Art print på kraftigt Hahnemühle papir med 100+ års farveholdbarhed.</li>
-  <li><strong>Triptykon-præcision:</strong> Ensartede farvetoner og bløde overgange i tågen, tilpasset til at hænge smukt sammen på samme væg.</li>
+  <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
+  <li><strong>Præcision:</strong> Høj detaljegrad, dybe mørke toner og naturtro farvegengivelse.</li>
   <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt fotolaboratorium.</li>
-  <li><strong>Levering:</strong> Sælges som 3 uindrammede kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
+  <li><strong>Levering:</strong> Sælges som uindrammet kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
