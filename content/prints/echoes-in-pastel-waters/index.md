@@ -28,12 +28,78 @@ Prisvindende kunsttryk fra Als Odde – også velegnet som eksklusiv plakat til 
 </div>
 
 <!-- Fragt & Indramnings-info -->
-<div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
-  <span>🖼️ Sælges uindrammet (leveres i sikker, afstivet emballage)</span><br>
-  <span>🚚 Gratis fragt</span> • 
-  <span>🛡️ Produceret på bestilling</span> • 
-  <span>📅 5-10 dages levering</span>
+<div class="product-highlights">
+  <div class="highlight-item">
+    <span class="highlight-icon">🖼️</span>
+    <span>Sælges uindrammet (sikker emballage)</span>
+  </div>
+  <div class="highlight-item">
+    <span class="highlight-icon">🚚</span>
+    <span>Gratis fragt</span>
+  </div>
+  <div class="highlight-item">
+    <span class="highlight-icon">🛡️</span>
+    <span>Produceret på bestilling</span>
+  </div>
+  <div class="highlight-item">
+    <span class="highlight-icon">📅</span>
+    <span>5–10 dages levering</span>
+  </div>
 </div>
+
+<style>
+.product-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 16px 0 24px 0;
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: #a0aec0;
+  white-space: nowrap;
+}
+
+.highlight-icon {
+  font-size: 1rem;
+}
+
+/* Lyst tema tilpasning */
+html[data-theme="light"] .product-highlights,
+body.light-mode .product-highlights {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+html[data-theme="light"] .highlight-item,
+body.light-mode .highlight-item {
+  color: #4a5568;
+}
+
+/* Mobil-tilpasning: 2 kolonne-grid med ren struktur */
+@media screen and (max-width: 600px) {
+  .product-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+  
+  .highlight-item {
+    white-space: normal;
+    font-size: 0.82rem;
+    line-height: 1.25;
+  }
+}
+</style>
 
 <h2>Hvorfor dette motiv?</h2>
 <p>Billedet er skabt ved Als Odde, hvor Mariager Fjord møder Kattegat – et af de mest stemningsfulde steder i området. En stille aprilaften, hvor vandet blev spejlblankt og efterlod et blødt lys i blå og rosa nuancer.</p>
