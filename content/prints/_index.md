@@ -6,19 +6,31 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
 ---
 
 <style>
-  /* Gør billed-containeren relativ, så badget kan placeres i hjørnet */
+  /* Gør billed-containeren relativ og fastlåser proportionerne til 4:3 */
   .print-image {
     position: relative;
     display: block;
-    margin-bottom: 0 !important; /* Fjerner ekstra afstand fra temaet */
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Låser alle billedfelter til samme højde/bredde forhold */
+    overflow: hidden;
+    margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
+  /* Zoomer let og udfylder hele rammen uden at forvrænge motivet */
   .print-image img {
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: 0 !important; /* Sikrer at billedet slutter helt tæt */
+    height: 100%;
+    object-fit: cover; /* Beskærer uendeligt lidt i kanten så alle billeder bliver 100% ens */
+    object-position: center;
+    margin-bottom: 0 !important;
+    transition: transform 0.4s ease; /* Tilføjer en blød hover-zoom effekt */
+  }
+
+  /* Blød zoom på billedet når musen føres over kortet */
+  .print-tile:hover .print-image img {
+    transform: scale(1.03);
   }
   
   /* Styling af badget */
@@ -36,35 +48,36 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   }
 
-  /* SIKRING AF KONTRAST VED LYST OG MØRKT TEMA */
+  /* SIKRING AF KONTRAST OG STRUKTUR VED BEGGE TEMAER */
   .print-tile {
     background-color: #1b2333 !important;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%; /* Tvinger alle kort til samme totale højde */
   }
 
   /* Indholdsboks direkte under billedet */
   .print-content {
-    padding: 14px 16px 16px 16px !important; /* Strammet padding i toppen */
+    padding: 16px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    flex-grow: 1; /* Sørger for at knapperne skubbes helt ned i bunden */
   }
 
   .print-tile h3 {
     color: #ffffff !important;
     margin-top: 0 !important;
-    margin-bottom: 4px !important; /* Tættere afstand mellem titel og undertitel */
+    margin-bottom: 4px !important;
     font-size: 1.15rem;
   }
 
   .print-tile p {
     color: #a0aec0 !important;
     margin-top: 0 !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 16px !important;
     font-size: 0.9rem;
   }
 
@@ -72,8 +85,9 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
     background-color: #2b3648 !important;
     color: #ffffff !important;
     border: 1px solid #4a5568 !important;
-    display: inline-block;
-    padding: 8px 14px;
+    display: block;
+    text-align: center;
+    padding: 10px 14px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
