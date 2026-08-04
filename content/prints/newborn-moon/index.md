@@ -107,7 +107,7 @@ Prisvindende kunsttryk og plakat af en sjælden blodmåne over Danmark – fange
   <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
   <li><strong>Præcision:</strong> Dyb kontrast, der bevarer de mørke toner og måneskivens røde glød uforandret.</li>
   <li><strong>Fremstilling:</strong> Produceret på bestilling hos professionelt fotolaboratorium for optimal farvegengivelse.</li>
-  <li><strong>Levering:</strong> Sælges som løst print uden ramme, rullet og afstivet forsvarligt i kraftigt rør.</li>
+  <li><strong>Levering:</strong> Sælges som uindrammet kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
