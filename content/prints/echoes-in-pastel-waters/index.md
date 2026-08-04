@@ -64,16 +64,21 @@ Prisvindende kunsttryk fra Als Odde – også velegnet som eksklusiv plakat til 
 <!-- Mobil Sticky Købs-bjælke -->
 <div class="mobile-sticky-buy-bar">
   <div class="sticky-buy-info">
-    <span class="sticky-title">Echoes in Pastel Waters</span>
+    <span class="sticky-title">Against the Snow</span>
     <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr</span>
   </div>
-  <a href="/prints/echoes-in-pastel-waters-70x50" class="sticky-buy-btn">
+  <a href="/prints/against-the-snow-70x50" class="sticky-buy-btn">
     Køb 70x50 cm
   </a>
 </div>
 
 <style>
-/* Mobil Sticky Bar Reset & Override */
+/* 1. Skjul altid den mobile sticky-bar på desktop/PC som standard */
+.mobile-sticky-buy-bar {
+  display: none !important;
+}
+
+/* 2. Aktiver og stil bjælken UDELUKKENDE på mobil (skærme under 768px) */
 @media screen and (max-width: 767px) {
   .mobile-sticky-buy-bar {
     display: flex !important;
@@ -124,6 +129,7 @@ Prisvindende kunsttryk fra Als Odde – også velegnet som eksklusiv plakat til 
     white-space: nowrap !important;
   }
 
+  /* Sørg for at footeren har plads i bunden */
   body {
     padding-bottom: 80px !important;
   }
