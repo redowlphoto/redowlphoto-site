@@ -42,10 +42,10 @@ Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og balance i dit hje
 
 <h2>Kvalitet og print</h2>
 <ul>
-  <li>Printet på Hahnemühle fine art papir</li>
-  <li>Høj detaljegrad og bløde toneovergange</li>
-  <li>Udvalgt specifikt til nordisk lys og dæmpede farver</li>
-  <li>Produceret på bestilling hos et professionelt fotolaboratorium med præcis farvegengivelse</li>
+  <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
+  <li><strong>Præcision:</strong> Høj detaljegrad, dybe mørke toner og naturtro farvegengivelse.</li>
+  <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt fotolaboratorium.</li>
+  <li><strong>Levering:</strong> Sælges som uindrammet kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
