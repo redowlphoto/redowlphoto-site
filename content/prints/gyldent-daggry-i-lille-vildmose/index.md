@@ -22,7 +22,7 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
     Køb 30x20 cm ({{< price "small" >}} kr pr. stk.)
   </a>
   <a href="/prints/gyldent-daggry-70x50" class="btn-primary-highlight">
-    <span class="badge">Anbefalet sæt</span>
+    <span class="badge-inline">Anbefalet sæt</span>
     Køb 70x50 cm ({{< price "medium" >}} kr pr. stk.)
   </a>
 </div>
@@ -48,13 +48,59 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
 </div>
 
 <style>
+/* Købsknapper layout & blikfang */
+.print-options-top {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0 16px 0;
+}
+
+.btn-primary, .btn-primary-highlight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2b3648 !important;
+  color: #ffffff !important;
+  border: 1px solid #4a5568 !important;
+}
+
+.btn-primary-highlight {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
+
+.badge-inline {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+/* Fragt boks styling */
 .product-highlights {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 18px;
   margin: 16px 0 24px 0;
   padding: 12px 14px;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
 }
@@ -68,31 +114,35 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
   white-space: nowrap;
 }
 
-.highlight-icon {
-  font-size: 1rem;
-}
-
 /* Lyst tema tilpasning */
 html[data-theme="light"] .product-highlights,
 body.light-mode .product-highlights {
-  background-color: #f8fafc;
-  border-color: #e2e8f0;
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
 }
 
 html[data-theme="light"] .highlight-item,
 body.light-mode .highlight-item {
-  color: #4a5568;
+  color: #4a5568 !important;
 }
 
-/* Mobil-tilpasning: 2 kolonne-grid med ren struktur */
+html[data-theme="light"] .btn-primary,
+body.light-mode .btn-primary {
+  background-color: #ffffff !important;
+  color: #0e1a27 !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
 @media screen and (max-width: 600px) {
+  .print-options-top {
+    flex-direction: column;
+  }
   .product-highlights {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 12px;
   }
-  
   .highlight-item {
     white-space: normal;
     font-size: 0.82rem;
@@ -112,7 +162,7 @@ body.light-mode .highlight-item {
   <li><strong>Museumskvalitet:</strong> Printet på kraftigt Hahnemühle fine art papir med 100+ års farveholdbarhed.</li>
   <li><strong>Præcision:</strong> Høj detaljegrad, dybe mørke toner og naturtro farvegengivelse.</li>
   <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt fotolaboratorium.</li>
-  <li><strong>Levering:</strong> Sælges som uindrammet kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
+  <li><strong>Levering:</strong> Sælges som 3 uindrammede kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
@@ -125,11 +175,11 @@ body.light-mode .highlight-item {
 <!-- Mobil Sticky Købs-bjælke -->
 <div class="mobile-sticky-buy-bar">
   <div class="sticky-buy-info">
-    <span class="sticky-title">Against the Snow</span>
-    <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr</span>
+    <span class="sticky-title">Gyldent daggry (Sæt af 3)</span>
+    <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr/stk</span>
   </div>
-  <a href="/prints/against-the-snow-70x50" class="sticky-buy-btn">
-    Køb 70x50 cm
+  <a href="/prints/gyldent-daggry-70x50" class="sticky-buy-btn">
+    Køb 70x50 cm sæt
   </a>
 </div>
 
@@ -179,9 +229,9 @@ body.light-mode .highlight-item {
   }
 
   .sticky-buy-btn {
-    background-color: #2b3648 !important;
+    background-color: #2563eb !important;
     color: #ffffff !important;
-    border: 1px solid #4a5568 !important;
+    border: none !important;
     padding: 10px 14px !important;
     border-radius: 6px !important;
     font-weight: 600 !important;
@@ -190,7 +240,6 @@ body.light-mode .highlight-item {
     white-space: nowrap !important;
   }
 
-  /* Sørg for at footeren har plads i bunden */
   body {
     padding-bottom: 80px !important;
   }
