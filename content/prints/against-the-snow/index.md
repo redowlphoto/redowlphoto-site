@@ -53,3 +53,73 @@ Minimalistisk kunsttryk og plakat af et ensomt egetræ i sne ved Mariager Fjord 
 <h2>Skræddersyede løsninger</h2>
 <p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
 <a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
+
+<!-- Mobil Sticky Købs-bjælke -->
+<div class="mobile-sticky-buy-bar">
+  <div class="sticky-buy-info">
+    <span class="sticky-title">Against the Snow</span>
+    <span class="sticky-subtitle">70x50 cm • {{< price "medium" >}} kr</span>
+  </div>
+  <a href="/prints/against-the-snow-70x50" class="sticky-buy-btn">
+    Køb 70x50 cm
+  </a>
+</div>
+
+<style>
+/* CSS til Sticky Mobile Bar - kan også flyttes til din globale CSS-fil */
+.mobile-sticky-buy-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #1b2333; /* Matcher din mørke baggrund */
+  border-top: 1px solid #2d3748;
+  padding: 12px 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky-buy-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
+.sticky-title {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sticky-subtitle {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+.sticky-buy-btn {
+  background-color: #2b3648;
+  color: #ffffff;
+  border: 1px solid #4a5568;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .mobile-sticky-buy-bar {
+    display: flex;
+  }
+  body {
+    padding-bottom: 75px; /* Sørger for at bunden af siden ikke dækkes */
+  }
+}
+</style>
