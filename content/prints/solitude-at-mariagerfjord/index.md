@@ -53,3 +53,78 @@ Minimalistisk kunsttryk fra Mariager Fjord – skabt til ro og balance i dit hje
 <h2>Skræddersyede løsninger</h2>
 <p>Få et konkret tilbud på specialstørrelser, indramning eller akustikprint</p>
 <a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Få et tilbud</a>
+
+<!-- Mobil Sticky Købs-bjælke -->
+<div class="mobile-sticky-buy-bar">
+  <div class="sticky-buy-info">
+    <span class="sticky-title">Against the Snow</span>
+    <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr</span>
+  </div>
+  <a href="/prints/against-the-snow-70x50" class="sticky-buy-btn">
+    Køb 70x50 cm
+  </a>
+</div>
+
+<style>
+/* 1. Skjul altid den mobile sticky-bar på desktop/PC som standard */
+.mobile-sticky-buy-bar {
+  display: none !important;
+}
+
+/* 2. Aktiver og stil bjælken UDELUKKENDE på mobil (skærme under 768px) */
+@media screen and (max-width: 767px) {
+  .mobile-sticky-buy-bar {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+    background-color: #1b2333 !important;
+    border-top: 1px solid #2d3748 !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5) !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+  }
+
+  .sticky-buy-info {
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 60% !important;
+  }
+
+  .sticky-title {
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .sticky-subtitle {
+    color: #a0aec0 !important;
+    font-size: 0.75rem !important;
+  }
+
+  .sticky-buy-btn {
+    background-color: #2b3648 !important;
+    color: #ffffff !important;
+    border: 1px solid #4a5568 !important;
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  /* Sørg for at footeren har plads i bunden */
+  body {
+    padding-bottom: 80px !important;
+  }
+}
+</style>
