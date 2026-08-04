@@ -10,6 +10,15 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
   .print-image {
     position: relative;
     display: block;
+    margin-bottom: 0 !important; /* Fjerner ekstra afstand fra temaet */
+    padding-bottom: 0 !important;
+  }
+
+  .print-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0 !important; /* Sikrer at billedet slutter helt tæt */
   }
   
   /* Styling af badget */
@@ -28,21 +37,35 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
   }
 
   /* SIKRING AF KONTRAST VED LYST OG MØRKT TEMA */
-  
-  /* 1. Hvis kortene altid beholder deres mørke baggrund (#1b2333 / #111827) */
   .print-tile {
     background-color: #1b2333 !important;
     border-radius: 8px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Indholdsboks direkte under billedet */
+  .print-content {
+    padding: 14px 16px 16px 16px !important; /* Strammet padding i toppen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
   .print-tile h3 {
     color: #ffffff !important;
-    margin-bottom: 6px;
+    margin-top: 0 !important;
+    margin-bottom: 4px !important; /* Tættere afstand mellem titel og undertitel */
+    font-size: 1.15rem;
   }
 
   .print-tile p {
     color: #a0aec0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    font-size: 0.9rem;
   }
 
   .print-tile .buy-btn {
@@ -63,7 +86,7 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
     color: #ffffff !important;
   }
 
-  /* 2. Valgfrit: Hvis kortene i lyst tema skal skifte til lys baggrund med mørk tekst */
+  /* Lyst tema tilpasning */
   html[data-theme="light"] .print-tile,
   body.light-mode .print-tile {
     background-color: #ffffff !important;
@@ -104,12 +127,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
     <span class="ro-badge">Award-winning</span>
     <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon kunsttryk">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Newborn Moon</h3>
       <p>Prisvindende kunsttryk – Als, Danmark</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/newborn-moon" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
@@ -120,12 +143,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
   <a href="/prints/echoes-in-pastel-waters" class="print-image">
     <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" alt="Echoes in Pastel Waters kunsttryk">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Echoes in Pastel Waters</h3>
       <p>CEWE Månedsvinder – Als Odde</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
@@ -137,12 +160,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
     <span class="ro-badge">Sæt af 3</span>
     <img src="/mockups/gyldent-daggry-i-lille-vildmose-mockup.jpg" alt="Gyldent daggry i Lille Vildmose triptykon">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Gyldent daggry</h3>
       <p>Eksklusiv fotoserie – Lille Vildmose</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/gyldent-daggry-i-lille-vildmose" class="buy-btn">Vælg sæt – fra {{< price "small" >}} kr/stk.</a>
     </div>
   </div>
@@ -153,12 +176,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
   <a href="/prints/solitude-at-mariagerfjord" class="print-image">
     <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Solitude at Mariagerfjord kunsttryk">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Solitude at Mariagerfjord</h3>
       <p>Minimalistisk fjordmotiv – Hadsund</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
@@ -170,12 +193,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
     <span class="ro-badge">Most popular</span>
     <img src="/mockups/against_the_snow_mockup.jpg" alt="Against the Snow kunsttryk">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Against the Snow</h3>
       <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/against-the-snow" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
@@ -186,12 +209,12 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
   <a href="/prints/golden-levitation" class="print-image">
     <img src="/mockups/golden-levitation-mockup.jpg" alt="Golden Levitation kunsttryk">
   </a>
-  <div class="print-content" style="padding: 16px;">
+  <div class="print-content">
     <div>
       <h3>Golden Levitation</h3>
       <p>Prisvindende naturfotografi – Lille Vildmose</p>
     </div>
-    <div class="print-actions" style="margin-top: 12px;">
+    <div class="print-actions">
       <a href="/prints/golden-levitation" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
