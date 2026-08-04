@@ -31,8 +31,8 @@ image: "mockups/Newborn_Moon_Mockup.jpeg"
 <div class="print-wrap">
 
 <p class="print-intro">
-Udvalgte værker fra Mariagerfjord og nordiske landskaber.  
-Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og unikke løsninger.
+Udvalgte kunsttryk fra Mariagerfjord og nordiske landskaber. Trykt på kraftigt museumspapir (sælges uindrammet).<br>
+Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgivning om indramning og specialmål.
 </p>
 
 <div class="print-grid">
@@ -49,7 +49,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Prisvindende kunsttryk – Als, Danmark</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/newborn-moon" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
+      <a href="/prints/newborn-moon" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -65,7 +65,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>CEWE Månedsvinder – Als Odde</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
+      <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -82,7 +82,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Eksklusiv fotoserie – Lille Vildmose</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/gyldent-daggry-i-lille-vildmose" class="buy-btn">Se serie - fra {{< price "small" >}} kr/stk.</a>
+      <a href="/prints/gyldent-daggry-i-lille-vildmose" class="buy-btn">Vælg sæt – fra {{< price "small" >}} kr/stk.</a>
     </div>
   </div>
 </div>
@@ -98,7 +98,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Minimalistisk fjordmotiv – Hadsund</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
+      <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -115,7 +115,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/against-the-snow" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
+      <a href="/prints/against-the-snow" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
@@ -131,7 +131,7 @@ Bestil direkte her – eller kontakt mig for specialstørrelser, indramning og u
       <p>Prisvindende naturfotografi – Lille Vildmose</p>
     </div>
     <div class="print-actions">
-      <a href="/prints/golden-levitation" class="buy-btn">Se print - fra {{< price "small" >}} kr.</a>
+      <a href="/prints/golden-levitation" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
     </div>
   </div>
 </div>
