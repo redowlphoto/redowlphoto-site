@@ -27,9 +27,11 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
   </a>
 </div>
 
+<!-- Fragt & Indramnings-info -->
 <div class="shipping-info" style="margin-top: 10px; margin-bottom: 20px;">
-  <span>🚚 Gratis fragt</span>
-  <span>🛡️ Produceret på bestilling</span>
+  <span>🖼️ Sælges uindrammet (leveres i sikker, afstivet emballage)</span><br>
+  <span>🚚 Gratis fragt</span> • 
+  <span>🛡️ Produceret på bestilling</span> • 
   <span>📅 5-10 dages levering</span>
 </div>
 
@@ -41,15 +43,84 @@ Tre sammenhængende kunsttryk fra Lille Vildmose – et landskab, der i stigende
 
 <h2>Kvalitet og print</h2>
 <ul>
-  <li>Sæt af 3 Fine Art print på Hahnemühle papir</li>
-  <li>Høj detaljegrad med bløde overgange i tågen</li>
-  <li>Ensartede toner, der skaber balance som triptykon</li>
-  <li>Produceret på bestilling hos et professionelt fotolaboratorium</li>
+  <li><strong>Museumskvalitet:</strong> Sæt af 3 Fine Art print på kraftigt Hahnemühle papir med 100+ års farveholdbarhed.</li>
+  <li><strong>Triptykon-præcision:</strong> Ensartede farvetoner og bløde overgange i tågen, tilpasset til at hænge smukt sammen på samme væg.</li>
+  <li><strong>Fremstilling:</strong> Produceret på bestilling hos et professionelt fotolaboratorium.</li>
+  <li><strong>Levering:</strong> Sælges som 3 uindrammede kunsttryk, pakket forsvarligt og afstivet mod stød under transporten.</li>
 </ul>
 
 <hr>
 
-<h2>Skræddersyede løsninger og enkeltkøb</h2>
-<p>Når du klikker på 'Køb', overføres hele sættet til din kurv. Her kan du nemt fravælge enkelte motiver, hvis du kun ønsker et eller to af dem.<br><br>
-Har du brug for hjælp til indramning eller specialmål?</p>
-<a href="mailto:hello@redowlphoto.dk" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Kontakt for specialløsning</a>
+<h2>Skræddersyede løsninger, indramning og enkeltkøb</h2>
+<p>Når du klikker på 'Køb', overføres hele sættet til din betaling, hvor du nemt kan fravælge enkelte motiver, hvis du kun ønsker et eller to af dem.</p>
+<p>Ønsker du rådgivning om valg af 3 matchende trærammer, pasform eller specialstørrelser til dit sommerhus eller din stue?</p>
+<a href="mailto:hello@redowlphoto.dk?subject=Forespørgsel%20på%20rammer%20eller%20specialmål%20-%20Gyldent%20Daggry%20Sæt" class="btn-primary-highlight" style="display: block; text-align: center; padding: 16px;">Kontakt for rammer eller specialløsning</a>
+
+<!-- Mobil Sticky Købs-bjælke -->
+<div class="mobile-sticky-buy-bar">
+  <div class="sticky-buy-info">
+    <span class="sticky-title">Gyldent daggry (Sæt af 3)</span>
+    <span class="sticky-subtitle">70x50 cm (uindrammet) • {{< price "medium" >}} kr/stk</span>
+  </div>
+  <a href="/prints/gyldent-daggry-70x50" class="sticky-buy-btn">
+    Køb sæt 70x50 cm
+  </a>
+</div>
+
+<style>
+/* Mobil Sticky Bar Reset & Override */
+@media screen and (max-width: 767px) {
+  .mobile-sticky-buy-bar {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+    background-color: #1b2333 !important;
+    border-top: 1px solid #2d3748 !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5) !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+  }
+
+  .sticky-buy-info {
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 60% !important;
+  }
+
+  .sticky-title {
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .sticky-subtitle {
+    color: #a0aec0 !important;
+    font-size: 0.75rem !important;
+  }
+
+  .sticky-buy-btn {
+    background-color: #2b3648 !important;
+    color: #ffffff !important;
+    border: 1px solid #4a5568 !important;
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  body {
+    padding-bottom: 80px !important;
+  }
+}
+</style>
