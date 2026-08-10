@@ -8,7 +8,7 @@ Jeg har set **elg**, **kronhjort**, **traner** og **havørn**. Nogle møder har 
 
 <!--more-->
 
-![Golden Levitation - Kronhjort i Lille Vildmose](content/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
+![Golden Levitation - Kronhjort i Lille Vildmose](/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
 *Et særligt øjeblik i det bløde lys i Lille Vildmose: Værket **Golden Levitation**. Vil du bringe denne rolige stemning ind i dit hjem, kan du se og [købe motivet som Fine Art Print her](https://redowlphoto.dk/prints/golden-levitation/).*
 
 ## Feltnoter fra de seneste besøg
@@ -18,9 +18,8 @@ Jeg har set **elg**, **kronhjort**, **traner** og **havørn**. Nogle møder har 
 - **Havørn** har jeg haft i sigte flere gange. Jeg leder stadig efter den majestætiske **kongeørn**.  
 - **Ulv** håber jeg en dag at se. Spor og meldinger dukker op indimellem, så jeg følger forhold og timing.
 
-Vil du have en fornemmelse af det lys og den ro, jeg søger, er her to relaterede værker:  
-- **Kronhjort (Print):** [**Golden Levitation Fine Art Print**](https://redowlphoto.dk/prints/golden-levitation/)  
-- **De rolige køer**, der hjælper med naturplejen: [**The Cows of Lille Vildmose**](https://redowlphoto.dk/works/the-cows-of-lille-vildmose/)
+Vil du have en fornemmelse af det lys, den ro og det landskab, jeg søger, kan du se dette værk:  
+- [**Gyldent Daggry i Lille Vildmose (Fine Art Print)**](https://redowlphoto.dk/prints/gyldent-daggry-i-lille-vildmose/)
 
 ## Årstider og en lille plan
 
