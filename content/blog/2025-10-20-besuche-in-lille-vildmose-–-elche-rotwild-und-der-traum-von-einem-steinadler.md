@@ -18,9 +18,8 @@ Ich habe **Elch**, **Rotwild**, **Kraniche** und **Seeadler** gesehen. Manches w
 - **Seeadler** ist mir schon einige Male begegnet. Nach dem **Steinadler** halte ich weiterhin Ausschau.  
 - **Wolf** ist der seltene Gast. Spuren und Meldungen tauchen gelegentlich auf, daher achte ich auf Bedingungen und Timing.
 
-Wer ein Gefühl für Licht und Stimmung bekommen möchte, findet hier zwei verwandte Arbeiten:  
-- **Rotwild Fine Art Print:** [**Golden Levitation**](https://redowlphoto.dk/prints/golden-levitation/)  
-- **Weidende Rinder**, die das Gebiet pflegen: [**The Cows of Lille Vildmose**](https://redowlphoto.dk/works/the-cows-of-lille-vildmose/)
+Wenn du ein Gefühl für das Licht, die Stimmung und die Natur in der Gegend bekommen möchtest, kannst du dir dieses Werk ansehen:  
+- [**Gyldent Daggry i Lille Vildmose (Fine Art Print)**](https://redowlphoto.dk/prints/gyldent-daggry-i-lille-vildmose/)
 
 ## Jahreszeiten und ein kleiner Plan
 
