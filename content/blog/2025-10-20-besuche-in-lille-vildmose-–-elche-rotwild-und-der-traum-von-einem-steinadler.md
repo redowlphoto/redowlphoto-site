@@ -8,7 +8,7 @@ Ich habe **Elch**, **Rotwild**, **Kraniche** und **Seeadler** gesehen. Manches w
 
 <!--more-->
 
-![Golden Levitation - Rotwild in Lille Vildmose](content/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
+![Golden Levitation - Rotwild in Lille Vildmose](/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
 *Ein besonderer Moment im sanften Licht der Lille Vildmose: Das Werk **Golden Levitation**. Wenn du dir diese friedliche Stimmung nach Hause holen möchtest, kannst du das Motiv [hier direkt als Fine Art Print ansehen und bestellen](https://redowlphoto.dk/prints/golden-levitation/).*
 
 ## Notizen aus den letzten Besuchen
@@ -19,7 +19,7 @@ Ich habe **Elch**, **Rotwild**, **Kraniche** und **Seeadler** gesehen. Manches w
 - **Wolf** ist der seltene Gast. Spuren und Meldungen tauchen gelegentlich auf, daher achte ich auf Bedingungen und Timing.
 
 Wer ein Gefühl für Licht und Stimmung bekommen möchte, findet hier zwei verwandte Arbeiten:  
-- **Rotwild:** [**Golden Levitation (Fine Art Print)**](https://redowlphoto.dk/prints/golden-levitation/)  
+- **Rotwild Fine Art Print:** [**Golden Levitation**](https://redowlphoto.dk/prints/golden-levitation/)  
 - **Weidende Rinder**, die das Gebiet pflegen: [**The Cows of Lille Vildmose**](https://redowlphoto.dk/works/the-cows-of-lille-vildmose/)
 
 ## Jahreszeiten und ein kleiner Plan
