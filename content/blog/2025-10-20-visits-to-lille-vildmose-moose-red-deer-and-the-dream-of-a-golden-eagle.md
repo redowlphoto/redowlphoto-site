@@ -8,6 +8,9 @@ I have seen **moose (elk)**, **red deer**, **cranes** and **white-tailed eagle**
 
 <!--more-->
 
+![Golden Levitation - Red Deer in Lille Vildmose](content/works/golden-levitation/golden-levitation-lille-vildmose.jpg)
+*A special moment in the soft light of Lille Vildmose: The work **Golden Levitation**. If you would like to bring this peaceful atmosphere into your home, you can [view and order it as a Fine Art Print here](https://redowlphoto.dk/prints/golden-levitation/).*
+
 ## Field notes from recent visits
 
 - **Moose and red deer** show well at first light and before dusk. The open peat and birch edges give long sightlines from the car.  
@@ -16,7 +19,7 @@ I have seen **moose (elk)**, **red deer**, **cranes** and **white-tailed eagle**
 - **Wolf** is the long shot. Tracks and reports surface from time to time, so I watch conditions and timing.
 
 If you want a feel for the light and mood I look for, here are two related works:  
-- **Red deer:** [**Golden Levitation**](https://redowlphoto.dk/works/golden-levitation/)  
+- **Red Deer (Print):** [**Golden Levitation Fine Art Print**](https://redowlphoto.dk/prints/golden-levitation/)  
 - **Grazing cattle** that help manage the reserve: [**The Cows of Lille Vildmose**](https://redowlphoto.dk/works/the-cows-of-lille-vildmose/)
 
 ## Seasons and a small plan
