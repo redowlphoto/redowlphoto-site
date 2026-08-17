@@ -13,7 +13,14 @@ And then there are the boats. On early mornings you can see small fishing boats 
 Here are some of my photographs from Als Odde:
 
 - [Chromatic Stillness – Sunset at Als Odde](https://redowlphoto.dk/works/chromatic-stillness--sunset-at-als-odde-mariager-fjord/)  
-- [Golden Dawn – Sunrise over Als Odde](https://redowlphoto.dk/works/golden-dawn-1--sunrise-over-als-odde-mariager-fjord/)
+- [Golden Dawn – Sunrise over Als Odde](https://redowlphoto.dk/works/golden-dawn-1--sunrise-over-als-odde-mariager-fjord/)  
+- [Echoes in Pastel Waters – Fine Art Print](https://redowlphoto.dk/prints/echoes-in-pastel-waters/)
+
+![Echoes in Pastel Waters - Fine Art Print from Als Odde](/works/echoes-in-pastel-waters/echoes_in_pastel_waters.jpg)
+
+<div style="margin: 1.5rem 0;">
+  <a href="/prints/echoes-in-pastel-waters/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Discover & Buy Echoes in Pastel Waters as a Fine Art Print</a>
+</div>
 
 These images capture the variation of light that makes this place so fascinating. One moment the fjord glows in warm golden tones, the next the world rests quietly in cool pastel shades. For me, it is an endless source of inspiration – a place where nature, calm, and light come together.
 
