@@ -21,7 +21,7 @@ Weitere Beispiele für Küstenlandschaften und das vollständige Portfolio finde
 Die Arbeiten an meinem kommenden Kalender für 2027 laufen auf Hochtouren, und ausgewählte Stimmungen aus Øster Hurup und der umliegenden Küstenlandschaft sind für die diesjährige Ausgabe in der engeren Auswahl. Bleiben Sie gespannt auf Updates.
 
 <div style="margin: 1.5rem 0;">
-  <a href="https://redowlphoto.dk/works/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Øster Hurup Poster als Fine Art Print ansehen und kaufen</a>
+  <a href="https://redowlphoto.dk/prints/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Øster Hurup Poster als Fine Art Print ansehen und kaufen</a>
 </div>
 
 {{< comments >}}
