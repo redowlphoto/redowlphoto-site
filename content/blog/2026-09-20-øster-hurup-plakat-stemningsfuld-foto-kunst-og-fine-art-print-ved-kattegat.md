@@ -21,7 +21,7 @@ Du kan se flere eksempler på kystlandskaber og det fulde galleri her: [Se alle 
 Arbejdet med min kommende 2027-kalender er i fuld gang, og udvalgte stemninger fra Øster Hurup og det omkringliggende kystlandskab er i spil til årets udgivelse. Hold øje med siden for opdateringer.
 
 <div style="margin: 1.5rem 0;">
-  <a href="https://redowlphoto.dk/works/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Se og køb Øster Hurup plakat som Fine Art Print</a>
+  <a href="https://redowlphoto.dk/prints/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">Se og køb Øster Hurup plakat som Fine Art Print</a>
 </div>
 
 {{< comments >}}
