@@ -21,7 +21,7 @@ You can view more examples of coastal landscapes and the complete gallery here: 
 Work on my upcoming 2027 calendar is well underway, and selected atmospheric views from Øster Hurup and the surrounding coastal landscape are in the running for this year's edition. Stay tuned for updates.
 
 <div style="margin: 1.5rem 0;">
-  <a href="https://redowlphoto.dk/works/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">View and buy Øster Hurup print as Fine Art Print</a>
+  <a href="https://redowlphoto.dk/prints/" style="background: #e7edf6; color: #0e1a27; padding: 0.8rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block; transition: opacity 0.2s;">View and buy Øster Hurup print as Fine Art Print</a>
 </div>
 
 {{< comments >}}
