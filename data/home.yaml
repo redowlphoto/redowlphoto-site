@@ -14,10 +14,10 @@ tiles:
     img: /mockups/Newborn_Moon_Mockup.jpeg
     alt: Award-winning fine art prints from Denmark for modern interiors
 
-  - title: Mariager Fjord Calendar 2026
+  - title: Kalendar 2027
     sub: |
       En kurateret samling af atmosfæriske landskaber fra fjord og kyst.
     hint: 'Pris: {{< price "calendar" >}} DKK – Se og bestil'
-    href: /calendar2026
-    img: /uploads/forside_flise.jpg
-    alt: Mariager Fjord Calendar 2026 cover with minimalist coastal landscape
+    href: /calendar2027
+    img: /uploads/calendar-2027/kalender-2027-00-forside.jpg
+    alt: Calendar 2027 cover with minimalist lonely tree photo
