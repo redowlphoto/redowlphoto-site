@@ -14,7 +14,7 @@ tiles:
     img: /mockups/Newborn_Moon_Mockup.jpeg
     alt: Award-winning fine art prints from Denmark for modern interiors
 
-  - title: Kalendar 2027
+  - title: Kalender 2027
     sub: |
       En kurateret samling af atmosfæriske landskaber fra fjord og kyst.
     hint: 'Pris: {{< price "calendar" >}} DKK – Se og bestil'
