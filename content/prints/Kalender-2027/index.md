@@ -36,7 +36,7 @@ En hyldest til den rå, stille og uforfalskede natur i Jylland. Denne fotokalend
     Køb 1 stk. ({{< price "calendar" >}} kr)
   </a>
   <a href="/calendar2027_2" class="btn-primary-highlight">
-    <span class="badge-inline">Spar penge</span>
+    <span class="badge-inline">Giv en, behold en</span>
     Køb 2 stk. ({{< price "calendar2" >}} kr samlet)
   </a>
 </div>
