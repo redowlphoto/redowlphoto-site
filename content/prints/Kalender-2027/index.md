@@ -190,6 +190,14 @@ body.light-mode .btn-primary {
 }
 </style>
 
+<h2>Den perfekte gave til naturmennesket</h2>
+<p>
+Kender du en, der elsker at opholde sig under åben himmel – jægeren, lystfiskeren, vandreren eller sejleren? Kalenderen er en oplagt og betænksom gaveidé til dem, der sætter pris på årets gang, vejrets skiften og den rå danske natur. 
+</p>
+<p>
+Netop derfor har jeg lavet en særlig pris ved køb af to styk: Giv den ene væk som en unik gave til en naturelsker, og behold den anden selv.
+</p>
+
 <h2>Årets gang i den jyske natur</h2>
 <p>Målet med billederne i denne kalender er at viderebringe stemningen ude fra naturen igennem et helt år, fanget på mange af mine absolutte yndlingssteder her i Jylland.</p>
 <p>Rejsen gennem året spænder bredt: Fra de stille, tågede morgener i Skjern Enge til den voldsomme naturkræft under en orkan i Hirtshals. Du vil opleve biderende sne og frost, fredfyldte aftener ved Mariagerfjord, farverige efterårsmorgener i Lille Vildmose, og det vidstrakte, næsten ørkenlignende landskab ved Råbjerg Mile nær Skagen.</p>
