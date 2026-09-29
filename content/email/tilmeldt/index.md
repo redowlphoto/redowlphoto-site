@@ -4,7 +4,7 @@ description: "Tjek din indbakke for at bekræfte din e-mailadresse."
 layout: "single"
 ---
 
-## Næsten frem...
+## Du er næsten klar...
 
 Mange tak fordi du vil følge med i mit arbejde! Jeg har sendt en bekræftelsesmail til din indbakke. 
 
