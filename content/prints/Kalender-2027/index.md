@@ -4,7 +4,6 @@ date: 2026-09-29
 draft: false
 image: "/uploads/calendar-2027/kalender-2027-00-forside.jpg"
 description: "En hyldest til den jyske natur gennem et helt år. Trykt på professionelt kunstpapir."
-slug: "calendar2027"
 ---
 
 <div class="mockup-container">
