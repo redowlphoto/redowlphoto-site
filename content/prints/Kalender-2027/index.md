@@ -32,10 +32,10 @@ En hyldest til den rå, stille og uforfalskede natur i Jylland. Denne fotokalend
 
 <!-- Købsknapper - Pris via shortcode -->
 <div class="print-options-top">
-  <a href="/checkout/calendar-1" class="btn-primary">
+  <a href="/calendar2027_1" class="btn-primary">
     Køb 1 stk. ({{< price "calendar" >}} kr)
   </a>
-  <a href="/checkout/calendar-2" class="btn-primary-highlight">
+  <a href="/calendar2027_2" class="btn-primary-highlight">
     <span class="badge-inline">Spar penge</span>
     Køb 2 stk. ({{< price "calendar2" >}} kr samlet)
   </a>
@@ -82,7 +82,7 @@ En hyldest til den rå, stille og uforfalskede natur i Jylland. Denne fotokalend
   transition: opacity 1.2s ease-in-out;
 }
 .cal-slide:first-child {
-  position: relative; /* Sørger for at containeren får den rette højde */
+  position: relative;
 }
 .cal-slide.is-active {
   opacity: 1;
@@ -210,7 +210,7 @@ body.light-mode .btn-primary {
     <span class="sticky-title">Kalender 2027</span>
     <span class="sticky-subtitle">{{< price "calendar" >}} kr • Gratis fragt</span>
   </div>
-  <a href="/checkout/calendar-1" class="sticky-buy-btn">
+  <a href="/calendar2027_1" class="sticky-buy-btn">
     Køb Kalender
   </a>
 </div>
@@ -283,6 +283,6 @@ body.light-mode .btn-primary {
     slides[i].classList.remove('is-active'); 
     i = (i + 1) % slides.length; 
     slides[i].classList.add('is-active'); 
-  }, 3500); /* Skifter billede hver 3,5 sekund */
+  }, 3500);
 })();
 </script>
