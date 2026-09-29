@@ -5,6 +5,42 @@
     <description>Fine Art Prints fra RedOwlPhoto</description>
     {{ range (where .Site.RegularPages "Section" "prints") }}
     
+    {{ if in (lower .Title) "kalender" }}
+    <!-- ========================================== -->
+    <!-- KALENDER PRODUKTER                         -->
+    <!-- ========================================== -->
+    
+    <!-- 1. Kalender (1 stk) -->
+    <item>
+      <g:id>kalender-2027-1stk</g:id>
+      <g:title>{{ .Title }}</g:title>
+      <g:description>{{ .Description | default .Summary }}</g:description>
+      <g:link>{{ .Permalink }}</g:link>
+      <g:image_link>{{ .Params.image | absURL }}</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>{{ .Site.Data.prices.calendar }} DKK</g:price>
+      <g:brand>RedOwlPhoto</g:brand>
+    </item>
+
+    <!-- 2. Kalender (2 stk - Sætpris) -->
+    <item>
+      <g:id>kalender-2027-2stk</g:id>
+      <g:title>{{ .Title }} - 2 stk. (Giv en, behold en)</g:title>
+      <g:description>Køb 2 stk. til særpris. {{ .Description | default .Summary }}</g:description>
+      <g:link>{{ .Permalink }}</g:link>
+      <g:image_link>{{ .Params.image | absURL }}</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>{{ .Site.Data.prices.calendar2 }} DKK</g:price>
+      <g:brand>RedOwlPhoto</g:brand>
+    </item>
+
+    {{ else }}
+    <!-- ========================================== -->
+    <!-- ALMINDELIGE FINE ART PRINTS                -->
+    <!-- ========================================== -->
+    
     <!-- 1. DET LILLE PRINT (30x20 cm) -->
     <item>
       <g:id>{{ .Slug | default .File.ContentBaseName }}-small</g:id>
@@ -30,7 +66,8 @@
       <g:price>{{ .Site.Data.prices.medium }} DKK</g:price>
       <g:brand>RedOwlPhoto</g:brand>
     </item>
-
+    
+    {{ end }}
     {{ end }}
   </channel>
 </rss>
