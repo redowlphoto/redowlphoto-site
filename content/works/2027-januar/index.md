@@ -15,7 +15,6 @@ cover:
 featured: true
 categories:
   - calendar-2027
-  - portfolio
 tags:
   - Hadsund
   - Mariagerfjord
