@@ -8,6 +8,9 @@ caption: >+
   og minimalistisk vinterdag ved Hadsund, hvor sneen har lagt sig tungt på
   markerne og skaber et grafisk udtryk på træets stamme og grene.
 
+cover:
+  image: kalender-2027-01.jpg
+  alt: "Eksklusiv vægkalender 2027 - Januar måned med vinterlandskab fra Hadsund, Mariager Fjord, Nordjylland"
 featured: true
 categories:
   - calendar-2027
@@ -33,9 +36,6 @@ tags:
 
 print_url: "/prints/kalender-2027/"
 ---
-
-<!-- Billedet hentes direkte fra uploads-mappen -->
-<img src="/uploads/calendar-2027/kalender-2027-01.jpg" alt="Eksklusiv vægkalender 2027 - Januar måned med vinterlandskab fra Hadsund" loading="eager" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 **Januar 2027 – Vinterlandskab fra Hadsund i Nordjylland**
 
@@ -102,7 +102,7 @@ Ved at fjerne al unødvendig støj fremstår træet som en grafisk skulptur mod 
   "description": "Januar måned fra den eksklusive vægkalender 2027. Minimalistisk vinterlandskab med sneklædt træ ved Hadsund, Mariager Fjord, Nordjylland.",
   "image": {
     "@type": "ImageObject",
-    "contentUrl": "https://redowlphoto.dk/uploads/calendar-2027/kalender-2027-01.jpg",
+    "contentUrl": "https://redowlphoto.dk/works/kalender-2027-januar/kalender-2027-01.jpg",
     "creator": {
       "@type": "Person",
       "@id": "https://redowlphoto.dk/#person"
