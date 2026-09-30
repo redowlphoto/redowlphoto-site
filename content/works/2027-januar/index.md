@@ -3,11 +3,12 @@ title: "Januar 2027 - Vinter ved Hadsund | Eksklusiv vægkalender 2027"
 draft: false
 date: 2026-09-30
 location: Hadsund, Mariager Fjord, Nordjylland, Denmark
-caption: >+
+caption: |
   Januar månedsbillede fra den eksklusive vægkalender 2027. En stemningsfuld
   og minimalistisk vinterdag ved Hadsund, hvor sneen har lagt sig tungt på
   markerne og skaber et grafisk udtryk på træets stamme og grene.
 
+  👉 <a href="/prints/kalender-2027/" style="display: inline-block; margin-top: 12px; background-color: #2563eb; color: #ffffff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">Bestil din vægkalender 2027 her</a>
 cover:
   image: kalender-2027-01.jpg
   alt: "Eksklusiv vægkalender 2027 - Januar måned med vinterlandskab fra Hadsund, Mariager Fjord, Nordjylland"
@@ -36,44 +37,20 @@ tags:
 
 print_url: "/prints/kalender-2027/"
 ---
-
-**Januar 2027 – Vinterlandskab fra Hadsund i Nordjylland**
-
 Dette månedsmotiv er udvalgt til Januar i årets **eksklusive vægkalender 2027**. Billedet er fanget på en stille vinterdag ved markerne nær Hadsund ved Mariager Fjord, hvor sneen har lagt sig som et blødt, dæmpet tæppe over landskabet.
 
 Sneen har klæbet sig til det fritstående træs stamme og fine grene, hvilket skaber et stærkt og grafisk, minimalistisk udtryk i det nordiske lys. 
 
-Billedet præsenteres her fra den fysiske trykte kalender, som kan købes direkte via hjemmesiden som årets ideelle **natur gaveidé 2027**.
+📅 Kalender detaljer  
+– 12 måneder, trykt i høj museums- og trykkvalitet  
+– Viser minimalistiske værker fra Nordjylland, Vestjylland og Mariager Fjord  
+– Trykkes på bestilling for at sikre det bedste resultat  
+
+👉 [Gå til bestilling af kalenderen her](/prints/kalender-2027/)
+
+Er du på udkig efter en smuk **naturfotokunst kalender** eller en personlig **fotokunst gave** til en, du holder af, er dette en oplagt **natur gaveidé 2027**.
 
 <!--more-->
-
----
-
-## Bestil årets kalender
-
-Er du på udkig efter en smuk **naturfotokunst kalender** eller en personlig **fotokunst gave** til en, du holder af? Kalenderen trykkes på bestilling i høj kvalitet.
-
-<div style="margin: 30px 0; text-align: center;">
-  <a href="/prints/kalender-2027/" class="btn" style="background-color: #2563eb; color: #ffffff; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block;">Bestil din vægkalender 2027 her →</a>
-</div>
-
----
-
-## Månedens motiv
-
-En minimalistisk skildring af den jyske natur. Scenen forener **Nordjyllands** åbne vidder med den helt særlige vinterstille ro, der kendetegner området omkring **Mariager Fjord**.
-
-Ved at fjerne al unødvendig støj fremstår træet som en grafisk skulptur mod den lyse himmel og det snedækkede terræn – en ægte repræsentation af roligt **landskabsfotografi**.
-
----
-
-## Om udgivelsen
-
-- **Udgivelse:** En del af **naturkalender Danmark 2027**-serien.
-- **Lokation:** Hadsund, Mariager Fjord, Nordjylland.
-- **Format:** Fysisk vægkalender i høj museums- og trykkvalitet.
-
----
 
 <!-- Skjulte søgeord / SEO optimering (vises ikke direkte for læseren) -->
 <div style="display:none;" aria-hidden="true">
@@ -81,7 +58,6 @@ Ved at fjerne al unødvendig støj fremstår træet som en grafisk skulptur mod 
 </div>
 
 <!-- SCHEMA START -->
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -124,5 +100,4 @@ Ved at fjerne al unødvendig støj fremstår træet som en grafisk skulptur mod 
   ]
 }
 </script>
-
 <!-- SCHEMA END -->
