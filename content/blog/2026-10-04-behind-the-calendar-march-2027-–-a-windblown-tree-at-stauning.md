@@ -16,7 +16,7 @@ If you are looking for atmospheric fine art photography with nature from the Dan
 To treat the motifs with the respect they deserve and to highlight the soft transitions in the morning mist, the pieces are printed on heavy, top-tier art paper. This is done at a professional photo lab, ensuring a deep, matte, and reflection-free appearance in your living room or studio.
 
 **A special gift idea for the nature lover**  
-When you seek genuine Scandinavian nature and fine art, this release is created to bring lasting joy. It is an obvious and thoughtful gift idea for any nature enthusiast. 
+When you seek genuine Scandinavian nature and fine art, this **exclusive wall calendar 2027** is created to bring lasting joy. It is a perfect and thoughtful gift idea for the nature enthusiast who appreciates a true **fine art nature calendar**. Every motif brings the landscape right into your living room, whether you are looking for a beautiful **West Jutland calendar** or a serene memory from Ringkøbing Fjord. 
 
 To make it easier to share the joy, I have created a special price if you order two copies: Keep one for yourself and give the other away. The calendar is printed exclusively on demand to avoid unnecessary waste, and shipping is always free.
 
@@ -27,8 +27,3 @@ To make it easier to share the joy, I have created a special price if you order 
 </div>
 
 {{< comments >}}
-
-<!-- Skjulte søgeord / SEO optimering (vises ikke direkte for læseren) -->
-<div style="display:none;" aria-hidden="true">
-  Exclusive wall calendar 2027, Fine art nature calendar, Scandinavian landscape photography calendar, Denmark photo calendar, West Jutland calendar, Stauning nature, Ringkøbing Fjord calendar, Nordic minimalism calendar, nature gift idea 2027, fine art photo gift.
-</div>
