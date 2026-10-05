@@ -2,18 +2,6 @@
 title: "Bag om kalenderen: Marts 2027 – Et vindblæst træ ved Stauning"
 date: 2026-10-05
 ---
-Her er blogindlæggene for marts i alle tre sprog. Jeg har skåret al unødvendig kode i toppen væk, præcis som du bad om sidst, så vi kun har title og date tilbage.
-
-I den danske version er dine nye SEO-regler fuldt integreret: De opdelte søgeord optræder naturligt i teksten, underoverskriften, billedets ALT-tekst og ankerteksten i knappen.
-
-1. Dansk version (DK)
-Opret filen i content/blog/marts-2027-vindblaest-trae-stauning/index.md:
-
-Markdown
----
-title: "Bag om kalenderen: Marts 2027 – Et vindblæst træ ved Stauning"
-date: 2026-09-30
----
 **Marts**  
 I årets første forårsmåned tager vi til Vestjylland. Marts-motivet er fanget en tidlig morgen lige inden solopgang ved Stauning, med Ringkøbing Fjord hvilende roligt i baggrunden. Disen hang usædvanligt tykt over landskabet, og netop der fangede dette markante, vindblæste træ min fulde opmærksomhed.
 
@@ -28,7 +16,7 @@ Hvis du leder efter stemningsfuld fotokunst med natur fra de danske kyster, er d
 For at yde motiverne den respekt, de fortjener, og for at fremhæve de bløde overgange i morgendisen, bliver værkerne trykt på et kraftigt kunstpapir af allerhøjeste kvalitet. Det foregår hos et professionelt fotolaboratorium, som garanterer et dybt, mat og refleksfrit udtryk i stuen eller studiet.
 
 **En særlig gaveidé til naturmennesket**  
-Når du søger efter ægte natur og fotokunst, er denne udgivelse skabt til at skabe en varig glæde. Den er en oplagt og nærværende gaveidé til naturelskeren. 
+Når du søger efter ægte natur og fotokunst, er denne **eksklusive vægkalender 2027** skabt til at bringe varig glæde. Den fungerer som en helt oplagt gaveidé til naturelskeren, der sætter pris på en ægte **naturfotokunst kalender**. Hvert motiv trækker landskabet helt ind i stuen, uanset om du leder efter en smuk **fotokalender fra Vestjylland** eller et roligt minde fra Ringkøbing Fjord. 
 
 For at gøre det nemmere at dele glæden, har jeg oprettet en speciel pris, hvis du bestiller to styk: Behold den ene selv, og forær den anden væk. Kalenderen trykkes udelukkende på bestilling for at undgå unødigt spild, og der er altid gratis fragt.
 
