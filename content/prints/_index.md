@@ -135,6 +135,23 @@ Vælg et motiv for størrelser og direkte køb – eller kontakt mig for rådgiv
 
 <div class="print-grid">
 
+<!-- KALENDER 2027 (NY FLISE) -->
+<div class="print-tile">
+  <a href="/prints/kalender-2027/" class="print-image">
+    <span class="ro-badge">Årets udgivelse</span>
+    <img src="/uploads/calendar-2027/kalender-2027-00-forside.jpg" alt="Naturkalenderen 2027 - Eksklusiv fotokalender">
+  </a>
+  <div class="print-content">
+    <div>
+      <h3>Naturkalenderen 2027</h3>
+      <p>Tolv Jyske Stemninger – Eksklusivt kunstpapir</p>
+    </div>
+    <div class="print-actions">
+      <a href="/prints/kalender-2027/" class="buy-btn" style="background-color: #2563eb !important; border: none !important;">Læs mere & køb – {{< price "calendar" >}} kr.</a>
+    </div>
+  </div>
+</div>
+
 <!-- NEWBORN MOON -->
 <div class="print-tile">
   <a href="/prints/newborn-moon" class="print-image">
