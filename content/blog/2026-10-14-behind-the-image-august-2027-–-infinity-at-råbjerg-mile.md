@@ -9,7 +9,7 @@ If you arrive early in the morning and step away from the main paths, you are me
 
 <!--more-->
 
-It was exactly this overwhelming emptiness and scale I wanted to capture for the August motif. If you look closely into the vast sandscape, you can actually spot the photographer himself, perfectly illustrating the immense scale of this natural phenomenon.
+It was exactly this overwhelming emptiness and scale I wanted to capture for the August motif. 
 
 ### Eco-friendly premium quality
 To ensure nothing distracts from the raw landscape, the calendar’s functionality is kept elegantly minimal. The month and dates are placed at the bottom, highlighting Sundays and public holidays gently. The colors of the date area are carefully matched to blend naturally with the photo's sandy tones, ensuring that the visual experience remains completely undisturbed.
