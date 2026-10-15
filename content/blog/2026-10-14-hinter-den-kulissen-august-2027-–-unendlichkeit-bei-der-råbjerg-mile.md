@@ -9,7 +9,7 @@ Wenn man früh am Tag ankommt und die üblichen Wege verlässt, wird man von ein
 
 <!--more-->
 
-Genau diese überwältigende Leere wollte ich in diesem August-Motiv festhalten. Wer genau hinsieht, kann in den endlosen Sanddünen sogar den Fotografen selbst als winzige Silhouette entdecken, was die enorme Größenordnung der dänischen Natur verdeutlicht.
+Genau diese überwältigende Leere wollte ich in diesem August-Motiv festhalten. 
 
 ### Ästhetik und Nachhaltigkeit im Fokus
 Für alle, die nach Inspiration und eindrucksvollen **Fotos mit Kalender** suchen, ist die Kombination aus Design und Qualität entscheidend. Das Kalendarium befindet sich unaufdringlich am unteren Rand, wobei Sonntage und Feiertage harmonisch integriert sind. Die Farben im Datumsbereich wurden so gestaltet, dass sie natürlich mit den Sandtönen des Monatsfotos verschmelzen und die Kunstwerke in keiner Weise stören.
