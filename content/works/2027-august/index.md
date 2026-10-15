@@ -32,7 +32,7 @@ print_url: "/prints/kalender-2027/"
 ---
 For august måned i **Naturkalenderen 2027** bevæger vi os helt til toppen af Danmark, nærmere bestemt til Råbjerg Mile syd for Skagen. Danmarks største vandreklit er en enorm "sandpude" på over 3,5 millioner kubikmeter sand, der, drevet af vestenvinden, konstant flytter sig østpå for en dag at ende i havet på østkysten[cite: 9].
 
-Dette fotografi er taget tidligt om morgenen, hvor landskabet lå uberørt hen under et blødt skydække[cite: 9]. Fordi der ingen bevoksning er overhovedet, opstår der hurtigt en særlig følelse af at være indhyllet helt i intethed[cite: 9]. Landskabet føles utroligt goldt, stort og ensomt – en skala, der for alvor træder i karakter, hvis man ser godt efter på billedet og får øje på fotografen selv som en lillebitte prik i horisonten[cite: 9].
+Dette fotografi er taget lige ved sonedgang, hvor landskabet lå uberørt hen under et blødt skydække[cite: 9]. Fordi der ingen bevoksning er overhovedet, opstår der hurtigt en særlig følelse af at være indhyllet helt i intethed[cite: 9]. Landskabet føles utroligt goldt, stort og ensomt.
 
 For at fastholde denne rene og uforstyrrede oplevelse af landskabet, viser kalenderen måneden nederst, hvor angivelsen af søndage og helligdage er inkorporeret med subtil elegance[cite: 9]. Farverne på dato-området er nøje afstemt og designet til at falde naturligt sammen med motivets sandtoner, så fotokunsten på intet tidspunkt forstyrres.
 
