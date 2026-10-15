@@ -9,7 +9,7 @@ Når man ankommer tidligt på dagen og går lidt væk fra stierne, kan man oplev
 
 <!--more-->
 
-Det var netop denne overvældende tomhed og ro, jeg ønskede at fange i august-motivet. Kigger du rigtig godt efter i sandlandskabet, kan du faktisk ane fotografen selv, hvilket sætter naturens enorme skala i perspektiv.
+Det var netop denne overvældende tomhed og ro, jeg ønskede at fange i august-motivet. 
 
 ### Bæredygtig kvalitet og design
 For at understøtte motivets ærlige og uforstyrrede udtryk, er kalenderen funktionelt og visuelt afdæmpet. Dato-området er placeret nederst, og søndage samt helligdage er fremhævet uden at skabe visuel støj. Farverne i dato-sektionen er designet sådan, at de falder naturligt sammen med månedens sandfarvede foto, så oplevelsen ikke forstyrres. 
