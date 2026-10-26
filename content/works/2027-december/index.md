@@ -1,7 +1,7 @@
 ---
 title: "December 2027 - Vinterens tuschtegning ved Havnø | Naturkalenderen 2027"
 draft: false
-date: 2026-10-31
+date: 2026-10-26
 location: "Havnø Gods, Mariagerfjord, Nordjylland, Danmark"
 caption: |
   December månedsbillede fra Naturkalenderen 2027. Et gammelt, kroget egetræ står alene på en sneklædt mark ved Havnø Gods. Snestormen fra nord har beklædt stammen, så træet fremstår som en fin tuschtegning mod vinterhimlen.
@@ -31,11 +31,11 @@ tags:
 
 print_url: "/prints/kalender-2027/"
 ---
-Årets kalender afrundes med december måned i **Naturkalenderen 2027**, som byder på et motiv, der betyder noget helt særligt for mig. Fotokunsten viser et gammelt, kroget egetræ, som står alene på en mark i området ved Havnø Gods, ikke langt fra Hadsund og Mariagerfjord[cite: 9]. Billedet, som har opnået anerkendelse i både nationale og internationale fotokonkurrencer, er et, jeg selv har printet i stor størrelse til min egen stue, da træets fascinerende grene og form aldrig holder op med at fange mit øje[cite: 9].
+Årets kalender afrundes med december måned i **Naturkalenderen 2027**, som byder på et motiv, der betyder noget helt særligt for mig. Fotokunsten viser et gammelt, kroget egetræ, som står alene på en mark i området ved Havnø Gods, ikke langt fra Hadsund og Mariagerfjord. Billedet, som har opnået anerkendelse i både nationale og internationale fotokonkurrencer, er et, jeg selv har printet i stor størrelse til min egen stue, da træets fascinerende grene og form aldrig holder op med at fange mit øje.
 
-Dette specifikke foto blev til lige efter en voldsom snestorm. Dagen forinden havde vinden fyget kraftigt fra nord, hvilket resulterede i, at træets grene og stamme blev klistret til med sne på den ene side. Da jeg ankom tidligt næste morgen omkring solopgang, mens sneen stadig dryssede let, stod kun træets mørke konturer skarpt tilbage[cite: 9]. Det gav motivet et grafisk udtryk, der mest af alt mindede om en sart, monokrom tuschtegning[cite: 9]. Det var et flygtigt, magisk øjeblik, og jeg er taknemmelig for, at jeg fik taget dette sjældne portræt af det gamle egetræ.
+Dette specifikke foto blev til lige efter en voldsom snestorm. Dagen forinden havde vinden fyget kraftigt fra nord, hvilket resulterede i, at træets grene og stamme blev klistret til med sne på den ene side. Da jeg ankom tidligt næste morgen omkring solopgang, mens sneen stadig dryssede let, stod kun træets mørke konturer skarpt tilbage. Det gav motivet et grafisk udtryk, der mest af alt mindede om en sart, monokrom tuschtegning. Det var et flygtigt, magisk øjeblik, og jeg er taknemmelig for, at jeg fik taget dette sjældne portræt af det gamle egetræ.
 
-For at bevare værkets rene, næsten hvide rotes minimalistiske udtryk, er kalenderen designet fuldstændig afdæmpet. Måneden er fremhævet nederst med en diskret markering af søndage og helligdage[cite: 9]. Farverne i dato-området er nøje afstemt, så de smelter blødt sammen med det lyse, snedækkede landskab[cite: 9], hvorved fotografiet lades uforstyrret tilbage.
+For at bevare værkets rene, næsten hvide rotes minimalistiske udtryk, er kalenderen designet fuldstændig afdæmpet. Måneden er fremhævet nederst med en diskret markering af søndage og helligdage. Farverne i dato-området er nøje afstemt, så de smelter blødt sammen med det lyse, snedækkede landskab, hvorved fotografiet lades uforstyrret tilbage.
 
 ### En ægte naturkalender 2027 til væggen
 📅 Kalender detaljer  
