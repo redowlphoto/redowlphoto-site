@@ -48,6 +48,20 @@ layout: single
     border-bottom: 1px solid var(--border, rgba(128,128,128,0.2));
     padding-bottom: 0.5rem;
   }
+
+  /* Specielt grid til præcis 2 elementer, så de centreres på stor skærm */
+  .print-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .print-grid-two {
+      grid-template-columns: 1fr;
+    }
+  }
   
   .internal-links-list {
     list-style: none;
@@ -133,7 +147,7 @@ layout: single
 
 <h2 class="hub-section-title">Årets Naturkalendere</h2>
 <p style="opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem;">Fjorden og de jyske kyster ændrer karakter året rundt. Oplev lysets skiften med mine eksklusive kalendere.</p>
-<div class="print-grid">
+<div class="print-grid-two">
   <!-- KALENDER 2027 -->
   <div class="print-tile">
     <a href="/prints/kalender-2027/" class="print-image">
@@ -150,9 +164,9 @@ layout: single
       </div>
     </div>
   </div>
-  <!-- KALENDER 2026 -->
+  <!-- KALENDER 2026 (Rettet link til works-opslaget) -->
   <div class="print-tile">
-    <a href="/prints/kalender-2026/" class="print-image">
+    <a href="/works/mariagerfjord-calendar-2026/" class="print-image">
       <img src="/works/mariagerfjord-calendar-2026/forside.png" alt="Mariagerfjord Kalender 2026">
     </a>
     <div class="print-content">
@@ -161,7 +175,7 @@ layout: single
         <p>Klassisk fotokalender – Arkiv</p>
       </div>
       <div class="print-actions">
-        <a href="/prints/kalender-2026/" class="buy-btn">Se kalenderen her</a>
+        <a href="/works/mariagerfjord-calendar-2026/" class="buy-btn">Se kalenderen her</a>
       </div>
     </div>
   </div>
