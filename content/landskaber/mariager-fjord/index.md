@@ -16,7 +16,7 @@ layout: single
   }
   .hub-subtitle {
     font-size: 1.2rem;
-    color: #94a3b8;
+    opacity: 0.7;
     font-weight: 300;
     margin-bottom: 2rem;
   }
@@ -27,16 +27,16 @@ layout: single
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 3rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
 
   .hub-intro {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #a0aec0;
     max-width: 800px;
     margin: 0 auto 4rem;
     text-align: left;
+    /* Fjerner hårdkodet farve for at lade Hugo styre lyst/mørkt tema */
   }
   .hub-intro p {
     margin-bottom: 1.5rem;
@@ -44,10 +44,9 @@ layout: single
   
   .hub-section-title {
     font-size: 1.8rem;
-    color: #ffffff;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #2d3748;
+    border-bottom: 1px solid var(--border, rgba(128,128,128,0.2));
     padding-bottom: 0.5rem;
   }
   
@@ -62,37 +61,24 @@ layout: single
   .internal-links-list li a {
     display: block;
     padding: 1.5rem;
-    background: #1b2333;
+    background: var(--entry, rgba(128,128,128,0.05));
     border-radius: 8px;
     text-decoration: none;
-    color: #e2e8f0;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: transform 0.2s ease, background 0.2s ease;
+    color: inherit;
+    border: 1px solid var(--border, rgba(128,128,128,0.1));
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
   .internal-links-list li a:hover {
     transform: translateY(-3px);
-    background: #2563eb;
-    color: #ffffff;
     border-color: #2563eb;
   }
   .internal-links-list li span {
     display: block;
     font-size: 0.9rem;
-    color: #94a3b8;
+    opacity: 0.7;
     margin-top: 0.5rem;
     line-height: 1.4;
   }
-  .internal-links-list li a:hover span {
-    color: #e2e8f0;
-  }
-  
-  /* Lyst tema tilpasning */
-  html[data-theme="light"] .hub-intro,
-  body.light-mode .hub-intro { color: #4a5568; }
-  html[data-theme="light"] .hub-section-title,
-  body.light-mode .hub-section-title { color: #0e1a27; border-bottom: 1px solid #e2e8f0; }
-  html[data-theme="light"] .internal-links-list li a,
-  body.light-mode .internal-links-list li a { background: #f8fafc; border: 1px solid #e2e8f0; color: #0e1a27; }
 </style>
 
 <div class="hub-header">
@@ -114,24 +100,8 @@ layout: single
 <h2 class="hub-section-title">Udvalgte Kunsttryk fra Fjorden</h2>
 
 <div class="print-grid">
-  <!-- AGAINST THE SNOW -->
-  <div class="print-tile">
-    <a href="/prints/against-the-snow" class="print-image">
-      <span class="ro-badge">Mest populære</span>
-      <img src="/mockups/against_the_snow_mockup.jpg" alt="Vinter fotokunst fra Mariagerfjord - Against the Snow">
-    </a>
-    <div class="print-content">
-      <div>
-        <h3>Against the Snow</h3>
-        <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
-      </div>
-      <div class="print-actions">
-        <a href="/prints/against-the-snow" class="buy-btn">Se størrelser og priser</a>
-      </div>
-    </div>
-  </div>
 
-  <!-- SOLITUDE -->
+  <!-- FLISE 1: SOLITUDE -->
   <div class="print-tile">
     <a href="/prints/solitude-at-mariagerfjord" class="print-image">
       <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Solitude at Mariagerfjord kunsttryk Hadsund">
@@ -147,12 +117,74 @@ layout: single
     </div>
   </div>
 
-  <!-- ECHOES -->
+  <!-- FLISE 2 (MIDTEN): NATURKALENDEREN 2027 -->
+  <div class="print-tile">
+    <a href="/prints/kalender-2027/" class="print-image">
+      <span class="ro-badge">Årets udgivelse</span>
+      <img src="/uploads/calendar-2027/kalender-2027-00-forside.jpg" alt="Naturkalenderen 2027 - Fotokunst fra Nordjylland">
+    </a>
+    <div class="print-content">
+      <div>
+        <h3>Naturkalenderen 2027</h3>
+        <p>Eksklusiv fotokalender – Nordjylland</p>
+      </div>
+      <div class="print-actions">
+        <a href="/prints/kalender-2027/" class="buy-btn">Se kalenderen her</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLISE 3: ECHOES -->
   <div class="print-tile">
     <a href="/prints/echoes-in-pastel-waters" class="print-image">
+      <span class="ro-badge">Award-winning</span>
       <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" alt="Echoes in Pastel Waters - Als Odde fotokunst">
     </a>
     <div class="print-content">
       <div>
         <h3>Echoes in Pastel Waters</h3>
-        <p>CE
+        <p>CEWE Månedsvinder – Als Odde</p>
+      </div>
+      <div class="print-actions">
+        <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se størrelser og priser</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="hub-section-title">Dyk ned i historierne bag lyset</h2>
+<p style="opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem;">Fjorden er omdrejningspunkt for mange af mine tanker om landskabsfotografi. Læs mere om arbejdsprocessen her.</p>
+
+<ul class="internal-links-list">
+  <li>
+    <a href="/blog/als-odde-and-the-light-by-mariager-fjord/">
+      <strong>Lyset ved Als Odde og Mariager Fjord</strong>
+      <span>Hvorfor lyset her kan måle sig med Skagens.</span>
+    </a>
+  </li>
+  <li>
+    <a href="/blog/bag-om-mariagerfjord-kalender-2026/">
+      <strong>Fjordens evige inspiration</strong>
+      <span>Tankerne bag Mariagerfjord Kalender 2026.</span>
+    </a>
+  </li>
+  <li>
+    <a href="/blog/echoes-in-pastel-waters-soft-pastel-hues-from-als-odde-by-kattegat-mariagerfjord/">
+      <strong>Soft Pastel Hues from Als Odde</strong>
+      <span>Historien bag det prisvindende CEWE-billede.</span>
+    </a>
+  </li>
+</ul>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Fotokunst fra Mariager Fjord og Als Odde | RedOwlPhoto",
+  "description": "Eksklusiv naturfotokunst fra Mariager Fjord, Hadsund og Als Odde. Skandinavisk minimalisme skabt af Allan Andersen.",
+  "url": "https://redowlphoto.dk/landskaber/mariager-fjord/",
+  "about": {
+    "@type": "Place",
+    "name": "Mariager Fjord, Nordjylland, Danmark
