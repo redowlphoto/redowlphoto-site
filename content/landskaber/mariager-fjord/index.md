@@ -21,7 +21,6 @@ layout: single
     margin-bottom: 2rem;
   }
   
-  /* Nyt Hero-billede til at fange opmærksomheden */
   .hub-hero-image {
     width: 100%;
     max-height: 500px;
@@ -37,7 +36,7 @@ layout: single
     color: #a0aec0;
     max-width: 800px;
     margin: 0 auto 4rem;
-    text-align: left; /* Giver en renere læseoplevelse end justify */
+    text-align: left;
   }
   .hub-intro p {
     margin-bottom: 1.5rem;
@@ -52,7 +51,6 @@ layout: single
     padding-bottom: 0.5rem;
   }
   
-  /* Links sektionerne */
   .internal-links-list {
     list-style: none;
     padding: 0;
@@ -102,8 +100,8 @@ layout: single
   <p class="hub-subtitle">Hvor himmel, hav og natur smelter sammen i skandinavisk minimalisme</p>
 </div>
 
-<!-- VIGTIGT: Indsæt dit flotteste fjord-billede her for at give wow-effekt -->
-<img class="hub-hero-image" src="/uploads/calendar-2027/kalender-2027-11.jpg" alt="Fotokunst fra Mariager Fjord og Als Odde">
+<!-- Hero-billede: Solitude at Mariagerfjord -->
+<img class="hub-hero-image" src="/works/solitude-at-mariagerfjord/solitude-at-mariagerfjord.jpg" alt="Fotokunst fra Mariager Fjord og Als Odde">
 
 <div class="hub-intro">
   <p>Som naturfotograf er strækningerne omkring Hadsund, Als Odde og udmundingen til Kattegat en konstant kilde til inspiration. Mariager Fjord skærer sig dybt ind i det jyske landskab og byder på en enestående visuel diversitet.</p>
@@ -157,60 +155,4 @@ layout: single
     <div class="print-content">
       <div>
         <h3>Echoes in Pastel Waters</h3>
-        <p>CEWE Månedsvinder – Als Odde</p>
-      </div>
-      <div class="print-actions">
-        <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se størrelser og priser</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- NEWBORN MOON -->
-  <div class="print-tile">
-    <a href="/prints/newborn-moon" class="print-image">
-      <span class="ro-badge">Award-winning</span>
-      <img src="/mockups/Newborn_Moon_Mockup.jpeg" alt="Newborn Moon - Als fotokunst">
-    </a>
-    <div class="print-content">
-      <div>
-        <h3>Newborn Moon</h3>
-        <p>Prisvindende kunsttryk – Als, Danmark</p>
-      </div>
-      <div class="print-actions">
-        <a href="/prints/newborn-moon" class="buy-btn">Se størrelser og priser</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h2 class="hub-section-title">Naturkalenderen 2027: Mariager Fjord Året Rundt</h2>
-<p style="color: #a0aec0; margin-bottom: 2rem; font-size: 1.05rem;">I årets udgivelse spiller fjorden en afgørende hovedrolle. Lokale motiver pryder hele tre måneder af kalenderen, hvor årets og lysets skiften er indfanget på bæredygtigt kunstpapir.</p>
-
-<ul class="internal-links-list">
-  <li>
-    <a href="/prints/kalender-2027/">
-      <strong>Se og køb Naturkalenderen 2027</strong>
-      <span>Få de nordjyske kystlandskaber op på din egen væg.</span>
-    </a>
-  </li>
-  <li>
-    <a href="/blog/2026-10-12-bag-om-billedet-juni-2027-stille-aften-als-odde/">
-      <strong>Juni: Stille aften ved Als Odde</strong>
-      <span>Pastelfarvet sommerro ved Kattegats udmunding.</span>
-    </a>
-  </li>
-  <li>
-    <a href="/blog/2026-10-23-bag-om-billedet-oktober-2027-den-mørkeblå-time-als/">
-      <strong>Oktober: Den blå time ved Als</strong>
-      <span>Det dybe, melankolske efterårslys over markerne.</span>
-    </a>
-  </li>
-  <li>
-    <a href="/blog/2026-10-26-bag-om-billedet-november-2027-fjordens-ro-als-odde/">
-      <strong>November: Fjordens ro ved Als Odde</strong>
-      <span>Vinterlyset der trækker langs fjorden ud i havet.</span>
-    </a>
-  </li>
-</ul>
-
-<h2 class="hub-section-title">Dyk ned i historierne bag lys
+        <p>CE
