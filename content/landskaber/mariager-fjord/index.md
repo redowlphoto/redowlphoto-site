@@ -1,6 +1,6 @@
 ---
 title: "Fotokunst fra Mariager Fjord og Als Odde | Skandinavisk Minimalisme"
-description: "Udforsk eksklusiv naturfotokunst fra Mariager Fjord, Hadsund og Als Odde. Oplev det særlige nordjyske lys omsat til skandinavisk minimalisme til din væg."
+description: "Udforsk eksklusiv naturfotokunst fra Mariager Fjord, Hadsund og Als Odde. Oplev het særlige nordjyske lys omsat til skandinavisk minimalisme til din væg."
 slug: mariager-fjord
 layout: single
 ---
@@ -49,7 +49,7 @@ layout: single
     padding-bottom: 0.5rem;
   }
 
-  /* Specielt grid til præcis 2 elementer, så de centreres på stor skærm */
+  /* Centreret grid til præcis 2 elementer på stor skærm */
   .print-grid-two {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 400px));
@@ -111,7 +111,7 @@ layout: single
 </div>
 
 <h2 class="hub-section-title">Udvalgte Kunsttryk fra Fjorden</h2>
-<div class="print-grid">
+<div class="print-grid-two">
   <!-- FLISE 1: SOLITUDE -->
   <div class="print-tile">
     <a href="/prints/solitude-at-mariagerfjord" class="print-image">
@@ -127,10 +127,9 @@ layout: single
       </div>
     </div>
   </div>
-  <!-- FLISE 2: ECHOES -->
+  <!-- FLISE 2: ECHOES (Badge fjernet) -->
   <div class="print-tile">
     <a href="/prints/echoes-in-pastel-waters" class="print-image">
-      <span class="ro-badge">Award-winning</span>
       <img src="/mockups/Echoes_in_pastel_Waters_Mockup_jpeg.jpg" alt="Echoes in Pastel Waters - Als Odde fotokunst">
     </a>
     <div class="print-content">
@@ -164,7 +163,7 @@ layout: single
       </div>
     </div>
   </div>
-  <!-- KALENDER 2026 (Rettet link til works-opslaget) -->
+  <!-- KALENDER 2026 -->
   <div class="print-tile">
     <a href="/works/mariagerfjord-calendar-2026/" class="print-image">
       <img src="/works/mariagerfjord-calendar-2026/forside.png" alt="Mariagerfjord Kalender 2026">
