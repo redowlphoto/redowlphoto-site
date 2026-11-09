@@ -18,10 +18,10 @@ layout: single
     line-height: 1.5;
   }
   
-  /* Grid der tilpasser sig fuldt ud til skærmen på mobil og samles pænt på PC */
+  /* Grid der fylder skærmen ud på mobil (1fr), men max 420px pr. kort på PC */
   .landscape-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 420px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 420px));
     justify-content: center;
     gap: 1.5rem;
     max-width: 900px;
@@ -39,13 +39,13 @@ layout: single
     transition: transform 0.2s ease, border-color 0.2s ease;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .landscape-card:hover {
     transform: translateY(-4px);
     border-color: #2563eb;
   }
   
-  /* Sikrer at billedet altid sidder øverst i fuld bredde */
   .landscape-card img {
     width: 100%;
     height: 210px;
