@@ -8,30 +8,58 @@ layout: single
 <style>
   .hub-header {
     text-align: center;
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 1rem;
   }
+  .hub-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .hub-subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  /* Nyt Hero-billede til at fange opmærksomheden */
+  .hub-hero-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
   .hub-intro {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     color: #a0aec0;
     max-width: 800px;
-    margin: 0 auto 3rem;
-    text-align: justify;
+    margin: 0 auto 4rem;
+    text-align: left; /* Giver en renere læseoplevelse end justify */
   }
+  .hub-intro p {
+    margin-bottom: 1.5rem;
+  }
+  
   .hub-section-title {
     font-size: 1.8rem;
     color: #ffffff;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #2d3748;
     padding-bottom: 0.5rem;
   }
+  
+  /* Links sektionerne */
   .internal-links-list {
     list-style: none;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    margin-bottom: 4rem;
   }
   .internal-links-list li a {
     display: block;
@@ -47,12 +75,14 @@ layout: single
     transform: translateY(-3px);
     background: #2563eb;
     color: #ffffff;
+    border-color: #2563eb;
   }
   .internal-links-list li span {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #94a3b8;
     margin-top: 0.5rem;
+    line-height: 1.4;
   }
   .internal-links-list li a:hover span {
     color: #e2e8f0;
@@ -69,15 +99,18 @@ layout: single
 
 <div class="hub-header">
   <h1>Mariager Fjord & Als Odde</h1>
-  <p style="font-size: 1.2rem; color: #94a3b8; font-weight: 300;">Hvor himmel, hav og himmerlandsk natur smelter sammen i skandinavisk minimalisme.</p>
+  <p class="hub-subtitle">Hvor himmel, hav og natur smelter sammen i skandinavisk minimalisme</p>
 </div>
 
-<div class="hub-intro">
-  <p>Mariager Fjord er med sine ca. 35 kilometer Danmarks længste fjord. Den skærer sig dybt ind i landskabet og danner en naturlig grænse mellem Himmerland i nord og Kronjylland i syd. Fra de brede vidder, hvor dybden falder mod 30 meter, til den smalle indsejling ved Hadsund, byder fjorden på en enestående visuel diversitet.</p>
-  
-  <p>Som naturfotograf er strækningerne omkring Hadsund, Als Odde og udmundingen til Kattegat en konstant kilde til inspiration. Ved Als Odde, hvor fjorden endeligt slipper sit greb og møder det åbne hav, opstår der magi. Her finder man klitter, strandenge og skovbryn side om side. Særligt om efteråret og vinteren, når solen står lavt, falder lyset på langs af fjorden og skaber et blødt, reflekterende kystlys, der indbyder til dyb ro og eftertænksomhed.</p>
+<!-- VIGTIGT: Indsæt dit flotteste fjord-billede her for at give wow-effekt -->
+<img class="hub-hero-image" src="/uploads/calendar-2027/kalender-2027-11.jpg" alt="Fotokunst fra Mariager Fjord og Als Odde">
 
-  <p>Det er præcis dette uforstyrrede, nordjyske lys og landskabets iboende melankoli, jeg stræber efter at indfange. Gennem en stram skandinavisk og minimalistisk tilgang skrælles forstyrrende elementer væk. Tilbage står kun konturerne, stilheden og de pasteltonede farvespil, som gør Mariager Fjord til et af Danmarks absolut smukkeste og mest fotogene naturområder.</p>
+<div class="hub-intro">
+  <p>Som naturfotograf er strækningerne omkring Hadsund, Als Odde og udmundingen til Kattegat en konstant kilde til inspiration. Mariager Fjord skærer sig dybt ind i det jyske landskab og byder på en enestående visuel diversitet.</p>
+  
+  <p>Ved Als Odde, hvor fjorden endeligt slipper sit greb og møder det åbne hav, opstår der magi. Særligt om efteråret og vinteren, når solen står lavt, falder lyset på langs af fjorden og skaber et blødt, reflekterende kystlys, der indbyder til dyb ro.</p>
+
+  <p>Det er præcis dette uforstyrrede, nordjyske lys og landskabets melankoli, jeg stræber efter at indfange. Gennem en stram skandinavisk og minimalistisk tilgang skrælles forstyrrende elementer væk. Tilbage står kun konturerne og de pasteltonede farvespil, som gør fjorden til et af Danmarks smukkeste naturområder.</p>
 </div>
 
 <h2 class="hub-section-title">Udvalgte Kunsttryk fra Fjorden</h2>
@@ -95,7 +128,7 @@ layout: single
         <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
       </div>
       <div class="print-actions">
-        <a href="/prints/against-the-snow" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
+        <a href="/prints/against-the-snow" class="buy-btn">Se størrelser og priser</a>
       </div>
     </div>
   </div>
@@ -111,7 +144,7 @@ layout: single
         <p>Minimalistisk fjordmotiv – Hadsund</p>
       </div>
       <div class="print-actions">
-        <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
+        <a href="/prints/solitude-at-mariagerfjord" class="buy-btn">Se størrelser og priser</a>
       </div>
     </div>
   </div>
@@ -127,7 +160,7 @@ layout: single
         <p>CEWE Månedsvinder – Als Odde</p>
       </div>
       <div class="print-actions">
-        <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
+        <a href="/prints/echoes-in-pastel-waters" class="buy-btn">Se størrelser og priser</a>
       </div>
     </div>
   </div>
@@ -144,16 +177,22 @@ layout: single
         <p>Prisvindende kunsttryk – Als, Danmark</p>
       </div>
       <div class="print-actions">
-        <a href="/prints/newborn-moon" class="buy-btn">Vælg størrelse – fra {{< price "small" >}} kr.</a>
+        <a href="/prints/newborn-moon" class="buy-btn">Se størrelser og priser</a>
       </div>
     </div>
   </div>
 </div>
 
 <h2 class="hub-section-title">Naturkalenderen 2027: Mariager Fjord Året Rundt</h2>
-<p style="color: #a0aec0; margin-bottom: 2rem;">I min Eksklusiv kalender 2027 spiller Mariager Fjord og Als Odde en afgørende hovedrolle. Lokale fjordmotiver pryder hele tre måneder af kalenderen, hvor årets og lysets skiften ved fjorden er indfanget på bæredygtigt kunstpapir.</p>
+<p style="color: #a0aec0; margin-bottom: 2rem; font-size: 1.05rem;">I årets udgivelse spiller fjorden en afgørende hovedrolle. Lokale motiver pryder hele tre måneder af kalenderen, hvor årets og lysets skiften er indfanget på bæredygtigt kunstpapir.</p>
 
 <ul class="internal-links-list">
+  <li>
+    <a href="/prints/kalender-2027/">
+      <strong>Se og køb Naturkalenderen 2027</strong>
+      <span>Få de nordjyske kystlandskaber op på din egen væg.</span>
+    </a>
+  </li>
   <li>
     <a href="/blog/2026-10-12-bag-om-billedet-juni-2027-stille-aften-als-odde/">
       <strong>Juni: Stille aften ved Als Odde</strong>
@@ -172,54 +211,6 @@ layout: single
       <span>Vinterlyset der trækker langs fjorden ud i havet.</span>
     </a>
   </li>
-  <li>
-    <a href="/prints/kalender-2027/">
-      <strong>Se hele Fotokalender Nordjylland 2027</strong>
-      <span>Køb kalenderen og støt lokal nordjysk naturfotokunst.</span>
-    </a>
-  </li>
 </ul>
 
-<h2 class="hub-section-title">Læs mere om lyset og naturen</h2>
-<p style="color: #a0aec0; margin-bottom: 2rem;">Dyk dybere ned i historierne bag billederne og min arbejdsproces ved fjorden.</p>
-
-<ul class="internal-links-list">
-  <li>
-    <a href="/blog/2025-09-17-als-odde-and-the-light-by-mariager-fjord/">
-      <strong>Lyset ved Als Odde og Mariager Fjord</strong>
-      <span>Hvorfor lyset her kan måle sig med Skagens.</span>
-    </a>
-  </li>
-  <li>
-    <a href="/blog/2025-09-16-bag-om-mariagerfjord-kalender-2026/">
-      <strong>Bag om Mariagerfjord Kalender 2026</strong>
-      <span>Fjordens konstante kilde til inspiration.</span>
-    </a>
-  </li>
-  <li>
-    <a href="/blog/2026-09-08-echoes-in-pastel-waters-soft-pastel-hues-from-als-odde-by-kattegat-mariagerfjord/">
-      <strong>Soft Pastel Hues from Als Odde</strong>
-      <span>Historien bag det prisvindende CEWE-billede.</span>
-    </a>
-  </li>
-</ul>
-
-<!-- SCHEMA START -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Fotokunst fra Mariager Fjord og Als Odde | RedOwlPhoto",
-  "description": "Eksklusiv naturfotokunst fra Mariager Fjord, Hadsund og Als Odde. Skandinavisk minimalisme skabt af Allan Andersen.",
-  "url": "https://redowlphoto.dk/landskaber/mariager-fjord/",
-  "about": {
-    "@type": "Place",
-    "name": "Mariager Fjord, Nordjylland, Danmark"
-  },
-  "creator": {
-    "@type": "Person",
-    "@id": "https://redowlphoto.dk/#person"
-  }
-}
-</script>
-<!-- SCHEMA END -->
+<h2 class="hub-section-title">Dyk ned i historierne bag lys
