@@ -91,6 +91,11 @@ disableKinds = []
     weight  = 20
 
   [[menu.main]]
+    name    = "Lokationer"
+    url     = "/landskaber/"
+    weight  = 25
+
+  [[menu.main]]
     name    = "About & Contact"
     pageRef = "about"
     weight  = 100
