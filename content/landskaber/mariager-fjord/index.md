@@ -105,9 +105,9 @@ layout: single
 <div class="hub-intro">
   <p>Som naturfotograf er strækningerne omkring Hadsund, Als Odde og udmundingen til Kattegat en konstant kilde til inspiration. Mariager Fjord skærer sig dybt ind i det jyske landskab og byder på en enestående visuel diversitet.</p>
   
-  <p>Ved Als Odde, hvor fjorden endeligt slipper sit greb og møder det åbne hav, opstår der magi. Særligt om efteråret og vinteren, når solen står lavt, falder lyset på langs af fjorden og skaber et blødt, reflekterende kystlys, der indbyder til dyb ro.</p>
+  <p>Ved Als Odde, hvor fjorden endeligt slipper sit greb og møder det åbne hav, opstår der magi. Særligt om om foråret og efteråret, falder lyset på langs af fjorden og skaber et blødt, reflekterende lys, der indbyder til dyb ro.</p>
 
-  <p>Det er præcis dette uforstyrrede, nordjyske lys og landskabets melankoli, jeg stræber efter at indfange. Gennem en stram skandinavisk og minimalistisk tilgang skrælles forstyrrende elementer væk. Tilbage står kun konturerne og de pasteltonede farvespil, som gør fjorden til et af Danmarks smukkeste naturområder.</p>
+  <p>Det er præcis dette uforstyrrede, nordjyske lys og landskabets melankoli, jeg stræber efter at indfange. Gennem en stram skandinavisk og minimalistisk tilgang skrælles forstyrrende elementer væk. Tilbage står kun konturerne og de pasteltonede farvespil, som gør fjorden til, måske, Danmarks smukkeste naturområde.</p>
 </div>
 
 <h2 class="hub-section-title">Udvalgte Kunsttryk fra Fjorden</h2>
