@@ -36,7 +36,6 @@ layout: single
     max-width: 800px;
     margin: 0 auto 4rem;
     text-align: left;
-    /* Fjerner hårdkodet farve for at lade Hugo styre lyst/mørkt tema */
   }
   .hub-intro p {
     margin-bottom: 1.5rem;
@@ -98,10 +97,24 @@ layout: single
 </div>
 
 <h2 class="hub-section-title">Udvalgte Kunsttryk fra Fjorden</h2>
-
 <div class="print-grid">
-
-  <!-- FLISE 1: SOLITUDE -->
+  <!-- FLISE 1: AGAINST THE SNOW -->
+  <div class="print-tile">
+    <a href="/prints/against-the-snow" class="print-image">
+      <span class="ro-badge">Mest populære</span>
+      <img src="/mockups/against_the_snow_mockup.jpg" alt="Vinter fotokunst fra Mariagerfjord - Against the Snow">
+    </a>
+    <div class="print-content">
+      <div>
+        <h3>Against the Snow</h3>
+        <p>Minimalistisk vinterlandskab – Mariagerfjord</p>
+      </div>
+      <div class="print-actions">
+        <a href="/prints/against-the-snow" class="buy-btn">Se størrelser og priser</a>
+      </div>
+    </div>
+  </div>
+  <!-- FLISE 2: SOLITUDE -->
   <div class="print-tile">
     <a href="/prints/solitude-at-mariagerfjord" class="print-image">
       <img src="/mockups/Solitude-at-Mariagerfjord-jpeg.jpg" alt="Solitude at Mariagerfjord kunsttryk Hadsund">
@@ -116,24 +129,6 @@ layout: single
       </div>
     </div>
   </div>
-
-  <!-- FLISE 2 (MIDTEN): NATURKALENDEREN 2027 -->
-  <div class="print-tile">
-    <a href="/prints/kalender-2027/" class="print-image">
-      <span class="ro-badge">Årets udgivelse</span>
-      <img src="/uploads/calendar-2027/kalender-2027-00-forside.jpg" alt="Naturkalenderen 2027 - Fotokunst fra Nordjylland">
-    </a>
-    <div class="print-content">
-      <div>
-        <h3>Naturkalenderen 2027</h3>
-        <p>Eksklusiv fotokalender – Nordjylland</p>
-      </div>
-      <div class="print-actions">
-        <a href="/prints/kalender-2027/" class="buy-btn">Se kalenderen her</a>
-      </div>
-    </div>
-  </div>
-
   <!-- FLISE 3: ECHOES -->
   <div class="print-tile">
     <a href="/prints/echoes-in-pastel-waters" class="print-image">
@@ -150,12 +145,46 @@ layout: single
       </div>
     </div>
   </div>
+</div>
 
+<h2 class="hub-section-title">Årets Naturkalendere</h2>
+<p style="opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem;">Fjorden og de jyske kyster ændrer karakter året rundt. Oplev lysets skiften med mine eksklusive kalendere.</p>
+<div class="print-grid">
+  <!-- KALENDER 2027 -->
+  <div class="print-tile">
+    <a href="/prints/kalender-2027/" class="print-image">
+      <span class="ro-badge">Årets udgivelse</span>
+      <img src="/uploads/calendar-2027/kalender-2027-00-forside.jpg" alt="Naturkalenderen 2027 - Fotokunst fra Nordjylland">
+    </a>
+    <div class="print-content">
+      <div>
+        <h3>Naturkalenderen 2027</h3>
+        <p>Eksklusiv fotokalender – Nordjylland</p>
+      </div>
+      <div class="print-actions">
+        <a href="/prints/kalender-2027/" class="buy-btn">Se kalenderen her</a>
+      </div>
+    </div>
+  </div>
+  <!-- KALENDER 2026 -->
+  <div class="print-tile">
+    <a href="/prints/kalender-2026/" class="print-image">
+      <img src="/uploads/calendar-2026/kalender-2026-forside.jpg" onerror="this.style.display='none'" alt="Mariagerfjord Kalender 2026">
+    </a>
+    <div class="print-content">
+      <div>
+        <h3>Mariagerfjord Kalender 2026</h3>
+        <p>Klassisk fotokalender – Arkiv</p>
+      </div>
+      <div class="print-actions">
+        <a href="/prints/kalender-2026/" class="buy-btn">Se kalenderen her</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <h2 class="hub-section-title">Dyk ned i historierne bag lyset</h2>
 <p style="opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem;">Fjorden er omdrejningspunkt for mange af mine tanker om landskabsfotografi. Læs mere om arbejdsprocessen her.</p>
-
 <ul class="internal-links-list">
   <li>
     <a href="/blog/als-odde-and-the-light-by-mariager-fjord/">
@@ -176,15 +205,3 @@ layout: single
     </a>
   </li>
 </ul>
-
-<!-- SCHEMA START -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Fotokunst fra Mariager Fjord og Als Odde | RedOwlPhoto",
-  "description": "Eksklusiv naturfotokunst fra Mariager Fjord, Hadsund og Als Odde. Skandinavisk minimalisme skabt af Allan Andersen.",
-  "url": "https://redowlphoto.dk/landskaber/mariager-fjord/",
-  "about": {
-    "@type": "Place",
-    "name": "Mariager Fjord, Nordjylland, Danmark
