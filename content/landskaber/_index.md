@@ -16,7 +16,7 @@ layout: single
     margin-top: 0.5rem;
   }
   
-  /* Centreret grid med fast max-bredde, så kortet ikke strækker sig ud */
+  /* Centreret grid med fast max-bredde, så kortene ikke strækker sig ud */
   .landscape-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
@@ -74,6 +74,15 @@ layout: single
     <div class="landscape-card-content">
       <h3>Mariager Fjord & Als Odde</h3>
       <p>Danmarks længste fjord, Hadsund og det bløde kystlys ved Kattegat. Udforsk udvalgte kunsttryk og årets kalendere.</p>
+    </div>
+  </a>
+
+  <!-- KORT 2: ØSTER HURUP & LILLE VILDMOSE -->
+  <a href="/landskaber/oester-hurup-lille-vildmose/" class="landscape-card">
+    <img src="/works/golden-levitation/golden-levitation-lille-vildmose.jpg" alt="Fotokunst fra Øster Hurup og Lille Vildmose">
+    <div class="landscape-card-content">
+      <h3>Øster Hurup & Lille Vildmose</h3>
+      <p>Danmarks største højmose, morgenlys over mosen og Kattegats kystlinje. Oplev mosemotiver og eksklusive kalendere.</p>
     </div>
   </a>
 
