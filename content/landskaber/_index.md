@@ -7,7 +7,7 @@ layout: single
 <style>
   .hub-header {
     text-align: center;
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 1.5rem;
   }
   .hub-subtitle {
     font-size: 1.1rem;
@@ -15,12 +15,13 @@ layout: single
     font-weight: 300;
     margin-top: 0.5rem;
     padding: 0 1rem;
+    line-height: 1.5;
   }
   
-  /* Responsivt grid: Fyld skærmen på mobil, max 420px pr. kort på PC */
+  /* Grid der tilpasser sig fuldt ud til skærmen på mobil og samles pænt på PC */
   .landscape-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 420px));
     justify-content: center;
     gap: 1.5rem;
     max-width: 900px;
@@ -43,13 +44,18 @@ layout: single
     transform: translateY(-4px);
     border-color: #2563eb;
   }
+  
+  /* Sikrer at billedet altid sidder øverst i fuld bredde */
   .landscape-card img {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
+    display: block;
   }
+  
   .landscape-card-content {
-    padding: 1.5rem;
+    padding: 1.25rem;
+    flex-grow: 1;
   }
   .landscape-card-content h3 {
     margin-top: 0;
