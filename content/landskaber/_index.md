@@ -10,20 +10,22 @@ layout: single
     padding: 1rem 0 2rem;
   }
   .hub-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     opacity: 0.7;
     font-weight: 300;
     margin-top: 0.5rem;
+    padding: 0 1rem;
   }
   
-  /* Centreret grid med fast max-bredde, så kortene ikke strækker sig ud */
+  /* Responsivt grid: Fyld skærmen på mobil, max 420px pr. kort på PC */
   .landscape-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 900px;
     margin: 0 auto 4rem;
+    padding: 0 1rem;
   }
   
   .landscape-card {
@@ -43,7 +45,7 @@ layout: single
   }
   .landscape-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
   }
   .landscape-card-content {
@@ -52,7 +54,7 @@ layout: single
   .landscape-card-content h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .landscape-card-content p {
     margin: 0;
