@@ -18,7 +18,7 @@ To protect the sustainable fine art print all the way to your doorstep, every ca
 **Order Early Ahead of the Holiday Rush**  
 If you want to have your gift ready in good time before postal carriers hit peak December volume, now is the ideal moment to place your order. The **Nature Calendar 2027** measures 30.5 x 20.3 cm (a classic A4 size) and features twelve months of minimalist Nordic nature photography from Jutland, Denmark—including Mariager Fjord, the Lille Vildmose raised bog, Skjern Å, and Rubjerg Knude.
 
-An **exclusive 2027 wall calendar** works equally well as a thoughtful holiday gift and as a serene **Nordic nature photography calendar** for your own wall. Worldwide shipping is completely free on all orders, and ordering two copies together unlocks a special bundle price.
+An **exclusive 2027 wall calendar** works equally well as a thoughtful holiday gift and as a serene **Nordic nature photography calendar** for your own wall. Shipping within the EU is completely free on all orders, and ordering two copies together unlocks a special bundle price. If you are ordering from outside the EU, please send me a message for exact shipping rates and delivery times.
 
 ![Exclusive 2027 wall calendar - April photograph by the North Sea in Hirtshals, Denmark](/uploads/calendar-2027/kalender-2027-04.jpg)
 
