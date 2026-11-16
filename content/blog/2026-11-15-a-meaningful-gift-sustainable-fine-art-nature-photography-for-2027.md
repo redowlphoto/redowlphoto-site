@@ -18,7 +18,7 @@ To prevent waste and overproduction, each calendar is printed strictly to order.
 **An Exclusive 2027 Wall Calendar for Lovers of Nordic Nature**  
 If you are looking for a thoughtful holiday gift for someone who appreciates minimalist design and the quiet beauty of the Danish coast, an **exclusive 2027 wall calendar** measuring 30.5 x 20.3 cm (a versatile classic A4 size) fits effortlessly into any home, office, or coastal retreat. Whether it evokes memories of travels through Northern Jutland as a **Nordic nature photography calendar** or simply brings the shifting seasons indoors, the **Nature Calendar 2027** is made to linger on the wall.
 
-If you would like to gift one for Christmas and keep one for yourself, a special bundle price is available when ordering two copies—and worldwide shipping is always free.
+If you would like to gift one for Christmas and keep one for yourself, a special bundle price is available when ordering two copies — and shipping within the EU is completely free on all orders. If you are ordering from outside the EU, please send me a message for exact shipping rates and delivery times.
 
 ![Nature Calendar 2027 - Winter oak tree in snow in Northern Jutland, Denmark](/uploads/calendar-2027/kalender-2027-00-forside.jpg)
 
